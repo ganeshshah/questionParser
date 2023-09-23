@@ -24,4 +24,13 @@ public class ParsingRepository {
         System.out.println("Need to implement logic to persist data");
         parsingRepo.saveAll(printSolutionMap);
     }
+
+    public void deleteMcq(Integer id){
+        System.out.println("Deleting question id : " +  id);
+        parsingRepo.deleteById(id);
+    }
+
+    public void updateMcq(McqCSV mcq){
+        parsingRepo.save(mcq);
+    }
 }

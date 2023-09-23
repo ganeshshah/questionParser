@@ -27,4 +27,14 @@ public class ParsingService {
    void processAndInsertMcq(ArrayList<McqCSV> mcqList){
          parsingRepository.processAndInsertMcq(mcqList);
     }
+
+    public void updateMcq(McqCSV mcq){
+        parsingRepository.updateMcq(mcq);
+    }
+
+    public void deleteMcq(Integer id){
+        System.out.println("Deleting question id : " +  id);
+        parsingRepository.deleteMcq(id);
+    }
+
 }
