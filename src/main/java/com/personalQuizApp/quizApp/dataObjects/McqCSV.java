@@ -17,11 +17,15 @@ public class McqCSV {
     private String answerKey;
     @Column(length = 2048)
     private String hint;
-    private String noOfAttempt;
-    private String accurracy;
-    private Integer consecutiveCorrect;
+    private Integer noOfAttempt;
+    private Integer accurracy;
+    private Integer noOfCorrect;
     private Date attemptedDate;
     private Date createdDate;
+    private String month;
+    private String lodingIndicator;
+    private Integer noOfIncorrectAttempt;
+    private String recentCorrect;
 
     public String getMonth() {
         return month;
@@ -31,15 +35,16 @@ public class McqCSV {
         this.month = month;
     }
 
-    private String month;
 
-    public Integer getConsecutiveCorrect() {
-        return consecutiveCorrect;
+
+    public Integer getNoOfCorrect() {
+        return noOfCorrect;
     }
 
-    public void setConsecutiveCorrect(Integer consecutiveCorrect) {
-        this.consecutiveCorrect = consecutiveCorrect;
+    public void setNoOfCorrect(Integer noOfCorrect) {
+        this.noOfCorrect = noOfCorrect;
     }
+
 
     public Date getCreatedDate() {
         return createdDate;
@@ -81,19 +86,19 @@ public class McqCSV {
         this.hint = hint;
     }
 
-    public String getNoOfAttempt() {
+    public Integer getNoOfAttempt() {
         return noOfAttempt;
     }
 
-    public void setNoOfAttempt(String noOfAttempt) {
+    public void setNoOfAttempt(Integer noOfAttempt) {
         this.noOfAttempt = noOfAttempt;
     }
 
-    public String getAccurracy() {
+    public Integer getAccurracy() {
         return accurracy;
     }
 
-    public void setAccurracy(String accurracy) {
+    public void setAccurracy(Integer accurracy) {
         this.accurracy = accurracy;
     }
 
@@ -112,4 +117,28 @@ public class McqCSV {
     public void setId(Integer id) {
         this.id = id;
     }
+    public String getLodingIndicator() {
+        return lodingIndicator;
+    }
+
+    public void setLodingIndicator(String lodingIndicator) {
+        this.lodingIndicator = lodingIndicator;
+    }
+
+    public Integer getNoOfIncorrectAttempt() {
+        return noOfIncorrectAttempt;
+    }
+
+    public void setNoOfIncorrectAttempt(Integer noOfIncorrectAttempt) {
+        this.noOfIncorrectAttempt = noOfIncorrectAttempt;
+    }
+
+    public String getRecentCorrect() {
+        return recentCorrect;
+    }
+
+    public void setRecentCorrect(String recentCorrect) {
+        this.recentCorrect = recentCorrect;
+    }
+
 }

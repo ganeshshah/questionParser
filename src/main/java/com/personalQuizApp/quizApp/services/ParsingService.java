@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestAttribute;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,11 +21,11 @@ public class ParsingService {
         this.parsingRepository = parsingRepository;
     }
 
-    List<McqCSV> getParsedMcq(){
-        return parsingRepository.getParsedMcq();
+    List<McqCSV> getQuestions(){
+        return parsingRepository.getQuestions();
     }
 
-   void processAndInsertMcq(ArrayList<McqCSV> mcqList){
+   void processAndInsertMcq(ArrayList<McqCSV> mcqList) throws IOException {
          parsingRepository.processAndInsertMcq(mcqList);
     }
 
@@ -37,4 +38,7 @@ public class ParsingService {
         parsingRepository.deleteMcq(id);
     }
 
+    public List<McqCSV> getQuestionsWithParam(int numQuestions, String flag, String subject, int accuracy, String month) {
+        return parsingRepository.getQuestionsWithParam( numQuestions, flag,subject,accuracy,month);
+    }
 }

@@ -1,12 +1,12 @@
-package com.personalQuizApp.quizApp.parsers;
+package com.personalQuizApp.quizApp.processors;
 
 import com.personalQuizApp.quizApp.dataObjects.McqCSV;
 import com.personalQuizApp.quizApp.enums.Months;
 import com.personalQuizApp.quizApp.enums.Subjects;
-import com.personalQuizApp.quizApp.services.ParsingController;
+import org.mozilla.universalchardet.UniversalDetector;
 
 import java.io.*;
-import java.sql.Date;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -16,17 +16,19 @@ import java.util.regex.Pattern;
 
 public class ParsePlainText {
     public static ArrayList<McqCSV> printSolutionMap;
-    public static List<McqCSV> parseText() {
+    public static List<McqCSV> parseText() throws IOException {
         HashMap<Integer,HashMap<String,String>> solutionMap = new HashMap<>();
         HashMap<Integer,String> questionMap = new HashMap<>();
 
         String fullText = "";
         String generatedOutput = "";
         String processedFileDirectory = "C:\\Users\\Ganesh\\Desktop\\Development\\quizApp\\src\\main\\java\\com\\personalQuizApp\\quizApp\\processedfile";
-        try (FileReader fr = new FileReader("C:\\Users\\Ganesh\\Desktop\\Development\\quizApp\\src\\main\\java\\com\\personalQuizApp\\quizApp\\filetoprocess\\PIB_AUGUST_2023.txt");
-             BufferedReader objReader = new BufferedReader(fr)) {
+        String sourceFileName = "C:\\Users\\Ganesh\\Desktop\\Development\\quizApp\\src\\main\\java\\com\\personalQuizApp\\quizApp\\filetoprocess\\PIB_AUGUST_2023.txt";
+
+        FileReader fr = new FileReader(sourceFileName, Charset.forName("windows-1252"));
+        try (BufferedReader buffReader = new BufferedReader(fr)) {
             String strCurrentLine;
-            while ((strCurrentLine = objReader.readLine()) != null) {
+            while ((strCurrentLine = buffReader.readLine()) != null) {
                 fullText += strCurrentLine + System.lineSeparator();
             }
             // Split the lines
@@ -62,7 +64,7 @@ public class ParsePlainText {
                 generatedOutput += sanitizedQuestion;
             }
             //printSolutionMap(solutionMap);
-            writeParsedFile(generatedOutput,processedFileDirectory);
+           // writeParsedFile(generatedOutput,processedFileDirectory);
             //System.out.println(solutionMap);
             String subject = "PIB";
             printSolutionMap = printSolutionMap(solutionMap,subject,questionMap);
@@ -129,6 +131,7 @@ public class ParsePlainText {
             writer.newLine();
         }
     }
+
 }
 
 

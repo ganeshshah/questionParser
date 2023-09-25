@@ -1,14 +1,18 @@
 package com.personalQuizApp.quizApp.services;
 
 import com.personalQuizApp.quizApp.dataObjects.McqCSV;
-import com.personalQuizApp.quizApp.parsers.ParsePlainText;
+import com.personalQuizApp.quizApp.processors.ProcessInput;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 public class ParsingController {
 
     private final ParsingService parsingService;
@@ -18,13 +22,24 @@ public class ParsingController {
         this.parsingService = parsingService;
     }
 
-    @GetMapping("hello")
-    List<McqCSV> getParsedMcq(){
-        return parsingService.getParsedMcq();
+    @GetMapping("getQuestions")
+    List<McqCSV> getQuestions(){
+        return parsingService.getQuestions();
+    }
+
+    @GetMapping("getQuestionsWithParam")
+    List<McqCSV> getQuestionsWithParam(
+            @RequestParam(name = "numQuestions") int numQuestions,
+            @RequestParam(name = "flag") String flag,
+            @RequestParam(name = "subject") String subject,
+            @RequestParam(name = "accuracy") int accuracy,
+            @RequestParam(name = "month") String month
+    ){
+        return parsingService.getQuestionsWithParam(numQuestions,flag,subject,accuracy,month);
     }
 
     @PostMapping("proccessFile")
-    void processAndInsertMcq(@RequestBody ArrayList<McqCSV> mcqList){
+    void processAndInsertMcq(@RequestBody ArrayList<McqCSV> mcqList) throws IOException {
         System.out.println("Inserting values in DB");
         parsingService.processAndInsertMcq(mcqList);
     }
@@ -40,5 +55,12 @@ public class ParsingController {
         System.out.println("Deleting from DB");
         parsingService.deleteMcq(id);
     }
+    @PutMapping("submitAnswer")
+    void submitAnswer(@RequestBody McqCSV mcq){
+        System.out.println("calculating accuracy and updating in DB");
+        parsingService.updateMcq(ProcessInput.processSubmission(mcq));
+    }
+
+
 
 }

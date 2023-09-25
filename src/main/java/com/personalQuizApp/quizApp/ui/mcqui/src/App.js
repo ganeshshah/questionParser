@@ -1,45 +1,34 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './views/Home';
+import PIB24X7 from './views/PIB24X7'; // Assuming you have a PIB24x7 component
+import AllQuestions from './views/AllQuestions';
+import EditForm from './views/components/EditForm';
+import Finance from './views/Finance';
+import RBI24X7 from './views/RBI24X7';
+import Management from './views/Management';
+import ESI from './views/ESI';
+import GeneralAwareness from './views/GeneralAwareness';
+import CloudAffairsGA from './views/CloudAffairsGA';
 
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Finance from "./views/Finance";
+
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <h1>MCQ Practice</h1>
-        <h3>Created this portal to do spaced repetition</h3>
-        <div>
-        <ul className="menu-list">
-          <li>
-            <a href="/Finance" target="_blank">Finance</a>
-          </li>
-          <li>
-            <Link to="/management">Management</Link>
-          </li>
-          <li>
-            <Link to="/esi">ESI</Link>
-          </li>
-          <li>
-            <Link to="/esi">PIB24x7</Link>
-          </li>
-          <li>
-            <Link to="/esi">RBI24x7</Link>
-          </li>
-          <li>
-            <Link to="/esi">General Awareness</Link>
-          </li>
-          <li>
-            <Link to="/esi">Create Mixed Test</Link>
-          </li>
-          <li>
-            <Link to="/esi">Analytics dashboard</Link>
-          </li>
-        </ul>
-        </div>
         <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/PIB24x7" element={<PIB24X7 />} />
+          <Route path="/Questions" element={<AllQuestions />} />
+          <Route path="/EditForm" element={<EditForm />} />
           <Route path="/Finance" element={<Finance />} />
+          <Route path="/RBI24x7" element={<RBI24X7 />} />
+          <Route path="/Management" element={<Management />} />
+          <Route path="/ESI" element={<ESI />} />
+          <Route path="/SpotlightGA" element={<GeneralAwareness />} />
+          <Route path="/CloudAffairsGA" element={<CloudAffairsGA />} />
         </Routes>
       </div>
     </Router>

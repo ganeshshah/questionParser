@@ -2,13 +2,13 @@ import React from 'react';
 import './Home.css';
 import SearchBar from './components/SearchBar';
 
-function ESI() {
+function Management() {
   return (
     <div className="Home">
-      <h1>MCQ Practice for ESI</h1> 
+      <h1>MCQ Practice for Management</h1> 
       <SearchBar />   
     </div>
   );
 }
 
-export default ESI;
+export default Management;
