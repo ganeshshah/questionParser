@@ -11,6 +11,7 @@ import Management from './views/Management';
 import ESI from './views/ESI';
 import GeneralAwareness from './views/GeneralAwareness';
 import CloudAffairsGA from './views/CloudAffairsGA';
+import QuestionsWithParams from './views/QuestionWithParams';
 
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/ESI" element={<ESI />} />
           <Route path="/SpotlightGA" element={<GeneralAwareness />} />
           <Route path="/CloudAffairsGA" element={<CloudAffairsGA />} />
+          <Route path="/searchWithParam" element={<QuestionsWithParams />} />
         </Routes>
       </div>
     </Router>
