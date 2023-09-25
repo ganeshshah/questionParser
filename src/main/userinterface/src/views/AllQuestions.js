@@ -1,21 +1,24 @@
 import React, { useEffect, useState } from "react";
 import RenderQuestions from "./components/RenderQuestions";
+import { useLocation } from 'react-router-dom';
 
-function AllQuestions() {
+function AllQuestions({testIdObject}) {
 // set state
+  const location = useLocation();
   const [questions, setQuestions] = useState([]);
-
+  const apiPath = 'http://localhost:8080/getQuestionsWithParam?'+'numQuestions='+ location.state.numQuestions +'&flag='
+  +location.state.flag +'&subject='+location.state.subject+'&accuracy='+location.state.accuracy+'&month='+ location.state.month;
 // first data grab
   useEffect(() => {
-    fetch("http://localhost:8080/getQuestions") // your url may look different
+    fetch(apiPath) // your url may look different
       .then(resp => resp.json())
       .then(data => setQuestions(data)) // set data to state
   }, []);
 
 return (
-    <div>
+    <div style={{ marginTop: 70}}>
       {/* pass data down to the QuestionBlock component where we'll create the table*/}
-      <RenderQuestions questions={questions} />
+      <RenderQuestions questions={questions} testIdObject={testIdObject} />
     </div>
   );
 }

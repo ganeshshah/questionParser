@@ -17,7 +17,7 @@ function QuestionsWithParams() {
   }, []);
 
 return (
-    <div>
+    <div style={{ marginTop: 70}}>
       {/* pass data down to the QuestionBlock component where we'll create the table*/}
       <RenderQuestions questions={questions} />
     </div>

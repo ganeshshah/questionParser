@@ -12,6 +12,7 @@ import ESI from './views/ESI';
 import GeneralAwareness from './views/GeneralAwareness';
 import CloudAffairsGA from './views/CloudAffairsGA';
 import QuestionsWithParams from './views/QuestionWithParams';
+import TakeTest from './views/TakeTest';
 
 
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/SpotlightGA" element={<GeneralAwareness />} />
           <Route path="/CloudAffairsGA" element={<CloudAffairsGA />} />
           <Route path="/searchWithParam" element={<QuestionsWithParams />} />
+          <Route path="/createTest" element={<TakeTest />} />
         </Routes>
       </div>
     </Router>

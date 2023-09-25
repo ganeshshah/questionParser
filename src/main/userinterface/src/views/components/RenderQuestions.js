@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import QuestionBlock from './QuestionBlock';
+import  './RenderQuestions.css';
 
-function RenderQuestions({ questions }) {
+function RenderQuestions(props) {
   const itemsPerPage = 20; // Number of questions to display per page
   const [currentPage, setCurrentPage] = useState(1);
+  const questions = props.questions;
+  const testIdObject = props.testIdObject;
+  const id = testIdObject.testId;
 
   // Calculate the index range for the current page
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -25,14 +29,10 @@ function RenderQuestions({ questions }) {
           <tr>
             <th>MCQ Questions</th>
           </tr>
-          <tr>
-          <button>Start test</button>
-          <button>End test</button>
-          </tr>
         </thead>
         <tbody>
           {questionsToDisplay.map((question) => (
-            <QuestionBlock key={question.id} question={question} />
+            <QuestionBlock key={question.id} question={question} testIdObject={testIdObject}/>
           ))}
         </tbody>
       </table>
@@ -42,6 +42,7 @@ function RenderQuestions({ questions }) {
             key={index}
             onClick={() => handlePageChange(index + 1)}
             className={currentPage === index + 1 ? 'active' : ''}
+            style={{backgroundColor:'grey', marginLeft:5}}
           >
             {index + 1}
           </button>

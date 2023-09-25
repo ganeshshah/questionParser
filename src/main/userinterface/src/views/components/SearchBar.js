@@ -3,17 +3,21 @@ import {useNavigate} from 'react-router-dom';
 import './SearchBar.css';
 
 function SearchBar() {
-  const [numQuestions, setNumQuestions] = useState('');
-  const [flag, setFlag] = useState('all'); // Initialize with 'all'
-  const [subject, setSubject] = useState('all');
-  const [accuracy, setAccuracy] = useState('all');
-  const [month, setMonth] = useState('all');
+  const [numQuestions, setNumQuestions] = useState('0');
+  const [flag, setFlag] = useState('yes');
+  const [subject, setSubject] = useState('PIB24X7');
+  const [accuracy, setAccuracy] = useState('0');
+  const [month, setMonth] = useState('AUG');
 
   const navigate = useNavigate();
   const navigateToSearch = () => {
-    // 👇️ navigate to /contacts
     navigate('/searchWithParam' , { state: { numQuestions, flag, subject, accuracy, month } });
   };
+
+  const navigate2 = useNavigate();
+  const navigateToCreatetest = () => {
+    navigate2('/createTest' , { state: { numQuestions, flag, subject, accuracy, month } });
+  }
 
   const months = [
     { value: 'JAN', label: 'January' },
@@ -117,6 +121,10 @@ function SearchBar() {
 
         <button type="submit" className="fetch-button" onClick={navigateToSearch}>
           Fetch Question
+        </button>
+
+        <button type="submit" className="fetch-button" style= {{background:'green'}} onClick={navigateToCreatetest}>
+          Create Test
         </button>
       </form>
     </div>

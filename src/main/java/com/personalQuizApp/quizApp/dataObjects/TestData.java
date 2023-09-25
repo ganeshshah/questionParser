@@ -9,14 +9,31 @@ import java.util.Date;
 
 @Entity
 public class TestData {
-
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
+    private Integer id;
     private Integer testId;
     private Date testDate;
     private String subject;
     private Integer questionId;
     private Integer result;
+    private String month;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public void setMonth(String month) {
+        this.month = month;
+    }
 
     public Integer getTestId() {
         return testId;

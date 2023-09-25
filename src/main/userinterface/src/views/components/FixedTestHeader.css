@@ -1,0 +1,55 @@
+/* FixedTestHeader.css */
+
+.fixedTestHeader {
+    position: fixed; /* Stick to the top */
+    top: 0; /* Align to the top of the viewport */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 999; /* Ensure it's above other content */
+  }
+  
+  .fixedTestHeader button {
+    background-color: #007bff; /* Blue by default */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Style for the Start button */
+  .fixedTestHeader button.start {
+    background-color: #28a745; /* Green */
+  }
+  
+  /* Style for the End button */
+  .fixedTestHeader button.end {
+    background-color: #dc3545; /* Red */
+  }
+  
+  .fixedTestHeader .timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .fixedTestHeader {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .fixedTestHeader button {
+      margin: 5px 0;
+    }
+  }
+  

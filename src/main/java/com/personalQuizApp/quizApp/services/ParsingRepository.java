@@ -39,24 +39,29 @@ public class ParsingRepository {
     }
 
 
-    public List<McqCSV> getQuestionsWithParam(int numQuestions, String flag, String subject, int accuracy, String month) {
-        if(numQuestions>0 && flag.equals("no")){
+    public List<McqCSV> getQuestionsWithParam(int numQuestions, String allFlag, String subject, int accuracy, String month) {
+        if(numQuestions>0 && allFlag.equals("no")){
             if(accuracy == 0){
-                return parsingRepo.getQuestions1();
+                List<McqCSV> results =  parsingRepo.getQuestions1(subject, month);
+                if (results.size() > numQuestions) {
+                    return results.subList(0, numQuestions);
+                }
+                return results;
             }
             else{
-                return parsingRepo.getQuestions1();
+                List<McqCSV> results = parsingRepo.getTopXQuestions(subject, accuracy, month);
+                if (results.size() > numQuestions) {
+                    return results.subList(0, numQuestions);
+                }
+                return results;
             }
         }else{
             if(accuracy == 0){
-                return parsingRepo.getQuestions1();
+                return parsingRepo.getQuestions1(subject, month);
             }
             else{
-                return parsingRepo.getQuestions1();
+                return parsingRepo.getQuestions2(subject,accuracy, month);
             }
         }
     }
-
-
-
 }
