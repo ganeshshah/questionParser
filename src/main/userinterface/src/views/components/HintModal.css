@@ -1,0 +1,55 @@
+/* HintModal.css */
+
+/* Modal overlay - covers the entire screen */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+  
+  /* Modal container */
+  .modal {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Modal header */
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Close button */
+  .modal-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  /* Modal content */
+  .modal-content {
+    margin-top: 15px;
+  }
+  
+  /* Styling for the modal title */
+  .modal h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+
+  
