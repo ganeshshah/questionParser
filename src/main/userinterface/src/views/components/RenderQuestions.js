@@ -6,8 +6,7 @@ function RenderQuestions(props) {
   const itemsPerPage = 20; // Number of questions to display per page
   const [currentPage, setCurrentPage] = useState(1);
   const questions = props.questions;
-  const testIdObject = props.testIdObject;
-  const id = testIdObject.testId;
+   
 
   // Calculate the index range for the current page
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -32,7 +31,7 @@ function RenderQuestions(props) {
         </thead>
         <tbody>
           {questionsToDisplay.map((question) => (
-            <QuestionBlock key={question.id} question={question} testIdObject={testIdObject}/>
+            <QuestionBlock key={question.id} question={question} testIdObject={props.testIdObject || null}/>
           ))}
         </tbody>
       </table>

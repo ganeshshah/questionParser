@@ -28,27 +28,28 @@ function QuestionBlock(props) {
   };
  
   const [dataToSend, setFormData] = useState({
-    testId : props.testIdObject.testId,
-    month : props.testIdObject.month,
+    testId : props.testIdObject ? props.testIdObject.testId : 0,
+    month : props.question.month,
     questionId : id,
     result : 0,
-    testDate : props.testIdObject.date,
+    testDate : props.testIdObject ? props.testIdObject.date : null,
     subject : subject
    });
-
-   console.log(props.testIdObject.date);
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
     if (inputValue === answerKey) {
-      dataToSend.result = 1;
+      if(props.testIdObject != null){
+        dataToSend.result = 1;
+      }
       setResultMessage('Success: Your answer is correct');
     } else {
       setResultMessage('Incorrect: Try again.');
     }
    
- // Send a POST request
+if(props.testIdObject != null){
+     // Send a POST request
  axios.post('http://localhost:8080/testData/submitQuestion', dataToSend)
  .then((response) => {
    console.log('POST request successful:', response.data);
@@ -58,8 +59,9 @@ function QuestionBlock(props) {
    console.error('Error making POST request:', error);
    // Handle errors
  });
+ }
 
-  };
+};
 
   const knowledgeNuggets = () => {
     setIsModalOpen(true); // Open the modal

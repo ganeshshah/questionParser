@@ -6,6 +6,7 @@ function FixedTestHeader({testIdObject}) {
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   const testId = testIdObject.testId;
   const date = testIdObject.date;
+  
 
   useEffect(() => {
     let interval;
