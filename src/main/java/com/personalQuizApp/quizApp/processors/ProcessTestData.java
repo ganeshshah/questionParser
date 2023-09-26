@@ -1,8 +1,5 @@
 package com.personalQuizApp.quizApp.processors;
-
-import com.personalQuizApp.quizApp.dataObjects.McqCSV;
 import com.personalQuizApp.quizApp.dataObjects.TestData;
-import com.personalQuizApp.quizApp.services.ParsingService;
 
 import java.util.ArrayList;
 import java.util.HashMap;

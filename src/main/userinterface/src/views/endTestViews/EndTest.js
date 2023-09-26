@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from "react";
 import './EndTest.css';
 import axios from 'axios';
+import {useNavigate} from 'react-router-dom';
 
 
 function EndTest(){
@@ -13,6 +14,7 @@ const totalTime = location.state.timer / 60;
 const totalTimeTaken = totalTime.toFixed(2);
 const testId = location.state.testId;
 const subject = location.state.subject;
+
 
 const apiPath = 'http://localhost:8080/testData/getTestResultData?testId='+ testId;
 const [testResultData, SetTestResultData] = useState([]);
@@ -32,7 +34,13 @@ const [testResultData, SetTestResultData] = useState([]);
   }, []);
  
 console.log(testResultData);
+const qlist = testResultData.incorrectQuestionsList;
   
+const navigate = useNavigate();
+  const navigateToReviewQuestions = () => {
+    navigate('/reviewQuestions' , { state :{qlist}});
+  };
+
 
 const data = [
   ["Result", "Percentage"],
@@ -55,7 +63,7 @@ const data = [
       </div>
       <PieChart data={data}/>
       <h2>Review Incorrect Questions Again</h2>
-      <button className="review-button" onClick={handleReviewClick}> Review Questions</button> 
+      <button className="review-button" onClick={navigateToReviewQuestions}> Review Questions</button> 
     </div>
   );
 };

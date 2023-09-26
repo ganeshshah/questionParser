@@ -14,6 +14,7 @@ import CloudAffairsGA from './views/CloudAffairsGA';
 import QuestionsWithParams from './views/QuestionWithParams';
 import TakeTest from './views/TakeTest';
 import EndTest from './views/endTestViews/EndTest';
+import ReviewQuestions from './views/endTestViews/ReviewQuestions';
 
 
 
@@ -35,6 +36,7 @@ function App() {
           <Route path="/searchWithParam" element={<QuestionsWithParams />} />
           <Route path="/createTest" element={<TakeTest />} />
           <Route path="/endTestPage" element={<EndTest />} />
+          <Route path="/reviewQuestions" element={<ReviewQuestions />} />
         </Routes>
       </div>
     </Router>

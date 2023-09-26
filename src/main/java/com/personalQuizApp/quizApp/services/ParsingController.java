@@ -62,7 +62,7 @@ public class ParsingController {
     }
 
     @GetMapping("getIncorrectQuestions")
-    public List<McqCSV> getIncorrectQuestions( @RequestParam(name = "numQuestions") ArrayList<Integer> ids){
+    public List<McqCSV> getIncorrectQuestions( @RequestParam ArrayList<Integer> ids){
         return (List<McqCSV>) parsingService.getIncorrectQuestions(ids);
     }
 
