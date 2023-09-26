@@ -61,6 +61,9 @@ public class ParsingController {
         parsingService.updateMcq(ProcessInput.processSubmission(mcq));
     }
 
-
+    @GetMapping("getIncorrectQuestions")
+    public List<McqCSV> getIncorrectQuestions( @RequestParam(name = "numQuestions") ArrayList<Integer> ids){
+        return (List<McqCSV>) parsingService.getIncorrectQuestions(ids);
+    }
 
 }

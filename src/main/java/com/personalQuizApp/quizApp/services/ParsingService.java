@@ -33,6 +33,10 @@ public class ParsingService {
         parsingRepository.updateMcq(mcq);
     }
 
+    public List<McqCSV> getIncorrectQuestions(ArrayList<Integer> ids){
+        return (List<McqCSV>) parsingRepository.getIncorrectQuestions(ids);
+    }
+
     public void deleteMcq(Integer id){
         System.out.println("Deleting question id : " +  id);
         parsingRepository.deleteMcq(id);
@@ -41,6 +45,5 @@ public class ParsingService {
     public List<McqCSV> getQuestionsWithParam(int numQuestions, String flag, String subject, int accuracy, String month) {
         return parsingRepository.getQuestionsWithParam( numQuestions, flag,subject,accuracy,month);
     }
-
 
 }

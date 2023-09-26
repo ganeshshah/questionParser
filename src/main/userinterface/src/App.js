@@ -13,6 +13,7 @@ import GeneralAwareness from './views/GeneralAwareness';
 import CloudAffairsGA from './views/CloudAffairsGA';
 import QuestionsWithParams from './views/QuestionWithParams';
 import TakeTest from './views/TakeTest';
+import EndTest from './views/endTestViews/EndTest';
 
 
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/CloudAffairsGA" element={<CloudAffairsGA />} />
           <Route path="/searchWithParam" element={<QuestionsWithParams />} />
           <Route path="/createTest" element={<TakeTest />} />
+          <Route path="/endTestPage" element={<EndTest />} />
         </Routes>
       </div>
     </Router>

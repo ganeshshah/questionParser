@@ -23,6 +23,10 @@ public class ParsingRepository {
         return (List<McqCSV>) parsingRepo.findAll();
     }
 
+    public List<McqCSV> getIncorrectQuestions(ArrayList<Integer> ids){
+        return (List<McqCSV>) parsingRepo.findAllById(ids);
+    }
+
     public void processAndInsertMcq(ArrayList<McqCSV> mcqList) throws IOException {
         System.out.println("Need to implement logic to persist data");
         ParsePlainText.parseText();
