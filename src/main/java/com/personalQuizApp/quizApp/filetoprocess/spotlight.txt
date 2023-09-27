@@ -1,0 +1,1690 @@
+
+Q.1)	Semiconductors are materials with electrical conductivity between that of insulators and conductors. They play a pivotal role in modern electronics by enabling the control and manipulation of electrical signals. Over the years, India has emerged as a significant player in semiconductor design, manufacturing, and research. Semicon India showcases the nation's strides in producing cutting-edge technologies and contributing to the global semiconductor landscape. This year, the event was organized in Gandhinagar, Gujarat on the theme of	. This conference will further the remarkable progress made in Indian semiconductor design
+ and manufacturing, reflecting a clear vision — nurturing a thriving domestic ecosystem to ensure self-sufficiency and make India a key player in the global semiconductor value chain.
+[A]	Fostering Growth in India's Semiconductor Industry
+[B]	Nurturing the Semiconductor Ecosystem in India
+[C]	Advancing India's Semiconductor Landscape
+[D]	Catalyzing India’s Semiconductor Ecosystem
+[E]	Empowering the Semiconductor Revolution in India
+
+Q.2)	The UNFPA has launched an AI chatbot called 'Just Ask!' in India to provide sexual and reproductive health information to adolescents and young adults. The project receives funding support from Bayer, an international pharmaceutical company, as part of their joint effort to enhance awareness about these health rights among the youth in India. Identify the correct statement with regards to the organizers of the initiative.
+[A]	UNFPA, in collaboration with the National Health Mission (NHM) and the Department of Public Health and Family Welfare, Government of Madhya Pradesh, India organized it
+[B]	UNFPA, in collaboration with the National Health Mission (NHM) and the Department of Public Health and Family Welfare, Government of Telangana, India organized it
+[C]	UNFPA, in collaboration with the National Rural Health Mission (NHM) and the Department of Public Health and Family Welfare, Government of Madhya Pradesh, India organized it
+[D]	UNFPA, in collaboration with the National Health Mission (NHM) and the Department of Health and Education, Government of Madhya Pradesh, India organized it
+[E]	UNFPA, in collaboration with the National Health Mission (NHM) and the Department of Information and Communication Technology, Government of Madhya Pradesh, India organized it
+
+Q.3)	The Multi-State Cooperative Societies (Amendment) Bill, 2023 provides for the establishment of a Co-operative Rehabilitation, Reconstruction and Development Fund for reviving the sick cooperatives. Which of the following would be the likely drawback of establishing this fund?
+[A]	This could compromise their fundamental principle of democratic decision-making and autonomous functioning
+[B]	This poses a complex challenge in balancing control mechanisms with the ethos of cooperative empowerment scenarios
+[C]	This fund will effectively impose a cost on
+well-functioning multi-cooperative societies, which will impact their functioning
+[D]	This could lead to the centralization of power and resources within the larger entity
+[E]	This might favor the interests of the dominant multi-state co-operative, potentially overlooking the unique needs and concerns of the merging state-level societies
+
+Q.4)	Gujjars and Bakerwals are the dominant ST communities in which of the following state/UT?
+[A]	J&K
+[B]	Andaman and Nicobar
+[C]	Jharkhand
+[D]	Manipur
+[E]	Nagaland
+
+Q.5)	Defence exercises hold immense importance as they allow armed forces to enhance their readiness and coordination in simulated real- world scenarios. These exercises provide valuable opportunities to test and refine strategic plans, communication systems, and tactical maneuvers, ensuring seamless interoperability among different branches and even allied nations. Therefore, various nations conduct bilateral, trilateral, and multilateral defence exercises in different modes. One such exercise is “Falcon Shield” air defence exercise, which was conducted by two Asian nations. Identify the countries.
+[A]	China and UAE
+[B]	France and India
+[C]	Sweden and Philippines
+[D]	Norway and South Korea
+[E]	Germany and Turkey
+
+Q.6)	Power Finance Corporation has become first member from India to join “Asia Transition Finance Study Group” (ATFSG) on the side lines of G20 summit at Goa. ATFSG is an initiative by Japanese Ministry of Economy, Trade and Industry (METI) for promoting sustainable transition finance for Asian Countries. Which of the following correctly states the meaning of Transition Finance?
+[A]	It examines psychological biases and emotional factors that influence financial decisions
+
+[B]	It focuses on providing financial services to low-income individuals and communities who may not have access to traditional banking
+[C]	It involves investing in private companies at various stages of growth, aiming to provide funding and expertise in exchange for ownership stakes
+[D]	It involves financing private investments to reduce high greenhouse gas emissions or other environmental impacts and transition to a climate neutral and sustainable economy
+[E]	It encompasses various investment vehicles like stocks, bonds, real estate, and commodities, as well as portfolio management and asset allocation strategies
+
+Q.7)	Mumbai-based Fino Payments Bank approved the proposal for the transition of the bank into a Small Finance Bank (SFB) license. Identify the correct statement with regards to the eligibility criteria of converting a Payment Bank into an SFB.
+1)	Minimum Net Worth Requirement – Rs 500 crore
+2)	Experience - 5 years of operations
+3)	Capital to Risk-Weighted Total Asset ratio (CRAR) - 15%
+[A]	Only 1 and 3
+[B]	Only 1, 2, and 3
+[C]	Only 1
+[D]	Only 2
+[E]	Only 3
+
+Q.8)Which company has developed a first-of-its- kind portable device called Pocket Soundbox, which can fit in your pocket and is as small as a debit card and empowers merchants who are always on the move with instant audio payment alerts?
+[A]	Mobikwik
+[B]	Paytm
+[C]	Razorpay
+[D]	PayU
+[E]	Infibeam
+
+Q.9)	Which state produces Koftgari Metal Craft?
+[A]	Telangana
+[B]	Rajasthan
+[C]	Gujarat
+
+[D]	Madhya Pradesh
+[E]	Maharashtra
+
+Q.10)	Indian women's hockey team won the title of Torneo del Centernario 2023 by defeating hosts Spain (by 3-0 score) in Terrassa, Barcelona. It was the 100th Anniversary of the Spanish Hockey Federation International Tournament 2023. Next, Indian women’s hockey team will participate in the Asian Games 2023 in Hangzhou, China, from September 23 to October
+8. Who is the captain of India’s women hockey
+team?
+[A]	Rani Rampal
+[B]	Gurjit Kaur
+[C]	Navneet Kaur
+[D]	Savita Punia
+[E]	Nikki Pradhan
+
+Q.11)	In the recently held 50th meeting of the Executive Committee of the National Mission for Clean Ganga, seven projects worth around Rs. 692 crores have been approved which includes project related to sewage management in Uttar Pradesh and Bihar. In which year was the mission established?
+[A] 2011
+[B] 2018
+[C] 2014
+[D] 2015
+[E] 2012
+
+Q.12)	Directorate General of Training under the Ministry of Skill Development and Entrepreneurship (MSDE) has partnered with a cloud computing platform to upskill students. The platform will upskill students in cloud computing, data annotation, artificial intelligence (AI), and machine learning (ML), to boost their capabilities and employability. DGT has been implementing long-term institutional skill training in the country through its network of about 15,000 Industrial Training Institutes (ITIs) and 33 National Skill Training Institutes (NSTIs). Name the platform.
+[A]	CloudLinux
+[B]	Google Cloud
+[C]	IBM Cloud
+[D]	Amazon web services
+[E]	Microsoft Azure
+
+
+Q.13)	As a mark of protest against China’s decision to issue stapled visas instead of stamped ones to three athletes from Arunachal Pradesh, India has withdrawn its entire  	 team from the World University Games scheduled to take place in Chengdu. What sport were these athletes representing?
+[A]	Judo
+[B]	Gymnastics
+[C]	Fencing
+[D]	Wushu
+[E]	Taekwondo
+
+Q.14)	Finland has planned to buy "David's Sling" anti-missile defence system which is capable of intercepting missiles fired towards it. An anti- missile defence system seeks to defend a given area from attack by locating and tracking an incoming missile and then launching an interceptor to destroy the missile before it can reach its target. The above anti-missile defence system belongs to which country?
+[A]	China
+[B]	Israel
+[C]	Russia
+[D]	France
+[E]	USA
+
+Q.15)	Human wants to leave the imprint of his creativity wherever it is possible. To carry forward this idea, a programme to send a collection of varied digitised art to the moon as a lasting record of human creativity is being taken up. The art will be stored on memory cards or laser etched on NanoFiche, a 21st-century update on film-based microfiche. Name the programme.
+[A]	Lunar Codex
+[B]	Lunar Manual
+[C]	Celestial treatise
+[D]	Lunatic Lexicon
+[E]	Lunar Atlas
+
+Q.16)	According to the recently released report on Global tobacco epidemic 2023 by WHO, India has the highest level of achievement with regards to putting health warning labels on tobacco products and providing tobacco dependence
+treatment. The success can be attributed to the
+
+National Health Policy of India which targets to reduce tobacco use by 30% by 2025. In which year the policy was introduced?
+[A] 2016
+[B] 2017
+[C] 2018
+[D] 2015
+[E] 2019
+
+Q.17)	Government has recently asked the Pharma companies to adopt good manufacturing practices (GMP) to ensure manufacturing of quality drugs. These mandatory standards bring quality into the product by way of control of materials, methods, machine, and processes. However very few Indian companies follow the GMP. In India, schedule M of the Drugs and Cosmetics Act, 1940, deals with GMP. In which year were these practices first incorporated
+in Schedule M? [A] 1984
+[B] 1990
+[C] 1998
+[D] 1988
+[E] 1985
+
+Q.18)	Kerala Startup Mission (KSUM) has transformed industry incubators into co-working space called 'LEAP Coworks’. KSUM is Kerala government's nodal agency for entrepreneurship development and incubation activities in the state. LEAP, which is short for	, Empower, Accelerate, Prosper aims to empower startups and foster their culture of innovation. Fill the gap.
+[A]	Learn
+[B]	Label
+[C]	Launch
+[D]	Level
+[E]	Lead
+
+Q.19)	A fintech company has launched RuPay credit card-based UPI payments in collaboration with the National Payments Corporation of India (NPCI). This launch will empower members to utilise their RuPay credit cards for making payments via UPI. The users can pay businesses or merchants by scanning any UPI QR code, using their RuPay credit card linked to their UPI.
+Name the company.
+
+[A]	CRED
+[B]	Zest
+[C]	RazorPay
+[D]	Zerodha
+[E]	Upstox
+
+Q.20)	Russia has planned to conduct “Ocean Shield-2023” naval exercise to assess the Russian Navy's readiness to defend the country's interests in a critical area, as well as the coordination of the various military forces. This exercise is announced few days after Russia has withdrawn from the Black Sea Grain initiative. Where will this exercise be conducted?
+[A]	Baltic Sea
+[B]	Black Sea
+[C]	Caspian Sea
+[D]	White Sea
+[E]	Aegean Sea
+
+Q.21)	Indian government has imposed immediate restrictions on importing laptops, tablets, and personal computers falling under HSN 8741 category. One of the major reasons has been to promote domestic manufacturing of these products. The new restrictions on computer imports are part of the Production Linked Incentive (PLI) scheme that was launched by the government in 2020 to boost domestic manufacturing and exports of electronics. What is the outlay of PLI schemes for 14 key sectors as announced in Union Budget 2021-22?
+[A]	INR 1.97 lakh crores
+[B]	INR 1.50 lakh crores
+[C]	INR 1.20 lakh crores
+[D]	INR 2.00 lakh crores
+[E]	INR 1.85 lakh crores
+
+Q.22)	The Cabinet Secretary is the top-most executive official and senior-most civil servant of the Government of India. Recently, appointments committee of the cabinet (ACC) has approved extension in service to Rajiv Gauba for a further period of 1 year, which will make him as the longest serving Cabinet secretary. What can be the maximum term of a cabinet secretary?
+[A]	3 years
+[B]	6 years
+[C]	5 years
+
+[D]	4 years
+[E]	7 years
+
+Q.23)Grandmaster Viswanathan Anand has been India’s top-ranked chess player in the live world rankings for last many years. Recently he has been dethroned by a 17-year-old player who defeated Mistradin Iskandarov in the second round of the FIDE World Cup in Baku, Azerbaijan. The player has climbed to the 9th position in the classic open category. Name the player.
+[A]	Dommaraju Gukesh
+[B]	Arjun Erigaisi
+[C]	Pentala Harikrishna
+[D]	Praggnanandhaa R
+[E]	Vidit Santosh Gujrathi
+
+Q.24)	Over the decades, the ecological and carbon footprint of humans has gradually increased, all while Earth’s biocapacity, i.e., its ability to regenerate resources has diminished significantly. That has led to Earth Overshoot Day arriving earlier and earlier, moving from December 30 in 1970 to August 2 this year. Which organisation calculates this?
+[A]	Intergovernmental Panel on Climate Change (IPCC)
+[B]	Global Footprint Network
+[C]	Greenpeace
+[D]	World Wide Fund
+[E]	United Nations Environment Programme
+
+Q.25)	Which state government has launched the Department of Forest & Environment’s ‘Amrit Brikshya Andolan’ web portal and mobile to make a significant impact on the State’s green economy by planting a total of 1 crore commercially-viable saplings across the State?
+[A]	Assam
+[B]	Meghalaya
+[C]	Uttarakhand
+[D]	Himachal Pradesh
+[E]	Arunachal Pradesh
+
+Q.26)	India’s Purchasing Managers’ Index (PMI) for services has reached an impressive 13-year high of 62.3 in July after a 3-month low in June. This survey is compiled by which of the following?
+[A]	Forbes
+
+[B]	Venture
+[C]	S&P Global
+[D]	CRISIL
+[E]	Fitch India
+
+Q.27)	National Highway Authority of India (NHAI) has launched a new app to improve user experience on highways and create a ‘citizen- centric unified mobile application’. The app will contain essential highway information, complaint redressal, FASTag services along with safe driving features. What is the name of the app?
+[A]	NHAI One
+[B]	Sukhad Yatra
+[C]	NHAI Act
+[D]	Rajmarg Yatra
+[E]	NHAI Help
+
+Q.28)	Government has introduced a new category of Ayush visa for foreign nationals to give a major boost to Medical Value Travel in India. According to the report ‘The Global Wellness Economy: Looking beyond COVID’ by the Global Wellness Institute (GWI), the Global Wellness economy will grow at 9.9% annually. What is the estimated value by which the Ayush based healthcare & wellness economy will grow by 2025?
+[A]	USD 120 billion
+[B]	USD 90 billion
+[C]	USD 70 billion
+[D]	USD 100 billion [e USD 50 billion
+
+Q.29) Lithium-ion batteries have changed the way
+products are designed in modern times. These
+new age batteries are opening up new
+possibilities for mobile phones and laptops,
+electronic gadgets, automobiles, and energy
+storage. Realizing its importance, a state
+government has signed a Memorandum of
+Understanding with US based International to set
+up ₹8,000 crore recyclable Lithium-ion battery
+unit in the state. Identify the state.
+[A] Karnataka
+[B] Tamil Nadu
+[C] Gujarat
+[D] Maharashtra
+[E] Telangana
+
+Q.30)	‘Vivad se Vishwas II’ scheme, announced
+in the Union Budget 2023-24,
+has recently been launched. This is a voluntary settlement scheme to resolve long-standing contractual disputes involving government agencies and is specifically designed for disputes where the Arbitral Award is under challenge in a court. Name the ministry which has launched the scheme.
+[A]	Ministry of Finance
+[B]	Ministry of Corporate Affairs
+[C]	Ministry of Commerce and Industry
+[D]	Ministry of Home Affairs
+[E]	Ministry of Statistics and Programme Implementation
+
+Q.31)	The "Study in India" program is an initiative launched by the Government of India to promote higher education opportunities for international students in India. The program aims to position India as a preferred destination for foreign students seeking quality education and cultural experiences. To provide ease to all stakeholders, Study in India portal has been launched. The portal provides information about the Higher Educational Institutions, which fulfills the following criteria:
+1)	NIRF ranking (<=100)
+2)	NAAC accreditation score (>=3.01)
+3)	FT B-School Rankings score (>=100)
+4)	Status of Institutes of National Importance
+
+[A]	Only 1, 2, and 4
+[B]	Only 2 and 3
+[C]	Only 1
+[D]	Only 1 and 4
+[E]	Only 1 and 2
+
+Q.32) To millions of additional students, teachers and collaborators across India. This platform was launched in 2017 for providing quality e-content for school education in States/UTs and QR coded Energized Textbooks for all grades (one nation, one digital platform). The platform currently
+supports 1.48 million schools across all of India’s
+35 states and Union Territories and is available in 36 Indian languages.
+
+[A]	IBM and Yukti
+[B]	Tata Consultancy Services and SPARC
+[C]	HCL Technologies and ShaGun
+[D]	Oracle Cloud Infrastructure and Diksha
+[E]	Tech Mahindra and Kartavya
+
+Q.33)	Consider the following statements:
+1)	Project Tiger has completed 50 years in 2022
+2)	Project Elephant has increased the number of elephant reserves to 23
+3)	Project Tiger and Project Elephant have been disintegrated
+4)	Project Tiger helped India to account for more
+than 70% of the world’s wild tigers
+
+Which of the above-mentioned statement(s) is/are incorrect?
+
+[A]	Only 1
+[B]	Only 1 and 2
+[C]	Only 1, 2, and 3
+[D]	Only 4
+[E]	Only 1 and 4
+
+Q.34)	Rajya Sabha has passed the Anusandhan National Research Foundation Bill, 2023 to replace the Science and Engineering Research Board Act, 2008. Considering this, identify the incorrect statement(s) with regards to the Bill.
+[A]	NRF will provide strategic direction for research, innovation, and entrepreneurship only in the fields of genetic sciences, agricultural innovation, quantum computing, semiconductors, and information technology
+[B]	NRF will receive funding from donations to the fund
+[C]	NRF will have a Governing Board headed by the Prime Minister of India
+[D]	The President of the Board may appoint or nominate additional members to the Board
+[E]	The Foundation will have an Executive Council to undertake implementation, which will be chaired by the Principal Scientific Adviser to the Government of India
+
+Q.35)	India's presidency of the G20 provides an opportunity to shape global economic priorities
+
+and foster inclusive growth through collaborative policymaking. During its term, India can lead discussions on sustainable development, digital transformation, and resilient recovery post- pandemic. In this direction only, the Sahitya Akademi will publish an anthology of poems with contributions from each of the G-20 nations to commemorate India’s presidency of the grouping. What is the name of the anthology and the author?
+[A]	Under the Same Sky and Ranjit Hoskote
+[B]	Beneath One Sky and Anurag Anand
+[C]	Together Under the Sky and Kunal Basu
+[D]	Unified Under the Heavens and Abhijit Bhaduri
+[E]	Earth's Common Canopy and Mannu Bhandari
+
+Q.36)	Which South Asian country has sought assistance from India for establishing its Unique Digital Identity Project? The project will revolutionize the country's administrative infrastructure and pave the way for more streamlined and efficient service delivery to its citizens.
+[A]	Maldives
+[B]	Bangladesh
+[C]	Nepal
+[D]	Bhutan
+[E]	Sri Lanka
+
+Q.37)	Microprocessors have revolutionized industries, driving automation, efficiency, and innovation, thereby boosting productivity and economic growth. In India, the RISC-V project began in 2010 to enable a new era of processor innovation through open standard collaboration and deliver a new level of free, extensible software and hardware freedom on architecture, paving the way for the next 50 years of computing design and innovation. An Indian Institute of Technology has launched India’s first indigenously designed microprocessor based on RISC-V ISA. Identify the institute and the name of the microprocessor.
+[A]	IIT-Kharagpur and Prajaval microprocessor
+[B]	IIT-Delhi and Pragyan microprocessor
+[C]	IIT-Ropar and PARAM Siddh microprocessor
+[D]	IIT-Roorkee and Mihir microprocessor
+
+[E]	IIT-Madras and Shakti microprocessor
+
+Q.38)	 	has launched the 'Athidhi portal', a user-friendly web portal to expedite the registration process for migrant workers in the state and introduce a unique identification system for them?
+[A]	Maharashtra
+[B]	Kerala
+[C]	Rajasthan
+[D]	Odisha
+[E]	Andhra Pradesh
+
+Q.39)	Consider the following statements:
+1)	WHO road map for neglected tropical diseases sets the target of eliminating NTDs in 100 countries by 2030
+2)	The 2021–2030 WHO neglected tropical disease road map targets the prevention, control elimination and eradication of 20 diseases and disease groups by 2030
+3)	WHO recommends the SAFE strategy- a comprehensive approach to reduce transmission of the causative organism, clear existing infections and deal with the effects of Trachoma
+4)	SAFE strategy is being implemented by WHO, in collaboration with Pfizer
+
+Which of the above-mentioned statement(s) is/are correct?
+[A]	Only 1
+[B]	Only 3 and 4
+[C]	Only 2 and 4
+[D]	Only 1, 2, 3 and 4
+[E]	Only 2, 3 and 4
+
+Q.40)	Lake Tana holds significant cultural and ecological importance, as it is the source of the Blue Nile River and hosts ancient monasteries and churches on its islands, attracting both religious pilgrims and tourists. In which country is the lake located in?
+[A]	Mauritania
+[B]	Ethiopia
+[C]	Niger
+[D]	Egypt
+[E]	Djibouti
+
+Q.41)	In August 2023, SEBI and Association of Portfolio Managers in India (APMI) announced to jointly set standards for performance audit of portfolio management services (PMS) companies. PMS players are required to conduct a performance audit annually and submit a report within 60 days after the end of a financial year. This performance audit needs to consider all clients' portfolios managed by the PMS. However, performance of advisory clients can be excluded only if it is not published in any marketing material or website. What is the implementation date of the standards?
+[A]	September 1, 2023
+[B]	October 1, 2023
+[C]	June 1, 2024
+[D]	January 1, 2024
+[E]	April 1, 2024
+
+Q.42)	The non-linked and non-participating product- Guarantee of Life Dreams (G.O.L.D.) Plan offers policyholders regular long-term income. The premium paying terms range between 6, 8, and 10 years for policy terms of 30 years and 40 years. The starting premium is as low as ₹4,176 per month and offers the choice to pay annually or in instalments. The plan offers three income options: immediate, intermediate and deferred. Which company has launched the plan?
+[A]	Max Life Insurance Company
+[B]	IndiaFirst Life Insurance Company
+[C]	Bharti AXA General Insurance
+[D]	ICICI Prudential Life Insurance Company
+[E]	TATA AIA Life Insurance Company
+
+Q.43)	Identify the correct statement from the options given below.
+[A]	The Maharatna status is given to companies which have recorded average annual turnover of more than Rs. 25,000 crores during the last 3 years
+[B]	A composite score of 60 or above in the following three categories Net Profit to Net Worth, PBIT to turnover, Earning Per share is enough for the grant of Navratna status
+[C]	Department of Public Enterprises confers Maharatna and Miniratna Status. Respective
+
+Ministries of the CPSEs confer the status of Navratna status
+[D]	For upgradation in the Miniratna Category-I status, pre-tax profit is Rs.80 crores or more in at least one of the three years
+[E]	For the grant of the Navratna status, a Miniratna company should have an average annual net profit after tax of more than Rs. 1,000 crores
+
+Q.44)	NMDC Ltd has unveiled its new logo. The new logo is a manifestation of NMDC’s vision of NMDC 2.0. This logo communicates the responsibilities of NMDC towards mining in harmony with nature and people, towards ensuring mineral security & building mineral accountability, and towards infusing self-reliance in our sector. NMDC is a major contributor in the National Steel Policy of 2017, which aims to
+ 	?
+[A]	Increase domestic availability of washed coking coal to reduce import dependence on coking coal from ~85% to ~65% by 2024-25
+[B]	Increase per Capita Steel Consumption to 160 Kgs by 2030-31
+[C]	Increase crude steel capacity of 800 MT
+[D]	Increase production of finished steel to 755 MT
+[E]	Increase finished steel per capita consumption of 108 Kgs by 2030-31
+
+Q.45)	What is India’s per capita GDP forecast by
+S&P Global Ratings (by FY31)? [A] $2,100
+[B] $6,300
+[C] $7,800
+[D] $4,500
+[E] $1,800
+
+Q.46)	Which is the world’s most profitable company in 2022?
+[A]	Walmart
+[B]	Amazon
+[C]	Saudi Aramco
+[D]	Exxon Mobil
+[E]	Apple
+
+Q.47)	The Asian Champions Trophy in football stands as a pivotal event in the sports calendar,
+
+uniting elite teams from Asia and underscoring the significance of regional competition. This tournament not only crowns the continent's football champion but also emphasizes the role of sports in fostering camaraderie, healthy rivalry, and athletic excellence among diverse nations. In 2023, the Asian Champions Trophy was organized by India in	?
+[A]	Rajiv Gandhi International Cricket Stadium
+[B]	M. A. Chidambaram Stadium
+[C]	M. Chinnaswamy Stadium
+[D]	Mayor Radhakrishnan Stadium
+[E]	DY Patil Stadium
+
+Q.48)	The All-India Football Federation (AIFF) is the governing body for football in India, responsible for organizing and promoting the sport at various levels, contributing to the development of Indian football talent and fostering its growth on the national and international stages. Recently, it has partnered with Subroto Mukerjee Sports Education Society (SMSES) to promote football at grass root level. Who is the President of AIFF?
+[A]	Kalyan Chaubey
+[B]	Sanjay Mehrotra
+[C]	Reshma Kewalramani
+[D]	Laxman Narasimhan
+[E]	Arvind Krishna
+
+Q.49)	National Health Authority (NHA) has announced the extension of its Digital Health Incentives Scheme (DHIS) under the Ayushman Bharat Digital Mission (ABDM) till 31st December 2023. Under DHIS, incentives are provided to hospitals and diagnostic labs and to the providers of digital health solutions such as Hospital/ Health Management Information System (HMIS) and Laboratory Management Information System (LMIS) for adopting and enabling transformative digitization under ABDM. The DHIS was launched with effect from 1st January 2023 as part of the Ayushman Bharat Digital Mission. How much financial incentive is given under the DHIS?
+[A]	Rs 1 crore
+[B]	Rs 10 crore
+[C]	Rs 25 crore
+[D]	Rs 4 crore
+[E]	Rs 15 crore
+
+
+Q.50)	International Union for Conservation of Nature’s Species Survival Commission (SSC) and the Wildlife Trust of India (WTI) have partnered to establish the Center for Species Survival (CSS) for South Asia in India. This will be the
+ 	Centre for Species Survival in the world and the first of its kind in South Asia.
+[A]	5th
+[B]	10th
+[C]	2nd
+[D]	3rd
+[E]	8th
+
+Q.51)	Central government has recently launched a portal to facilitate fast transfer of mortal remains of Indian nationals who die abroad. A nodal officer from Airport Health Organization will monitor it 24x7 and scrutinize and give fast track approvals.
+The portal will have two provisions- one for bringing dead bodies from aboard and other to bring mortal remains. Name the portal.
+[A]	e- CARe
+[B]	e- SHAANTi
+[C]	e- MEMORY
+[D]	e-SHAKTI
+[E]	e-HOME
+
+Q.52)	Integrated theatre commands combine the resources of all three services (the Army, Navy, and Air Force) under a single commander to secure a particular geographic area. There are theatre commands in several countries, including China and the United States. India is likely to get its 1st Integrated theatre command in August. Which committee recommended the creation of 3 integrated theatre commands in India?
+[A]	Shekatkar Committee
+[B]	Jankiramanan Committee
+[C]	Kothari Commission
+[D]	Mahajan Committee
+[E]	Khusro Committee
+
+Q.53)	ISRO has transferred the IMS-1 Satellite Bus Technology to M/S Alpha Design Technologies Pvt. Ltd. (ADTL), promoting private industry participation in India’s space sector. The
+transfer marks the first instance of ISRO’s satellite
+
+bus technologies being shared with private companies. NewSpace India Limited (NSIL) has facilitated the technology transfer. This satellite bus will enable low-cost access to space and serve as a dedicated vehicle for payloads up
+to	kg.
+[A] 30
+[B] 100
+[C] 150
+[D]	50
+[E]	90
+
+Q.54)	SEBI has announced the establishment of a Common online dispute resolution (ODR) portal to streamline the existing dispute resolution mechanism by establishing a less time- consuming common ODR portal. The current grievance redressal mechanism will be integrated with ODR mechanism to ensure that complainants unsatisfied with the previous portal can approach ODR. What is the name of existing redressal mechanism?
+[A]	NIVARAN
+[B]	SCORES
+[C]	SUVIDHA
+[D]	CPGRAMS
+[E]	REDRESS
+
+Q.55)	Sashidhar Jagdishan has emerged as the highest-paid bank chief executive in financial year 2022-23. With an overall package of Rs. 10.55 crore, Jagdishan's compensation stands out among his peers in the banking sector. Which bank is he associated with?
+[A]	HDFC Bank
+[B]	ICICI Bank
+[C]	Axis Bank
+[D]	Federal Bank
+[E]	IDBI Bank
+
+Q.56)	National Handloom Day is celebrated every year on 7th of August to generate awareness about the importance of the handloom industry and to recognise the efforts as well as skills of the community of weavers engaged in the sector. This theme for this year was "Handlooms for Sustainable Fashion". Which edition of the day was celebrated this year?
+[A]	7th
+
+[B]	9th
+[C]	10th
+[D]	15th
+[E]	5th
+
+Q.57)	HS Prannoy has won silver medal in Men’s singles finals in Australian Open Super 500 badminton tournament. Who won the gold medal?
+[A]	Gong Zhichao
+[B]	Fu Haifeng
+[C]	Li Xuerui
+[D]	Weng Hong Yang
+[E]	Xie Xingfang
+
+Q.58)	Prime Minister has recently laid the foundation stone for the rejuvenation of 13 railway stations under the Amrit Bharat Station Scheme (ABSS) in Karnataka. This is part of the all-India launch of laying foundation stone for work on 508 stations in various States with an investment of
+₹25,000 crore. When was the scheme launched?
+[A] 2021
+[B] 2018
+[C] 2023
+[D] 2022
+[E] 2020
+
+Q.59)	Central Board of Indirect Taxes and Customs (CBIC), a statutory body established under the Central Boards of Revenue Act, 1963 is a part of the Department of Revenue under the Ministry of Finance. The body deals with the tasks of formulation of policy concerning levy and collection of various indirect taxes. Recently, a new chairman has been appointed to CBIC. Name him.
+[A]	Sanjay Kumar Agarwal
+[B]	Surjit Bhujabal
+[C]	Rajeesh Prakash
+[D]	Ajit Kumar
+[E]	Vivek Johri
+
+Q.60)	Ministry of Railways and IIT Madras has signed a memorandum of understanding ((MoU) to establish the India 5G testbed which will accelerate the indigenisation efforts of Indian railways in the field of communications and create a testing facility for Indian railways. Where will the
+test bed be located?
+
+[A]	Secunderabad
+[B]	Nagpur
+[C]	Lucknow
+[D]	Varanasi
+[E]	Bangalore
+
+Q.61)	Postal Life Insurance (PLI) has launched a pilot program for Direct Incentive Disbursement for sales staff. The program will recognize the role of PLI’s sales force which is the driving force behind the department’s accomplishments.
+The agents will be able to seamlessly receive the transfer of their commissions from the previous month directly to their Post Office Savings Bank (POSB) Accounts. In which year was Postal Life Insurance launched?
+[A] 1884
+[B] 1934
+[C] 1960
+[D] 1854
+[E] 1988
+
+Q.62)	Interpol Global Academy Network (IGAN) launched in 2019, is aimed at supporting academic collaboration among different law enforcement training institutions across the world. CBI Academy has recently become a member of IGAN. How many members are there in IGAN now, after India has joined?
+[A]	9
+[B]	11
+[C]	12
+[D]	10
+[E]	8
+
+Q.63)	World Trade Statistical Review (WTSR) 2023 provides a detailed analysis of the latest developments in world trade. This WTO’s flagship statistical publication released on an annual basis provides data on merchandise and services trade, categorized by geographical origin, product groups, and sectors. India ranks	among the exporters in world merchandise trade (2022).
+[A]	15th
+[B]	8th
+[C]	12th
+[D]	18th
+[E]	7th
+
+Q.64)	India's defence ministry has adopted 'Maya' OS for enhanced cybersecurity. The ministry has decided to replace the Microsoft Operating System (OS) on internet-connected computers with a new OS called Maya, developed locally based on open-source	.
+Name the open-source.
+[A]	GIMP
+[B]	Ubuntu
+[C]	Moxilla Firefox
+[D]	Linux
+[E]	Blender
+
+Q.65)	The Quit India Movement, also known as the August Movement or Bharat Chodo Andolan, was a significant civil disobedience movement launched by Mahatma Gandhi on 8th August 1942 with the aim to end British colonial rule in India and achieve full independence. The year marks the 81st anniversary of the Quit India movement. A famous slogan, "Do or Die" was given by Mahatma Gandhi. Who coined this term?
+[A]	Subhash Chandra Bose
+[B]	Bankim Chandra Chatterjee
+[C]	Mahatma Gandhi
+[D]	Yusuf Meherally
+[E]	Muhammad Iqbal
+
+Q.66)	Kuldeep Yadav has become the fastest Indian to pick 50 wickets in T20 Internationals. Previously, Yuzvendra Chahal was the fastest Indian who picked 50 T20I wickets in 34 matches. Sri Lanka’s Ajantha Mendis holds the record for picking 50 wickets in 26 T20Is. In how many matches Kuldeep Yadav has achieved this feat?
+[A]	32
+[B]	30
+[C]	31
+[D]	33
+[E]	29
+
+Q.67)	Mexican state Nuevo Leon has recently signed a Memorandum of Understanding (MoU) for investment in tourism, infrastructure, pharma and medical sectors with an Indian state government. Identify the state.
+[A]	Rajasthan
+[B]	Madhya Pradesh
+
+[C]	Maharashtra
+[D]	Uttar Pradesh
+[E]	Gujarat
+
+Q.68)	Haryana government is planning to build a dam 4.5 km upstream from the	Barrage in Yamunanagar district. The decision has been taken after Yamuna flooded parts in Delhi last month. The dam will be built at an estimated at a cost of Rs 6,134 crore and submerge significant part of Kalesar National Park and Wildlife Sanctuary, in Haryana. Name the Barrage.
+[A]	Tajewala
+[B]	Dadupur
+[C]	Hathini kund
+[D]	Masani
+[E]	Hamida
+
+Q.69)	31st World University Games were recently held in Chengdu, China where India has won a total of 26 medals across 4 disciplines with highest medal count at the World University Games. Many of the athletes who won the Medals come from Khelo India Scheme and Target Olympic Podium Scheme (TOPS). Where will the Next World University Games will be held in 2025?
+[A]	Germany
+[B]	South Africa
+[C]	Russia
+[D]	France
+[E]	Australia
+
+Q.70)	Eight South American countries have joined hands to address the critical issue of deforestation in the Amazon rainforest at the Amazon Cooperation Treaty Organisation (ACTO) summit, hosted by Brazil. These forests host unparalleled biodiversity, harbouring around 10% of Earth’s known species. It constitutes over half of the world’s remaining tropical rainforests. Which of the following country is not a part of ACTO?
+[A]	Argentina
+[B]	Suriname
+[C]	Brazil
+[D]	Ecuador
+[E]	Peru
+
+Q.71)	Name the company that has recently collaborated with the CSC Academy to provide digital and financial literacy to the weak and underprivileged segments of society.
+[A]	PayU India
+[B]	Freecharge
+[C]	Razorpay
+[D]	Infibeam
+[E]	PhoneP
+
+Q.72)	Which bank has recently partnered with the Government of Odisha, to support the payment solutions for the Odisha Tourism Development Corporation (OTDC) Limited?
+[A]	RBL Bank
+[B]	ICICI Bank
+[C]	YES Bank
+[D]	Bandhan Bank
+[E]	HDFC Bank
+
+Q.73)	Grandmaster Viswanathan Anand has been India’s top-ranked chess player in the live world rankings for last many years. Recently he has been dethroned by a 17-year-old player who defeated Mistradin Iskandarov in the second round of the FIDE World Cup in Baku, Azerbaijan. The player has climbed to the 9th position in the classic open category. Name the player.
+[A]	Dommaraju Gukesh
+[B]	Arjun Erigaisi
+[C]	Pentala Harikrishna
+[D]	Praggnanandhaa R
+[E]	Vidit Santosh Gujrathi
+
+Q.74)	Over the decades, the ecological and carbon footprint of humans has gradually increased, all while Earth’s biocapacity, i.e., its ability to regenerate resources has diminished significantly. That has led to Earth Overshoot Day arriving earlier and earlier, moving from December 30 in 1970 to August 2 this year. Which organisation calculates this?
+[A]	Intergovernmental Panel on Climate Change (IPCC)
+[B]	Global Footprint Network
+[C]	Greenpeace
+[D]	World Wide Fund
+[E]	United Nations Environment Programme
+
+Q.75)	Which state government has launched the Department of Forest & Environment’s ‘Amrit Brikshya Andolan’ web portal and mobile to make a significant impact on the State’s green economy by planting a total of 1 crore commercially-viable saplings across the State?
+[A]	Assam
+[B]	Meghalaya
+[C]	Uttarakhand
+[D]	Himachal Pradesh
+[E]	Arunachal Pradesh
+
+Q.76)	India’s Purchasing Managers’ Index (PMI) for services has reached an impressive 13-year high of 62.3 in July after a 3-month low in June. This survey is compiled by which of the following?
+[A]	Forbes
+[B]	Venture
+[C]	S&P Global
+[D]	CRISIL
+[E]	Fitch India
+
+Q.77)	National Highway Authority of India (NHAI) has launched a new app to improve user experience on highways and create a ‘citizen- centric unified mobile application’. The app will contain essential highway information, complaint redressal, FASTag services along with safe driving features. What is the name of the app?
+[A]	NHAI One
+[B]	Sukhad Yatra
+[C]	NHAI Act
+[D]	Rajmarg Yatra
+[E]	NHAI Help
+
+Q.78)	Government has introduced a new category of Ayush visa for foreign nationals to give a major boost to Medical Value Travel in India. According to the report ‘The Global Wellness Economy: Looking beyond COVID’ by the Global Wellness Institute (GWI), the Global Wellness economy will grow at 9.9% annually. What is the estimated value by which the Ayush based healthcare & wellness economy will grow by 2025?
+[A]	USD 120 billion
+[B]	USD 90 billion
+[C]	USD 70 billion
+[D]	USD 100 billion
+
+[e USD 50 billion
+
+Q.79)	Lithium-ion batteries have changed the way products are designed in modern times. These new age batteries are opening up new possibilities for mobile phones and laptops, electronic gadgets, automobiles, and energy storage. Realizing its importance, a state government has signed a Memorandum of Understanding with US based International to set up ₹8,000 crore recyclable Lithium-ion battery unit in the state. Identify the state.
+[A]	Karnataka
+[B]	Tamil Nadu
+[C]	Gujarat
+[D]	Maharashtra
+[E]	Telangana
+
+Q.80)	‘Name the company that has recently signed a MoU with REC Ltd. and Power Finance Corporation Ltd. (PFC) to receive Rs 9,120 crore for funding wind, transmission, and advanced metering projects in India.
+[A]	Apraava Energy Private Ltd
+[B]	Suzlon Energy
+[C]	Hindustan Power Private Ltd
+[D]	Orient Green Power Ltd
+[E]	Websol Energy Systems Ltd
+
+Q.81)	The Zoological Survey of India (ZSI) is a premier scientific organization under the Ministry of Environment, Forest and Climate Change, Government of India. It aims to promote the survey, exploration, research, and documentation of the fauna of India. The primary objective of ZSI is to conduct taxonomic, ecological, and conservation research related to the diverse animal species found in the country. When was the organization created?
+[A]	August 15, 1987
+[B]	July 1, 1916
+[C] June 19, 1978 [D] May 16, 1999
+[E] October 10, 1956
+
+Q.82)	Recently, the Zoological Survey of India has celebrated its foundation day. During the 3- day celebration event, ZSI signed three MOUs.
+Two MOUs were signed with IIT Jodhpur and
+
+University of Burdwan, West Bengal. One MOU was signed with	, which aims to conduct population assessment of the Red Panda, through a non-invasive method, in the other country.
+[A]	Bhutan
+[B]	Maldives
+[C]	Mexico
+[D]	Guyana
+[E]	Suriname
+
+Q.83)	PM GatiShakti is India's National Master Plan aimed at creating a seamless and integrated multi-modal infrastructure network, enhancing efficiency in transportation and boosting economic growth through synchronized connectivity and logistics. It focuses on optimizing resource utilization and reducing transportation costs for sustained development. The plan consists of a three-tier institutional arrangement, of which	has been given the power to approve the infrastructure projects, entailing an investment of over Rs 500 crore?
+[A]	Network Planning Group
+[B]	Connectivity Strategy Team
+[C]	Infrastructure Coordination Unit
+[D]	Integrated Logistics Consortium
+[E]	Transportation Optimization Cell
+
+Q.84)	International Youth Day, observed on August 12th, celebrates the potential and vitality of young people worldwide, highlighting their role in driving positive social change and fostering global development through innovation, activism, and leadership. This day encourages the recognition and empowerment of youth voices, addressing their unique challenges and contributions. What is the theme of this day in 2023?
+[A]	Empowering Youth for Climate Action:
+Nurturing Eco-Leadership
+[B]	Youth for Biodiversity Conservation:
+Guardians of Life
+[C]	Youth Innovations for Sustainable Futures
+[D]	Green Skills for Youth: Towards a Sustainable World
+[E]	Tech-savvy Youth for Eco-friendly Urban Transport
+
+Q.85)	Ministry of Railways has recently announced to establish the Pradhan Mantri Bhartiya Janaushadhi Kendras (PMBJKs) at some of the railway stations.	stations have been identified for the pilot phase. Under this scheme, PMBJKs would be deemed ‘desirable passenger amenity’. PMBJKs will be set up and operated by Licensees at locations identified by Railway Divisions. Stalls will be provided by E- auctioning as with respective Railway Divisions through IREPS. These stalls will be designed by
+ 	.
+[A]	100; Arch College of Design & Business
+[B]	70; Symbiosis Institute of Design
+[C]	50; NID Ahmedabad
+[D]	45; MIT Institute of Design
+[E]	65; Srishti Institute of Art, Design, and Technology
+
+Q.86)	Who chairs the 19-member committee of National Council of Educational Research and Training (NCERT), which has been formed to formulate new textbooks for Grade 3 to 12, in conjunction with the National Education Policy (NEP)? The high-powered committee is named as “The National Syllabus and Teaching Learning Material Committee (NSTC)”.
+[A]	Surya Kumar Rao
+[B]	M.C. Pant
+[C]	Tarun Mohan Verma
+[D]	Balaji Shankar Choudhary
+[E]	Rajendra Prasad Singh
+
+Q.87)	Department for Promotion of Industry and Internal Trade (DPIIT), Ministry of Commerce & Industry has collaborated with Ministry of Rural Development for the One District One Product (ODOP) program. This strategic collaboration was unveiled with the inauguration of the ODOP Wall at SARAS Aajeevika Store in New Delhi. SARAS Aajeevika is an initiative by Deendayal Antyodaya (DAY-NRLM), Ministry of Rural Development. Considering the above paragraph, identify the incorrect statement with regards to the One District One Product (ODOP) initiative?
+1)	It aims to make India and its people self-reliant by fostering balanced regional development across all districts of the country
+
+2)	It will create special marketplace for well- crafted products of women artisans and Self-Help Groups (SHGs)
+3)	It encompasses various sectors, including handlooms and handicrafts
+
+[A]	Only 1 and 3
+[B]	Only 2
+[C]	Only 3
+[D]	Only 1, 2, and 3
+[E]	Only 2 and 3
+
+Q.88)	The online gaming industry has rapidly evolved into a global powerhouse, connecting millions of players worldwide through immersive experiences and competitive gameplay. Its continuous growth is driven by technological advancements, social connectivity, and the allure of virtual worlds. To regulate the market, Indian govt has introduced the Central Goods and Services Tax (Amendment) Bill, 2023. How much GST has been levied on online gaming platforms, horse racing clubs and casinos under this bill?
+[A] 18%
+[B] 28%
+[C] 25%
+[D] 5%
+[E] 10%
+
+Q.89)	Port Rashid stands as a symbol of the city's maritime heritage and modern growth. Located in a Middle Eastern country, it epitomizes a fusion of maritime legacy and contemporary progress, fostering international commerce and travel through its advanced infrastructure and strategic importance. Identify the country.
+[A]	UAE
+[B]	Saudi Arabia
+[C]	Oman
+[D]	Israel
+[E]	Qatar
+
+Q.90)	Biofuels are renewable energy sources derived from organic materials, such as plants, algae, or waste biomass. These fuels offer a more sustainable alternative to traditional fossil fuels, as they emit fewer greenhouse gases during combustion, contributing to reduced carbon
+emissions and mitigating climate change. World
+
+Biofuel Day highlights the significance of sustainable biofuels in promoting energy security and reducing carbon footprints. This day underscores the importance of harnessing organic resources for cleaner and more sustainable energy solutions When is the Day observed?
+[A]	October 11
+[B]	August 10
+[C]	September 15
+[D]	July 18
+[E]	May 19
+
+Q.91)	Larsen & Toubro Limited (L&T) and its green hydrogen joint venture (JV) partners viz. Indian Oil Corporation Limited (IOCL) and ReNew Power, has announced to invest USD 4 billion in their green hydrogen businesses over next 3 to 5 years. Green Hydrogen can be produced through electrolysis of water using renewable electricity, and from biomass through thermochemical and biochemical routes. Several entities have announced plans to setup production facilities for Green Hydrogen/Green Ammonia in India. How many million tonnes of green hydrogen does India aim to produce by 2030?
+[A]	5 MMT
+[B]	25 MMT
+[C]	12 MMT
+[D]	8 MMT
+[E]	10 MMT
+
+Q.92)	From August 11 to 21, the world will witness a convergence of naval power as India’s indigenous frontline warships will team up with counterparts from the US Navy (USN), Japan Maritime Self Defence Force (JMSDF), and the esteemed Royal Australian Navy (RAN). The MALABAR series of maritime exercises, which started in 1992 as a joint venture between the Indian Navy and the US Navy, has evolved into a symbol of cooperative maritime security. Name the Indian warships participating in Malabar 2023.
+[A]	INS Calcutta and INS Sahyadri
+[B]	INS Kalvari and INS Sahyadri
+[C]	INS Calcutta and INS Kalvari
+[D]	INS Vikrant and INS Calcutta
+[E]	INS Vikrant and INS Sahyadri
+
+Q.93)	The Aspirational Districts programme (ADP) aims to expeditiously improve the socio- economic status of 112 districts through cooperative and competitive federalism. It focuses on the strengths of each district and prioritizes the attainable outcomes for immediate improvement. The objective is to rapidly transform districts that have shown relatively less progress in key social areas, and have emerged as pockets of under-development, thereby posing a challenge to balanced regional development. Which district of Haryana has secured 2nd rank in NITI Aayog’s Delta ranking among ADP?
+[A]	Nuh
+[B]	Ambala
+[C]	Rohtak
+[D]	Hisar
+[E]	Karnal
+
+Q.94)	Russian space agency Roscosmos has recently launched the Luna-25 mission from the Vosthochny cosmodrome atop a Soyuz rocket. This is Russia’s first lunar landing mission since 1976. The launch comes a month later since India has launched its third lunar mission
+Chandrayaan-3. Who is the project director for Chandrayaan 3?
+[A]	S Somanath
+[B]	Sameer V Kamath
+[C]	Mayilsamy Annadurai
+[D]	M Vanitha
+[E]	P Veeramuthuvel
+
+Q.95)	Garden Reach Shipbuilders and Engineers (GRSE) Ltd., under the Ministry of Defence (MoD) has launched “Neerakshi” (Eyes in the Water). This is India’s first of its kind indigenous Autonomous Underwater Vehicle (AUV) developed through a collaboration between Kolkata-based warship maker GRSE Ltd and Micro, Small & Medium Enterprises (MSME) entity		.
+[A]	Aerospace Engineering Private Ltd
+[B]	Dynamatic Technologies
+[C]	Spaceover corp
+[D]	Dhruva Space
+[E]	Skyroot Aerospace
+
+Q.96)	Tata-backed airline Air India has unveiled its new logo, replacing the previous “Wheel of Konark”. The new logo symbol – “The Vista” is inspired by the peak of the gold window frame, signifying limitless possibilities, progressiveness, and the airline’s bold, confident outlook for the future. In which year the Government of India passed the Air Corporations Act and purchased a majority stake in the carrier from Tata Sons though its founder J. R. D. Tata?
+[A] 1960
+[B] 1953
+[C] 1948
+[D] 1970
+[E] 1958
+
+Q.97)	12 August is celebrated as International Youth Day every year since 12 August, 2000 after its adoption by the United Nations General Assembly (UNGA) in 1999 to draw worldwide focus towards various issues surrounding the youths What is the theme for the year 2023?
+[A]	Youth and Sustainable Future
+[B]	Green Skills for Youth: Towards a Sustainable World
+
+[C]	Transforming Food Systems: Youth Innovation for Human and Planetary Health
+[D]	Youth and Health for future
+[E]	Intergenerational solidarity: Creating a world for all ages
+
+Q.98)	Indian Banks’ Association (IBA) has recently constituted a sectoral committee to frame the unique regulatory landscape for 26 member banks operating within the Gujarat International Finance Tec-City (GIFT City). IBA was formed for the development, coordination and strengthening of Indian banking, and to assist the member banks in various ways including implementation of new systems and adoption of standards among the members. In which year was IBA formed?
+[A] 1954
+[B] 1955
+[C] 1946
+[D] 1950
+[E] 1949
+
+Q.99)	Indian Army has secured a patent for an ‘Accident Prevention System based on Artificial Intelligence (AI)’ which is developed within the Army’s research and development (R&D) division. The system will save lives by alerting drivers from falling asleep & reducing accidents caused by drowsiness. How long is a patent valid in India from the date of filing the patent application?
+[A]	20
+[B]	10
+[C]	15
+[D]	12
+[E]	25
+
+Q.100)	Abhay Kumar, Deputy Director General of Indian Council of Cultural Relations (ICCR) has launched his new book titled “Monsoon: A Poem of Love and Longing”. ICCR is an autonomous organisation of the Government of India, involved in India's global cultural relations. It was founded by the first Education Minister of independent India in the year	.
+[A] 1950
+[B] 1951
+[C] 1949
+[D] 1952
+[E] 1955
+
+Q.101)	One District One Product’ (ODOP) initiative focuses on promoting one unique product from each district, fostering balanced regional development. Which Ministry has launched One District One Product’ Wall at SARAS Ajeevika Store in New Delhi to promote indigenous crafts and artisans of India?
+[A]	Ministry of Commerce & Industry
+[B]	Ministry of Micro, Small and Medium Enterprises
+[C]	Ministry of Rural Development
+[D]	A and B
+[E]	A and C
+
+Q.102)	Supreme Court of India (SC) has constituted an all-women committee of 3 former High Court judges to oversee the relief rehabilitation and rebuilding measures in Manipur. Who is the head of the all-woman panel?
+[A]	Justice Ruth Bader Ginsburg
+[B]	Justice Sonia Sotomayor
+
+[C]	Justice Gita Mittal
+[D]	Justice Gyan Sudha Misra
+[E]	Justice Sudha Narayan
+
+Q.103)	Starting this year, every 11 August will be celebrated as World Steelpan Day to recognise the cultural and historical significance of the Steelpan, the National Musical instrument
+of	, and its correlation to cultural, social, and economic development. Steelpan’ was declared as the National Musical instrument of
+ 	in August 1992. Fill the gap.
+[A]	Trinidad and Tobago
+[B]	Hawaii
+[C]	Colombia
+[D]	Peru
+[E]	Cuba
+
+Q.104)	Which Ministry in collaboration with United Nations India, Yuwaah at UNICEF has organised ImPact with Youth Conclave on the eve of International Youth Day to empower youth, amplify their voices, and drive positive change in South Asia?
+[A]	Ministry of Education
+[B]	Ministry of Sports and Youth Affairs
+[C]	Ministry of Skill Development and Entrepreneurship
+[D]	Ministry of Women and Child Development
+[E]	Ministry of Culture
+
+Q.105)	Union Minister of Health and Family Welfare, Mansukh Mandaviya has inaugurated the 2nd phase of the Annual Nationwide Mass Drug Administration (MDA) campaign for
+ 	(disease) in New Delhi, Delhi.
+[A]	Helminthiasis
+[B]	Lymphatic Filariasis
+[C]	Echinococcosis
+[D]	Dengue
+[E]	Dracunculiasis
+
+Q.106)	Name the company that has recently (in August ‘23) partnered with the Protean eGov Technologies to provide credit services on the Open Network for Digital Commerce (ONDC) network for borrowers & Micro, Small & Medium Enterprises (MSMEs).
+[A]	PayNearby
+
+[B]	Policybazaar
+[C]	MobiKwik
+[D]	Paytm
+[E]	PhonePe
+
+Q.107)	Name the Mobile App that has been recently launched by Chief Justice of India (CJI) Dhananjaya Yeshwant Chandrachud to get e- passes to enter the Supreme Court of India (SC).
+[A]	Abhivadati
+[B]	SuSwagatam
+[C]	Svagata
+[D]	Abhinandan
+[E]	SUPACE
+
+Q.108)	Which company has recently entered into an agreement with Technology Development Board (TDB), Department of Science & Technology (DST) to the commercialisation of digitally enabled advanced universal Intensive Care Unit (ICU) ventilators?
+[A]	Asimov Robotics Pvt Ltd
+[B]	Rapyuta Robotics Pvt Ltd
+[C]	M/s Noccarc Robotics Pvt Ltd
+[D]	Sastra Robotics India Pvt Ltd
+[E]	M/s Bharati Robotic Systems Pvt Ltd
+
+Q.109)	Padma Awardee and renowned nuclear physicist Bikash Chandra Sinha passed away in August 2023. In which year did he receive the Padma Bhushan Award in the field of Science & Engineering?
+[A] 2010
+[B] 2014
+[C] 2018
+[D] 2021
+[E] 2022
+
+Q.110)	Chief Minister of Rajasthan has launched the Indira Gandhi Smart Phone Scheme under which free smartphones with 3 years of data facility will be distributed to women in Rajasthan. The beneficiaries will include girl students (class 9 to class 12) of government schools, college students, single women, and widows. What will be the amount deposited in their e-wallet for the purchase of these smartphones and SIM?
+[A] Rs. 6800
+[B] Rs. 8800
+
+[C] Rs. 4800
+[D] Rs. 9800
+[E] Rs. 2800
+
+Q.111)	National Space Innovation Challenge 2023 is being launched to ignite next generation space enthusiasts to understand and contribute towards growing Indian space economy and future space workforce. The challenge is open to all school students (Classes 5 to 12) from ATL and Non-ATL schools across the country.
+Who has launched this national-level campaign?
+[A]	Atal Innovation Mission
+[B]	Indian Space Research Organisation
+[C]	Navars EduTech
+[D]	A and B
+[E]	A, B and C
+
+Q.112)	Ministry of Skill Development and Entrepreneurship recently has launched Direct Benefit Transfer in National Apprenticeship Promotion Scheme to strengthen apprenticeship ecosystem in India. Under this scheme,
+ 	of prescribed stipend subject to a maximum of	per month per apprentice is shared with the employers. Fill the gaps.
+[A] 25%, Rs. 1500
+[B] 30%, Rs. 2000
+[C] 35%, Rs. 2500
+[D] 20%, Rs. 3000
+[E] 15%, Rs. 3500
+
+Q.113)	Every year 13 August is celebrated World Organ Donation Day to raise awareness about the importance of organ donation and to encourage people to become organ donors. It was first celebrated in 2005 by the World Health Organization (WHO) and the International Society for Organ Donation (ISOD). What is theme for the year 2023?
+[A]	Step up to volunteer; need more organ donors to fill the lacunae
+[B]	Step up to give; need more organ donors
+[C]	Step up to contribute; need more people to donate
+[D]	Step up; donate
+[E]	Step up for the cause; need more organ donors
+
+
+Q.114)	Which of the following government sector enterprises has recently (In August ‘23) signed an MoU with Universal Health Foundation for setting up of Gramin Gyan Jyoti Kendras in nine villages of Jodhpur (Rajasthan) & one village of Nagore (Rajasthan)?
+[A]	National Thermal Power Corporation (NTPC)
+[B]	Energy Efficiency Services Limited (EESL)
+[C]	Power Finance Corporation Limited (PFC)
+[D]	Nuclear Power Corporation of India Limited (NPCIL)
+[E]	National Hydroelectric Power Corporation Ltd (NHPC)
+
+Q.115)	Chakr Innovation Pvt Ltd, Haryana- based technology start-up has recently (in Aug ‘23) secured substantial funding of Rs.18 crores from the	under its Ubharte Sitare Programme (USP).
+[A]	Export-Import Bank of India
+[B]	Canara Bank
+[C]	Bank of India
+[D]	Union Bank of India
+[E]	Indian Bank
+
+Q.116)	Which of the following banks has recently (in Aug ‘23) signed an MoU with Amul, to offer financial services to federation's supply network pan-India under the MUDRA scheme and finance Amul’s retailers?
+[A]	IndusInd Bank
+[B]	Punjab National Bank
+[C]	YES Bank
+[D]	HDFC Bank
+[E]	ICICI Bank
+
+Q.117)	A renewable energy microgrid is an autonomous, localised and self-contained energy system that incorporates renewable energy sources as its primary generation inputs. Which ministry has officially inaugurated a Microgrid Power Plant for Renewable Energy, aimed at fulfilling the electrical energy requirements of rural communities?
+[A]	Ministry of Electronics & Information Technology
+[B]	Ministry of Home Affairs
+[C]	Ministry of Commerce and Industry
+
+[D]	Ministry of Corporate Affairs
+[E]	Ministry of Information and Broadcasting
+
+Q.118)	In August 2023,	is India's Only Movie to enter it to the semifinals of the Oscar’s Student Academy Awards (SAA) 2023.
+[A]	Period. End of Sentence
+[B]	Chhello Show
+[C]	Champaran Mutton
+[D]	Writing with Fire
+[E]	All That Breathes
+
+Q.119)	Padma Shri Awardee Professor MR Satyanarayana Rao passed away in August 2023. In which year did he receive Padma Shri Award for Science and Engineering?
+[A] 2010
+[B] 2020
+[C] 2018
+[D] 2015
+[E] 2022
+
+Q.120)	Name the state that has recently (in August ‘23) launched India’s 1st Agricultural Data Exchange (ADeX) and Agriculture Data Management Framework (ADMF).
+[A]	Telangana
+[B]	Punjab
+[C]	Tamil Nadu
+[D]	Karnataka
+[E]	Andhra Pradesh
+
+Q.121)	1st WHO Global Summit on Traditional Medicine is being organised to explore the role of traditional, complementary and integrative medicine in addressing pressing health challenges and driving progress in global health and sustainable development.
+Where is the summit being organised by World Health Organization (WHO) which is co-hosted by the Ministry of Ayush?
+[A]	Varanasi
+[B]	Leh
+[C]	Gandhinagar
+[D]	Jaipur
+[E]	Bhopal
+
+Q.122)	Union Cabinet has recently approved the Mutual Recognition Arrangement of Authorised Economic Operators (AEO) between India and another country. The arrangement is aimed at providing reciprocal benefits to accredited and trusted exporters of both the signatories in the clearance of goods by the Customs authorities of the importing country. Name the country.
+[A]	Vietnam
+[B]	China
+[C]	Australia
+[D]	Singapore
+[E]	France
+
+Q.123)	Consider the following statements about PM Vishwakarma-
+(1)	It is Central Sector Scheme with financial outlay of Rs. 25,000 crores.
+(2)	It is being implemented for period of 5 years (FY 2023-24 to FY 2027-28).
+(3)	It will provide credit support and other support to artisans and craftspeople only from rural areas across India.
+(4)	Under it, artisans and craftspeople will be provided with Rs.1 lakh (First Tranche) and Rs.2 lakh (Second Tranche) with a concessional interest rate of 5%.
+(5)	It is covering total 25 traditional trades in the first instance.
+Which of the above statements are incorrect?
+[A]	2, 3 and 4 Only
+[B]	3, 4 and 5 Only
+[C]	1, 3 and 5 Only
+[D]	1, 2 and 3 Only
+[E]	2, 4 and 5 Only
+
+Q.124)	India’s first Unmanned Aerial Systems
+(Drone) Common Testing Centre will be set up in
+ 	at an outlay of Rs 45 crore. The testing centre is under Défense Testing Infrastructure Scheme (DTIS) which envisages setting up of 6-8 Greenfield Defense Testing Infrastructure facilities that are required for defense and aerospace related production. Name the state where the testing centre will come up.
+[A]	Karnataka
+[B]	West Bengal
+[C]	Tamil Nadu
+[D]	Telangana
+
+[E]	Jharkhand
+
+Q.125)	14 August is celebrated as Partition Horrors Remembrance Day / Vibhajan Vibhishika Smriti Diwas to remember of the struggles and sacrifices made by people during the partition of India into India and Pakistan in 1947. Which edition of the day was celebrated this year?
+[A]	2
+[B]	4
+[C]	3
+[D]	5
+[E]	8
+
+Q.126)	Where Ministry of Electronics & Information Technology is organising G20-Digital Innovation Alliance (DIA) Summit on sidelines of the Fourth meeting of G20 Digital Economy Working Group (DEWG) under India's Presidency?
+[A]	Pune
+[B]	Hyderabad
+[C]	New Delhi
+[D]	Lucknow
+[E]	Bengaluru
+
+Q.127)	Which of the following statements are incorrect about recently approved bus scheme “PM-eBus Sewa” by Union Cabinet?
+(1)	It aims to augment city bus operation by 20,000 e-buses on Public Private Partnership (PPP) model
+(2)	It will cover cities of 3 lakh and above population (Census 2011) including all Capital cities of UTs, North Eastern Region and Hill States.
+(3)	Its estimated cost of Rs.57,613 crore, out of which support of Rs.35,000 crore will be provided by the Central government
+(4)	Bus operations under this scheme will be supported for 15 years
+(5)	It has two Segment A – Augmenting the City bus services (169 cities) and Segment B – Green Urban Mobility Initiatives (181 cities)
+[A]	1, 3 and 4 Only
+[B]	2, 4 and 5 Only
+[C]	1, 2 and 3 Only
+[D]	2, 3 and 4 Only
+[E]	1, 4 and 5 Only
+
+
+Q.128)	Union Cabinet recently has approved signing of MoU between India and which country in the field of Medical Products Regulation?
+[A]	Maldives
+[B]	Suriname
+[C]	Sri Lanka
+[D]	Mauritius
+[E]	Kenya
+
+Q.129)	Which country recently hosted International Conference on ‘Preserving Information Integrity and Public Trust in Elections’?
+[A]	South Africa
+[B]	Brazil
+[C]	Russia
+[D]	India
+[E]	China
+
+Q.130)	With which country has Union Cabinet approved signing and ratification of the Mutual Recognition Arrangement aimed at providing reciprocal benefits to accredited and trusted exporters of both the signatories in the clearance of goods by the Customs authorities of the importing country?
+[A]	Australia
+[B]	United States
+[C]	Mauritius
+[D]	Singapore
+[E]	Russia
+
+Q.131)	Name the country that has recently signed an MoU for sharing of ‘India Stack ‘, a collection of open Application Programming Interfaces (APIs), and Digital Public Goods (DPGs).
+[A]	South Africa
+[B]	Bangladesh
+[C]	Trinidad and Tobago
+[D]	Srilanka
+[E]	Nepal
+
+Q.132)	Which country’s Air Force has recently received the Dornier 228 maritime surveillance aircraft from the Indian Navy?
+[A]	Maldives
+[B]	Indonesia
+[C]	Srilanka
+
+[D]	Singapore
+[E]	Seychelles
+
+Q.133)	Which of the following points is/are “correct” with respect to the initiative taken by the Reserve Bank of India (RBI) in August 2023?
+1. Reserve Bank of India (RBI) commenced its digital lending pilot project for Public Tech Platform for Frictionless Credit which is developed by Reserve Bank Innovation Hub (RBIH). 2. RBI Governor has introduced a centralized web portal called “उद्गम UDGAM” (Unclaimed Deposits – Gateway to Access inforMation) to simplify the process for the public to locate their unclaimed deposits in various banks through a single platform.
+3. Reserve Bank Information Technology Pvt Ltd (ReBIT), Indian Financial Technology & Allied Services (IFTAS) and participating banks have collaborated to develop this portal.
+Which of the above statements are correct?
+[A]	Only 1
+[B]	1 and 2
+[C]	1, 2 and 3
+[D]	2 and 3
+[E]	Only 3
+
+Q.134)	Consider the following statements about "FloodWatch" mobile application:
+1.	The "FloodWatch" app offers an interactive map feature that allows users to directly select a station for flood forecasts and provides information in English, Hindi, and regional languages.
+2.	Users of the "FloodWatch" app can access flood forecasts up to 7 days in advance through satellite data analysis and mathematical modelling.
+3.	Free download from Google Play Store and is available on Apple iOS also.
+Select the correct statements using the codes below:
+[A]	1 only
+[B]	2 only
+[C]	Both 1 and 2
+[D]	3 only
+[E]	1, 2 and 3
+
+Q.135)	Which attached office/Government agency of the GoI has recently launched FloodWatch, a mobile application to provide real- time flood information and forecasts?
+[A]	NITI Aayog
+[B]	Paani Foundation
+[C]	Central Water Commission
+[D]	Central Water and Power Research Station
+[E]	Central Ground Water Board
+
+Q.136)	Where Ministry of Electronics & Information Technology is organising G20-Digital Innovation Alliance (DIA) Summit on sidelines of the Fourth meeting of G20 Digital Economy Working Group (DEWG) under India's Presidency?
+[A]	Pune
+[B]	Hyderabad
+[C]	New Delhi
+[D]	Lucknow
+[E]	Bengaluru
+
+Q.137)	Name the bank that has recently partnered with Reserve Bank Innovation Hub (RBIH) to launch Kisan Credit Card (KCC) and unsecured Micro, Small and Medium Enterprises (MSME) loans powered by Public Tech Platform for Frictionless Credit (PTPFC).
+[A]	YES Bank
+[B]	ICICI Bank
+[C]	HDFC Bank
+[D]	IndusInd Bank
+[E]	Axis Bank
+
+Q.138)	Name the company that has recently signed an MoU with the North Eastern Handicrafts and Handlooms Development Corporation (NEHHDC) to empower digitisation of the handloom and handicraft sector in northeast India.
+[A]	Vena Solutions
+[B]	Tide Platform Limited
+[C]	Addepar Limited
+[D]	Anaplan Limited
+[E]	iCapital Solutions
+
+Q.139)	India’s first 3D-printed post office has been inaugurated by Union Minister Ashwini
+Vaishnaw in Bengaluru’s Cambridge Layout. The
+
+post office covers an area of 1,021 square feet and was created using advanced 3D concrete printing. With robotic precision and pre-embedded designs, the project was completed in just 43 days, far shorter than the conventional 6 to 8 months. Name the firm which undertook the project.
+[A]	Shapoorji Group
+[B]	Larsen & Toubro Limited
+[C]	Hindustan Construction Company
+[D]	Reliance Infrastructure
+[E]	Brigade group
+
+Q.140)	Which bank has recently launched Visa multi-branded credit card in partnership with British Airways Executive Club and Qatar Airways Privilege Club?
+[A]	YES Bank
+[B]	ICICI Bank
+[C]	HDFC Bank
+[D]	IndusInd Bank
+[E]	Axis Bank
+
+Q.141)	Consider the following statements about Bharat New Car Assessment Programme.
+1.	Manufacturers have to mandatorily get their cars tested as per the Automotive Industry Standard (AIS) 197.
+2.	Based on the performance of the car in the tests, the car will be awarded star ratings for Adult Occupants (AOP) and Child Occupants (COP).
+3.	The proposed Bharat NCAP assessment will allocate Star Ratings from 1 to 10 stars.
+Select the correct statements using the codes below:
+[A]	1 only
+[B]	2 only
+[C]	Both 1 and 2
+[D]	Both 1 and 3
+[E]	3 only
+
+Q.142)	According to a recent study by the Reserve Bank of India (RBI), five states accounted for more than half of the total bank- assisted investment proposals made during the year 2022-23, mirroring the skewed pattern of industrialization in the country. These states together accounted for 57.2% of the total
+
+investment proposals made during the year. Identify the states.
+[A]	Uttar Pradesh, Gujarat and Assam
+[B]	Uttar Pradesh, Kerala and Rajasthan
+[C]	Uttar Pradesh, Gujarat and Odisha
+[D]	Uttar Pradesh, Kerala and Goa
+[E]	Uttar Pradesh, Goa and Rajasthan
+
+Q.143)	Consider the following statements about BRICS
+1.	The BRICS is a group of major emerging economies, which include Brazil, Russia, India, China and South Africa. The 15th meeting of the heads of state and government of member nations will be held in Johannesburg.
+2.	India became its member in 2010.
+3.	The heads of state and government of the member nations convene annually with each nation taking up a one-year rotating chairmanship of the group.
+Select the correct statements using the codes below:
+[A]	1 only
+[B]	2 only
+[C]	1 and 3
+[D]	2 and 3
+[E]	3 only
+
+Q.144)	Which one of the following groups of items
+is included in India’s foreign-exchange reserves?
+[A]	Foreign-currency assets, Special Drawing Rights (SDRs) and loans from foreign countries
+[B]	Foreign-currency assets, gold holdings of the RBI and SDRs
+[C]	Foreign-currency assets, gold holdings of the RBI and loans from the World Bank
+[D]	Foreign-currency assets, loans from the World Bank and SDRs
+[E]	Foreign-currency assets, gold holdings of the RBI and loans from foreign countries
+
+Q.145)	Which new variety flower named ‘Namoh 108’ has recently been developed by Lucknow Institute CSIR-NBRI (National Botanical Research Institute)?
+[A]	Lotus
+[B]	Sunflower
+[C]	Rose
+[D]	Orchid
+
+[E]	Lilly
+
+Q.146)	Ministry of New and Renewable Energy recently has notified the Green Hydrogen Standard for India. It has defined Green Hydrogen as having a well-to-gate emission threshold of	kg CO2 equivalent / kg H2 as 12-month average. Fill the gap.
+[A]	6
+[B]	5
+[C]	4
+[D]	3
+[E]	2
+
+Q.147)	‘Global Initiative on Digital Health’ has been launched recently during G20 Health Ministers’ Meeting held under India’s Presidency in Gandhinagar, Gujarat. It is WHO-managed platform for sharing digital goods and knowledge to promote country capacity and strengthen international cooperation. Which of the following are pillars are of GIDH?
+(1)	Country Need Tracker
+(2)	Pandemic Monitoring
+(3)	Country Resource Portal
+(4)	Transformation Toolbox
+(5)	Convening & Knowledge Exchange
+[A]	1, 2 and 3
+[B]	2, 3 and 5
+[C] 1, 3, 4 and 5
+[D] 2, 3, 4 and 5
+[E] 1, 2, 3 and 4
+
+Q.148)	In which state Union Minister for Fisheries, Animal Husbandry and Dairying, Parshottam Rupala has recently unveiled the ‘A-HELP’ (Accredited Agent for Health and Extension of Livestock Production) programme?
+[A]	Gujarat
+[B]	Madhya Pradesh
+[C]	Andhra Pradesh
+[D]	Karnataka
+[E]	Maharashtra
+
+Q.149)	Which ministry has recently launched the
+‘Graphene-Aurora program’ in Kochi, Kerala?
+[A]	Ministry of Commerce and Industry
+[B]	Ministry of Mines
+[C]	Ministry of Coal
+
+[D]	Ministry of Petroleum and Natural Gas
+[E]	Ministry of Electronics & Information Technology
+
+Q.150)	Which organisation/Bank has recently approved a USD 40.5 million loan for an integrated project focussing on Early Childhood Development (ECD) and Maternal Mental Health in Meghalaya, India?
+[A]	Asian Development Bank
+[B]	New Development Bank
+[C]	African Development Bank
+[D]	United Nations Children's Fund
+[E]	World Health Organization
+
+Q.151)	Which bank has recently became the First Public Sector Bank (PSB) to extend the facility of execution of on-line locker agreement through Digital Document Execution (DDE) Platform of National E-Governance Services Limited (NeSL)?
+[A]	Bank of Baroda
+[B]	Punjab National Bank
+[C]	Canara Bank
+[D]	Indian Bank
+[E]	Union Bank of India
+
+Q.152)	Recently, India’s first long-range side swing revolver ‘Prabal’ with twice the range of other revolvers was launched at the Small Arms Factory (SFA) in Kanpur, Uttar Pradesh. Which company manufactured the swing revolver?
+[A]	Astra Microwave Products
+[B]	Advanced Weapons and Equipment India Ltd.
+[C]	Amol Steel Pvt Ltd
+[D]	Bharat Earth Movers Ltd
+[E]	Hindustan Aeronautics Ltd
+
+Q.153)	In Which state, the second Missile Cum Ammunition (MCA) Barge Yard 76 (LSAM 8) was inaugurated by Commodore G Ravi in August 2023?
+[A]	Andhra Pradesh
+[B]	West Bengal
+[C]	Tamil Nadu
+[D]	Kerala
+[E]	Maharashtra
+
+Q.154)	What was the theme of World Photography Day 2023 that was observed across the globe on 19th August 2023?
+[A]	Understanding Clouds
+[B]	Transcending the boundaries of language
+[C]	Be Nice
+[D]	Pandemic Lockdown through the lens
+[E]	Landscapes
+
+Q.155)	Indian Space Research Organisation (ISRO) is developing Radio thermoelectric generators (RTGs), in collaboration with an organisation with an aim to surpass the constraints of conventional chemical engines for interplanetary voyages. The chemical engines work well for satellite thrusters, but they are inadequate for deep space travel due to fuel limitations and lack of solar power in distant regions. Name the organisation which is developing the generators with ISRO.
+[A]	Bhabha Atomic Research Center
+[B]	Defence Research and Development Organization
+[C]	Tata Institute of Fundamental Research
+[D]	National Innovation Foundation
+[E]	Council of Scientific and Industrial Research
+
+Q.156)	Indian Army has inducted the first Swathi Mark II Mountain variant Weapon Locating Radar (WLR), a lighter and compact version WLR designed specifically for mountains & high- altitude areas. Which company has developed Swathi Mk II?
+[A]	Bharat Dynamics
+[B]	Bharat Electronics Limited
+[C]	Hindustan Aerospace
+[D]	Astra Micro
+[E]	MTAR technologies
+
+Q.157)	In the recently held 20th ASEAN-India Economic Ministers’ Meeting in Semarang, Indonesia, an agreement to review the free trade agreement by 2025 has been reached.
+In which year ASEAN-India Trade in Goods Agreement was signed and entered into force? [A] 2010
+[B] 2012
+[C] 2013
+[D] 2011
+
+[E] 2014
+
+Q.158)	Consider the following statements-
+1.	India is the world's second-biggest wheat producer after China.
+2.	India is the largest producer of rice in the world.
+3.	India is the largest producer and China is the largest exporters of Onions in the world. Select the correct statements using the codes below:
+[A]	1 only
+[B]	2 only
+[C]	Both 1 and 2
+[D]	Both 1 and 3
+[E]	3 only
+
+Q.159)	Consider the following statements with respect to groupings-
+1.	ASEAN and BRICS have India as a common member.
+2.	ASEAN was founded in 1967 by the 10 Southeast Asian member nations.
+3.	India maintains a trade deficit with ASEAN. Select the correct statements using the codes below:
+[A]	1 only
+[B]	2 only
+[C]	1 and 2
+[D]	3 only
+[E]	1 and 3
+
+Q.160)	Which bank has recently mobile banking
+application ‘iris’?
+[A]	YES Bank
+[B]	HDFC Bank
+[C]	ICICI Bank
+[D]	IndusInd Bank
+[E]	Axis Bank
+
+Q.161)	Recently, U.S. Food and Drug Administration has approved Abrysvo, the first vaccine approved for use in pregnant individuals to prevent lower respiratory tract disease (LRTD) and severe LRTD caused by respiratory  	 virus (RSV) in infants from birth through 6 months of age. Abrysvo is administered as a single dose injection into the muscle, is approved for use at 32 through 36 weeks gestational age of pregnancy. Name the virus.
+[A]	Salmonellosis
+
+[B]	Shigellosis
+[C]	Syphilis
+[D]	Syncytial
+[E]	Small pox
+
+Q.162)	Recently a cricket has been appointed as the ‘National Icon’ for voter awareness and education for the Election Commission of India (ECI). Through this partnership ECI aims to bridge the gap between citizens, especially youth and urban populations and the electoral process thereby, trying to address the challenges of urban and youth apathy. Identify the player.
+[A]	Sachin Tendulkar
+[B]	Mahendra Singh Dhoni
+[C]	Rahul Dravid
+[D]	Saurav Ganguly
+[E]	Rohit Sharma
+
+Q.163)	The board of the Unique Identification Authority of India (UIDAI) comprises a chairperson, two part-time members, and the chief executive officer, who is also the Member- Secretary of the Authority. The chairperson and the members hold office for a term of three years or up to the age of 65, whichever is earlier. Who has recently been appointed as the part-time chairman of UIDAI?
+[A]	Neelkanth Mishra
+[B]	J. Satyanarayana
+[C]	Saurabh Garg
+[D]	Nandan Nilekani
+[E]	Amit Agarwal
+
+Q.164)	World Water Week is annually observed across the globe during the last week of August with an aim to examine the pivotal role of water in addressing several pressing global challenges such as water crisis, global warming, biodiversity loss, etc. The Theme of World Water Week 2023 is “Seeds of Change: Innovative Solutions for a Water-Wise World”. Which organisation organises the World Water Week?
+[A]	World Wildlife Fund
+[B]	World Water Council
+[C]	United Nations Development Fund
+[D]	International Water Organisation
+[E]	Stockholm International Water Institute
+
+Q.165)	Ratan Tata has been honoured with the first ever ‘Udyog Ratna Award’ for his outstanding contribution to Maharashtra’s industrial development. The Udyog Ratna Award is one of the category awards presented in the Maharashtra Industry Awards 2023, instituted by the Maharashtra government. Which edition of Maharashtra Industry awards was celebrated this year?
+[A]	1st
+[B]	5th
+[C]	10th
+[D]	2nd
+[E]	3rd
+
+Q.166)	Which life insurance company has recently become the first in the country to provide 24X7 inbound contact centre?
+[A]	HDFC Life Insurance
+[B]	SBI Life Insurance
+[C]	Exide Life Insurance
+[D]	IndiaFirst Life Insurance
+[E]	Max Life Insurance
+
+Q.167)	Who has been recently appointed as the brand ambassador of Bharat Petroleum Corporation Ltd (BPCL)?
+[A]	Rahul Dravid
+[B]	Sunil Manohar Gavaskar
+[C]	Yuvraj Singh
+[D]	Virendra Sehwag
+[E]	Saurav Ganguly
+
+Q.168)	Which country has recently launched a new Earth observation satellite, ‘Gaofen-12 04’ by a Long March-4C carrier rocket?
+[A]	Japan
+[B]	Russia
+[C]	China
+[D]	Australia
+[E]	Israel
+
+Q.169)	Which of the following points is/are “correct” with respect to the World Under-20 Wrestling Championships 2023 held in Amman, Jordan?
+A)	Indian wrestlers have won a total of 14 medals (4 golds, 3 silver and 7 bronze) in the World
+Under-20 Wrestling Championships 2023.
+
+B)	Antim Panghal won the gold Medal in
+Women’s 53kg event.
+C)	Mohit Kumar won the gold medal in the 61kg
+freestyle category (Men’s).
+[A]	A
+[B]	B
+[C]	A and B
+[D]	B and C
+[E]	A, B and C
+
+Q.170)	Katchatheevu island has been a longstanding point of contention between India and	, particularly with regard to fishing rights and sovereignty over the uninhabited island. Name the country with which India has this issue.
+[A]	Srilanka
+[B]	Maldives
+[C]	Bangladesh
+[D]	Seychelles
+[E]	Mauritius
+
+Q.171)	Which state government has recently released Mayem Biodiversity Atlas - India’s 1st
+
+[B]	North Korea
+[C]	Iran
+[D]	Vietnam
+[E]	Qatar
+
+Q.174)	Which state’s electronics and communications (ITE&C) department has recently signed a Letter of Intent (LoI) with the United Nations Educational, Scientific and Cultural Organization (UNESCO) to implement the UNESCO recommendation on the Ethics of Artificial Intelligence (AI)
+[A]	Karnataka
+[B]	West Bengal
+[C]	Tamil Nadu
+[D]	Telangana
+[E]	Jharkhand
+
+Q.175)	According to the MoU signed between Indian Renewable Energy Development Agency Limited (IREDA) & Ministry of New and Renewable Energy (MNRE) in August 2023, the GoI has set a target of achieving Rs
+
+Village Atlas which gives a socio-cultural history	 	revenue from operations during FY
+
+of Mayem village that dates back to the 12th century?
+[A]	Karnataka
+[B]	Kerala
+[C]	Goa
+[D]	Jharkhand
+[E]	Nagaland
+
+Q.172)	In August 2023, Union Minister Rajnath Singh, Ministry of Defence (MoD) has set up a 9- member committee of experts headed by
+ 	, to maintain the Defence Research and Development Organization (DRDO).
+[A]	V. K. Saraswat
+[B]	Ajay K. Sood
+[C]	Rajagopala Chidambaram
+[D]	Manjul Bhargava
+[E]	K Vijay Raghavan
+
+Q.173)	Name the country that has recently unveiled Mohajer-10, the new domestically built attack drone (unmanned combat aerial vehicle – UCAV).
+[A] Israel
+
+2023-24 and Rs.5,220 crores during FY 2024-25
+[A]	Rs. 5,350 crores
+[B]	Rs. 3,350 crores
+[C]	Rs. 4,350 crores
+[D]	Rs. 5,050 crores
+[E]	Rs. 4,850 crores
+
+Q.176)	Name the organisation that has recently entered into a MoU with the Ministry of Development of North Eastern Region (MDoNER) to enhance and accelerate Sustainable Development Goals (SDGs) in northeastern regions of India
+[A]	Asian Development Bank
+[B]	World Bank
+[C]	International Monetary fund
+[D]	International Labour Organisation
+[E]	United Nations Development Programme
+
+Q.177)	Which company has recently received USD 100 million investment from International Finance Corporation (IFC) to increase access to housing finance among economically weaker sections (EWS) and Low-Income Groups (LIG) in
+India?
+
+[A]	India Home Loans Ltd
+[B]	Gic Housing Finance Ltd
+[C]	IIFL Home Finance Ltd
+[D]	Indiabulls Housing Ltd
+[E]	LIC Housing Finance Ltd
+
+Q.178)	Which state became first in India to operationalize Ayushman Bharat Digital Mission (ABDM) Microsite under the 100 Microsites Project?
+[A]	Mizoram
+[B]	Uttar Pradesh
+[C]	Karnataka
+[D]	Bihar
+[E]	Uttarakhand
+
+Q.179)	Consider the following statements about BRICS-
+1.	The BRICS is a group of major emerging economies, which include Brazil, Russia, India, China and South Africa. The 15th meeting of the heads of state and government of member nations will be held in Johannesburg.
+2.	India became its member in 2010.
+3.	The heads of state and government of the member nations convene annually with each nation taking up a one-year rotating chairmanship of the group.
+Select the correct statements using the codes below:
+[A]	1 only
+[B]	2 only
+[C]	1 and 3
+[D]	2 and 3
+[E]	3 only
+
+Q.180)	Union Minister Nitin Gadkari, the Ministry of Road Transport and Highways (MoRTH) has recently launched the BNCAP in New Delhi, Delhi. What does C stand for in BNCAP?
+[A]	Customer
+[B]	Central
+[C]	Car
+[D]	Carriage
+[E]	Crash
+
+Q.181)	Consider the following statements about India Smart City Awards (ISCA) 2022-
+
+1.	The contest provides an opportunity for smart cities to showcase their most innovative, impactful projects and for others to recognize and learn from their best practices.
+2.	Indore has been named as the best city in the Smart Cities Mission in ISCA 2022.
+3.	This is the fifth edition of ISCA awards. Which of the following statements is true?
+[A]	1 only
+[B]	1 and 3
+[C]	1 and 2
+[D]	2 and 3
+[E]	3 only
+
+Q.182)	Consider the following statements about National Film Awards 2023-
+1.	The awards aims at encouraging the production of films of aesthetic and technical excellence and social relevance.
+2.	The event is held by the Government of India’s Film and Television Institute of India, which comes under the Ministry of Information and Broadcasting.
+3.	Rocketry: The Nambi effect has won the best feature film award.
+Which of the following statements is true?
+[A]	1 only
+[B]	1 and 3
+[C]	1 and 2
+[D]	2 and 3
+[E]	3 only
+
+Q.183)	Consider the following statements about
+PM’s recent visit to Greece-
+1.	Prime Minister Narendra Modi was conferred with 'The Grand Cross of the Order of Honour’, the country’s second-highest civilian honour.
+2.	Greece is surrounded by Mediterranean Sea on one side and Black Sea on another.
+3.	Capital of Greece is Athens.
+Which of the following statements is true?
+[A]	1 only
+[B]	1 and 3
+[C]	1 and 2
+[D]	2 and 3
+[E]	3 only
+
+Q.184)	Consider the following statements-
+
+1.	12th April is celebrated as the International Day of Human Space Flight to commemorate Neil Armstrong’s landing on the moon.
+2.	23rd August will be celebrated as National Space Day of India.
+3.	1996 was designated as International Space Year by the United Nations.
+Which of the following statements is true?
+[A]	1 only
+[B]	2 only
+[C]	1 and 3
+[D]	2 and 3
+[E]	3 only
+
+Q.185)	Name the company that has recently signed an MoU with Inland Waterways Authority of India (IWAI) to export Petroleum Cargo via National Waterways (NW)-2 (Brahmaputra) and Indo Bangladesh Protocol Route (IBPR).
+[A]	Jamnagar Refinery Limited
+[B]	Hindustan Petroleum Corporation Limited
+[C]	Numaligarh Refinery Limited
+[D]	Bharat Petroleum Corporation Limited
+[E]	Bharat Petroleum Corporation Limited
+
+Q.186)	Which of the following tennis players has been recently been appointed as the ambassador of Infosys Limited?
+[A]	Novak Djokovic (Serbia)
+[B]	Rafael Nadal (Spain)
+[C]	Iga Świątek (Poland)
+[D]	Both 1 & 3
+[E]	Both 2 & 3
+
+Q.187)	The Indian Navy has successfully undertaken the maiden test drop of the
+ 	and Rescue Kit (SARK) from the Boeing P-8I long-range patrol aircraft. Fill the gap.
+[A]	System
+[B]	Ship
+[C]	Search
+[D]	Saturated
+[E]	Scalar
+
+Q.188)	In August 2023, the Defence Acquisition Council (DAC) granted Acceptance of Necessity (AoN) for capital acquisition proposals worth around Rs	to enhance the
+
+operational capabilities of the Indian Armed Forces.
+[A]	Rs. 7800 crores
+[B]	Rs. 9800 crores
+[C]	Rs. 4800 crores
+[D]	Rs. 5800 crores
+[E]	Rs. 2800 crores
+
+Q.189)	Which country's wrestling Federation membership has recently got suspended by the United World Wrestling (UWW) due to lack of elections in the organisation?
+[A]	Russia
+[B]	China
+[C]	India
+[D]	Ukraine
+[E]	France
+
+Q.190)	Name the state government that has recently launched the Manav Sampada portal to ensure transparency in the work of all the officers and employees.
+[A]	Rajasthan
+[B]	Punjab
+[C]	Uttar Pradesh
+[D]	Bihar
+[E]	Haryana
+
+Q.191)	Consider the following statements about Exercise BRIGHT STAR 23.
+1.	It is one day military exercise being held in Cairo, Egypt.
+2.	India is a regular participant of this exercise since its inception.
+3.	Egypt is located in a strategic location between the Mediterranean Sea and the Red Sea. Which of the following statements is true?
+[A]	1 only
+[B]	1 and 3
+[C]	1 and 2
+[D]	2 and 3
+[E]	3 only
+
+Q.192)	Consider the following statements-
+1.	Sport Authority of India is responsible for the Indian contingent's participation in the Olympic Games, Commonwealth Games, Asian Games, World Games etc.
+
+2.	There is no national federation or governing body for Handball in India.
+3.	2023 World Wrestling Championships is scheduled to take place in Belgrade, Serbia. Which of the following statements is true?
+[A]	1 only
+[B]	1 and 3
+[C]	1 and 2
+[D]	2 and 3
+[E]	3 only
+
+Q.193)	Launched in 1998, the International Space Station is one of the most ambitious international collaborations ever attempted. The largest space station ever constructed; the ISS continues to be assembled in orbit. It has been visited by astronauts from 18 countries and counting. Which of the following Space agency is not a partner in International Space station?
+[A]	NASA
+[B]	Roscosmos
+[C]	ESA
+[D]	ISRO
+[E]	CSA
+
+Q.194)	Which company has recently has signed a contract with the Ministry of Defence to acquire five indigenously built Fleet Support Ships (FSS) for the Indian Navy worth Rs.19,000 crore?
+[A]	Garden Reach Shipbuilders & Engineers
+[B]	Cochin Shipyard Limited
+[C]	Mazagon Dock Shipbuilders Limited
+[D]	Hindustan Shipyard Limited
+[E]	Goa Shipyard Limited
+
+Q.195)	In August 2023, Emmerson Mnangagwa was re-elected as the President of  	 for the second term of 5 years.
+[A]	Rwanda
+[B]	Ghana
+[C]	Zimbabwe
+[D]	Tanzania
+[E]	Ethiopia
+
+Q.196)	Which of the following points is/are “correct” with respect to the Badminton World Federation (BWF) World Championships 2023 held in Copenhagen, Denmark?
+
+A)	Kunlavut Vitidsarn of Thailand won the men’s
+singles title by defeating Kodai Naraoka of Japan.
+B)	India’s Srikanth Kidambi won the bronze medal in the men’s singles at the BWF World Championships 2023.
+C)	An Se-young of South Korea won the women’s
+singles title by defeating Carolina Marin of Spain.
+[A]	All A, B & C
+[B]	Only A & B
+[C]	Only B & C
+[D]	Only A & C
+[E]	Only A
+
+Q.197)	Which of the following points is/are “correct” with respect to the World Athletics Championships 2023 held in August 2023?
+A)	The 2020 Tokyo Olympics gold medallist Neeraj Chopra has won the gold medal in the men’s javelin with an 88.17-meter throw in the World Athletics Championships 2023.
+B)	Indian men’s 4x400m relay team comprising Muhammed Anas Yahiya, Amob Jacob, Muhammed Ajmal and Rajesh Ramesh finished fifth in the finals.
+C)	India has finished 18th in the championship with 1 gold to its total tally.
+[A]	Only A
+[B]	All A, B & C
+[C]	Only A & B
+[D]	Only B & C
+[E]	Only A
+
+Q.198)	Which GoI office/Authority has recently launched TRINETRA, an indigenously developed cyber threat detection and resolution system?
+[A]	Common Services Centres (CSC) e-
+Governance Service India Limited
+[B]	Centre for Development of Telematics
+[C]	Centre for Development of Imaging Technology
+[D]	Centre for Research in Rural and Industrial Development
+[E]	National Legal Services Authority
+
+Q.199)	Name the Indian Institute of Technology (IIT) that has recently partnered with HSBC to support Innovation-led Green Hydrogen production.
+[A]	IIT Kanpur
+
+[B]	IIT Roorkee
+[C]	IIT Bombay
+[D]	IIT Madras
+[E]	IIT Guwahati
+
+Q.200)	Which Payments Bank has recently collaborated with Frontier Markets and the Mastercard Center for Inclusive Growth to launch ‘She Leads Bharat: Udyam’?
+[A]	Airtel Payments Bank
+[B]	Jio Payments Bank
+[C]	Fino Payments Bank
+[D]	India Post Payments Bank
+[E]	Paytm Payments Bank
+
+Q.201)	Consider the following statements about Production Linked Incentives (PLI):
+1.	The PLI scheme aims to provide financial incentives to manufacturers who meet specific production targets.
+2.	The scheme is also applicable to the agriculture sector.
+3.	The PLI scheme is expected to reduce dependence on imports and promote domestic manufacturing.
+Which of the above statements is /are correct?
+[A]	1 and 2 only
+[B]	2 and 3 only
+[C]	1 and 3 only
+[D]	1, 2 and 3
+[E]	2 only
+
+Q.202)	Which organization has recently signed an MoU with the National Institution for Transforming India (NITI) Aayog to speed up the efforts to achieve the Sustainable Development Goals (SDGs).
+[A]	United Nations Environment Programme
+[B]	International Labour Organization
+[C]	United Nations Children's Fund
+[D]	World Health Organization
+[E]	United Nations Development Programme
+
+Q.203)	Who has been recently appointed as the first woman Chargé d’Affaires (CDA) at the High Commission of India in Islamabad, Pakistan?
+[A]	Seema Pujani
+[B]	Sneha Dubey
+[C]	Geetika Srivastava
+
+[D]	Ruchira Kamboj
+[E]	Asma Garg
+
+Q.204)	On the occasion of National Sports Day 2023, Union Minister Anurag Singh Thakur, Ministry of Youth Affairs and Sports (MYAS) has launched the National Sports  	 (NSF) portal.
+[A]	Facility
+[B]	Functions
+[C]	Federations
+[D]	Funds
+[E]	Foundations
+
+Q.205)	Which team has recently won the 1st edition of World Chess Federation (FIDE) World Rapid Team Championship 2023 held in Dusseldorf, Germany.
+[A]	WR Chess
+[B]	Columbus Energy Kings Of Chess
+[C]	MGD1
+[D]	Team Freedom
+[E]	Armenia
+
+Q.206)	Which state government has recently signed an MoU with Deutsche Fußball Liga GmbH (DFL) to develop the football ecosystem in India?
+[A]	Uttarakhand
+[B]	Maharashtra
+[C]	Tamil Nadu
+[D]	Karnataka
+[E]	Assam
+
+Q.207)	Name the Organisation/bank that has recently signed an Rs 1.2 billion worth of agreement with the Fourth Partner Energy (4PEL) Private Limited to build and operate a solar photovoltaic power plant in Tirunelveli, Tamil Nadu.
+[A]	Asian Infrastructure Investment Bank
+[B]	Asian Development Bank
+[C]	International Monetary Fund
+[D]	United Nations Development Programme
+[E]	World Bank
+
+Q.208)	Which state has recently launched Panchayati Raj Accounting Information System
+Automation (PRAISA) software to make online
+
+payment compulsory for Panchayati Raj institutions at a state-level ‘Meri Mati Mera Desh‘campaign?
+[A]	Gujarat
+[B]	Odisha
+[C]	Gujarat
+[D]	West Bengal
+[E]	Madhya Pradesh
+
+Q.209)	Name the bank that has recently launched ‘Infinity Savings Account’, a first of-its-kind fully Digital fixed fee-based savings account with no paperwork or branch visits.
+[A]	IndusInd Bank
+[B]	HDFC Bank
+[C]	Axis Bank
+[D]	YES Bank
+[E]	ICICI Bank
+
+Q.210)	Who has been recently appointed as the chairman of the Finance Industry Development Council (FIDC) for a period of 2 years?
+[A]	Theepak Jain
+[B]	Ajay Kumar
+[C]	Atish Mathur
+[D]	Umesh Revankar
+[E]	Jayanth Kumar

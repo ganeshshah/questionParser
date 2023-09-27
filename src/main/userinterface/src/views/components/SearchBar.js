@@ -4,7 +4,7 @@ import './SearchBar.css';
 
 function SearchBar() {
   const [numQuestions, setNumQuestions] = useState('0');
-  const [flag, setFlag] = useState('yes');
+  const [flag, setFlag] = useState('no');
   const [subject, setSubject] = useState('PIB24X7');
   const [accuracy, setAccuracy] = useState('0');
   const [month, setMonth] = useState('AUG');
@@ -80,7 +80,8 @@ function SearchBar() {
             <option value="ESI">ESI</option>
             <option value="PIB24X7">PIB24X7</option>
             <option value="RBI24X7">RBI24X7</option>
-            <option value="GA">General Awareness</option>
+            <option value="SPOTLIGHT">Spotlight GA</option>
+            <option value="CLOUD_AFFAIRS">Cloud Affairs GA</option>
           </select>
         </div>
 

@@ -22,8 +22,8 @@ public class ParsingService {
         return parsingRepository.getQuestions();
     }
 
-   void processAndInsertMcq(ArrayList<McqCSV> mcqList) throws IOException {
-         parsingRepository.processAndInsertMcq(mcqList);
+   void processAndInsertMcq(ArrayList<McqCSV> mcqList, String subject) throws IOException {
+         parsingRepository.processAndInsertMcq(mcqList, subject);
     }
 
     public void updateMcq(McqCSV mcq){

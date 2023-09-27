@@ -1,12 +1,12 @@
-package com.personalQuizApp.quizApp.processors;
+package com.personalQuizApp.quizApp.processors.cloudaffairsParser;
 
 import com.personalQuizApp.quizApp.dataObjects.McqCSV;
 import com.personalQuizApp.quizApp.enums.Months;
 import com.personalQuizApp.quizApp.enums.Subjects;
-import org.mozilla.universalchardet.UniversalDetector;
 
 import java.io.*;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -14,8 +14,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ParsePlainText {
-    public static ArrayList<McqCSV> printSolutionMap;
+public class CloudAffairsParser {
     public static List<McqCSV> parseText() throws IOException {
         HashMap<Integer,HashMap<String,String>> solutionMap = new HashMap<>();
         HashMap<Integer,String> questionMap = new HashMap<>();
@@ -23,9 +22,9 @@ public class ParsePlainText {
         String fullText = "";
         String generatedOutput = "";
         String processedFileDirectory = "C:\\Users\\Ganesh\\Desktop\\Development\\quizApp\\src\\main\\java\\com\\personalQuizApp\\quizApp\\processedfile";
-        String sourceFileName = "C:\\Users\\Ganesh\\Desktop\\Development\\quizApp\\src\\main\\java\\com\\personalQuizApp\\quizApp\\filetoprocess\\PIB_AUGUST_2023.txt";
+        String sourceFileName = "C:\\Users\\Ganesh\\Desktop\\Development\\quizApp\\src\\main\\java\\com\\personalQuizApp\\quizApp\\filetoprocess\\cloudaffairs.txt";
 
-        FileReader fr = new FileReader(sourceFileName, Charset.forName("windows-1252"));
+        FileReader fr = new FileReader(sourceFileName,StandardCharsets.UTF_8);
         try (BufferedReader buffReader = new BufferedReader(fr)) {
             String strCurrentLine;
             while ((strCurrentLine = buffReader.readLine()) != null) {
@@ -49,14 +48,14 @@ public class ParsePlainText {
                 String solExplaination = "";
                 while((line = reader.readLine())!=null){
 
-                   if(line.contains("Solution:")){
-                       sol = answerKey(line);
-                       while((line = reader.readLine())!=null){
-                           solExplaination += line + System.lineSeparator();
-                       }
-                   }else{
-                       sanitizedQuestion += line + System.lineSeparator();
-                   }
+                    if(line.contains("Answer-")){
+                        sol = answerKey(line);
+                        while((line = reader.readLine())!=null){
+                            solExplaination += line + System.lineSeparator();
+                        }
+                    }else{
+                        sanitizedQuestion += line + System.lineSeparator();
+                    }
                 }
                 solution.put(sol,solExplaination);
                 questionMap.put(no,sanitizedQuestion);
@@ -64,11 +63,10 @@ public class ParsePlainText {
                 generatedOutput += sanitizedQuestion;
             }
             //printSolutionMap(solutionMap);
-           // writeParsedFile(generatedOutput,processedFileDirectory);
+            // writeParsedFile(generatedOutput,processedFileDirectory);
             //System.out.println(solutionMap);
-            String subject = "PIB";
-            printSolutionMap = printSolutionMap(solutionMap,subject,questionMap);
-            return printSolutionMap;
+
+            return  getSolutionMap(solutionMap,questionMap);
 
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -77,7 +75,7 @@ public class ParsePlainText {
     }
 
     public static String answerKey(String line){
-        String regex = "Solution: \\[([a-zA-Z])\\]";
+        String regex = "Answer- (\\d+)\\)";
 
         // Create a Pattern object
         Pattern pattern = Pattern.compile(regex);
@@ -95,27 +93,24 @@ public class ParsePlainText {
         return null;
     }
 
-    public static ArrayList<McqCSV> printSolutionMap(HashMap<Integer,HashMap<String,String>> solutionMap, String subject, HashMap<Integer,String> questionMap){
+    public static ArrayList<McqCSV> getSolutionMap(HashMap<Integer,HashMap<String,String>> solutionMap, HashMap<Integer,String> questionMap){
         ArrayList<McqCSV> mcqList = new ArrayList<>();
         for (Map.Entry<Integer, HashMap<String, String>> entry : solutionMap.entrySet()) {
             McqCSV mcqObject = new McqCSV();
-            mcqObject.setSubject(String.valueOf(Subjects.PIB24X7));
+            mcqObject.setSubject(String.valueOf(Subjects.CLOUD_AFFAIRS));
             mcqObject.setMonth(String.valueOf(Months.AUG));
             int key = entry.getKey();
             mcqObject.setQuestion(questionMap.get(key));
             HashMap<String, String> inner = entry.getValue();
-           // System.out.println("Key: " + key);
-
             for (Map.Entry<String, String> innerEntry : inner.entrySet()) {
                 String innerKey = innerEntry.getKey();
                 String innerValue = innerEntry.getValue();
                 mcqObject.setAnswerKey(innerKey);
                 mcqObject.setHint(innerValue);
-                //System.out.println("  Inner Key: " + innerKey + ", Inner Value: " + innerValue);
             }
             mcqList.add(mcqObject);
         }
-        System.out.println(mcqList.toString());
+        mcqList.remove(0);
         return mcqList;
     }
 
@@ -131,7 +126,4 @@ public class ParsePlainText {
             writer.newLine();
         }
     }
-
 }
-
-

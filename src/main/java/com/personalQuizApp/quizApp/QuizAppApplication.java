@@ -1,6 +1,5 @@
 package com.personalQuizApp.quizApp;
 
-import com.personalQuizApp.quizApp.processors.ParsePlainText;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

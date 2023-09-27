@@ -47,7 +47,7 @@ public class ParsingController {
             mcq.setMonth(month);
             mcq.setSubject(subject);
         }
-        parsingService.processAndInsertMcq(mcqList);
+        parsingService.processAndInsertMcq(mcqList,subject);
     }
 
     @PutMapping("editMcq")

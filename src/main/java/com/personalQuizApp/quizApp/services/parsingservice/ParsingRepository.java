@@ -1,13 +1,15 @@
 package com.personalQuizApp.quizApp.services.parsingservice;
 import com.personalQuizApp.quizApp.dataObjects.McqCSV;
-import com.personalQuizApp.quizApp.processors.ParsePlainText;
+import com.personalQuizApp.quizApp.enums.Subjects;
+import com.personalQuizApp.quizApp.processors.PIB24X7Parser.Pib27x7Parser;
+import com.personalQuizApp.quizApp.processors.SpotlightParser.SpotlightParser;
+import com.personalQuizApp.quizApp.processors.cloudaffairsParser.CloudAffairsParser;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.personalQuizApp.quizApp.processors.ParsePlainText.printSolutionMap;
 
 @Component
 public class ParsingRepository {
@@ -26,10 +28,15 @@ public class ParsingRepository {
         return (List<McqCSV>) parsingRepo.findAllById(ids);
     }
 
-    public void processAndInsertMcq(ArrayList<McqCSV> mcqList) throws IOException {
+    public void processAndInsertMcq(ArrayList<McqCSV> mcqList, String subject) throws IOException {
         System.out.println("Need to implement logic to persist data");
-        ParsePlainText.parseText();
-        parsingRepo.saveAll(printSolutionMap);
+        if(subject.equals(Subjects.CLOUD_AFFAIRS.toString())){
+            parsingRepo.saveAll(CloudAffairsParser.parseText());
+        }else if(subject.equals(Subjects.SPOTLIGHT.toString())){
+            parsingRepo.saveAll(SpotlightParser.parseText());
+        }else{
+            parsingRepo.saveAll(Pib27x7Parser.parseText());
+        }
     }
 
     public void deleteMcq(Integer id){
