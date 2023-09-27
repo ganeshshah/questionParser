@@ -1,4 +1,4 @@
-package com.personalQuizApp.quizApp.services;
+package com.personalQuizApp.quizApp.services.testresultservice;
 
 import com.personalQuizApp.quizApp.dataObjects.TestData;
 import org.springframework.stereotype.Component;

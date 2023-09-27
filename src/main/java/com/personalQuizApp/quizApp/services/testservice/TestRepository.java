@@ -1,9 +1,7 @@
-package com.personalQuizApp.quizApp.services;
+package com.personalQuizApp.quizApp.services.testservice;
 
 import com.personalQuizApp.quizApp.dataObjects.TestIdStore;
 import org.springframework.stereotype.Component;
-
-import java.util.Date;
 
 @Component
 public class TestRepository {

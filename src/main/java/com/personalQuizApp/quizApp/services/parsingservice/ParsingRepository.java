@@ -1,7 +1,6 @@
-package com.personalQuizApp.quizApp.services;
+package com.personalQuizApp.quizApp.services.parsingservice;
 import com.personalQuizApp.quizApp.dataObjects.McqCSV;
 import com.personalQuizApp.quizApp.processors.ParsePlainText;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;

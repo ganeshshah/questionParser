@@ -1,13 +1,11 @@
-package com.personalQuizApp.quizApp.services;
+package com.personalQuizApp.quizApp.services.testservice;
 
 import com.personalQuizApp.quizApp.Constants;
-import com.personalQuizApp.quizApp.dataObjects.McqCSV;
 import com.personalQuizApp.quizApp.dataObjects.TestIdStore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
-import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")

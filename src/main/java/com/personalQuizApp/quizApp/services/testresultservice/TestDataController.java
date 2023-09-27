@@ -1,4 +1,4 @@
-package com.personalQuizApp.quizApp.services;
+package com.personalQuizApp.quizApp.services.testresultservice;
 
 import com.personalQuizApp.quizApp.dataObjects.TestData;
 import com.personalQuizApp.quizApp.processors.ProcessTestData;
@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")

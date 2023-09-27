@@ -2,30 +2,40 @@ package com.personalQuizApp.quizApp.dataObjects;
 
 import jakarta.persistence.*;
 
-import java.sql.Date;
-import java.time.DayOfWeek;
+import java.util.Date;
+
 
 @Entity
 public class McqCSV {
 
+    @PrePersist
+    protected void onCreate() {
+        createdDate = new Date(); // Set the default date when an entity is created
+    }
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
+    @Column(nullable = false)
     private String subject;
     @Column(length = 2048)
     private String question;
+    @Column(nullable = false)
     private String answerKey;
     @Column(length = 2048)
     private String hint;
-    private Integer noOfAttempt;
-    private Integer accurracy;
-    private Integer noOfCorrect;
+    private Integer noOfAttempt = 0;
+
+    private Integer accurracy = 0;
+
+    private Integer noOfCorrect = 0;
     private Date attemptedDate;
+    @Column(nullable = false)
     private Date createdDate;
-    private String month;
-    private String lodingIndicator;
-    private Integer noOfIncorrectAttempt;
-    private String recentCorrect;
+    @Column(nullable = false)
+    private String month ;
+    @Column(nullable = false)
+    private String lodingIndicator = "AUTO_PARSED";
+    private Integer noOfIncorrectAttempt = 0;
 
     public String getMonth() {
         return month;
@@ -131,14 +141,6 @@ public class McqCSV {
 
     public void setNoOfIncorrectAttempt(Integer noOfIncorrectAttempt) {
         this.noOfIncorrectAttempt = noOfIncorrectAttempt;
-    }
-
-    public String getRecentCorrect() {
-        return recentCorrect;
-    }
-
-    public void setRecentCorrect(String recentCorrect) {
-        this.recentCorrect = recentCorrect;
     }
 
 }

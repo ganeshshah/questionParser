@@ -12,18 +12,21 @@ function TakeTest() {
   const apiPath = 'http://localhost:8080/test/createTestId?'+'subject='+ location.state.subject +'&month=' + location.state.month;
   const [testIdObject, setTestIdObject] = useState([]);
 
-  // Make the API request using Axios
-  useEffect(() => {
-    axios.get(apiPath) // your API endpoint URL
-      .then(response => {
-        // Assuming the response data is JSON
+    // Create an async function to fetch and set the data
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(apiPath);
+        // Assuming the response data is JSON, set it to testIdObject
         setTestIdObject(response.data);
-      })
-      .catch(error => {
-        // Handle errors here
+      } catch (error) {
+        // Handle errors here, e.g., display an error message to the user
         console.error('Error fetching data:', error);
-      });
-  }, []);
+      }
+    };
+
+    useEffect(() => {
+      fetchData();
+    }, []);
 
 return (
     <div>

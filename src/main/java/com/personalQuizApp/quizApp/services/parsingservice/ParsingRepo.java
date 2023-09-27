@@ -1,4 +1,4 @@
-package com.personalQuizApp.quizApp.services;
+package com.personalQuizApp.quizApp.services.parsingservice;
 
 import com.personalQuizApp.quizApp.dataObjects.McqCSV;
 import org.springframework.data.jpa.repository.Query;

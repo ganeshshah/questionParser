@@ -1,4 +1,4 @@
-package com.personalQuizApp.quizApp.services;
+package com.personalQuizApp.quizApp.services.parsingservice;
 
 import com.personalQuizApp.quizApp.dataObjects.McqCSV;
 import com.personalQuizApp.quizApp.processors.ProcessInput;
@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
@@ -39,8 +38,15 @@ public class ParsingController {
     }
 
     @PostMapping("proccessFile")
-    void processAndInsertMcq(@RequestBody ArrayList<McqCSV> mcqList) throws IOException {
+    void processAndInsertMcq(
+            @RequestParam("subject") String subject,
+            @RequestParam("month") String month,
+            @RequestBody ArrayList<McqCSV> mcqList) throws IOException {
         System.out.println("Inserting values in DB");
+        for(McqCSV mcq : mcqList){
+            mcq.setMonth(month);
+            mcq.setSubject(subject);
+        }
         parsingService.processAndInsertMcq(mcqList);
     }
 

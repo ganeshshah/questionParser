@@ -3,6 +3,7 @@ import {Routes, Route, useNavigate} from 'react-router-dom';
 import './QuestionBlock.css';
 import HintModal from './HintModal';
 import axios from 'axios';
+import EditModal from './EditModal';
 
 function QuestionBlock(props) {
   const [inputValue, setInputValue] = useState('');
@@ -14,6 +15,7 @@ function QuestionBlock(props) {
   const answerKey = props.question.answerKey;
   const hint = props.question.hint;
   const subject = props.question.subject;
+  const [isEditModalOpen, setIsEditModalOpen] = useState(false); 
 
   const navigate = useNavigate();
   const navigateToEdit = () => {
@@ -71,6 +73,13 @@ if(props.testIdObject != null){
     setIsModalOpen(false); // Close the modal
   };
 
+  const openEditModal = () => {
+    setIsEditModalOpen(true);
+  };
+
+  const closeEditModal = () => {
+    setIsEditModalOpen(false);
+  };
 
   return (
     <div className='quest-block'>
@@ -100,13 +109,19 @@ if(props.testIdObject != null){
             Submit Answer
           </button>
         </form>
-        <button className='button' onClick={navigateToEdit} >Edit Question</button>
-        <button className='button'>Delete Question</button>
-        <button className='button' onClick={knowledgeNuggets}>Knowledge nuggets</button>
+        <button className='button' onClick={openEditModal}>Edit Question</button>
+        <button className='button' style={{backgroundColor:'orange'}} onClick={knowledgeNuggets}>Knowledge nuggets</button>
         {isModalOpen && <HintModal hint={hint} onClose={closeHintModal} />} {/* Render the modal when open */}
+        <button className='button' style={{backgroundColor:'red'}}>Delete Question</button>
         <div className={`result ${resultMessage.includes('Success') ? 'success' : 'error'}`}>
           <p>{resultMessage}</p>
         </div>
+        {isEditModalOpen && (
+        <EditModal
+          props={props.question}
+          onClose={closeEditModal}
+        />
+      )}
       </div>
     </div>
   );

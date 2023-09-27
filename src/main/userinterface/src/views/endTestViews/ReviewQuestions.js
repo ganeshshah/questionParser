@@ -17,16 +17,27 @@ questionList.forEach(item => {
   const apiPath = 'http://localhost:8080/getIncorrectQuestions?ids=' + queryParams;
   
 
-// first data grab
   useEffect(() => {
-    fetch(apiPath) // your url may look different
-      .then(resp => resp.json())
-      .then(data => setQuestions(data)) // set data to state
+    const fetchData = async () => {
+      try {
+        const response = await fetch(apiPath);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        setQuestions(data); // set data to state
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        // Handle errors here
+      }
+    };
+  
+    fetchData();
   }, []);
 
 return (
     <div>
-        <h1>-----------------------------------------------------------------Mistake questions to review-----------------------------------------------------</h1>
+        <h1 style={{ textAlign: "center"}}>Mistake questions to review</h1>
       <RenderQuestions questions={questions} />
     </div>
   );

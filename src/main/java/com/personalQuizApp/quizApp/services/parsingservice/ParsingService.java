@@ -1,11 +1,8 @@
-package com.personalQuizApp.quizApp.services;
+package com.personalQuizApp.quizApp.services.parsingservice;
 
 import com.personalQuizApp.quizApp.dataObjects.McqCSV;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestAttribute;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.io.IOException;
 import java.util.ArrayList;

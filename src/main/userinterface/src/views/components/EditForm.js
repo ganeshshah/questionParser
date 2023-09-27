@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './EditForm.css'; // Import the CSS file
 import { useLocation } from 'react-router-dom';
 
-function EditForm() {
-  const location = useLocation();
-  const [formData, setFormData] = useState(location.state);
-
+function EditForm({props}) {
+ 
+  const [formData, setFormData] = useState(props);
+  const [isSuccess, SetIsSuccess ] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,6 +27,7 @@ function EditForm() {
 
       if (response.ok) {
         // Handle a successful response here
+        SetIsSuccess(true);
         console.log('PUT request successful');
       } else {
         // Handle errors if the request is not successful
@@ -88,9 +89,7 @@ function EditForm() {
         <button className="save" onClick={handleSave}>
           Save
         </button>
-        <button className="cancel">
-          Cancel
-        </button>
+        {isSuccess && <p>Data saved successfully</p>}
       </div>
     </div>
   );
