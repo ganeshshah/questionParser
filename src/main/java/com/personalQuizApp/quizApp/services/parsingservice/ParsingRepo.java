@@ -15,7 +15,7 @@ public interface ParsingRepo extends CrudRepository<McqCSV, Integer> {
             @Param("subjectParam") String subject,
             @Param("monthOfQuestion") String month);
 
-    @Query("SELECT m FROM McqCSV m WHERE m.subject = :subjectParam AND m.accurracy >= :accuracyParam AND m.month = :monthOfQuestion ORDER BY m.id")
+    @Query("SELECT m FROM McqCSV m WHERE m.subject = :subjectParam AND m.accurracy <= :accuracyParam AND m.month = :monthOfQuestion ORDER BY m.id")
     List<McqCSV> getQuestions2(
             @Param("subjectParam") String subject,
             @Param("accuracyParam") double accuracy,

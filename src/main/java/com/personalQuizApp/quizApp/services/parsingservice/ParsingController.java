@@ -15,7 +15,8 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:3000")
 public class ParsingController {
 
-    private final ParsingService parsingService;
+    @Autowired
+    public final ParsingService parsingService;
 
     @Autowired
     public ParsingController(ParsingService parsingService) {

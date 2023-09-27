@@ -12,7 +12,7 @@ import java.util.Date;
 @RequestMapping(value = {"/test"})
 public class TestController {
 
-    TestService testService;
+    public final TestService testService;
 
     @Autowired
     public TestController(TestService testService) {

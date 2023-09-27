@@ -29,14 +29,14 @@ function QuestionBlock(props) {
     setInputValue(event.target.value);
   };
  
-  const [dataToSend, setFormData] = useState({
+  const dataToSend = {
     testId : props.testIdObject ? props.testIdObject.testId : 0,
     month : props.question.month,
     questionId : id,
     result : 0,
     testDate : props.testIdObject ? props.testIdObject.date : null,
     subject : subject
-   });
+   };
 
   const handleSubmit = (event) => {
     event.preventDefault();

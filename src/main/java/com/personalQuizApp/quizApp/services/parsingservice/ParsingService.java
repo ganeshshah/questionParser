@@ -27,6 +27,10 @@ public class ParsingService {
         parsingRepository.updateMcq(mcq);
     }
 
+    public void updateAllMcq(List<McqCSV> mcqlist){
+        parsingRepository.updateAllMcq(mcqlist);
+    }
+
     public List<McqCSV> getIncorrectQuestions(ArrayList<Integer> ids){
         return (List<McqCSV>) parsingRepository.getIncorrectQuestions(ids);
     }
