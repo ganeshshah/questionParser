@@ -25,7 +25,7 @@ public class McqCSV {
     private String hint;
     private Integer noOfAttempt = 0;
 
-    private Integer accurracy = 0;
+    private double accurracy = 0;
 
     private Integer noOfCorrect = 0;
     private Date attemptedDate;
@@ -104,11 +104,11 @@ public class McqCSV {
         this.noOfAttempt = noOfAttempt;
     }
 
-    public Integer getAccurracy() {
+    public double getAccurracy() {
         return accurracy;
     }
 
-    public void setAccurracy(Integer accurracy) {
+    public void setAccurracy(double accurracy) {
         this.accurracy = accurracy;
     }
 

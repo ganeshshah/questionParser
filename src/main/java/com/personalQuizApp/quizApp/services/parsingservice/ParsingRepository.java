@@ -80,4 +80,8 @@ public class ParsingRepository {
             }
         }
     }
+
+    public void updateAllMcq(List<McqCSV> mcqlist) {
+        parsingRepo.saveAll(mcqlist);
+    }
 }
