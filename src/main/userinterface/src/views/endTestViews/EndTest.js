@@ -4,24 +4,26 @@ import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from "react";
 import './EndTest.css';
 import axios from 'axios';
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
-function EndTest(){
+function EndTest() {
 
-const location = useLocation();
-const totalTime = location.state.timer / 60;
-const totalTimeTaken = totalTime.toFixed(2);
-const testId = location.state.testId;
-const subject = location.state.subject;
+  const location = useLocation();
+  const totalTime = location.state.timer / 60;
+  const totalTimeTaken = totalTime.toFixed(2);
+  const testId = location.state.testId;
+  const subject = location.state.subject;
 
 
-const apiPath = 'http://localhost:8080/testData/getTestResultData?testId='+ testId;
-const [testResultData, SetTestResultData] = useState([]);
+  const apiPath = 'http://localhost:8080/testData/getTestResultData?testId=' + testId;
+  const [testResultData, SetTestResultData] = useState([]);
 
 
   // Make the API request using Axios
   useEffect(() => {
+    //TODO: call api function created in services file in root directory instead of directly calling api here
+
     axios.get(apiPath) // your API endpoint URL
       .then(response => {
         // Assuming the response data is JSON
@@ -32,21 +34,21 @@ const [testResultData, SetTestResultData] = useState([]);
         console.error('Error fetching data:', error);
       });
   }, []);
- 
-console.log(testResultData);
-const qlist = testResultData.incorrectQuestionsList;
-  
-const navigate = useNavigate();
+
+  console.log(testResultData);
+  const qlist = testResultData.incorrectQuestionsList;
+
+  const navigate = useNavigate();
   const navigateToReviewQuestions = () => {
-    navigate('/reviewQuestions' , { state :{qlist}});
+    navigate('/reviewQuestions', { state: { qlist } });
   };
 
 
-const data = [
-  ["Result", "Percentage"],
-  ["Correct", testResultData.correctQuestions],
-  ["Mistake", testResultData.incorrectQuestions]
-];
+  const data = [
+    ["Result", "Percentage"],
+    ["Correct", testResultData.correctQuestions],
+    ["Mistake", testResultData.incorrectQuestions]
+  ];
 
   const handleReviewClick = () => {
     // Handle the review logic here
@@ -61,9 +63,9 @@ const data = [
         <p>TestId : {testId}</p>
         <p>Subject : {subject}</p>
       </div>
-      <PieChart data={data}/>
+      <PieChart data={data} />
       <h2>Review Incorrect Questions Again</h2>
-      <button className="review-button" onClick={navigateToReviewQuestions}> Review Questions</button> 
+      <button className="review-button" onClick={navigateToReviewQuestions}> Review Questions</button>
     </div>
   );
 };

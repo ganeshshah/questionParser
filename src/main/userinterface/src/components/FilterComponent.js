@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import {useNavigate} from 'react-router-dom';
-import './SearchBar.css';
+import { useNavigate } from 'react-router-dom';
+import './FilterComponent.css';
 
-function SearchBar() {
+function FilterComponent() {
   const [numQuestions, setNumQuestions] = useState('0');
   const [flag, setFlag] = useState('no');
   const [subject, setSubject] = useState('PIB24X7');
@@ -11,12 +11,12 @@ function SearchBar() {
 
   const navigate = useNavigate();
   const navigateToSearch = () => {
-    navigate('/searchWithParam' , { state: { numQuestions, flag, subject, accuracy, month } });
+    navigate('/searchWithParam', { state: { numQuestions, flag, subject, accuracy, month } });
   };
 
   const navigate2 = useNavigate();
   const navigateToCreatetest = () => {
-    navigate2('/createTest' , { state: { numQuestions, flag, subject, accuracy, month } });
+    navigate2('/createTest', { state: { numQuestions, flag, subject, accuracy, month } });
   }
 
   const months = [
@@ -124,7 +124,7 @@ function SearchBar() {
           Fetch Question
         </button>
 
-        <button type="submit" className="fetch-button" style= {{background:'green'}} onClick={navigateToCreatetest}>
+        <button type="submit" className="fetch-button" style={{ background: 'green' }} onClick={navigateToCreatetest}>
           Create Test
         </button>
       </form>
@@ -132,4 +132,4 @@ function SearchBar() {
   );
 }
 
-export default SearchBar;
+export default FilterComponent;

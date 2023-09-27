@@ -1,46 +1,48 @@
 import React, { useEffect, useState } from "react";
-import RenderQuestions from "./components/RenderQuestions";
+import RenderQuestions from "../components/RenderQuestions";
 import { useLocation } from 'react-router-dom';
 
-function AllQuestions({testIdObject}) {
-// set state
+function AllQuestions({ testIdObject }) {
+  // set state
   const location = useLocation();
   const [questions, setQuestions] = useState([]);
-  const apiPath = 'http://localhost:8080/getQuestionsWithParam?'+'numQuestions='+ location.state.numQuestions +'&flag='
-  +location.state.flag +'&subject='+location.state.subject+'&accuracy='+location.state.accuracy+'&month='+ location.state.month;
-// first data grab
+  const apiPath = 'http://localhost:8080/getQuestionsWithParam?' + 'numQuestions=' + location.state.numQuestions + '&flag='
+    + location.state.flag + '&subject=' + location.state.subject + '&accuracy=' + location.state.accuracy + '&month=' + location.state.month;
+  // first data grab
 
-async function fetchData(apiPath) {
-  try {
-    const response = await fetch(apiPath);
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    throw error;
-  }
-}
+  async function fetchData(apiPath) {
+    //TODO: call api function created in services file in root directory instead of directly calling api here
 
-useEffect(() => {
-  async function fetchQuestions() {
     try {
-      const data = await fetchData(apiPath);
-      setQuestions(data);
+      const response = await fetch(apiPath);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
     } catch (error) {
-      console.error('Error fetching data:', error);
+      throw error;
     }
   }
 
-  fetchQuestions();
-}, []);
+  useEffect(() => {
+    async function fetchQuestions() {
+      try {
+        const data = await fetchData(apiPath);
+        setQuestions(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+
+    fetchQuestions();
+  }, []);
 
 
-console.log(testIdObject);
+  console.log(testIdObject);
 
-return (
-    <div style={{ marginTop: 70}}>
+  return (
+    <div style={{ marginTop: 70 }}>
       {/* pass data down to the QuestionBlock component where we'll create the table*/}
       <RenderQuestions questions={questions} testIdObject={testIdObject} />
     </div>

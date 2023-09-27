@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './views/Home';
 import PIB24X7 from './views/PIB24X7'; // Assuming you have a PIB24x7 component
 import AllQuestions from './views/AllQuestions';
-import EditForm from './views/components/EditForm';
 import Finance from './views/Finance';
 import RBI24X7 from './views/RBI24X7';
 import Management from './views/Management';
@@ -16,32 +15,30 @@ import TakeTest from './views/TakeTest';
 import EndTest from './views/endTestViews/EndTest';
 import ReviewQuestions from './views/endTestViews/ReviewQuestions';
 import QuestionLoader from './views/loadQuestions/QuestionLoader';
-
-
+import Layout from './components/Layout';
+import EditForm from './components/EditForm'
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/PIB24x7" element={<PIB24X7 />} />
-          <Route path="/Questions" element={<AllQuestions />} />
-          <Route path="/EditForm" element={<EditForm />} />
-          <Route path="/Finance" element={<Finance />} />
-          <Route path="/RBI24x7" element={<RBI24X7 />} />
-          <Route path="/Management" element={<Management />} />
-          <Route path="/ESI" element={<ESI />} />
-          <Route path="/SpotlightGA" element={<GeneralAwareness />} />
-          <Route path="/CloudAffairsGA" element={<CloudAffairsGA />} />
-          <Route path="/searchWithParam" element={<QuestionsWithParams />} />
-          <Route path="/createTest" element={<TakeTest />} />
-          <Route path="/endTestPage" element={<EndTest />} />
-          <Route path="/reviewQuestions" element={<ReviewQuestions />} />
-          <Route path="/loadQuestions" element={<QuestionLoader />} />
-        </Routes>
-      </div>
-    </Router>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/PIB24x7" element={<PIB24X7 />} />
+        <Route path="/Questions" element={<AllQuestions />} />
+        <Route path="/EditForm" element={<EditForm />} />
+        <Route path="/Finance" element={<Finance />} />
+        <Route path="/RBI24x7" element={<RBI24X7 />} />
+        <Route path="/Management" element={<Management />} />
+        <Route path="/ESI" element={<ESI />} />
+        <Route path="/SpotlightGA" element={<GeneralAwareness />} />
+        <Route path="/CloudAffairsGA" element={<CloudAffairsGA />} />
+        <Route path="/searchWithParam" element={<QuestionsWithParams />} />
+        <Route path="/createTest" element={<TakeTest />} />
+        <Route path="/endTestPage" element={<EndTest />} />
+        <Route path="/reviewQuestions" element={<ReviewQuestions />} />
+        <Route path="/loadQuestions" element={<QuestionLoader />} />
+      </Route>
+    </Routes>
   );
 }
 

@@ -29,36 +29,38 @@ function QuestionLoader() {
 
 
   const handleValidateFormat = () => {
-    
+
   };
 
   const handleLoadQuestions = () => {
     const dataToSend = {
-        questionPath: questionPath,
-        answerPath: answerPath,
-        selectedParser: selectedParser,
-        selectedSubject: selectedSubject,
-        selectedMonth: selectedMonth
-      };
+      questionPath: questionPath,
+      answerPath: answerPath,
+      selectedParser: selectedParser,
+      selectedSubject: selectedSubject,
+      selectedMonth: selectedMonth
+    };
     console.log(dataToSend);
 
-      // Send a POST request
- axios.post(apiPath, dataToSend)
- .then((response) => {
-   console.log('POST request successful:', response.data);
-   // Handle the response as needed
- })
- .catch((error) => {
-   console.error('Error making POST request:', error);
-   // Handle errors
- });
+    //TODO: call api function created in services file in root directory instead of directly calling api here
+
+    // Send a POST request
+    axios.post(apiPath, dataToSend)
+      .then((response) => {
+        console.log('POST request successful:', response.data);
+        // Handle the response as needed
+      })
+      .catch((error) => {
+        console.error('Error making POST request:', error);
+        // Handle errors
+      });
   };
 
 
   return (
     <div className="app">
-        <h1>Load questions</h1>
-        <p>**Answer path required only for spotlight parser</p>
+      <h1>Load questions</h1>
+      <p>**Answer path required only for spotlight parser</p>
       <div className="search-bar">
         <input
           type="text"

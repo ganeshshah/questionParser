@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import QuestionLoader from './loadQuestions/QuestionLoader';
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 function Home() {
@@ -19,6 +19,7 @@ function Home() {
       <div>
         <ul className="menu-list">
           <li>
+            {/* 
             <Link to="/Finance">Finance</Link>
           </li>
           <li>
@@ -36,7 +37,7 @@ function Home() {
           <li>
             <Link to="/SpotlightGA">General Awareness</Link>
           </li>
-          <li>
+          <li> */}
             <Link to="/CloudAffairsGA">Cloudaffairs GA</Link>
           </li>
           <li>
@@ -47,15 +48,33 @@ function Home() {
           </li>
         </ul>
         <div>
-        <button className='buttons'>Add Question Manually</button>
-        <button className='buttons'> Load Question from excel</button>
-        <button className='buttons' onClick={navigateLoadQuestions}>Load Question from text file</button>
+          <button className='buttons'>Add Question Manually</button>
+          <button className='buttons'> Load Question from excel</button>
+          <button className='buttons' onClick={navigateLoadQuestions}>Load Question from text file</button>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
 export default Home;
 
+
+
+// import QuestionCard from '../components/QuestionCard';
+
+// function Home() {
+
+//   const nums = [1, 2, 3, 4, 5];
+
+//   return (
+//     <div className='mx-auto my-5 max-w-5xl flex flex-col gap-y-8'>
+//       {
+//         nums.map(() => (<QuestionCard />))
+//       }
+//     </div >
+//   );
+// }
+
+// export default Home;
 

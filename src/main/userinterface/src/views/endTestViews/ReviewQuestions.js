@@ -1,23 +1,25 @@
 import React, { useEffect, useState } from "react";
-import RenderQuestions from "../components/RenderQuestions";
+import RenderQuestions from "../../components/RenderQuestions";
 import { useLocation } from 'react-router-dom';
 
 function ReviewQuestions() {
-// set state
+  // set state
   const location = useLocation();
   const [questions, setQuestions] = useState([]);
   const questionList = location.state.qlist;
 
   console.log(questionList);
 
-var queryParams = "";
-questionList.forEach(item => {
-  queryParams += item + ",";
-});
+  var queryParams = "";
+  questionList.forEach(item => {
+    queryParams += item + ",";
+  });
   const apiPath = 'http://localhost:8080/getIncorrectQuestions?ids=' + queryParams;
-  
+
 
   useEffect(() => {
+    //TODO: call api function created in services file in root directory instead of directly calling api here
+
     const fetchData = async () => {
       try {
         const response = await fetch(apiPath);
@@ -31,13 +33,13 @@ questionList.forEach(item => {
         // Handle errors here
       }
     };
-  
+
     fetchData();
   }, []);
 
-return (
+  return (
     <div>
-        <h1 style={{ textAlign: "center"}}>Mistake questions to review</h1>
+      <h1 style={{ textAlign: "center" }}>Mistake questions to review</h1>
       <RenderQuestions questions={questions} />
     </div>
   );
