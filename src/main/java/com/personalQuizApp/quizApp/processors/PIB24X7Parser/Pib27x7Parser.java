@@ -14,16 +14,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Pib27x7Parser {
-    public static List<McqCSV> parseText() throws IOException {
+    public static List<McqCSV> parseText(String questionFilePath, String subject, String month) throws IOException {
         HashMap<Integer,HashMap<String,String>> solutionMap = new HashMap<>();
         HashMap<Integer,String> questionMap = new HashMap<>();
 
         String fullText = "";
-        String generatedOutput = "";
-        String processedFileDirectory = "C:\\Users\\Ganesh\\Desktop\\Development\\quizApp\\src\\main\\java\\com\\personalQuizApp\\quizApp\\processedfile";
-        String sourceFileName = "C:\\Users\\Ganesh\\Desktop\\Development\\quizApp\\src\\main\\java\\com\\personalQuizApp\\quizApp\\filetoprocess\\pib24x7.txt";
 
-        FileReader fr = new FileReader(sourceFileName, Charset.forName("windows-1252"));
+        FileReader fr = new FileReader(questionFilePath, Charset.forName("windows-1252"));
         try (BufferedReader buffReader = new BufferedReader(fr)) {
             String strCurrentLine;
             while ((strCurrentLine = buffReader.readLine()) != null) {
@@ -59,12 +56,11 @@ public class Pib27x7Parser {
                 solution.put(sol,solExplaination);
                 questionMap.put(no,sanitizedQuestion);
                 solutionMap.put(no++,solution);
-                generatedOutput += sanitizedQuestion;
             }
             //printSolutionMap(solutionMap);
            // writeParsedFile(generatedOutput,processedFileDirectory);
             //System.out.println(solutionMap);
-            return getSolutionMap(solutionMap,questionMap);
+            return getSolutionMap(solutionMap,questionMap,subject,month);
 
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -91,7 +87,7 @@ public class Pib27x7Parser {
         return null;
     }
 
-    public static ArrayList<McqCSV> getSolutionMap(HashMap<Integer,HashMap<String,String>> solutionMap, HashMap<Integer,String> questionMap){
+    public static ArrayList<McqCSV> getSolutionMap(HashMap<Integer,HashMap<String,String>> solutionMap, HashMap<Integer,String> questionMap, String subject, String month){
         ArrayList<McqCSV> mcqList = new ArrayList<>();
         for (Map.Entry<Integer, HashMap<String, String>> entry : solutionMap.entrySet()) {
             McqCSV mcqObject = new McqCSV();

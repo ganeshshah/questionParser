@@ -1,4 +1,5 @@
 package com.personalQuizApp.quizApp.services.parsingservice;
+import com.personalQuizApp.quizApp.dataObjects.LoadQuestionParams;
 import com.personalQuizApp.quizApp.dataObjects.McqCSV;
 import com.personalQuizApp.quizApp.enums.Subjects;
 import com.personalQuizApp.quizApp.processors.PIB24X7Parser.Pib27x7Parser;
@@ -28,14 +29,19 @@ public class ParsingRepository {
         return (List<McqCSV>) parsingRepo.findAllById(ids);
     }
 
-    public void processAndInsertMcq(ArrayList<McqCSV> mcqList, String subject) throws IOException {
-        System.out.println("Need to implement logic to persist data");
-        if(subject.equals(Subjects.CLOUD_AFFAIRS.toString())){
-            parsingRepo.saveAll(CloudAffairsParser.parseText());
+    public void processAndInsertMcq(LoadQuestionParams loadQuestionParams) throws IOException {
+        String questionFilePath = loadQuestionParams.getQuestionPath();
+        String answerFilePath = loadQuestionParams.getAnswerPath();
+        String month = loadQuestionParams.getSelectedMonth();
+        String subject = loadQuestionParams.getSelectedSubject();
+        String parser = loadQuestionParams.getSelectedParser();
+        if(subject.equals(Subjects.CA.toString())){
+            parsingRepo.saveAll(CloudAffairsParser.parseText(questionFilePath,subject,month));
         }else if(subject.equals(Subjects.SPOTLIGHT.toString())){
-            parsingRepo.saveAll(SpotlightParser.parseText());
-        }else{
-            parsingRepo.saveAll(Pib27x7Parser.parseText());
+            parsingRepo.saveAll(SpotlightParser.parseText(questionFilePath,answerFilePath,subject,month));
+        }else if(subject.equals(Subjects.PIB24X7.toString())){
+            System.out.println("I am called");
+            parsingRepo.saveAll(Pib27x7Parser.parseText(questionFilePath,subject,month));
         }
     }
 

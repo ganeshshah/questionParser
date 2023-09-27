@@ -11,7 +11,7 @@ class QuizAppApplicationTests {
 
 	@Test
 	void contextLoads() throws IOException {
-		SpotlightParser.parseText();
+
 	}
 
 

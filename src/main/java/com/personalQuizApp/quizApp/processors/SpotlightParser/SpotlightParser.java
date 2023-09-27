@@ -6,25 +6,19 @@ import com.personalQuizApp.quizApp.enums.Months;
 import com.personalQuizApp.quizApp.enums.Subjects;
 
 import java.io.*;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SpotlightParser {
-    public static List<McqCSV> parseText() throws IOException {
+    public static List<McqCSV> parseText(String questionFilePath, String answerFilePath, String subject, String month) throws IOException {
         ArrayList<McqCSV> mcqList = new ArrayList<>();
 
         String fullText = "";
-        String generatedOutput = "";
-        String processedFileDirectory = "C:\\Users\\Ganesh\\Desktop\\Development\\quizApp\\src\\main\\java\\com\\personalQuizApp\\quizApp\\processedfile";
-        String sourceFileName = "C:\\Users\\Ganesh\\Desktop\\Development\\quizApp\\src\\main\\java\\com\\personalQuizApp\\quizApp\\filetoprocess\\spotlight.txt";
-        String answerSourceFile = "C:\\Users\\Ganesh\\Desktop\\Development\\quizApp\\src\\main\\java\\com\\personalQuizApp\\quizApp\\filetoprocess\\spotlightanswers.txt";
-
         // Process answer file
         HashMap<Integer,String> ansKeyMap = new HashMap<>();
-        FileReader answerReader = new FileReader(answerSourceFile);
+        FileReader answerReader = new FileReader(answerFilePath);
         BufferedReader answerBuffReader = new BufferedReader(answerReader);
         String answerLine = null;
         while ((answerLine = answerBuffReader.readLine()) != null) {
@@ -33,7 +27,7 @@ public class SpotlightParser {
             ansKeyMap.put(Integer.valueOf(answerKey[0]),answerKey[1]);
         }
 
-        FileReader fr = new FileReader(sourceFileName, StandardCharsets.UTF_8);
+        FileReader fr = new FileReader(questionFilePath, StandardCharsets.UTF_8);
         try (BufferedReader buffReader = new BufferedReader(fr)) {
             String strCurrentLine;
             while ((strCurrentLine = buffReader.readLine()) != null) {
@@ -46,8 +40,8 @@ public class SpotlightParser {
             int no = 0;
             for(String quest : separatedQuestions){
                 McqCSV mcqObject = new McqCSV();
-                mcqObject.setSubject(String.valueOf(Subjects.SPOTLIGHT));
-                mcqObject.setMonth(String.valueOf(Months.AUG));
+                mcqObject.setSubject(subject);
+                mcqObject.setMonth(month);
                 mcqObject.setQuestion(quest);
                 mcqObject.setCreatedDate(new Date());
                 if(no>0){

@@ -5,7 +5,6 @@ import com.personalQuizApp.quizApp.enums.Months;
 import com.personalQuizApp.quizApp.enums.Subjects;
 
 import java.io.*;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,16 +14,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CloudAffairsParser {
-    public static List<McqCSV> parseText() throws IOException {
+    public static List<McqCSV> parseText(String questionFilePath, String subject, String month) throws IOException {
         HashMap<Integer,HashMap<String,String>> solutionMap = new HashMap<>();
         HashMap<Integer,String> questionMap = new HashMap<>();
 
         String fullText = "";
-        String generatedOutput = "";
-        String processedFileDirectory = "C:\\Users\\Ganesh\\Desktop\\Development\\quizApp\\src\\main\\java\\com\\personalQuizApp\\quizApp\\processedfile";
-        String sourceFileName = "C:\\Users\\Ganesh\\Desktop\\Development\\quizApp\\src\\main\\java\\com\\personalQuizApp\\quizApp\\filetoprocess\\cloudaffairs.txt";
-
-        FileReader fr = new FileReader(sourceFileName,StandardCharsets.UTF_8);
+        FileReader fr = new FileReader(questionFilePath,StandardCharsets.UTF_8);
         try (BufferedReader buffReader = new BufferedReader(fr)) {
             String strCurrentLine;
             while ((strCurrentLine = buffReader.readLine()) != null) {
@@ -60,13 +55,12 @@ public class CloudAffairsParser {
                 solution.put(sol,solExplaination);
                 questionMap.put(no,sanitizedQuestion);
                 solutionMap.put(no++,solution);
-                generatedOutput += sanitizedQuestion;
             }
             //printSolutionMap(solutionMap);
             // writeParsedFile(generatedOutput,processedFileDirectory);
             //System.out.println(solutionMap);
 
-            return  getSolutionMap(solutionMap,questionMap);
+            return  getSolutionMap(solutionMap,questionMap, subject, month);
 
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -93,12 +87,12 @@ public class CloudAffairsParser {
         return null;
     }
 
-    public static ArrayList<McqCSV> getSolutionMap(HashMap<Integer,HashMap<String,String>> solutionMap, HashMap<Integer,String> questionMap){
+    public static ArrayList<McqCSV> getSolutionMap(HashMap<Integer,HashMap<String,String>> solutionMap, HashMap<Integer,String> questionMap, String subject, String month){
         ArrayList<McqCSV> mcqList = new ArrayList<>();
         for (Map.Entry<Integer, HashMap<String, String>> entry : solutionMap.entrySet()) {
             McqCSV mcqObject = new McqCSV();
-            mcqObject.setSubject(String.valueOf(Subjects.CLOUD_AFFAIRS));
-            mcqObject.setMonth(String.valueOf(Months.AUG));
+            mcqObject.setSubject(subject);
+            mcqObject.setMonth(month);
             int key = entry.getKey();
             mcqObject.setQuestion(questionMap.get(key));
             HashMap<String, String> inner = entry.getValue();
@@ -114,16 +108,5 @@ public class CloudAffairsParser {
         return mcqList;
     }
 
-    public static void writeParsedFile(String input, String processedFileDirectory) throws IOException {
-        String filePath = processedFileDirectory + "\\output.txt";
-        BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
-        StringReader stringReader = new StringReader(input);
-        // Create a BufferedReader to read lines from the StringReader
-        BufferedReader reader = new BufferedReader(stringReader);
-        String line = null;
-        while((line = reader.readLine())!=null){
-            writer.write(line);
-            writer.newLine();
-        }
-    }
+
 }

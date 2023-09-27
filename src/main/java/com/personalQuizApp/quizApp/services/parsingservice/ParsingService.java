@@ -1,5 +1,6 @@
 package com.personalQuizApp.quizApp.services.parsingservice;
 
+import com.personalQuizApp.quizApp.dataObjects.LoadQuestionParams;
 import com.personalQuizApp.quizApp.dataObjects.McqCSV;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,10 +23,6 @@ public class ParsingService {
         return parsingRepository.getQuestions();
     }
 
-   void processAndInsertMcq(ArrayList<McqCSV> mcqList, String subject) throws IOException {
-         parsingRepository.processAndInsertMcq(mcqList, subject);
-    }
-
     public void updateMcq(McqCSV mcq){
         parsingRepository.updateMcq(mcq);
     }
@@ -43,4 +40,7 @@ public class ParsingService {
         return parsingRepository.getQuestionsWithParam( numQuestions, flag,subject,accuracy,month);
     }
 
+    public void processAndInsertMcq(LoadQuestionParams loadQuestionParams) throws IOException {
+        parsingRepository.processAndInsertMcq(loadQuestionParams);
+    }
 }

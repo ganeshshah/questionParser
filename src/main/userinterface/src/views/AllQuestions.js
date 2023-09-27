@@ -9,11 +9,35 @@ function AllQuestions({testIdObject}) {
   const apiPath = 'http://localhost:8080/getQuestionsWithParam?'+'numQuestions='+ location.state.numQuestions +'&flag='
   +location.state.flag +'&subject='+location.state.subject+'&accuracy='+location.state.accuracy+'&month='+ location.state.month;
 // first data grab
-  useEffect(() => {
-    fetch(apiPath) // your url may look different
-      .then(resp => resp.json())
-      .then(data => setQuestions(data)) // set data to state
-  }, []);
+
+async function fetchData(apiPath) {
+  try {
+    const response = await fetch(apiPath);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw error;
+  }
+}
+
+useEffect(() => {
+  async function fetchQuestions() {
+    try {
+      const data = await fetchData(apiPath);
+      setQuestions(data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  }
+
+  fetchQuestions();
+}, []);
+
+
+console.log(testIdObject);
 
 return (
     <div style={{ marginTop: 70}}>

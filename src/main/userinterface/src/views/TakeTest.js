@@ -28,6 +28,8 @@ function TakeTest() {
       fetchData();
     }, []);
 
+    console.log(testIdObject);
+
 return (
     <div>
       <FixedTestHeader testIdObject={testIdObject}/>

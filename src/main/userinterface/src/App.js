@@ -15,6 +15,7 @@ import QuestionsWithParams from './views/QuestionWithParams';
 import TakeTest from './views/TakeTest';
 import EndTest from './views/endTestViews/EndTest';
 import ReviewQuestions from './views/endTestViews/ReviewQuestions';
+import QuestionLoader from './views/loadQuestions/QuestionLoader';
 
 
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/createTest" element={<TakeTest />} />
           <Route path="/endTestPage" element={<EndTest />} />
           <Route path="/reviewQuestions" element={<ReviewQuestions />} />
+          <Route path="/loadQuestions" element={<QuestionLoader />} />
         </Routes>
       </div>
     </Router>

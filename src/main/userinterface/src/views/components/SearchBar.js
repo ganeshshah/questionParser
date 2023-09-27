@@ -81,7 +81,7 @@ function SearchBar() {
             <option value="PIB24X7">PIB24X7</option>
             <option value="RBI24X7">RBI24X7</option>
             <option value="SPOTLIGHT">Spotlight GA</option>
-            <option value="CLOUD_AFFAIRS">Cloud Affairs GA</option>
+            <option value="CA">Cloud Affairs GA</option>
           </select>
         </div>
 

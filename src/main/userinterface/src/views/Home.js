@@ -1,9 +1,17 @@
 import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
-import Finance from './Finance';
+import QuestionLoader from './loadQuestions/QuestionLoader';
+import {useNavigate} from 'react-router-dom';
+
 
 function Home() {
+
+  const navigate = useNavigate();
+  const navigateLoadQuestions = () => {
+    navigate('/loadQuestions');
+  };
+
   return (
     <div className="Home">
       <h1>MCQ Practice</h1>
@@ -41,7 +49,7 @@ function Home() {
         <div>
         <button className='buttons'>Add Question Manually</button>
         <button className='buttons'> Load Question from excel</button>
-        <button className='buttons'>Load Question from text file</button>
+        <button className='buttons' onClick={navigateLoadQuestions}>Load Question from text file</button>
         </div>
       </div>
     </div>
