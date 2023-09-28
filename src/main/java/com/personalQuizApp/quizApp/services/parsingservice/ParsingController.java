@@ -63,14 +63,15 @@ public class ParsingController {
         parsingService.updateMcq(ProcessInput.processSubmission(mcq));
     }
 
+    // This can be used to call for all questions too
     @GetMapping("getIncorrectQuestions")
     public List<McqCSV> getIncorrectQuestions( @RequestParam ArrayList<Integer> ids){
-        return (List<McqCSV>) parsingService.getIncorrectQuestions(ids);
+        return parsingService.getIncorrectQuestions(ids);
     }
 
     @GetMapping("getRevisionData")
-    public HashMap<String, HashMap<String, ArrayList<Integer>>>  getRevisionData( ){
-        List<McqCSV> allQuestions = parsingService.getQuestions();
+    public HashMap<String, HashMap<String, ArrayList<Integer>>>  getRevisionData(@RequestParam String byMonthOrAll){
+        List<McqCSV> allQuestions = parsingService.getQuestionsByMonthOrAll(byMonthOrAll);
         return RevisionStrategy.processAllQuestions(allQuestions);
     }
 

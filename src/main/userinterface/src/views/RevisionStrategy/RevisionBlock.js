@@ -6,7 +6,7 @@ const data = {
         '15Days': [1, 2, 3],
         'notAttempted': [7, 9],
         'lessThan80Accuracy': [12, 15],
-        '25Days': [30, 21, 23],
+        '25Days': [30, 21, 23,25,56,67],
         '7Days': [89],
     },
 };

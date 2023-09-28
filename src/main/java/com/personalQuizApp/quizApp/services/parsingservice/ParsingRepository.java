@@ -25,6 +25,15 @@ public class ParsingRepository {
         return (List<McqCSV>) parsingRepo.findAll();
     }
 
+    List<McqCSV> getQuestionsByMonthOrAll(String byMonthOrAll){
+        if(byMonthOrAll.equals("ALL")){
+            return (List<McqCSV>) parsingRepo.findAll();
+        }
+        else{
+            return parsingRepo.getQuestionsByMonth(byMonthOrAll);
+        }
+    }
+
     public List<McqCSV> getIncorrectQuestions(ArrayList<Integer> ids){
         return (List<McqCSV>) parsingRepo.findAllById(ids);
     }

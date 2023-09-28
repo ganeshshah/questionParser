@@ -27,6 +27,9 @@ public interface ParsingRepo extends CrudRepository<McqCSV, Integer> {
             @Param("monthOfQuestion") String month
     );
 
+    @Query("SELECT m FROM McqCSV m WHERE m.month = :monthOfQuestion ORDER BY m.id")
+    List<McqCSV> getQuestionsByMonth(
+            @Param("monthOfQuestion") String month);
 
     }
 
