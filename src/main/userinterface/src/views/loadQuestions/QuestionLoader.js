@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './QuestionLoader.css';
 import axios from 'axios';
+import { loadQuestions } from '../../services'
 
 function QuestionLoader() {
 
@@ -9,7 +10,7 @@ function QuestionLoader() {
   const [selectedParser, setSelectedParser] = useState('PIB24X7');
   const [selectedSubject, setSelectedSubject] = useState('PIB24X7');
   const [selectedMonth, setSelectedMonth] = useState('AUG');
-  const apiPath = "http://localhost:8080/proccessFile";
+  // const apiPath = "http://localhost:8080/proccessFile";
 
   const months = [
     { value: 'JAN', label: 'January' },
@@ -32,7 +33,7 @@ function QuestionLoader() {
 
   };
 
-  const handleLoadQuestions = () => {
+  const handleLoadQuestions = async () => {
     const dataToSend = {
       questionPath: questionPath,
       answerPath: answerPath,
@@ -42,18 +43,25 @@ function QuestionLoader() {
     };
     console.log(dataToSend);
 
-    //TODO: call api function created in services file in root directory instead of directly calling api here
-
     // Send a POST request
-    axios.post(apiPath, dataToSend)
-      .then((response) => {
-        console.log('POST request successful:', response.data);
-        // Handle the response as needed
-      })
-      .catch((error) => {
-        console.error('Error making POST request:', error);
-        // Handle errors
-      });
+    // axios.post(apiPath, dataToSend)
+    //   .then((response) => {
+    //     console.log('POST request successful:', response.data);
+    //     // Handle the response as needed
+    //   })
+    //   .catch((error) => {
+    //     console.error('Error making POST request:', error);
+    //     // Handle errors
+    //   });
+
+
+
+    try {
+      const resData = await loadQuestions(dataToSend);
+      console.log(resData)
+    } catch (error) {
+      console.error("Error post data:", error);
+    }
   };
 
 

@@ -1,69 +1,78 @@
 import React, { useState } from 'react';
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import './QuestionBlock.css';
 import HintModal from './HintModal';
 import axios from 'axios';
 import EditModal from './EditModal';
+import { submitQuestion } from '../services'
 
 function QuestionBlock(props) {
   const [inputValue, setInputValue] = useState('');
   const [resultMessage, setResultMessage] = useState('');
-  const [isModalOpen, setIsModalOpen] = useState(false); 
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const id = props.question.id;
   const question = props.question.question;
   const answerKey = props.question.answerKey;
   const hint = props.question.hint;
   const subject = props.question.subject;
-  const [isEditModalOpen, setIsEditModalOpen] = useState(false); 
+  const [isEditModalOpen, setIsEditModalOpen] = useState(false);
 
   const navigate = useNavigate();
   const navigateToEdit = () => {
     // 👇️ navigate to /contacts
-    navigate('/EditForm' , { state: { id, question, answerKey, hint, subject } });
+    navigate('/EditForm', { state: { id, question, answerKey, hint, subject } });
   };
 
-    // Use useEffect to send a POST request when formData changes
+  // Use useEffect to send a POST request when formData changes
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
   };
- 
-  const dataToSend = {
-    testId : props.testIdObject ? props.testIdObject.testId : 0,
-    month : props.question.month,
-    questionId : id,
-    result : 0,
-    testDate : props.testIdObject ? props.testIdObject.date : null,
-    subject : subject
-   };
 
-  const handleSubmit = (event) => {
+  const dataToSend = {
+    testId: props.testIdObject ? props.testIdObject.testId : 0,
+    month: props.question.month,
+    questionId: id,
+    result: 0,
+    testDate: props.testIdObject ? props.testIdObject.date : null,
+    subject: subject
+  };
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     if (inputValue === answerKey) {
-      if(props.testIdObject != null){
+      if (props.testIdObject != null) {
         dataToSend.result = 1;
       }
       setResultMessage('Success: Your answer is correct');
     } else {
       setResultMessage('Incorrect: Try again.');
     }
-   
-if(props.testIdObject != null){
-     // Send a POST request
- axios.post('http://localhost:8080/testData/submitQuestion', dataToSend)
- .then((response) => {
-   console.log('POST request successful:', response.data);
-   // Handle the response as needed
- })
- .catch((error) => {
-   console.error('Error making POST request:', error);
-   // Handle errors
- });
- }
 
-};
+    if (props.testIdObject != null) {
+
+      try {
+        const resData = await submitQuestion(dataToSend);
+        console.log(resData)
+      } catch (error) {
+        console.error("Error post data:", error);
+      }
+
+      // Send a POST request
+      // axios.post('http://localhost:8080/testData/submitQuestion', dataToSend)
+      //   .then((response) => {
+      //     console.log('POST request successful:', response.data);
+      //     // Handle the response as needed
+      //   })
+      //   .catch((error) => {
+      //     console.error('Error making POST request:', error);
+      //     // Handle errors
+      //   });
+    }
+
+  };
 
   const knowledgeNuggets = () => {
     setIsModalOpen(true); // Open the modal
@@ -90,7 +99,7 @@ if(props.testIdObject != null){
             <th>Subject</th>
             <th>Question</th>
           </tr>
-           <tr key={id}>
+          <tr key={id}>
             <td>{id}</td>
             <td>{subject}</td>
             <td>{question}</td>
@@ -110,18 +119,18 @@ if(props.testIdObject != null){
           </button>
         </form>
         <button className='button' onClick={openEditModal}>Edit Question</button>
-        <button className='button' style={{backgroundColor:'orange'}} onClick={knowledgeNuggets}>Knowledge nuggets</button>
+        <button className='button' style={{ backgroundColor: 'orange' }} onClick={knowledgeNuggets}>Knowledge nuggets</button>
         {isModalOpen && <HintModal hint={hint} onClose={closeHintModal} />} {/* Render the modal when open */}
-        <button className='button' style={{backgroundColor:'red'}}>Delete Question</button>
+        <button className='button' style={{ backgroundColor: 'red' }}>Delete Question</button>
         <div className={`result ${resultMessage.includes('Success') ? 'success' : 'error'}`}>
           <p>{resultMessage}</p>
         </div>
         {isEditModalOpen && (
-        <EditModal
-          props={props.question}
-          onClose={closeEditModal}
-        />
-      )}
+          <EditModal
+            props={props.question}
+            onClose={closeEditModal}
+          />
+        )}
       </div>
     </div>
   );

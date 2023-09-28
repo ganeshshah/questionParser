@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { fetchQuestions } from '../services'
 
 function AllQuestions({ testIdObject }) {
-  // set state
+
   const location = useLocation();
   const [questions, setQuestions] = useState([]);
 

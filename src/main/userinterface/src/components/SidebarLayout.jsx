@@ -61,6 +61,10 @@ function SidebarLayout() {
             id: "loadQuestions",
             title: "Load Question from text file",
         },
+        {
+            id: 'ReviseDashBoard',
+            title: 'Revise DashBoard'
+        }
     ];
 
 
