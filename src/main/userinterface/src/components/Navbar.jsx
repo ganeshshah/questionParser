@@ -37,6 +37,7 @@ const navLinks = [
     // }
 ];
 
+//! not in use
 const Navbar = () => {
     const [active, setActive] = useState("Home");
     const [toggle, setToggle] = useState(false);

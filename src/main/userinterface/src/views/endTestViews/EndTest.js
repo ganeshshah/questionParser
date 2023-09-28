@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import './EndTest.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-
+import { fetchtestResult } from '../../services'
 
 function EndTest() {
 
@@ -16,24 +16,40 @@ function EndTest() {
   const subject = location.state.subject;
 
 
-  const apiPath = 'http://localhost:8080/testData/getTestResultData?testId=' + testId;
   const [testResultData, SetTestResultData] = useState([]);
 
+  // const apiPath = 'http://localhost:8080/testData/getTestResultData?testId=' + testId;
 
   // Make the API request using Axios
-  useEffect(() => {
-    //TODO: call api function created in services file in root directory instead of directly calling api here
+  // useEffect(() => {
 
-    axios.get(apiPath) // your API endpoint URL
-      .then(response => {
-        // Assuming the response data is JSON
-        SetTestResultData(response.data);
-      })
-      .catch(error => {
-        // Handle errors here
-        console.error('Error fetching data:', error);
-      });
+  //   axios.get(apiPath) // your API endpoint URL
+  //     .then(response => {
+  //       // Assuming the response data is JSON
+  //       SetTestResultData(response.data);
+  //     })
+  //     .catch(error => {
+  //       // Handle errors here
+  //       console.error('Error fetching data:', error);
+  //     });
+  // }, []);
+
+
+
+  useEffect(() => {
+    //this is a self invoked function to fetch all questions
+    (async function () {
+      try {
+        const resData = await fetchtestResult(testId);
+        console.log(resData)
+        SetTestResultData(resData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    })()
   }, []);
+
+
 
   console.log(testResultData);
   const qlist = testResultData.incorrectQuestionsList;

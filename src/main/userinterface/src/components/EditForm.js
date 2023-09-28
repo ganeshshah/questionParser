@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './EditForm.css'; // Import the CSS file
 import { useLocation } from 'react-router-dom';
+import { editForm } from '../services'
 
-function EditForm({props}) {
- 
+function EditForm({ props }) {
+
   const [formData, setFormData] = useState(props);
-  const [isSuccess, SetIsSuccess ] = useState(false);
+  const [isSuccess, SetIsSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,21 +18,31 @@ function EditForm({props}) {
 
   const handleSave = async () => {
     try {
-      const response = await fetch('http://localhost:8080/editMcq', {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData), // Send the updated form data
-      });
 
-      if (response.ok) {
-        // Handle a successful response here
+      // const response = await fetch('http://localhost:8080/editMcq', {
+      //   method: 'PUT',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify(formData), // Send the updated form data
+      // });
+
+      // if (response.ok) {
+      //   // Handle a successful response here
+      //   SetIsSuccess(true);
+      // console.log('PUT request successful');
+      // } else {
+      //   // Handle errors if the request is not successful
+      //   console.error('PUT request failed');
+      // }
+
+
+
+      const resData = await editForm(formData)
+      console.log(resData)
+      //TODO:  this logic might be invalid, must be checked
+      if (resData) {
         SetIsSuccess(true);
-        console.log('PUT request successful');
-      } else {
-        // Handle errors if the request is not successful
-        console.error('PUT request failed');
       }
     } catch (error) {
       // Handle network errors or other exceptions

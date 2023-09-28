@@ -22,6 +22,7 @@ function RevisionBlock() {
     const predefinedColors = ['#337825', '#5f7825', '#d12e31', '#79a80c', '#eb5334'];
 
     const barChartData = [['Key', 'Number of Data', { role: 'style' }]];
+
     Object.keys(dataCounts).forEach((key, index) => {
         const roundedValue = Math.round(dataCounts[key]);
         const color = predefinedColors[index % predefinedColors.length]; // Function to generate a random color

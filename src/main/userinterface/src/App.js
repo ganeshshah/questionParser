@@ -18,11 +18,12 @@ import QuestionLoader from './views/loadQuestions/QuestionLoader';
 import Layout from './components/Layout';
 import EditForm from './components/EditForm'
 import RevisionBlock from './views/RevisionStrategy/RevisionBlock';
+import SidebarLayout from './components/SidebarLayout'
 
 function App() {
   return (
     <Routes>
-      <Route element={<Layout />}>
+      <Route element={<SidebarLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/PIB24x7" element={<PIB24X7 />} />
         <Route path="/Questions" element={<AllQuestions />} />
