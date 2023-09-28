@@ -17,6 +17,7 @@ import ReviewQuestions from './views/endTestViews/ReviewQuestions';
 import QuestionLoader from './views/loadQuestions/QuestionLoader';
 import Layout from './components/Layout';
 import EditForm from './components/EditForm'
+import RevisionBlock from './views/RevisionStrategy/RevisionBlock';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/endTestPage" element={<EndTest />} />
         <Route path="/reviewQuestions" element={<ReviewQuestions />} />
         <Route path="/loadQuestions" element={<QuestionLoader />} />
+        <Route path="/ReviseDashBoard" element={<RevisionBlock />} />
       </Route>
     </Routes>
   );
