@@ -3,12 +3,14 @@ package com.personalQuizApp.quizApp.services.parsingservice;
 import com.personalQuizApp.quizApp.dataObjects.LoadQuestionParams;
 import com.personalQuizApp.quizApp.dataObjects.McqCSV;
 import com.personalQuizApp.quizApp.processors.ProcessInput;
+import com.personalQuizApp.quizApp.revisionStrategy.RevisionStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 @RestController
@@ -64,6 +66,12 @@ public class ParsingController {
     @GetMapping("getIncorrectQuestions")
     public List<McqCSV> getIncorrectQuestions( @RequestParam ArrayList<Integer> ids){
         return (List<McqCSV>) parsingService.getIncorrectQuestions(ids);
+    }
+
+    @GetMapping("getRevisionData")
+    public HashMap<String, HashMap<String, ArrayList<Integer>>>  getRevisionData( ){
+        List<McqCSV> allQuestions = parsingService.getQuestions();
+        return RevisionStrategy.processAllQuestions(allQuestions);
     }
 
 }
