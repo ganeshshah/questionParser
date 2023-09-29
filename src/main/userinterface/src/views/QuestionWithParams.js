@@ -8,17 +8,6 @@ function QuestionsWithParams() {
   const location = useLocation();
   const [questions, setQuestions] = useState([]);
 
-  // const apiPath = 'http://localhost:8080/getQuestionsWithParam?' + 'numQuestions=' + location.state.numQuestions + '&flag='
-  //   + location.state.flag + '&subject=' + location.state.subject + '&accuracy=' + location.state.accuracy + '&month=' + location.state.month;
-
-  // first data grab
-  // useEffect(() => {
-  //   fetch(apiPath) // your url may look different
-  //     .then(resp => resp.json())
-  //     .then(data => setQuestions(data)) // set data to state
-  // }, []);
-
-
   useEffect(() => {
     //this is a self invoked function to fetch all questions
     (async function () {

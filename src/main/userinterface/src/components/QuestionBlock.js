@@ -59,18 +59,9 @@ function QuestionBlock(props) {
       } catch (error) {
         console.error("Error post data:", error);
       }
-
-      // Send a POST request
-      // axios.post('http://localhost:8080/testData/submitQuestion', dataToSend)
-      //   .then((response) => {
-      //     console.log('POST request successful:', response.data);
-      //     // Handle the response as needed
-      //   })
-      //   .catch((error) => {
-      //     console.error('Error making POST request:', error);
-      //     // Handle errors
-      //   });
     }
+
+    
 
   };
 

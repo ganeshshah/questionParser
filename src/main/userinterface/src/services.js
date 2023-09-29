@@ -7,7 +7,7 @@ export const fetchQuestions = async (numQuestions, flag, subject, accuracy, mont
 
     const response = await fetch(url);
 
-    if (!response.ok) {
+    if (response.status !== 200) {
         throw new Error(`HTTP error! Status: ${response.status}`);
     }
     return await response.json();
@@ -18,7 +18,7 @@ export const fetchTestId = async (subject, month) => {
 
     const response = await fetch(url);
 
-    if (!response.ok) {
+    if (response.status !== 200) {
         throw new Error(`HTTP error! Status: ${response.status}`);
     }
     return await response.json();
@@ -28,12 +28,12 @@ export const loadQuestions = async (body) => {
     const url = API_LOAD_QUESTIONS
 
     const response = await axios.post(url, body);
-    if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-    } else {
+    if (response.status == 200) {
         console.log('POST request successful!!!')
+    } else {
+        throw new Error(`HTTP error! Status: ${response.status}`);
     }
-    return await response.json();
+    return response;
 }
 
 
@@ -42,10 +42,10 @@ export const fetchtestResult = async (testId) => {
 
     const response = await fetch(url);
 
-    if (!response.ok) {
+    if (response.status !== 200) {
         throw new Error(`HTTP error! Status: ${response.status}`);
     }
-    return await response.json();
+    return response;
 }
 
 export const editForm = async (formData) => {
@@ -57,10 +57,10 @@ export const editForm = async (formData) => {
         body: JSON.stringify(formData),
     });
 
-    if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
+    if (response.status == 200) {
+        console.log('PUT request successfull!!!');
     } else {
-        console.error('PUT request successfull!!!');
+        throw new Error(`HTTP error! Status: ${response.status}`);
     }
 }
 
@@ -68,10 +68,10 @@ export const submitQuestion = async (body) => {
     const url = API_SUBMIT_QUESTION
 
     const response = await axios.post(url, body);
-    if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-    } else {
+    if (response.status == 200) {
         console.log('POST request successful!!!')
+    } else {
+        throw new Error(`HTTP error! Status: ${response.status}`);
     }
-    return await response.json();
+    return response;
 }

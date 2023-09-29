@@ -18,24 +18,6 @@ function EndTest() {
 
   const [testResultData, SetTestResultData] = useState([]);
 
-  // const apiPath = 'http://localhost:8080/testData/getTestResultData?testId=' + testId;
-
-  // Make the API request using Axios
-  // useEffect(() => {
-
-  //   axios.get(apiPath) // your API endpoint URL
-  //     .then(response => {
-  //       // Assuming the response data is JSON
-  //       SetTestResultData(response.data);
-  //     })
-  //     .catch(error => {
-  //       // Handle errors here
-  //       console.error('Error fetching data:', error);
-  //     });
-  // }, []);
-
-
-
   useEffect(() => {
     //this is a self invoked function to fetch all questions
     (async function () {

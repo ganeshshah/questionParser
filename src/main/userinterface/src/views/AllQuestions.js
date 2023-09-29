@@ -8,45 +8,14 @@ function AllQuestions({ testIdObject }) {
   const location = useLocation();
   const [questions, setQuestions] = useState([]);
 
-  // const apiPath = 'http://localhost:8080/getQuestionsWithParam?' + 'numQuestions=' + location.state.numQuestions + '&flag='
-  //   + location.state.flag + '&subject=' + location.state.subject + '&accuracy=' + location.state.accuracy + '&month=' + location.state.month;
-
-  // async function fetchData(apiPath) {
-
-  //   try {
-  //     const response = await fetch(apiPath);
-  //     if (!response.ok) {
-  //       throw new Error(`HTTP error! Status: ${response.status}`);
-  //     }
-  //     const data = await response.json();
-  //     return data;
-  //   } catch (error) {
-  //     throw error;
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   async function fetchQuestions() {
-  //     try {
-  //       const data = await fetchData(apiPath);
-  //       setQuestions(data);
-  //     } catch (error) {
-  //       console.error('Error fetching data:', error);
-  //     }
-  //   }
-
-  //   fetchQuestions();
-  // }, []);
-
-
-
   useEffect(() => {
     //this is a self invoked function to fetch all questions
-    (async function () {
+    (function () {
       try {
-        const resData = await fetchQuestions(location.state.numQuestions, location.state.flag, location.state.subject, location.state.accuracy, location.state.month);
+        const resData = fetchQuestions(location.state.numQuestions, location.state.flag, location.state.subject, location.state.accuracy, location.state.month);
         console.log(resData)
-        setQuestions(resData);
+        setQuestions(resData)
+        
       } catch (error) {
         console.error("Error fetching data:", error);
       }

@@ -19,25 +19,6 @@ function EditForm({ props }) {
   const handleSave = async () => {
     try {
 
-      // const response = await fetch('http://localhost:8080/editMcq', {
-      //   method: 'PUT',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify(formData), // Send the updated form data
-      // });
-
-      // if (response.ok) {
-      //   // Handle a successful response here
-      //   SetIsSuccess(true);
-      // console.log('PUT request successful');
-      // } else {
-      //   // Handle errors if the request is not successful
-      //   console.error('PUT request failed');
-      // }
-
-
-
       const resData = await editForm(formData)
       console.log(resData)
       //TODO:  this logic might be invalid, must be checked
@@ -60,6 +41,7 @@ function EditForm({ props }) {
             type="text"
             name="id"
             value={formData.id}
+            readOnly={true}
           />
         </div>
         <div>
@@ -68,6 +50,7 @@ function EditForm({ props }) {
             type="text"
             name="subject"
             value={formData.subject}
+            readOnly={true}
           />
         </div>
         <div>

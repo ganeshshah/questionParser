@@ -3,7 +3,6 @@ import RenderQuestions from "../../components/RenderQuestions";
 import { useLocation } from 'react-router-dom';
 
 function ReviewQuestions() {
-  // set state
   const location = useLocation();
   const [questions, setQuestions] = useState([]);
   const questionList = location.state.qlist;

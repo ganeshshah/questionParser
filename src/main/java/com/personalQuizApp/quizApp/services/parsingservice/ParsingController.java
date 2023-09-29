@@ -42,8 +42,9 @@ public class ParsingController {
     }
 
     @PostMapping("proccessFile")
-    void processAndInsertMcq(@RequestBody LoadQuestionParams loadQuestionParams) throws IOException {
+    Integer processAndInsertMcq(@RequestBody LoadQuestionParams loadQuestionParams) throws IOException {
         parsingService.processAndInsertMcq(loadQuestionParams);
+        return 200;
     }
 
     @PutMapping("editMcq")
