@@ -9,14 +9,13 @@ import java.util.List;
 
 public interface ParsingRepo extends CrudRepository<McqCSV, Integer> {
 
-
     @Query("SELECT m FROM McqCSV m WHERE m.subject = :subjectParam AND m.month = :monthOfQuestion ORDER BY m.id")
-    List<McqCSV> getQuestions1(
+    List<McqCSV> getQuestionsBySubjectAndMonth(
             @Param("subjectParam") String subject,
             @Param("monthOfQuestion") String month);
 
     @Query("SELECT m FROM McqCSV m WHERE m.subject = :subjectParam AND m.accurracy <= :accuracyParam AND m.month = :monthOfQuestion ORDER BY m.id")
-    List<McqCSV> getQuestions2(
+    List<McqCSV> getQuestionsBySubjectMonthAndAccuracy(
             @Param("subjectParam") String subject,
             @Param("accuracyParam") double accuracy,
             @Param("monthOfQuestion") String month);
@@ -27,7 +26,14 @@ public interface ParsingRepo extends CrudRepository<McqCSV, Integer> {
             @Param("monthOfQuestion") String month
     );
 
+    @Query("SELECT m FROM McqCSV m WHERE m.month = :monthOfQuestion ORDER BY m.id")
+    List<McqCSV> getQuestionsByMonth(
+            @Param("monthOfQuestion") String month);
 
-    }
+    @Query("SELECT m FROM McqCSV m WHERE m.subject = :subject ORDER BY m.id")
+    List<McqCSV> getAllQuestionsBySubject(@Param("subject") String subject);
+}
+
+
 
 

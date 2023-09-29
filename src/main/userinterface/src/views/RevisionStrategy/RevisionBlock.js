@@ -1,21 +1,15 @@
 import React from 'react';
 import { Chart } from 'react-google-charts';
-
-const data = {
-    RBI24X7: {
-        '15Days': [1, 2, 3],
-        'notAttempted': [7, 9],
-        'lessThan80Accuracy': [12, 15],
-        '25Days': [30, 21, 23],
-        '7Days': [89],
-    },
-};
-
+import { useLocation } from 'react-router-dom';
+import RevisionQuestionBar from './RevisionQuestionBar';
 
 function RevisionBlock() {
+    const location = useLocation();
+    const {data} = location.state; // Replace PIB24X7 with the subject you want to display
+    console.log(data);
     // Calculate the number of data points for each key
-    const dataCounts = Object.keys(data.RBI24X7).reduce((counts, key) => {
-        counts[key] = data.RBI24X7[key].length;
+    const dataCounts = Object.keys(data).reduce((counts, key) => {
+        counts[key] = data[key].length;
         return counts;
     }, {});
 
@@ -49,7 +43,6 @@ function RevisionBlock() {
                     }}
                 />
             </div>
-
             <div className="chart-container">
                 <Chart
                     chartType="PieChart"
@@ -62,6 +55,7 @@ function RevisionBlock() {
                         legend: { position: 'right' },
                     }}
                 />
+                <RevisionQuestionBar data = {data}/>
             </div>
         </div>
     );

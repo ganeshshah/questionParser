@@ -25,6 +25,19 @@ public class ParsingRepository {
         return (List<McqCSV>) parsingRepo.findAll();
     }
 
+    List<McqCSV> getQuestionsByMonthOrAll(String byMonthOrAll, String subject){
+        if(byMonthOrAll.equals("ALL") && subject.equals("ALL")){
+            return (List<McqCSV>) parsingRepo.findAll();
+        }
+        else if(!byMonthOrAll.equals("ALL") && !subject.equals("ALL")){
+            return parsingRepo.getQuestionsBySubjectAndMonth(subject,byMonthOrAll);
+        }else if(byMonthOrAll.equals("ALL") && !subject.equals("ALL")){
+            return parsingRepo.getAllQuestionsBySubject(subject);
+        }else{
+            return parsingRepo.getQuestionsByMonth(byMonthOrAll);
+        }
+    }
+
     public List<McqCSV> getIncorrectQuestions(ArrayList<Integer> ids){
         return (List<McqCSV>) parsingRepo.findAllById(ids);
     }
@@ -58,7 +71,7 @@ public class ParsingRepository {
     public List<McqCSV> getQuestionsWithParam(int numQuestions, String allFlag, String subject, int accuracy, String month) {
         if(numQuestions>0 && allFlag.equals("no")){
             if(accuracy == 0){
-                List<McqCSV> results =  parsingRepo.getQuestions1(subject, month);
+                List<McqCSV> results =  parsingRepo.getQuestionsBySubjectAndMonth(subject, month);
                 if (results.size() > numQuestions) {
                     return results.subList(0, numQuestions);
                 }
@@ -73,10 +86,10 @@ public class ParsingRepository {
             }
         }else{
             if(accuracy == 0){
-                return parsingRepo.getQuestions1(subject, month);
+                return parsingRepo.getQuestionsBySubjectAndMonth(subject, month);
             }
             else{
-                return parsingRepo.getQuestions2(subject,accuracy, month);
+                return parsingRepo.getQuestionsBySubjectMonthAndAccuracy(subject,accuracy, month);
             }
         }
     }
