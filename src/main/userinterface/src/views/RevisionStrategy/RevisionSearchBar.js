@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { fetchRevisionData } from '../../services';
 import { useNavigate } from 'react-router-dom';
 
@@ -22,33 +22,33 @@ function RevisionSearchBar() {
         { value: 'DEC', label: 'December' },
     ];
 
-    
+
     const navigate = useNavigate();
-    
+
     const handleSearch = async () => {
-        const data  = await fetchRevisionData(selectedMonth, selectedSubject);
+        const data = await fetchRevisionData(selectedMonth, selectedSubject);
 
         console.log(data);
-        if(selectedSubject !== 'ALL'){
-            if(selectedSubject == 'PIB24X7'){
-                navigate('/ReviseDashBoard',{state : {data : data.PIB24X7}})
+        if (selectedSubject !== 'ALL') {
+            if (selectedSubject == 'PIB24X7') {
+                navigate('/ReviseDashBoard', { state: { data: data.PIB24X7 } })
             }
-            else if(selectedSubject == 'RBI24X7'){
-                navigate('/ReviseDashBoard',{state : {data : data.RBI24X7}})
+            else if (selectedSubject == 'RBI24X7') {
+                navigate('/ReviseDashBoard', { state: { data: data.RBI24X7 } })
             }
-            else if(selectedSubject == 'SPOTLIGHT'){
-                navigate('/ReviseDashBoard',{state : {data : data.SPOTLIGHT}})
+            else if (selectedSubject == 'SPOTLIGHT') {
+                navigate('/ReviseDashBoard', { state: { data: data.SPOTLIGHT } })
             }
-            else if(selectedSubject == 'CA'){
-                navigate('/ReviseDashBoard',{state : {data : data.CA}})
-            }else{
+            else if (selectedSubject == 'CA') {
+                navigate('/ReviseDashBoard', { state: { data: data.CA } })
+            } else {
                 console.log("Page not defined yet");
             }
-        } 
+        }
     };
 
     return (
-        <div className="border border-green-200 rounded-lg p-4 w-full flex items-center">
+        <div className="border border-green-200 rounded-lg p-2 w-full flex items-center gap-2">
             <div className="relative flex-grow">
                 <select
                     className="block appearance-none w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"

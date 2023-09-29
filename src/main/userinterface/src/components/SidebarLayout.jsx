@@ -19,12 +19,9 @@ function SidebarLayout() {
         },
         {
             id: "SpotlightGA",
-            title: "Gen. Awareness",
+            title: "SpotLight GA",
         },
-        {
-            id: "Questions",
-            title: "Questions",
-        },
+
         {
             id: "Finance",
             title: "Finance",
@@ -39,22 +36,23 @@ function SidebarLayout() {
         },
         {
             id: "CloudAffairsGA",
-            title: "CloudAffairsGA",
+            title: "Cloud Affairs GA",
         },
         {
-            id: "CloudAffairsGA",
+            id: "all_questions",
+            title: "All Questions",
+        },
+        {
+            id: "#",
             title: "Create Mixed Test",
         },
+
         {
-            id: "CloudAffairsGA",
-            title: "Analytics dashboard",
-        },
-        {
-            id: "CloudAffairsGA",
+            id: "#",
             title: "Add Question Manually",
         },
         {
-            id: "CloudAffairsGA",
+            id: "#",
             title: "Load Question from excel",
         },
         {
@@ -64,7 +62,11 @@ function SidebarLayout() {
         {
             id: 'Revise',
             title: 'Revise Search Bar'
-        }
+        },
+        {
+            id: "#",
+            title: "Analytics dashboard",
+        },
     ];
 
 
@@ -93,7 +95,7 @@ function SidebarLayout() {
                 </label>
             </header>
 
-            <aside id="sidebar" className="z-50 bg-gray-800 text-gray-100 md:w-64 w-3/4 space-y-6 pt-6 px-0 absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out  md:flex md:flex-col md:justify-between overflow-y-auto" data-dev-hint="sidebar; px-0 for frameless; px-2 for visually inset the navigation">
+            <aside id="sidebar" className=" flex-shrink-0 min-w-[16rem] z-50 bg-gray-800 text-gray-100 md:w-64 w-3/4 space-y-6 pt-6 px-0 absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out  md:flex md:flex-col md:justify-between overflow-y-auto" data-dev-hint="sidebar; px-0 for frameless; px-2 for visually inset the navigation">
                 <div className="flex flex-col space-y-6" data-dev-hint="optional div for having an extra footer navigation">
                     <a href="#" className="text-white flex items-center space-x-2 px-4" title="Your App is cool">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">

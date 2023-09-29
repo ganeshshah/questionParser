@@ -59,14 +59,14 @@ function RevisionQuestionBar({ data }) {
   return (
     <div className="RevisionQuestionBar">
       <div className="search-container">
-        <select value={selectedOption} onChange={handleDropdownChange}>
+        <select className="select" value={selectedOption} onChange={handleDropdownChange}>
           <option value="notAttempted">Not Attempted questions</option>
           <option value="moreThan7Days">7 day overdue</option>
           <option value="moreThan15Days">15 day overdue</option>
           <option value="moreThan25Days">25 day overdue</option>
           <option value="lessThan80Accuracy">Question with less than 80% accuracy</option>
         </select>
-        <button onClick={handleFetchQuestion}>Search</button>
+        <button className ="search_button" onClick={handleFetchQuestion}>Search</button>
       </div>
     </div>
   );

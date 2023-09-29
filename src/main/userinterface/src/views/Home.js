@@ -1,7 +1,6 @@
 import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
-import QuestionLoader from './loadQuestions/QuestionLoader';
 import { useNavigate } from 'react-router-dom';
 import QuestionCard from '../components/QuestionCard';
 

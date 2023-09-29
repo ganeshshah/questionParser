@@ -1,45 +1,33 @@
-/* RevisionQuestionBar.css */
+/* RevisionQuestionBar.css
 
 .RevisionQuestionBar {
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  .search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  input[type="text"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
-    width: 300px;
-  }
-  
-  select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 8px 100px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search_button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 100px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search_button:hover {
+  background-color: #0056b3;
+} */

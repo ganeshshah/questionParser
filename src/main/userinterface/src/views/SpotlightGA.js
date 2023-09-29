@@ -2,13 +2,13 @@ import React from 'react';
 import './Home.css';
 import FilterContainer from '../components/FilterContainer';
 
-function Finance() {
+function SpotlightGA() {
   return (
     <div className="Home">
-      <h1>MCQ Practice for Finance</h1>
+      <h1>MCQ Practice for Spotlight GA</h1>
       <FilterContainer />
     </div>
   );
 }
 
-export default Finance;
+export default SpotlightGA;
