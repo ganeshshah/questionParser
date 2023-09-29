@@ -22,13 +22,29 @@ function RevisionSearchBar() {
         { value: 'DEC', label: 'December' },
     ];
 
-    const navigate = useNavigate();
     
+    const navigate = useNavigate();
     
     const handleSearch = async () => {
         const data  = await fetchRevisionData(selectedMonth, selectedSubject);
+
         console.log(data);
-        navigate('/ReviseDashBoard',{state : {data : data, subject : selectedSubject}})
+        if(selectedSubject !== 'ALL'){
+            if(selectedSubject == 'PIB24X7'){
+                navigate('/ReviseDashBoard',{state : {data : data.PIB24X7}})
+            }
+            else if(selectedSubject == 'RBI24X7'){
+                navigate('/ReviseDashBoard',{state : {data : data.RBI24X7}})
+            }
+            else if(selectedSubject == 'SPOTLIGHT'){
+                navigate('/ReviseDashBoard',{state : {data : data.SPOTLIGHT}})
+            }
+            else if(selectedSubject == 'CA'){
+                navigate('/ReviseDashBoard',{state : {data : data.CA}})
+            }else{
+                console.log("Page not defined yet");
+            }
+        } 
     };
 
     return (

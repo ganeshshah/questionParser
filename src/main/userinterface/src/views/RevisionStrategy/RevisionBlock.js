@@ -1,15 +1,15 @@
 import React from 'react';
 import { Chart } from 'react-google-charts';
 import { useLocation } from 'react-router-dom';
+import RevisionQuestionBar from './RevisionQuestionBar';
 
 function RevisionBlock() {
     const location = useLocation();
-    const subjectData = location.state.data.PIB24X7; // Replace PIB24X7 with the subject you want to display
-    console.log(subjectData);
-
+    const {data} = location.state; // Replace PIB24X7 with the subject you want to display
+    console.log(data);
     // Calculate the number of data points for each key
-    const dataCounts = Object.keys(subjectData).reduce((counts, key) => {
-        counts[key] = subjectData[key].length;
+    const dataCounts = Object.keys(data).reduce((counts, key) => {
+        counts[key] = data[key].length;
         return counts;
     }, {});
 
@@ -43,7 +43,6 @@ function RevisionBlock() {
                     }}
                 />
             </div>
-
             <div className="chart-container">
                 <Chart
                     chartType="PieChart"
@@ -56,6 +55,7 @@ function RevisionBlock() {
                         legend: { position: 'right' },
                     }}
                 />
+                <RevisionQuestionBar/>
             </div>
         </div>
     );
