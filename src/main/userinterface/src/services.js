@@ -1,4 +1,4 @@
-import { API_GET_QUESTIONS, API_CREATE_TEST, API_LOAD_QUESTIONS, API_TEST_RESULT, API_EDIT_FORM, API_SUBMIT_QUESTION } from './constants';
+import { API_GET_QUESTIONS, API_CREATE_TEST, API_LOAD_QUESTIONS, API_TEST_RESULT, API_EDIT_FORM, API_SUBMIT_QUESTION, API_GET_REVISION_DATA } from './constants';
 import axios from 'axios';
 
 export const fetchQuestions = async (numQuestions, flag, subject, accuracy, month) => {
@@ -72,6 +72,17 @@ export const submitQuestion = async (body) => {
         throw new Error(`HTTP error! Status: ${response.status}`);
     } else {
         console.log('POST request successful!!!')
+    }
+    return await response.json();
+}
+
+export const fetchRevisionData = async (month, subject) => {
+    const url = API_GET_REVISION_DATA + 'byMonthOrAll=' + month + '&subject=' + subject
+
+    const response = await fetch(url);
+
+    if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
     }
     return await response.json();
 }

@@ -23,8 +23,8 @@ public class ParsingService {
         return parsingRepository.getQuestions();
     }
 
-    List<McqCSV> getQuestionsByMonthOrAll(String byMonthOrAll){
-        return parsingRepository.getQuestionsByMonthOrAll(byMonthOrAll);
+    List<McqCSV> getQuestionsByMonthOrAll(String byMonthOrAll,String subject){
+        return parsingRepository.getQuestionsByMonthOrAll(byMonthOrAll, subject);
     }
 
 

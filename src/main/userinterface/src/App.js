@@ -19,6 +19,8 @@ import Layout from './components/Layout';
 import EditForm from './components/EditForm'
 import RevisionBlock from './views/RevisionStrategy/RevisionBlock';
 import SidebarLayout from './components/SidebarLayout'
+import RevisionSearchBar from './views/RevisionStrategy/RevisionSearchBar';
+import Revise from './views/RevisionStrategy/Revise';
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function App() {
         <Route path="/reviewQuestions" element={<ReviewQuestions />} />
         <Route path="/loadQuestions" element={<QuestionLoader />} />
         <Route path="/ReviseDashBoard" element={<RevisionBlock />} />
+        <Route path="/RevisionSearchBar" element={<RevisionSearchBar />} />
+        <Route path="/Revise" element={<Revise />} />
       </Route>
     </Routes>
   );

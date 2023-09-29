@@ -22,8 +22,9 @@ public class RevisionStrategy {
     public static final String PIB24X7 = "PIB24X7";
     public static final String CA = "CA";
     public static final String SPOTLIGHT = "SPOTLIGHT";
-    public static HashMap<String,HashMap<String, ArrayList<Integer>>>  processAllQuestions(List<McqCSV> allQuestions) {
+    public static HashMap<String,HashMap<String, ArrayList<Integer>>>  processAllQuestions(List<McqCSV> allQuestions, String givenSubject) {
         HashMap<String,HashMap<String, ArrayList<Integer>>>  revisionMap = new HashMap<>();
+        HashMap<String,HashMap<String, ArrayList<Integer>>>  finalResult = new HashMap<>();
         HashMap<String, ArrayList<Integer>> distributionMapRBI24X7 = new HashMap<>();
         distributionMapRBI24X7.put(NOT_ATTEMPTED,new ArrayList<>());
         distributionMapRBI24X7.put(GREATER_THAN_7_DAYS,new ArrayList<>());
@@ -78,6 +79,10 @@ public class RevisionStrategy {
                 // even after 4th attempt less accuracy give one more attempt
                 revisionMap.get(subject).get(LESS_THAN_80_ACCURACY).add(question.getId());
             }
+        }
+        if(!givenSubject.equals("ALL")){
+            finalResult.put(givenSubject,revisionMap.get(givenSubject));
+            return finalResult;
         }
         return revisionMap;
     }

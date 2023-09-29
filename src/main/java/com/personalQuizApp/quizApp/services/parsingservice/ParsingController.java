@@ -70,9 +70,10 @@ public class ParsingController {
     }
 
     @GetMapping("getRevisionData")
-    public HashMap<String, HashMap<String, ArrayList<Integer>>>  getRevisionData(@RequestParam String byMonthOrAll){
-        List<McqCSV> allQuestions = parsingService.getQuestionsByMonthOrAll(byMonthOrAll);
-        return RevisionStrategy.processAllQuestions(allQuestions);
+    public HashMap<String, HashMap<String, ArrayList<Integer>>>  getRevisionData(@RequestParam String byMonthOrAll,
+                                                                                 @RequestParam String subject){
+        List<McqCSV> allQuestions = parsingService.getQuestionsByMonthOrAll(byMonthOrAll,subject);
+        return RevisionStrategy.processAllQuestions(allQuestions, subject);
     }
 
 }

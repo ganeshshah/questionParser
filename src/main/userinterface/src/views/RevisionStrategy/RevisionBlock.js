@@ -1,21 +1,15 @@
 import React from 'react';
 import { Chart } from 'react-google-charts';
-
-const data = {
-    RBI24X7: {
-        '15Days': [1, 2, 3],
-        'notAttempted': [7, 9],
-        'lessThan80Accuracy': [12, 15],
-        '25Days': [30, 21, 23,25,56,67],
-        '7Days': [89],
-    },
-};
-
+import { useLocation } from 'react-router-dom';
 
 function RevisionBlock() {
+    const location = useLocation();
+    const subjectData = location.state.data.PIB24X7; // Replace PIB24X7 with the subject you want to display
+    console.log(subjectData);
+
     // Calculate the number of data points for each key
-    const dataCounts = Object.keys(data.RBI24X7).reduce((counts, key) => {
-        counts[key] = data.RBI24X7[key].length;
+    const dataCounts = Object.keys(subjectData).reduce((counts, key) => {
+        counts[key] = subjectData[key].length;
         return counts;
     }, {});
 
