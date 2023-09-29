@@ -14,10 +14,10 @@ import java.util.List;
 
 public class RevisionStrategy {
     public static final String NOT_ATTEMPTED = "notAttempted";
-    public static final String GREATER_THAN_7_DAYS = "7Days";
-    public static final String GREATER_THAN_15_DAYS = "15Days";
+    public static final String GREATER_THAN_7_DAYS = "moreThan7Days";
+    public static final String GREATER_THAN_15_DAYS = "moreThan15Days";
     public static final String LESS_THAN_80_ACCURACY = "lessThan80Accuracy";
-    public static final String GREATER_THAN_25_DAYS = "25Days";
+    public static final String GREATER_THAN_25_DAYS = "moreThan25Days";
     public static final String RBI24X7 = "RBI24X7";
     public static final String PIB24X7 = "PIB24X7";
     public static final String CA = "CA";

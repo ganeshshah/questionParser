@@ -55,7 +55,7 @@ function RevisionBlock() {
                         legend: { position: 'right' },
                     }}
                 />
-                <RevisionQuestionBar/>
+                <RevisionQuestionBar data = {data}/>
             </div>
         </div>
     );

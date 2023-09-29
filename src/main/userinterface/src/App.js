@@ -21,6 +21,7 @@ import RevisionBlock from './views/RevisionStrategy/RevisionBlock';
 import SidebarLayout from './components/SidebarLayout'
 import RevisionSearchBar from './views/RevisionStrategy/RevisionSearchBar';
 import Revise from './views/RevisionStrategy/Revise';
+import QuestionSearchForRevision from './views/RevisionStrategy/QuestionSearchForRevision';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <Route path="/ReviseDashBoard" element={<RevisionBlock />} />
         <Route path="/RevisionSearchBar" element={<RevisionSearchBar />} />
         <Route path="/Revise" element={<Revise />} />
+        <Route path="/ReviseQuestion" element={<QuestionSearchForRevision />} />
       </Route>
     </Routes>
   );
