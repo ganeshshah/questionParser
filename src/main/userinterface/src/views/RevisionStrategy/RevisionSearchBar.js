@@ -74,9 +74,9 @@ function RevisionSearchBar() {
                     <option value="ALL">All Subjects</option>
                     <option value="FINANCE">Finance</option>
                     <option value="MANAGEMENT">Management</option>
-                    <option value="ESI">ESI</option>
-                    <option value="PIB24X7">PIB24X7</option>
-                    <option value="RBI24X7">RBI24X7</option>
+                    <option value="Esi">Esi</option>
+                    <option value="Pib24x7">Pib24x7</option>
+                    <option value="Rbi24x7">Rbi24x7</option>
                     <option value="SPOTLIGHT">Spotlight GA</option>
                     <option value="CA">Cloud Affairs GA</option>
                 </select>

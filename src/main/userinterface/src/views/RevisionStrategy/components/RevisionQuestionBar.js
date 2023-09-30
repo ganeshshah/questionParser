@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './RevisionQuestionBar.css';
-import { fetchAllQuestions } from '../../services';
+import '../css/RevisionQuestionBar.css';
+import { fetchAllQuestions } from '../../../services';
 import { useNavigate } from 'react-router-dom';
 
 function RevisionQuestionBar({ data }) {

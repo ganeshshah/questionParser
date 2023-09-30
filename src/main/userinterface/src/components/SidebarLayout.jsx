@@ -3,39 +3,38 @@ import './SidebarLayout.css'
 import { Link } from 'react-router-dom'
 
 function SidebarLayout() {
-
     const navLinks = [
         {
             id: "",
             title: "Home",
         },
         {
-            id: "PIB24x7",
+            id: "pib24x7",
             title: "PIB",
         },
         {
-            id: "RBI24x7",
+            id: "rbi24x7",
             title: "RBI",
         },
         {
-            id: "SpotlightGA",
+            id: "spotlight_ga",
             title: "SpotLight GA",
         },
 
         {
-            id: "Finance",
+            id: "finance",
             title: "Finance",
         },
         {
-            id: "Management",
+            id: "management",
             title: "Management",
         },
         {
-            id: "ESI",
+            id: "esi",
             title: "ESI",
         },
         {
-            id: "CloudAffairsGA",
+            id: "cloudaffairs_ga",
             title: "Cloud Affairs GA",
         },
         {
@@ -60,11 +59,11 @@ function SidebarLayout() {
             title: "Load Question from text file",
         },
         {
-            id: 'Revise',
+            id: 'revise',
             title: 'Revise Search Bar'
         },
         {
-            id: "showAnalytics",
+            id: "show_analytics",
             title: "Analytics dashboard",
         },
     ];

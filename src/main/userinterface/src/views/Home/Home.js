@@ -1,14 +1,14 @@
 import React from 'react';
-import './Home.css';
+import './css/Home.css';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import QuestionCard from '../components/QuestionCard';
+import QuestionCard from '../../components/QuestionCard';
 
 function Home() {
 
   const navigate = useNavigate();
   const navigateLoadQuestions = () => {
-    navigate('/loadQuestions');
+    navigate('/LoadQuestions');
   };
 
   const nums = [1, 2, 3];

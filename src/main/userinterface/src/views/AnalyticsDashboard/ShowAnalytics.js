@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import './ShowAnalytics.css';
-import { DoubleBarChart } from './DoubleBarChart';
-import { LineChart } from './LineChart';
-import { StackedBarChart } from './StackedBarChart';
-import { DoughnutChart } from './DoughnutChart';
-import MaterialCardQuestion from './MaterialCardQuestion';
-import MaterialCardAttempted from './MaterialCardAttempted';
+import './css/ShowAnalytics.css';
+import { DoubleBarChart } from './components/DoubleBarChart';
+import { LineChart } from './components/LineChart';
+import { StackedBarChart } from './components/StackedBarChart';
+import { DoughnutChart } from './components/DoughnutChart';
+import MaterialCardQuestion from './components/MaterialCardQuestion';
+import MaterialCardAttempted from './components/MaterialCardAttempted';
 import { fetchAnalyticsData } from '../../services';
 
 function ShowAnalytics() {

@@ -1,8 +1,8 @@
 import React from 'react';
-import './Home.css';
-import FilterContainer from '../components/FilterContainer';
+import '../Home/css/Home.css';
+import FilterContainer from '../../components/FilterContainer';
 
-function RBI24X7() {
+function Rbi24x7() {
   return (
     <div className="Home">
       <h1>MCQ Practice for RBI24X7</h1>
@@ -11,4 +11,4 @@ function RBI24X7() {
   );
 }
 
-export default RBI24X7;
+export default Rbi24x7;

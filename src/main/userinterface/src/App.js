@@ -1,26 +1,26 @@
 import React from 'react';
-import './App.css';
+import './css/App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './views/Home';
-import PIB24X7 from './views/PIB24X7'; // Assuming you have a PIB24x7 component
-import AllQuestions from './views/AllQuestions';
-import Finance from './views/Finance';
-import RBI24X7 from './views/RBI24X7';
-import Management from './views/Management';
-import ESI from './views/ESI';
-import SpotlightGA from './views/SpotlightGA';
-import CloudAffairsGA from './views/CloudAffairsGA';
-import QuestionsWithParams from './views/QuestionWithParams';
-import TakeTest from './views/TakeTest';
-import EndTest from './views/endTestViews/EndTest';
-import ReviewQuestions from './views/endTestViews/ReviewQuestions';
-import LoadQuestionsPage from './views/loadQuestions/LoadQuestionsPage';
+import Home from './views/Home/Home';
+import Pib24x7 from './views/Pib24x7/Pib24x7'; // Assuming you have a PIB24x7 component
+import AllQuestions from './views/AllQuestions/AllQuestions';
+import Finance from './views/Finance/Finance';
+import Rbi24x7 from './views/Rbi24x7/Rbi24x7';
+import Management from './views/Management/Management';
+import Esi from './views/Esi/Esi';
+import SpotlightGA from './views/SpotLightGa/SpotlightGA';
+import CloudAffairsGA from './views/CloudAffairsGA/CloudAffairsGA';
+import SearchQuestionsWithParams from './views/SearchQuestionsWithParams/SearchQuestionWithParams';
+import CreateTest from './views/CreateTest/CreateTest';
+import EndTest from './views/EndTestViews/EndTest';
+import ReviewQuestions from './views/EndTestViews/ReviewQuestions';
+import LoadQuestions from './views/LoadQuestions/LoadQuestions';
 import EditForm from './components/EditForm'
-import RevisionBlock from './views/RevisionStrategy/RevisionBlock';
+import ReviseDashBoard from './views/RevisionStrategy/components/ReviseDashBoard';
 import SidebarLayout from './components/SidebarLayout'
 import RevisionSearchBar from './views/RevisionStrategy/RevisionSearchBar';
 import Revise from './views/RevisionStrategy/Revise';
-import QuestionSearchForRevision from './views/RevisionStrategy/QuestionSearchForRevision';
+import ReviseQuestion from './views/RevisionStrategy/components/ReviseQuestion';
 import ShowAnalytics from './views/AnalyticsDashboard/ShowAnalytics';
 
 function App() {
@@ -28,25 +28,25 @@ function App() {
     <Routes>
       <Route element={<SidebarLayout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/PIB24x7" element={<PIB24X7 />} />
+        <Route path="/pib24x7" element={<Pib24x7 />} />
         <Route path="/all_questions" element={<AllQuestions />} />
-        <Route path="/EditForm" element={<EditForm />} />
-        <Route path="/Finance" element={<Finance />} />
-        <Route path="/RBI24x7" element={<RBI24X7 />} />
-        <Route path="/Management" element={<Management />} />
-        <Route path="/ESI" element={<ESI />} />
-        <Route path="/SpotlightGA" element={<SpotlightGA />} />
-        <Route path="/CloudAffairsGA" element={<CloudAffairsGA />} />
-        <Route path="/searchWithParam" element={<QuestionsWithParams />} />
-        <Route path="/createTest" element={<TakeTest />} />
-        <Route path="/endTestPage" element={<EndTest />} />
-        <Route path="/reviewQuestions" element={<ReviewQuestions />} />
-        <Route path="/loadQuestions" element={<LoadQuestionsPage />} />
-        <Route path="/ReviseDashBoard" element={<RevisionBlock />} />
-        <Route path="/RevisionSearchBar" element={<RevisionSearchBar />} />
-        <Route path="/Revise" element={<Revise />} />
-        <Route path="/ReviseQuestion" element={<QuestionSearchForRevision />} />
-        <Route path="/showAnalytics" element={<ShowAnalytics />} />
+        <Route path="/edit_form" element={<EditForm />} />
+        <Route path="/finance" element={<Finance />} />
+        <Route path="/rbi24x7" element={<Rbi24x7 />} />
+        <Route path="/management" element={<Management />} />
+        <Route path="/esi" element={<Esi />} />
+        <Route path="/spotlight_ga" element={<SpotlightGA />} />
+        <Route path="/cloudaffairs_ga" element={<CloudAffairsGA />} />
+        <Route path="/search_questions_with_params" element={<SearchQuestionsWithParams />} />
+        <Route path="/create_test" element={<CreateTest />} />
+        <Route path="/end_test" element={<EndTest />} />
+        <Route path="/review_questions" element={<ReviewQuestions />} />
+        <Route path="/load_questions" element={<LoadQuestions />} />
+        <Route path="/revise_dashboard" element={<ReviseDashBoard />} />
+        <Route path="/revision_searchbar" element={<RevisionSearchBar />} />
+        <Route path="/revise" element={<Revise />} />
+        <Route path="/revise_question" element={<ReviseQuestion />} />
+        <Route path="/show_analytics" element={<ShowAnalytics />} />
       </Route>
     </Routes>
   );

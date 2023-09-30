@@ -1,8 +1,8 @@
 import React from 'react';
-import './Home.css';
-import FilterContainer from '../components/FilterContainer';
+import '../Home/css/Home.css';
+import FilterContainer from '../../components/FilterContainer';
 
-function PIB24X7() {
+function Pib24x7() {
   return (
     <div className="Home">
       <h1>MCQ Practice for PIB24X7</h1>
@@ -11,4 +11,4 @@ function PIB24X7() {
   );
 }
 
-export default PIB24X7;
+export default Pib24x7;

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import FixedTestHeader from "../components/FixedTestHeader";
-import AllQuestions from "./AllQuestions";
+import FixedTestHeader from "../../components/FixedTestHeader";
+import AllQuestions from "../AllQuestions/AllQuestions";
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
-import { fetchTestId } from '../services'
+import { fetchTestId } from '../../services'
 
-function TakeTest() {
+function CreateTest() {
 
   const location = useLocation();
   const [testIdObject, setTestIdObject] = useState([]);
@@ -31,4 +31,4 @@ function TakeTest() {
     </div>
   );
 }
-export default TakeTest
+export default CreateTest

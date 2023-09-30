@@ -3,9 +3,9 @@ import { Chart } from 'react-google-charts';
 import { useLocation } from 'react-router-dom';
 import RevisionQuestionBar from './RevisionQuestionBar';
 
-function RevisionBlock() {
+function ReviseDashBoard() {
     const location = useLocation();
-    const {data} = location.state; // Replace PIB24X7 with the subject you want to display
+    const {data} = location.state; // Replace Pib24x7 with the subject you want to display
     console.log(data);
     // Calculate the number of data points for each key
     const dataCounts = Object.keys(data).reduce((counts, key) => {
@@ -61,4 +61,4 @@ function RevisionBlock() {
     );
 }
 
-export default RevisionBlock;
+export default ReviseDashBoard;

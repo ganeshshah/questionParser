@@ -1,6 +1,6 @@
 import React from 'react';
-import './Home.css';
-import FilterContainer from '../components/FilterContainer';
+import '../Home/css/Home.css';
+import FilterContainer from '../../components/FilterContainer';
 
 function Management() {
   return (

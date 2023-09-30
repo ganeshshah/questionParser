@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { loadQuestions } from '../../services'
 
-function LoadQuestionsPage() {
+function LoadQuestions() {
 
   const [questionPath, setQuestionPath] = useState('');
   const [answerPath, setAnswerPath] = useState('');
@@ -77,8 +77,8 @@ function LoadQuestionsPage() {
             value={selectedParser}
             onChange={(e) => setSelectedParser(e.target.value)}
           >
-            <option value="PIB24X7">PIB24X7 Parser</option>
-            <option value="RBI24X7">RBI24X7 Parser</option>
+            <option value="Pib24x7">Pib24x7 Parser</option>
+            <option value="Rbi24x7">Rbi24x7 Parser</option>
             <option value="SPOTLIGHT">Spotlight Parser</option>
             <option value="CA">Cloudaffairs Parser</option>
           </select>
@@ -89,9 +89,9 @@ function LoadQuestionsPage() {
           >
             <option value="FINANCE">Finance</option>
             <option value="MANAGEMENT">Management</option>
-            <option value="ESI">ESI</option>
-            <option value="PIB24X7">PIB24X7</option>
-            <option value="RBI24X7">RBI24X7</option>
+            <option value="Esi">Esi</option>
+            <option value="Pib24x7">Pib24x7</option>
+            <option value="Rbi24x7">Rbi24x7</option>
             <option value="SPOTLIGHT">Spotlight GA</option>
             <option value="CA">Cloud Affairs GA</option>
           </select>
@@ -115,4 +115,4 @@ function LoadQuestionsPage() {
   );
 }
 
-export default LoadQuestionsPage;
+export default LoadQuestions;
