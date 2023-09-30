@@ -18,7 +18,6 @@ public class AnalyticsDashBoard {
     private static final String CA = "CA";
     private static final String SPOTLIGHT = "SPOTLIGHT";
     private static ArrayList<ArrayList<Object>> doughNutData = new ArrayList<>();
-
     public static HashMap<String,Object> prepareAnalyticsData(List<McqCSV> listOfQuestions){
         HashMap<String,Object> resultMap = new HashMap<>();
         Integer totalQuestions = listOfQuestions.size();
@@ -122,6 +121,7 @@ public class AnalyticsDashBoard {
         //resultMap.put("lineChartData",lineChartData);
         resultMap.put("doubleBarChartData",doubleBarChartData);
         resultMap.put("subjectWiseBarChartData",doubleBarChartDataMap);
+        doughNutData = new ArrayList<>();
         return resultMap;
     }
 

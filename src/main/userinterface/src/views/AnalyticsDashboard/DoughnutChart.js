@@ -1,22 +1,21 @@
 import React from "react";
 import { Chart } from "react-google-charts";
 
-export const data = [
-  ["Task", "Hours per Day"],
-  ["Work", 11],
-  ["Eat", 2],
-  ["Commute", 2],
-  ["Watch TV", 2],
-  ["Sleep", 7], // CSS-style declaration
-];
+
 
 export const options = {
-  title: "My Daily Activities",
+  title: "Subject Wise Completion Percentage",
   pieHole: 0.4,
   is3D: false,
 };
 
-export function DoughnutChart() {
+export function DoughnutChart({analyticsData}) {
+
+  console.log(analyticsData.doughnutChartData)
+
+  const data = JSON.stringify(analyticsData.doughnutChartData);
+  console.log(JSON.stringify(data))
+  console.log(Object.values(data))
   return (
     <Chart
       chartType="PieChart"
