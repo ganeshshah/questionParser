@@ -21,6 +21,7 @@ import SidebarLayout from './components/SidebarLayout'
 import RevisionSearchBar from './views/RevisionStrategy/RevisionSearchBar';
 import Revise from './views/RevisionStrategy/Revise';
 import QuestionSearchForRevision from './views/RevisionStrategy/QuestionSearchForRevision';
+import ShowAnalytics from './views/AnalyticsDashboard/ShowAnalytics';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/RevisionSearchBar" element={<RevisionSearchBar />} />
         <Route path="/Revise" element={<Revise />} />
         <Route path="/ReviseQuestion" element={<QuestionSearchForRevision />} />
+        <Route path="/showAnalytics" element={<ShowAnalytics />} />
       </Route>
     </Routes>
   );

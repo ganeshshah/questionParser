@@ -64,7 +64,7 @@ function SidebarLayout() {
             title: 'Revise Search Bar'
         },
         {
-            id: "#",
+            id: "showAnalytics",
             title: "Analytics dashboard",
         },
     ];
