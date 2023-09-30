@@ -1,27 +1,26 @@
 import React from 'react';
-import './css/App.css';
+import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './views/Home/Home';
-import Pib24x7 from './views/Pib24x7/Pib24x7'; // Assuming you have a PIB24x7 component
-import AllQuestions from './views/AllQuestions/AllQuestions';
-import Finance from './views/Finance/Finance';
-import Rbi24x7 from './views/Rbi24x7/Rbi24x7';
-import Management from './views/Management/Management';
-import Esi from './views/Esi/Esi';
-import SpotlightGA from './views/SpotLightGa/SpotlightGA';
-import CloudAffairsGA from './views/CloudAffairsGA/CloudAffairsGA';
-import SearchQuestionsWithParams from './views/SearchQuestionsWithParams/SearchQuestionWithParams';
-import CreateTest from './views/CreateTest/CreateTest';
-import EndTest from './views/EndTestViews/EndTest';
-import ReviewQuestions from './views/EndTestViews/ReviewQuestions';
-import LoadQuestions from './views/LoadQuestions/LoadQuestions';
-import EditForm from './components/EditForm'
-import ReviseDashBoard from './views/RevisionStrategy/components/ReviseDashBoard';
+import Home from './views/home/Home';
+import Pib24x7 from './views/pib247/Pib24x7'; // Assuming you have a PIB24x7 component
+import AllQuestions from './views/allQuestions/AllQuestions';
+import Finance from './views/finance/Finance';
+import Rbi24x7 from './views/rbi24x7/Rbi24x7';
+import Management from './views/management/Management';
+import Esi from './views/esi/Esi';
+import SpotlightGA from './views/spotLightGa/SpotlightGA';
+import CloudAffairsGA from './views/cloudAffairsGA/CloudAffairsGA';
+import SearchQuestionsWithParams from './views/searchQuestionsWithParams/SearchQuestionWithParams';
+import CreateTest from './views/createTest/CreateTest.jsx';
+import EndTest from './views/endTest/EndTest';
+import ReviewQuestions from './views/endTest/components/ReviewQuestions';
+import LoadQuestions from './views/loadQuestions/LoadQuestions';
+import ReviseDashBoard from './views/revisionStrategy/components/ReviseDashBoard';
 import SidebarLayout from './components/SidebarLayout'
-import RevisionSearchBar from './views/RevisionStrategy/RevisionSearchBar';
-import Revise from './views/RevisionStrategy/Revise';
-import ReviseQuestion from './views/RevisionStrategy/components/ReviseQuestion';
-import ShowAnalytics from './views/AnalyticsDashboard/ShowAnalytics';
+import RevisionSearchBar from './views/revisionStrategy/RevisionSearchBar';
+import Revise from './views/revisionStrategy/Revise';
+import ReviseQuestion from './views/revisionStrategy/components/ReviseQuestion';
+import ShowAnalytics from './views/analyticsDashboard/ShowAnalytics';
 
 function App() {
   return (
@@ -30,7 +29,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/pib24x7" element={<Pib24x7 />} />
         <Route path="/all_questions" element={<AllQuestions />} />
-        <Route path="/edit_form" element={<EditForm />} />
         <Route path="/finance" element={<Finance />} />
         <Route path="/rbi24x7" element={<Rbi24x7 />} />
         <Route path="/management" element={<Management />} />
