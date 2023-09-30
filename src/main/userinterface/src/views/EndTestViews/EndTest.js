@@ -1,8 +1,8 @@
 import React from 'react';
-import PieChart from './PieChart';
+import PieChart from './component/PieChart';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from "react";
-import './EndTest.css';
+import './css/EndTest.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { fetchtestResult } from '../../services'

@@ -30,7 +30,7 @@ function FixedTestHeader({testIdObject}) {
 
   const handleEndClick = () => {
     setIsTimerRunning(false);
-    navigate('/endTestPage' , {state : {timer, testId, subject}});
+    navigate('/end_test' , {state : {timer, testId, subject}});
   };
 
   const formatTime = (seconds) => {

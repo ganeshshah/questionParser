@@ -11,12 +11,12 @@ function FilterContainer() {
 
   const navigate = useNavigate();
   const navigateToSearch = () => {
-    navigate('/searchWithParam', { state: { numQuestions, flag, subject, accuracy, month } });
+    navigate('/search_questions_with_params', { state: { numQuestions, flag, subject, accuracy, month } });
   };
 
   const navigate2 = useNavigate();
   const navigateToCreatetest = () => {
-    navigate2('/createTest', { state: { numQuestions, flag, subject, accuracy, month } });
+    navigate2('/create_test', { state: { numQuestions, flag, subject, accuracy, month } });
   }
 
   const months = [

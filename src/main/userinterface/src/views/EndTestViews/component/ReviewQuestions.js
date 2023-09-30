@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import RenderQuestions from "../../components/RenderQuestions";
+import RenderQuestions from "../../../components/RenderQuestions";
 import { useLocation } from 'react-router-dom';
 
 function ReviewQuestions() {

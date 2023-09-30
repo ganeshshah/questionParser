@@ -13,7 +13,7 @@ import CloudAffairsGA from './views/CloudAffairsGA/CloudAffairsGA';
 import SearchQuestionsWithParams from './views/SearchQuestionsWithParams/SearchQuestionWithParams';
 import CreateTest from './views/CreateTest/CreateTest';
 import EndTest from './views/EndTestViews/EndTest';
-import ReviewQuestions from './views/EndTestViews/ReviewQuestions';
+import ReviewQuestions from './views/EndTestViews/component/ReviewQuestions';
 import LoadQuestions from './views/LoadQuestions/LoadQuestions';
 import EditForm from './components/EditForm'
 import ReviseDashBoard from './views/RevisionStrategy/components/ReviseDashBoard';
