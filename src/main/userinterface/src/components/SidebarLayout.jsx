@@ -63,7 +63,7 @@ function SidebarLayout() {
             title: "Load Question from excel",
         },
         {
-            id: "/load_questions",
+            id: "loadQuestions",
             title: "Load Question from text file",
         },
         {

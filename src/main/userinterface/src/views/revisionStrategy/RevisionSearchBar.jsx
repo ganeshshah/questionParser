@@ -30,17 +30,17 @@ function RevisionSearchBar() {
 
         console.log(data);
         if (selectedSubject !== 'ALL') {
-            if (selectedSubject == 'PIB24X7') {
-                navigate('/ReviseDashBoard', { state: { data: data.PIB24X7 } })
+            if (selectedSubject.toUpperCase() == 'PIB24X7') {
+                navigate('/revise_dashboard', { state: { data: data.PIB24X7 } })
             }
-            else if (selectedSubject == 'RBI24X7') {
-                navigate('/ReviseDashBoard', { state: { data: data.RBI24X7 } })
+            else if (selectedSubject.toUpperCase() == 'RBI24X7') {
+                navigate('/revise_dashboard', { state: { data: data.RBI24X7 } })
             }
-            else if (selectedSubject == 'SPOTLIGHT') {
-                navigate('/ReviseDashBoard', { state: { data: data.SPOTLIGHT } })
+            else if (selectedSubject.toUpperCase() == 'SPOTLIGHT') {
+                navigate('/revise_dashboard', { state: { data: data.SPOTLIGHT } })
             }
-            else if (selectedSubject == 'CA') {
-                navigate('/ReviseDashBoard', { state: { data: data.CA } })
+            else if (selectedSubject.toUpperCase() == 'CA') {
+                navigate('/revise_dashboard', { state: { data: data.CA } })
             } else {
                 console.log("Page not defined yet");
             }
@@ -74,9 +74,9 @@ function RevisionSearchBar() {
                     <option value="ALL">All Subjects</option>
                     <option value="FINANCE">Finance</option>
                     <option value="MANAGEMENT">Management</option>
-                    <option value="Esi">Esi</option>
-                    <option value="Pib24x7">Pib24x7</option>
-                    <option value="Rbi24x7">Rbi24x7</option>
+                    <option value="ESI">Esi</option>
+                    <option value="PIB24X7">Pib24x7</option>
+                    <option value="RBI24X7">Rbi24x7</option>
                     <option value="SPOTLIGHT">Spotlight GA</option>
                     <option value="CA">Cloud Affairs GA</option>
                 </select>
