@@ -2,6 +2,7 @@ package com.personalQuizApp.quizApp.services.parsingservice;
 
 import com.personalQuizApp.quizApp.dataObjects.LoadQuestionParams;
 import com.personalQuizApp.quizApp.dataObjects.McqCSV;
+import com.personalQuizApp.quizApp.performanceAnalyzer.AnalyticsDashBoard;
 import com.personalQuizApp.quizApp.processors.ProcessInput;
 import com.personalQuizApp.quizApp.revisionStrategy.RevisionStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -75,6 +76,18 @@ public class ParsingController {
                                                                                  @RequestParam String subject){
         List<McqCSV> allQuestions = parsingService.getQuestionsByMonthOrAll(byMonthOrAll,subject);
         return RevisionStrategy.processAllQuestions(allQuestions, subject);
+    }
+
+    @GetMapping("getAnalyticsData")
+    public HashMap<String,Object>  getAnalyticsData(@RequestParam ArrayList<String> byMonthOrMonthRange,
+                                          @RequestParam String allMonthsIndicator){
+        List<McqCSV> allQuestions = new ArrayList<>();
+        if(allMonthsIndicator.equals("ALL")){
+            allQuestions = parsingService.getQuestions();
+        }else{
+            allQuestions = parsingService.getQuestionsForAnalytics(byMonthOrMonthRange);
+        }
+        return AnalyticsDashBoard.prepareAnalyticsData(allQuestions);
     }
 
 }

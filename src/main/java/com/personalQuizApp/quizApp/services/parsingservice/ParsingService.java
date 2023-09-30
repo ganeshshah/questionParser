@@ -52,4 +52,8 @@ public class ParsingService {
     public void processAndInsertMcq(LoadQuestionParams loadQuestionParams) throws IOException {
         parsingRepository.processAndInsertMcq(loadQuestionParams);
     }
+
+    public List<McqCSV> getQuestionsForAnalytics(ArrayList<String> byMonthOrMonthRange) {
+        return parsingRepository.getQuestionsForAnalytics(byMonthOrMonthRange);
+    }
 }

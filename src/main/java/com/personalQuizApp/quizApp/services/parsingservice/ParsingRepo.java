@@ -5,6 +5,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public interface ParsingRepo extends CrudRepository<McqCSV, Integer> {
@@ -32,6 +33,9 @@ public interface ParsingRepo extends CrudRepository<McqCSV, Integer> {
 
     @Query("SELECT m FROM McqCSV m WHERE m.subject = :subject ORDER BY m.id")
     List<McqCSV> getAllQuestionsBySubject(@Param("subject") String subject);
+
+    @Query("SELECT m FROM McqCSV m WHERE m.month in :byMonthOrMonthRange ORDER BY m.id")
+    List<McqCSV> getQuestionsByMonths(ArrayList<String> byMonthOrMonthRange);
 }
 
 

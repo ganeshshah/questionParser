@@ -97,4 +97,8 @@ public class ParsingRepository {
     public void updateAllMcq(List<McqCSV> mcqlist) {
         parsingRepo.saveAll(mcqlist);
     }
+
+    public List<McqCSV> getQuestionsForAnalytics(ArrayList<String> byMonthOrMonthRange) {
+        return parsingRepo.getQuestionsByMonths(byMonthOrMonthRange);
+    }
 }
