@@ -27,3 +27,10 @@
         --tw-translate-x: 0;
     }
 }
+
+
+@media (min-width: 768px) {
+    .main_content_width {
+        width: calc(100vw - 17rem);
+    }
+}
