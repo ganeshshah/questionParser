@@ -10,18 +10,13 @@ export const options = {
 };
 
 export function DoughnutChart({analyticsData}) {
-
-  console.log(analyticsData.doughnutChartData)
-
-  const data = JSON.stringify(analyticsData.doughnutChartData);
-  console.log(JSON.stringify(data))
-  console.log(Object.values(data))
+  console.log(analyticsData)
   return (
     <Chart
       chartType="PieChart"
       width="100%"
       height="400px"
-      data={data}
+      data={analyticsData}
       options={options}
     />
   );

@@ -50,7 +50,7 @@ function ShowAnalytics() {
             </div>
             <LineChart />
             <DoubleBarChart />
-            <DoughnutChart analyticsData = {analyticsData}/>
+            <DoughnutChart analyticsData = {analyticsData.doughnutChartData}/>
             <StackedBarChart />
         </div> }
         </>

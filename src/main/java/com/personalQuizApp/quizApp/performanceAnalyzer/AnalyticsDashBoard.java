@@ -20,6 +20,10 @@ public class AnalyticsDashBoard {
     private static ArrayList<ArrayList<Object>> doughNutData = new ArrayList<>();
     public static HashMap<String,Object> prepareAnalyticsData(List<McqCSV> listOfQuestions){
         HashMap<String,Object> resultMap = new HashMap<>();
+        ArrayList<Object> headers =  new ArrayList<>();
+        headers.add("Subject");
+        headers.add("Completion Status");
+        doughNutData.add(headers);
         Integer totalQuestions = listOfQuestions.size();
         Integer totalAttempted = 0;
         Date todaysDate = new Date();
