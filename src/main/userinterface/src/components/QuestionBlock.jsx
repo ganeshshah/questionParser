@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import HintModal from './HintModal';
 import EditModal from './EditModal';
-import { submitQuestion } from '../services'
+import {deleteQuestionById, submitQuestion} from '../services'
+import ConfirmationModal from "./ConfirmationModal";
+
 
 function QuestionBlock(props) {
   const [inputValue, setInputValue] = useState('');
@@ -65,6 +67,28 @@ function QuestionBlock(props) {
     setIsEditModalOpen(false);
   };
 
+  const [isConfirmationModalOpen, setIsConfirmationModalOpen] = useState(false);
+
+  const deleteQuestion = () => {
+    // Open the confirmation modal when the delete button is clicked.
+    setIsConfirmationModalOpen(true);
+  };
+
+  const confirmDelete = async () => {
+    // Close the confirmation modal.
+    setIsConfirmationModalOpen(false);
+
+    try {
+      // Send a delete request to the backend.
+      await deleteQuestionById(id); // Pass the question ID to your delete function.
+
+      // Handle the deletion on the front end (remove the question from the UI, etc.).
+      // You can use a state management library or update the UI state as needed.
+    } catch (error) {
+      console.error("Error deleting question:", error);
+    }
+  };
+
   return (
     <div className='whitespace-pre-line border border-gray-300 p-4 mb-4 rounded-md shadow-md bg-gray-100 flex flex-col gap-2'>
       <table className='w-full border-collapse '>
@@ -98,9 +122,16 @@ function QuestionBlock(props) {
           Knowledge nuggets
         </button>
         {isHintModalOpen && <HintModal hint={hint} onClose={closeHintModal} />}
-        <button className='px-4 mt-2 py-2 bg-red-500 text-white rounded-md cursor-pointer whitespace-nowrap'>
+        <button onClick={deleteQuestion} className='px-4 mt-2 py-2 bg-red-500 text-white rounded-md cursor-pointer whitespace-nowrap'>
           Delete Question
         </button>
+        {isConfirmationModalOpen && (
+            <ConfirmationModal
+                isOpen={isConfirmationModalOpen}
+                onClose={() => setIsConfirmationModalOpen(false)}
+                onConfirm={confirmDelete}
+            />
+        )}
       </div>
       <div className={`${resultMessage.includes('Success') ? 'text-green-500' : 'text-red-500'}`}>
         <p>{resultMessage}</p>

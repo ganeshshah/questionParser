@@ -59,8 +59,8 @@ public class ParsingController {
         parsingService.updateMcq(mcq);
     }
 
-    @DeleteMapping (path = "{id}")
-    void editQuestion(@PathVariable("id") Integer id){
+    @DeleteMapping (path = "deleteQuestionById/{id}")
+    void deleteQuestionById(@PathVariable("id") Integer id){
         System.out.println("Deleting from DB");
         parsingService.deleteMcq(id);
     }

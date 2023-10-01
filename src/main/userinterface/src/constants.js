@@ -8,3 +8,4 @@ export const API_GET_REVISION_DATA = "http://localhost:8080/getRevisionData?";
 export const API_GET_ALL_QUESTION_BY_IDS = "http://localhost:8080/getIncorrectQuestions?ids=";
 export const API_GET_ALL_ANALYTICS_DATA = "http://localhost:8080/getAnalyticsData?byMonthOrMonthRange=";
 export const API_ADD_QUESTION = "http://localhost:8080/addQuestionManually";
+export const API_DELETE_QUESTION = "http://localhost:8080/deleteQuestionById/";
