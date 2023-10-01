@@ -15,7 +15,7 @@ const bull = (
   </Box>
 );
 
-export default function MaterialCardAttempted() {
+export default function MaterialCardAttempted({totalAttempted}) {
   return (
     <Card sx={{ minWidth: 270 }}>
       <CardContent>
@@ -26,7 +26,7 @@ export default function MaterialCardAttempted() {
           At least Once
         </Typography>
         <Typography variant="body2" sx={{ fontSize: 50 }}>
-          230
+          {totalAttempted}
         </Typography>
       </CardContent>
     </Card>

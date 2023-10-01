@@ -12,6 +12,7 @@ function ShowAnalytics() {
     const [param, setParam] = useState('AUG,SEPT&allMonthsIndicator=NO');
     const [analyticsData, setAnalyticsData] = useState(null);
     const [loading, setLoading] = useState([false]);
+    const subjects = ["RBI24X7", "SPOTLIGHT", "PIB24X7", "CA"];
 
     useEffect(() => {
         setLoading(true)
@@ -38,13 +39,23 @@ function ShowAnalytics() {
             {analyticsData && <div className="ShowAnalytics">
                 <h1>Analytics Dashboard</h1>
                 <div>
-                    <MaterialCardQuestion />
-                    <MaterialCardAttempted />
+                    <MaterialCardQuestion totalQuestions = {analyticsData.totalQuestions}/>
+                    <MaterialCardAttempted totalAttempted = {analyticsData.totalAttempted}/>
                 </div>
                 <LineChart />
-                <DoubleBarChart />
+                <DoubleBarChart analyticsData={analyticsData.doubleBarChartData}/>
                 <DoughnutChart analyticsData={analyticsData.doughnutChartData} />
-                <StackedBarChart />
+                <h1 style={{textAlign : "center"}}>Subject Wise Statistics</h1>
+                {subjects.map(subject => {
+                    return (
+                        <StackedBarChart
+                            key={subject}
+                            analyticsData={analyticsData.subjectWiseBarChartData[subject]}
+                            subject={subject}
+                        />
+                    );
+                })}
+
             </div>}
         </>
     );

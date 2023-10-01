@@ -1,35 +1,26 @@
 import React from "react";
 import { Chart } from "react-google-charts";
 
-export const data = [
-  ["City", "2010 Population", "2000 Population"],
-  ["New York City", 8175000, 8008000],
-  ["Los Angeles", 3792000, 3694000],
-  ["Chicago", 2695000, 2896000],
-  ["Houston", 2099000, 1953000],
-  ["Philadelphia", 1526000, 1517000],
-];
-
 export const options = {
-  title: "Population of Largest U.S. Cities",
+  title: "Criteria wise question distribution overall subjects",
   chartArea: { width: "50%" },
-  colors: ["#b0120a", "#ffab91"],
+  colors: ["#b0120a", "#49bf28"],
   hAxis: {
-    title: "Total Population",
+    title: "Total Questions",
     minValue: 0,
   },
   vAxis: {
-    title: "City",
+    title: "Completion Target",
   },
 };
 
-export function DoubleBarChart() {
+export function DoubleBarChart({analyticsData}) {
   return (
     <Chart
       chartType="BarChart"
       width="100%"
       height="400px"
-      data={data}
+      data={analyticsData}
       options={options}
     />
   );

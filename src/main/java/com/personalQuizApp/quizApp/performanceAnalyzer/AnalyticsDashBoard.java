@@ -73,7 +73,7 @@ public class AnalyticsDashBoard {
         doubleBarChartDataMap.put(PIB24X7,doubleBarChartDataItem1);
         doubleBarChartDataMap.put(CA,doubleBarChartDataItem2);
         doubleBarChartDataMap.put(SPOTLIGHT,doubleBarChartDataItem3);
-        doubleBarChartData.add(new ArrayList<>(Arrays.asList("Criteria", "Actual Target", "Completed till now")));
+
 
         for(McqCSV question : listOfQuestions){
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -166,6 +166,8 @@ public class AnalyticsDashBoard {
             }
             doughNutInnerData.put(datasetName, doughnutValue*100);
         }
+
+        barData.add(new ArrayList<>(Arrays.asList("Criteria", "Still to be completed", "Completed till now")));
 
         for (Map.Entry<String, ArrayList<Integer>> innerEntry : innerData.entrySet()) {
             String categoryName = innerEntry.getKey();
