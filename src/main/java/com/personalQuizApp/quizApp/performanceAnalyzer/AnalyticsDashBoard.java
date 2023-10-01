@@ -19,6 +19,13 @@ public class AnalyticsDashBoard {
     private static final String PIB24X7 = "PIB24X7";
     private static final String CA = "CA";
     private static final String SPOTLIGHT = "SPOTLIGHT";
+    private static final HashSet<String> supportedSubjects = new HashSet<String>() {{
+        add(RBI24X7);
+        add(PIB24X7);
+        add(CA);
+        add(SPOTLIGHT);
+    }};
+
     private static ArrayList<ArrayList<Object>> doughNutData = new ArrayList<>();
     public static HashMap<String,Object> prepareAnalyticsData(List<McqCSV> listOfQuestions){
         HashMap<String,Object> resultMap = new HashMap<>();
@@ -26,7 +33,7 @@ public class AnalyticsDashBoard {
         headers.add("Subject");
         headers.add("Completion Status");
         doughNutData.add(headers);
-        Integer totalQuestions = listOfQuestions.size();
+        Integer totalQuestions = 0;
         Integer totalAttempted = 0;
         Date todaysDate = new Date();
         HashMap<String, Integer> doughnutChartData = new HashMap<>();
@@ -78,45 +85,48 @@ public class AnalyticsDashBoard {
 
 
         for(McqCSV question : listOfQuestions){
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-            String formattedDate = sdf.format(todaysDate);
-            String questionCreatedDate = question.getCreatedDate().toString().substring(0,10);
-            long daysGap = calculateDateDifferenceInDays(questionCreatedDate,formattedDate);
-            Integer noOfAttempts = question.getNoOfAttempt();
-            String subject = question.getSubject();
-            if(noOfAttempts!= null && noOfAttempts > 0)
-                totalAttempted++;
-            if (noOfAttempts!= null && noOfAttempts == 0) {
-                Integer value = doubleBarChartDataMap.get(subject).get(NOT_ATTEMPTED).get(0) + 1;
-                doubleBarChartDataMap.get(subject).get(NOT_ATTEMPTED).set(0,value);
-            } else if(noOfAttempts!= null && daysGap <=7){
-                Integer value = doubleBarChartDataMap.get(subject).get(NOT_ATTEMPTED).get(1) + 1;
-                doubleBarChartDataMap.get(subject).get(NOT_ATTEMPTED).set(1,value);
-            }else if (daysGap > 7 && daysGap < 15) {
-                if(noOfAttempts!= null && noOfAttempts < 2 ){
-                    Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_7_DAYS).get(0) + 1;
-                    doubleBarChartDataMap.get(subject).get(GREATER_THAN_7_DAYS).set(0,value);
-                }else {
-                    Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_7_DAYS).get(1) + 1;
-                    doubleBarChartDataMap.get(subject).get(GREATER_THAN_7_DAYS).set(1,value);
-                }
-            } else if (daysGap >= 15 && daysGap < 25) {
-                if(noOfAttempts!= null && noOfAttempts < 3 ){
-                    Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_15_DAYS).get(0) + 1;
-                    doubleBarChartDataMap.get(subject).get(GREATER_THAN_15_DAYS).set(0,value);
-                }else {
-                    Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_15_DAYS).get(1) + 1;
-                    doubleBarChartDataMap.get(subject).get(GREATER_THAN_15_DAYS).set(1,value);
-                }
-            } else if (daysGap >= 25 ) {
-                if(noOfAttempts!= null && noOfAttempts < 4 ){
-                    Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_25_DAYS).get(0) + 1;
-                    doubleBarChartDataMap.get(subject).get(GREATER_THAN_25_DAYS).set(0,value);
-                }else {
-                    Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_25_DAYS).get(1) + 1;
-                    doubleBarChartDataMap.get(subject).get(GREATER_THAN_25_DAYS).set(1,value);
-                }
-            }
+           if(supportedSubjects.contains(question.getSubject())){
+               totalQuestions++;
+               SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+               String formattedDate = sdf.format(todaysDate);
+               String questionCreatedDate = question.getCreatedDate().toString().substring(0,10);
+               long daysGap = calculateDateDifferenceInDays(questionCreatedDate,formattedDate);
+               Integer noOfAttempts = question.getNoOfAttempt();
+               String subject = question.getSubject();
+               if(noOfAttempts!= null && noOfAttempts > 0)
+                   totalAttempted++;
+               if (noOfAttempts!= null && noOfAttempts == 0) {
+                   Integer value = doubleBarChartDataMap.get(subject).get(NOT_ATTEMPTED).get(0) + 1;
+                   doubleBarChartDataMap.get(subject).get(NOT_ATTEMPTED).set(0,value);
+               } else if(noOfAttempts!= null && daysGap <=7){
+                   Integer value = doubleBarChartDataMap.get(subject).get(NOT_ATTEMPTED).get(1) + 1;
+                   doubleBarChartDataMap.get(subject).get(NOT_ATTEMPTED).set(1,value);
+               }else if (daysGap > 7 && daysGap < 15) {
+                   if(noOfAttempts!= null && noOfAttempts < 2 ){
+                       Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_7_DAYS).get(0) + 1;
+                       doubleBarChartDataMap.get(subject).get(GREATER_THAN_7_DAYS).set(0,value);
+                   }else {
+                       Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_7_DAYS).get(1) + 1;
+                       doubleBarChartDataMap.get(subject).get(GREATER_THAN_7_DAYS).set(1,value);
+                   }
+               } else if (daysGap >= 15 && daysGap < 25) {
+                   if(noOfAttempts!= null && noOfAttempts < 3 ){
+                       Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_15_DAYS).get(0) + 1;
+                       doubleBarChartDataMap.get(subject).get(GREATER_THAN_15_DAYS).set(0,value);
+                   }else {
+                       Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_15_DAYS).get(1) + 1;
+                       doubleBarChartDataMap.get(subject).get(GREATER_THAN_15_DAYS).set(1,value);
+                   }
+               } else if (daysGap >= 25 ) {
+                   if(noOfAttempts!= null && noOfAttempts < 4 ){
+                       Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_25_DAYS).get(0) + 1;
+                       doubleBarChartDataMap.get(subject).get(GREATER_THAN_25_DAYS).set(0,value);
+                   }else {
+                       Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_25_DAYS).get(1) + 1;
+                       doubleBarChartDataMap.get(subject).get(GREATER_THAN_25_DAYS).set(1,value);
+                   }
+               }
+           }
         }
 
         doubleBarChartData = prepareListForDoubleBarChart(doubleBarChartDataMap);

@@ -89,7 +89,7 @@ public class ParsingController {
         HashMap<String,Object> resultData;
         List<McqCSV> allQuestions;
         List<TestData> allAttemptedQuestions = testDataService.getAttemptedQuestions();
-        if(allMonthsIndicator.equals("ALL")){
+        if(allMonthsIndicator.equals("YES")){
             allQuestions = parsingService.getQuestions();
         }else{
             allQuestions = parsingService.getQuestionsForAnalytics(byMonthOrMonthRange);
