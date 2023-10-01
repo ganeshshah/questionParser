@@ -1,0 +1,369 @@
+Q.) Which of the following statements is/are incorrect about RBI’s powers?
+1. RBI cannot supersede the board of NBFC like in banks.
+2. RBI can remove and can further appoint the director of a board of NBFC
+3. RBI cannot remove auditors, call for audit of any group company of an NBFC
+(a) 1 only
+(b) 2 only
+(c) 1 and 3 only
+(d) 1,2 and 3 only
+(e) None of the above
+
+Solution: (c)
+
+Q.) Recently in the month of August 2023, RBI the process of resolution of the which of the following
+NBFCs under the country’s insolvency and bankruptcy code
+(a) Srei Infrastructure Finance
+(b) Sahara Infrastructure group
+(c) Mohina Asset Finance Company
+(d) Larsen & turbo
+(e) Kohima Micro Finance Company
+
+Solution: (a)
+
+Q.) Which of the following appropriately describes the concept of Asset price bubble.
+(a) When housing price crashes leading to an increase in demand
+(b) When the price of an asset rises at a rapid pace underlying fundamentals to justify the price spike.
+(c) When the book value of the asset is more than the market price
+(d) When housing prices overshoots leading to a market crash
+(e) When prices of assets are uncontrollable by the monetary policy committee
+
+Solution: (b)
+
+Q.) Which of the following is/are true about the impact of incremental Cash reserve ratio?
+1. Helps control the excess money in the system
+2. Prevents it from causing inflation
+3. I-CRR occurs when banks experience an unexpected deposit fall.
+(a) 1 only
+(b) 2 only
+(c) 1 and 2 only
+(d) 1,2 and 3 only
+(e) None of the above
+
+Solution: (c)
+
+Q.): Who all are the main developers of the UDGAM portal?
+1.Reserve Bank Information Technology Pvt Ltd (ReBIT)
+2.Indian Financial Technology & Allied Services (IFTAS)
+3.Depositor Education and Awareness Fund (DEAF)
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 1 and 2 only
+(d) 1, 2 and 3
+(e) 2 and 3 only
+Solution: (C)
+
+Explanation: Reserve Bank Information Technology Pvt Ltd (ReBIT), Indian Financial Technology & Allied Services (IFTAS) and participating banks have collaborated on developing the UDGAM portal. Depositor Education and Awareness Fund (DEAF) is not a developer, it is a fund that is created for banks wherein they put all the unclaimed deposits in this fund.
+Q.): Which statement defines the agenda of UDGAM portal?
+1.The platform aims to assist users in identifying and locating their unclaimed deposits across multiple banks, allowing them to claim the amount or reactivate their accounts.
+2.The platform aims to assist users in identifying and locating their unclaimed deposits in the single bank only allowing them to claim the amount and deactivate their accounts.
+3.The platform aims to help users in locating their information across multiple banks, allowing them to manage their accounts.
+Options:
+(a) 2 Only
+(b) 1 Only
+(c) 1 and 2 only
+(d) 1, 2 and 3
+(e) 2 and 3 only
+Solution: (B)
+Explanation: Following is the agenda of UDGAM portal:
+•
+Aid users to identify their unclaimed deposits/ accounts
+•
+To facilitate and make it easier for public members to search their unclaimed deposits across multiple banks at one place.
+•
+Enable them to either claim the deposit amount or make their deposit accounts operative at their respective banks.
+
+Q.): According to the guidelines issued by RBI, what is the purpose of communicating with borrowers at the time of sanction of loans?
+1.To inform borrowers about changes in bank policies.
+2.To notify borrowers about upcoming interest rate hikes.
+3.To explain the potential impact of benchmark rate changes on EMI/tenor.
+Options:
+(a) 2 Only
+(b) 1 Only
+(c) 1 and 2 only
+(d) 1, 2 and 3
+(e) 3 Only
+Solution: (E)
+
+Explanation: The purpose of communicating with borrowers at the time of sanction of loans is to explain the potential impact of benchmark rate changes on EMI/tenor. It informs the borrower regarding the potential impact of a change in interest rate on their EMI and tenor.
+Q.): What is the key benefit of a fixed interest rate loan?
+1.It allows for flexibility in EMI payments.
+2.It offers lower interest rates over time.
+3.It provides security and stability during economic changes.
+Options:
+(a) 2 Only
+(b) 4 Only
+(c) 3 only
+(d) 1, 2 and 4
+(e) 2 and 3 only
+Solution: (C)
+
+Explanation: Fixed interest rates offer both the borrower and the lender with stability and assurance. Depending on the economic condition, the variable interest rate may decline or rise in the near future. If the interest rate rises, the borrower's EMI or tenor rises, which is bad for the borrower, but if the interest rate falls, the borrower's EMI or tenor falls, which is bad for the bank. As a result, a fixed interest rate provides stability and security to both parties.
+Q.): Which is not a characteristic of the co-operative bank?
+1.Members of co-operative bank cannot be a customer of that co-operative bank.
+2.Operational decisions and governance are democratically controlled by the members.
+3.Loans from co-operative banks are very expensive for rural and local communities only members can take loans and advances from the co-operative banks
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 2 and 3 only
+Solution: (B)
+
+Q.): What is the main objective of the Reserve Bank Innovation Hub (RBIH)?
+1.To generate profits for the Reserve Bank of India (RBI).
+2.To enhance access to financial services for the high-income population in India.
+3.To promote innovation and digitalization in financial sector.
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (E)
+
+Q.): What is the purpose of the Public Tech Platform introduced by RBI?
+1.To create obstacles in the digital credit delivery process.
+2.To increase the cost of lending for financial sector players.
+3.To enable frictionless credit delivery by facilitating seamless digital information flow to lenders.
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (E)
+
+Q.): Why are penal charges levied by lending institutions?
+1.To enhance revenue beyond the contracted interest rate.
+2.To maintain credit discipline among borrowers.
+3.To encourage borrowers to default on their loans.
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (B)
+
+Explanation: Penal charges are the penalty that borrower pay for not paying their EMIs. They are levied to generate the behaviour of paying their EMIs on time and on a regular basis. It is not a method of earning revenue, apart from this it encourages the borrower to pay their credit on time.
+Q.): According to the issued instructions, what must lend institutions do regarding penal charges?
+1.Add an extra interest component to the interest rate.
+2.Communicate the penalty amount only in loan agreements.
+3.Formulate a board-approved policy for penal charges on loans.
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (B)
+Explanation: As per the instruction given, all financial institutions are required to inform the borrower regarding the potential penalty in case of non-payment of the EMI in their loan agreement. So, that it makes the borrower aware of all the terms and conditions.
+
+Q.): What is the distinctive feature of the Star series banknotes issued by RBI?
+1.They have a holographic strip for security.
+2.They feature a unique design for each denomination.
+3.They contain a *(star) character in the number panel.
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (E)
+Explanation: They contain a *(star) character in the number panel.
+
+Q.): Why did RBI introduce the Star series banknotes?
+1.To replace old banknotes with new designs.
+2.To reduce manual intervention and cost in replacing defectively printed notes.
+3.To introduce higher denomination notes into circulation.
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (B)
+
+Explanation: Earlier, if a person holds a defective note, they have to return the note in the nearby printing press. Next time when the printing press issues the same note, it adds a (*) prefix in the unique number of the note considering it as a replacement for a defective note. So, to reduce manual intervention and cost in replacing defectively printed notes.
+Q.): What does the term "Incremental CRR (I-CRR)" refer to?
+1.The minimum percentage of liquid cash a bank must maintain as per RBI regulations.
+2.The RBI's decision to withdraw ₹2,000 notes from circulation.
+3.An additional cash reserve requirement is applied to deposits made after a specific date.
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (B)
+Explanation: I-CRR occurs when banks experience an unexpected deposit excess. As a result, banks would increase their lending, inject more money into the economy, and boost inflation. To guarantee that extra liquidity is absorbed by the RBI in the form of Incremental or additional CRR, a separate CRR is applied to deposits made as of a specific date.
+Q.): What is the impact of I-CRR guidelines on liquidity in the banking system?
+1.It leads to increased surplus liquidity in the banking system.
+2.It has no effect on liquidity levels.
+3.It significantly decreases surplus liquidity in the banking system.
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (B)
+Explanation: It significantly decreases surplus liquidity in the banking system. I-CRR occurs when banks experience an unexpected deposit excess. As a result, banks would increase their lending, inject more money into the economy, and boost inflation. To guarantee that extra liquidity is absorbed by the RBI in the form of Incremental or additional CRR, a separate CRR is applied to deposits made as of a specific date.
+Q.): Which survey conducted by the RBI aims to capture consumer perception about economic variables such as economic situation, employment, price level, income, and spending?
+1.Survey of Professional Forecasters (SPF)
+2.Business Expectations Survey (BES)
+3.Consumer Confidence survey
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (E)
+Q.): What is the purpose of the Survey of Professional Forecasters (SPF) conducted by the RBI?
+1.To measure consumer perception about economic variables
+2.To capture business sentiments for the current and ensuing quarters
+3.To provide annual and quarterly forecasts of key macroeconomic indicators
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (E)
+Q.): What does SEBI's proposal for a "Research Analyst Administration and Supervisory Body (RAASB)" aim to achieve?
+1.To regulate the issuance of currency notes by financial influencers.
+2.To manage the administrative actions and monitoring of investment advisors.
+3.To increase supervision over research analysts, considering unsolicited stock recommendations.
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (E)
+Q.): What is the responsibility of BSE Administration and Supervision Limited (BASL) recognized by SEBI?
+1.Monitoring and approving advertisements by research analysts.
+2.Supervising the issuance of research reports by investment advisors.
+3.Ensuring compliance with investment regulations for government agencies.
+
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (B)
+Q.): What initiative did the Indian government take to encourage merchants to accept payments with RuPay cards?
+1.Increasing ATM withdrawal limits
+2.Imposing cash withdrawal charges
+3.Abolishing merchant service fees on RuPay card transactions
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (E)
+Q.): Which factor contributed to the rise in contactless payments in India during the Covid pandemic?
+1.Reduction in merchant service fees
+2.Increase in ATM withdrawal limits
+3.Demand for touch-free payments
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (E)
+Q.): What is the RBI-DPI?
+1.An index measuring digital payments growth
+2.A benchmark for currency exchange rates
+3.A report on RBI's monetary policies
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (A)
+Explanation: The DPI index is the index that is constructed by the RBI to measure the extent of digitization of payments across the country. 
+It is based on multiple parameters and reflects the expansion of various digital payment modes accurately. It is a first-of-its-kind index to 
+measure the spread of digital payments across the country.
+
+Q.): What is the primary aim of the RBI's pilot scheme for enhancing transaction limits for small value digital payments in offline mode?
+a) To discourage technological innovations in low internet connectivity
+b) To facilitate large-value digital transactions in an online mode
+c) To promote small-value digital transactions in situations with weak or no internet connectivity
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (E)
+Explanation: Reasons for introducing offline UPI lite payment:
+•
+Encourage technological innovations
+•
+Help users make digital payments even if internet connectivity is low
+Q.): What is the key change introduced by the RBI in the upper limit of offline payment transactions?
+a) The upper limit of an offline payment transaction is increased to ₹1,000.
+b) The upper limit of an offline payment transaction is increased to ₹500.
+c) The upper limit of an offline payment transaction remains the same.
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (B)
+Explanation: The upper limit of an offline payment transaction is increased to ₹500.
+Q.)3: What is the primary goal of the "UPI Chalega 3.0" campaign launched by NPCI?
+1.To promote the adoption of UPI as a secure, easy, and instant mode of payment.
+2.To create a brand-new digital currency for India.
+3.To encourage the use of credit cards for online transactions.
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (a)
+Q.)4: What is the role of the National Payments Corporation of India (NPCI)?
+1.To oversee retail payments and settlement systems in India.
+2.To provide loans to small businesses in India.
+3.To regulate cryptocurrency transactions in India.
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (a)
+
+Q.)5: What is the primary focus of the India-UK Free Trade Agreement (FTA) negotiations mentioned in the article?
+1.Visa liberalization and immigration issues.
+2.Bilateral Investment Treaty (BIT) and local business mobility.
+3.Promoting tourism
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (b) Bilateral Investment Treaty (BIT) and local business mobility.
+
+Q.)6: What is the main purpose of a Free Trade Agreement (FTA), as described in the article?
+1.To increase government tariffs on imports and exports.
+2.To promote trade by reducing restrictions on the exchange of goods and services between countries.
+3.To establish unilateral trade barriers and prohibitions.
+Options:
+(a) 1 Only
+(b) 2 Only
+(c) 3 and 2 only
+(d) 1, and 3 only
+(e) 3 only
+Solution: (b) To promote trade by reducing restrictions on the exchange of goods and services between countries

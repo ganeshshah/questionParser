@@ -3,6 +3,7 @@ import com.personalQuizApp.quizApp.dataObjects.LoadQuestionParams;
 import com.personalQuizApp.quizApp.dataObjects.McqCSV;
 import com.personalQuizApp.quizApp.enums.Subjects;
 import com.personalQuizApp.quizApp.processors.PIB24X7Parser.Pib27x7Parser;
+import com.personalQuizApp.quizApp.processors.RBI24X7Parser.Rbi24x7Parser;
 import com.personalQuizApp.quizApp.processors.SpotlightParser.SpotlightParser;
 import com.personalQuizApp.quizApp.processors.cloudaffairsParser.CloudAffairsParser;
 import org.springframework.stereotype.Component;
@@ -55,6 +56,9 @@ public class ParsingRepository {
         }else if(subject.equals(Subjects.PIB24X7.toString())){
             System.out.println("I am called");
             parsingRepo.saveAll(Pib27x7Parser.parseText(questionFilePath,subject,month));
+        }else if(subject.equals(Subjects.RBI24X7.toString())){
+            System.out.println("I am called");
+            parsingRepo.saveAll(Rbi24x7Parser.parseText(questionFilePath,subject,month));
         }
     }
 
