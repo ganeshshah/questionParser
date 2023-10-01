@@ -21,7 +21,7 @@ function RenderQuestions(props) {
     <div className='flex flex-col'>
       <p className='text-lg self-center mb-4'>MCQ Questions</p>
       {questionsToDisplay.map((question) => (
-        <QuestionBlock key={question.id} question={question} testIdObject={props.testIdObject || null} />
+        <QuestionBlock key={question.id} question={question} testIdObject={props.testIdObject || null} getQuestions={props.getQuestions} />
       ))}
       <div className="">
         {Array.from({ length: totalPages }).map((_, index) => (

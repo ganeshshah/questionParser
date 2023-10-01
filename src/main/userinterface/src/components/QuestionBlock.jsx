@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import HintModal from './HintModal';
 import EditModal from './EditModal';
-import {deleteQuestionById, submitQuestion} from '../services'
+import { deleteQuestionById, submitQuestion } from '../services'
 import ConfirmationModal from "./ConfirmationModal";
 
 
@@ -126,11 +126,11 @@ function QuestionBlock(props) {
           Delete Question
         </button>
         {isConfirmationModalOpen && (
-            <ConfirmationModal
-                isOpen={isConfirmationModalOpen}
-                onClose={() => setIsConfirmationModalOpen(false)}
-                onConfirm={confirmDelete}
-            />
+          <ConfirmationModal
+            isOpen={isConfirmationModalOpen}
+            onClose={() => setIsConfirmationModalOpen(false)}
+            onConfirm={confirmDelete}
+          />
         )}
       </div>
       <div className={`${resultMessage.includes('Success') ? 'text-green-500' : 'text-red-500'}`}>
@@ -140,6 +140,7 @@ function QuestionBlock(props) {
         <EditModal
           props={props.question}
           onClose={closeEditModal}
+          getQuestions={props.getQuestions}
         />
       )}
     </div>
