@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import QuestionBlock from './QuestionBlock';
+import Alert from '../components/Alert'
 
 function RenderQuestions(props) {
 
   const itemsPerPage = 10;
   const [currentPage, setCurrentPage] = useState(1);
+
+  const [alert, setAlert] = useState(false);
   const questions = props.questions;
 
   //! calculations for pagination
@@ -18,10 +21,12 @@ function RenderQuestions(props) {
   };
 
   return (
+
     <div className='flex flex-col'>
+      {alert && <Alert message={"Question deleted"} type={"success"} />}
       <p className='text-lg self-center mb-4'>MCQ Questions</p>
       {questionsToDisplay.map((question) => (
-        <QuestionBlock key={question.id} question={question} testIdObject={props.testIdObject || null} getQuestions={props.getQuestions} />
+        <QuestionBlock key={question.id} question={question} testIdObject={props.testIdObject || null} getQuestions={props.getQuestions} setAlert={setAlert} />
       ))}
       <div className="">
         {Array.from({ length: totalPages }).map((_, index) => (

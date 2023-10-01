@@ -5,7 +5,6 @@ import Alert from '../components/Alert'
 
 function EditModal({ props, onClose, getQuestions }) {
   const [formData, setFormData] = useState(props);
-  const [isSuccess, SetIsSuccess] = useState(false);
   const [loading, setLoading] = useState(false)
   const [alert, setAlert] = useState(false)
 
@@ -23,7 +22,6 @@ function EditModal({ props, onClose, getQuestions }) {
       const resData = await editForm(formData)
       setAlert(true)
       getQuestions()
-      SetIsSuccess(true);
     } catch (error) {
       console.error('Error:', error);
     } finally {
@@ -34,7 +32,7 @@ function EditModal({ props, onClose, getQuestions }) {
   return (
     <>
       {loading && <Loading />}
-      {alert && <Alert message={"question deleted"} type={"success"} />}
+      {alert && <Alert message={"Question saved"} type={"success"} />}
 
       <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 z-40 flex justify-center items-center'>
         <div className='w-11/12 h-4/5 relative flex justify-center items-center'>
@@ -92,7 +90,6 @@ function EditModal({ props, onClose, getQuestions }) {
             <button onClick={onSaveHandler} className="px-4 mt-2 py-2 bg-green-500 text-white rounded-md cursor-pointer whitespace-nowrap" >
               Save
             </button>
-            {isSuccess && <p className='text-green-400'>Data saved successfully</p>}
           </div>
           <span className='absolute top-10 right-10 bg-red-500 text-white border-none rounded-md py-1 px-2 cursor-pointer hover:bg-red-600 z-40' onClick={onClose}><button >Close</button></span>
         </div>

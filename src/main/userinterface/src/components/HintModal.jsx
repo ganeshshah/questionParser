@@ -7,7 +7,7 @@ function HintModal({ hint, onClose }) {
         <div className=" w-full h-full  p-10 flex flex-col gap-3 bg-gray-200 overflow-y-auto rounded-lg ">
           <p className='text-lg self-center'>Knowledge Nugget</p>
           <div className="">
-            <p>{hint}</p>
+            <p> {'=> ' + hint}</p>
           </div>
         </div>
         <span className='absolute top-10 right-10 bg-red-500 text-white border-none rounded-md py-1 px-2 cursor-pointer hover:bg-red-600 z-50' onClick={onClose}><button >Close</button></span>

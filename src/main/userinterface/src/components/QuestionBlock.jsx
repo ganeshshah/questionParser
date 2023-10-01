@@ -3,7 +3,6 @@ import HintModal from './HintModal';
 import EditModal from './EditModal';
 import { deleteQuestionById, submitQuestion } from '../services'
 import ConfirmationModal from "./ConfirmationModal";
-import Alert from '../components/Alert'
 
 function QuestionBlock(props) {
   const [inputValue, setInputValue] = useState('');
@@ -16,7 +15,6 @@ function QuestionBlock(props) {
   const hint = props.question.hint;
   const subject = props.question.subject;
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
-  const [alert, setAlert] = useState(false);
 
   const dataToSend = {
     testId: props.testIdObject ? props.testIdObject.testId : 0,
@@ -82,7 +80,7 @@ function QuestionBlock(props) {
     try {
       // Send a delete request to the backend.
       await deleteQuestionById(id); // Pass the question ID to your delete function.
-      setAlert(true);
+      props.setAlert(true);
       props.getQuestions();
       // Handle the deletion on the front end (remove the question from the UI, etc.).
       // You can use a state management library or update the UI state as needed.
@@ -93,7 +91,7 @@ function QuestionBlock(props) {
 
   return (
     <>
-      <Alert message={"question deleted"} type={"success"} />
+
       <div className='whitespace-pre-line border border-gray-300 p-4 mb-4 rounded-md shadow-md bg-gray-100 flex flex-col gap-2'>
         <table className='w-full border-collapse '>
           <tbody>
