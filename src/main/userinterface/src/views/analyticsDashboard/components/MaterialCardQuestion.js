@@ -15,7 +15,7 @@ const bull = (
   </Box>
 );
 
-export default function MaterialCardQuestion() {
+export default function MaterialCardQuestion({totalQuestions}) {
   return (
     <Card sx={{ Width: 270 }}>
       <CardContent>
@@ -26,7 +26,7 @@ export default function MaterialCardQuestion() {
           Present
         </Typography>
         <Typography variant="body2" sx={{ fontSize: 50 }}>
-          230
+          {totalQuestions}
         </Typography>
       </CardContent>
     </Card>

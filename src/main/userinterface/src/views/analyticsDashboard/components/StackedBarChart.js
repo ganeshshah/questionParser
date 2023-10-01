@@ -1,36 +1,33 @@
 import React from "react";
 import { Chart } from "react-google-charts";
 
-export const data = [
-  ["City", "2010 Population", "2000 Population"],
-  ["New York City, NY", 8175000, 8008000],
-  ["Los Angeles, CA", 3792000, 3694000],
-  ["Chicago, IL", 2695000, 2896000],
-  ["Houston, TX", 2099000, 1953000],
-  ["Philadelphia, PA", 1526000, 1517000],
-];
+export function StackedBarChart({ analyticsData, subject }) {
+  const options = {
+    chartArea: { width: "50%" },
+    isStacked: true,
+    colors: ["#b0120a", "#49bf28"],
+    hAxis: {
+      title: "Total Questions",
+      minValue: 0,
+    },
+    vAxis: {
+      title: "Completion Target",
+    },
+    title: "Criteria wise question distribution for " + subject, // Moved inside the component
+  };
 
-export const options = {
-  title: "Population of Largest U.S. Cities",
-  chartArea: { width: "50%" },
-  isStacked: true,
-  hAxis: {
-    title: "Total Population",
-    minValue: 0,
-  },
-  vAxis: {
-    title: "City",
-  },
-};
+  const resultArray = [
+    ["Criteria", "target", "completed"],
+    ...Object.keys(analyticsData).map((key) => [key, ...analyticsData[key]]),
+  ];
 
-export function StackedBarChart() {
   return (
-    <Chart
-      chartType="BarChart"
-      width="100%"
-      height="400px"
-      data={data}
-      options={options}
-    />
+      <Chart
+          chartType="BarChart"
+          width="100%"
+          height="400px"
+          data={resultArray}
+          options={options}
+      />
   );
 }

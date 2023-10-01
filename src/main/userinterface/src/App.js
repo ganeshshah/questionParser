@@ -14,13 +14,16 @@ import SearchQuestionsWithParams from './views/searchQuestionsWithParams/SearchQ
 import CreateTest from './views/createTest/CreateTest.jsx';
 import EndTest from './views/endTest/EndTest';
 import ReviewQuestions from './views/endTest/components/ReviewQuestions';
-import LoadQuestions from './views/loadQuestions/LoadQuestions';
+import LoadQuestionsFromText from './views/loadQuestions/LoadQuestionsFromText';
 import ReviseDashBoard from './views/revisionStrategy/components/ReviseDashBoard';
 import SidebarLayout from './components/SidebarLayout'
 import RevisionSearchBar from './views/revisionStrategy/RevisionSearchBar';
 import Revise from './views/revisionStrategy/Revise';
 import ReviseQuestion from './views/revisionStrategy/components/ReviseQuestion';
 import ShowAnalytics from './views/analyticsDashboard/ShowAnalytics';
+import AddQuestion from './views/addQuestion/AddQuestion'
+import CreateMixedTest from "./views/createMixedTest/CreateMixedTest";
+import LoadQuestionFromExcel from "./views/loadQuestionFromExcel/LoadQuestionfromExcel";
 
 function App() {
   return (
@@ -39,12 +42,15 @@ function App() {
         <Route path="/create_test" element={<CreateTest />} />
         <Route path="/end_test" element={<EndTest />} />
         <Route path="/review_questions" element={<ReviewQuestions />} />
-        <Route path="/load_questions" element={<LoadQuestions />} />
+        <Route path="/load_questions_from_text" element={<LoadQuestionsFromText />} />
         <Route path="/revise_dashboard" element={<ReviseDashBoard />} />
         <Route path="/revision_searchbar" element={<RevisionSearchBar />} />
         <Route path="/revise" element={<Revise />} />
         <Route path="/revise_question" element={<ReviseQuestion />} />
         <Route path="/show_analytics" element={<ShowAnalytics />} />
+        <Route path="/add_question" element={<AddQuestion />} />
+        <Route path="/create_mixed_test" element={<CreateMixedTest />} />
+        <Route path="/load_question_from_excel" element={<LoadQuestionFromExcel />} />
       </Route>
     </Routes>
   );

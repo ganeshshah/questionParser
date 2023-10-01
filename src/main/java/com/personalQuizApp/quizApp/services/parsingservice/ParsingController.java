@@ -2,9 +2,11 @@ package com.personalQuizApp.quizApp.services.parsingservice;
 
 import com.personalQuizApp.quizApp.dataObjects.LoadQuestionParams;
 import com.personalQuizApp.quizApp.dataObjects.McqCSV;
+import com.personalQuizApp.quizApp.dataObjects.TestData;
 import com.personalQuizApp.quizApp.performanceAnalyzer.AnalyticsDashBoard;
 import com.personalQuizApp.quizApp.processors.ProcessInput;
 import com.personalQuizApp.quizApp.revisionStrategy.RevisionStrategy;
+import com.personalQuizApp.quizApp.services.testresultservice.TestDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,10 +22,13 @@ public class ParsingController {
 
     @Autowired
     public final ParsingService parsingService;
+    @Autowired
+    public final TestDataService testDataService;
 
     @Autowired
-    public ParsingController(ParsingService parsingService) {
+    public ParsingController(ParsingService parsingService, TestDataService testDataService) {
         this.parsingService = parsingService;
+        this.testDataService = testDataService;
     }
 
     @GetMapping("getQuestions")
@@ -54,8 +59,8 @@ public class ParsingController {
         parsingService.updateMcq(mcq);
     }
 
-    @DeleteMapping (path = "{id}")
-    void editQuestion(@PathVariable("id") Integer id){
+    @DeleteMapping (path = "deleteQuestionById/{id}")
+    void deleteQuestionById(@PathVariable("id") Integer id){
         System.out.println("Deleting from DB");
         parsingService.deleteMcq(id);
     }
@@ -81,13 +86,24 @@ public class ParsingController {
     @GetMapping("getAnalyticsData")
     public HashMap<String,Object>  getAnalyticsData(@RequestParam ArrayList<String> byMonthOrMonthRange,
                                           @RequestParam String allMonthsIndicator){
-        List<McqCSV> allQuestions = new ArrayList<>();
-        if(allMonthsIndicator.equals("ALL")){
+        HashMap<String,Object> resultData;
+        List<McqCSV> allQuestions;
+        List<TestData> allAttemptedQuestions = testDataService.getAttemptedQuestions();
+        if(allMonthsIndicator.equals("YES")){
             allQuestions = parsingService.getQuestions();
         }else{
             allQuestions = parsingService.getQuestionsForAnalytics(byMonthOrMonthRange);
         }
-        return AnalyticsDashBoard.prepareAnalyticsData(allQuestions);
+        resultData = AnalyticsDashBoard.prepareAnalyticsData(allQuestions);
+        resultData.put("lineChartData",AnalyticsDashBoard.processLineChartData(allAttemptedQuestions));
+        return resultData;
+    }
+
+    @PostMapping("addQuestionManually")
+    Integer addQuestionManually(@RequestBody McqCSV question) throws IOException {
+        McqCSV processedQuestion = ProcessInput.processQuestion(question);
+        parsingService.updateMcq(processedQuestion);
+        return 200;
     }
 
 }

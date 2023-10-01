@@ -1,4 +1,5 @@
-import { API_GET_QUESTIONS, API_CREATE_TEST, API_LOAD_QUESTIONS, API_TEST_RESULT, API_EDIT_FORM, API_SUBMIT_QUESTION, API_GET_REVISION_DATA, API_GET_ALL_QUESTION_BY_IDS, API_GET_ALL_ANALYTICS_DATA} from './constants';
+import { API_GET_QUESTIONS, API_CREATE_TEST, API_LOAD_QUESTIONS, API_TEST_RESULT, API_EDIT_FORM, API_SUBMIT_QUESTION, API_GET_REVISION_DATA,
+    API_GET_ALL_QUESTION_BY_IDS, API_GET_ALL_ANALYTICS_DATA, API_ADD_QUESTION, API_DELETE_QUESTION} from './constants';
 import axios from 'axios';
 
 export const fetchQuestions = async (numQuestions, flag, subject, accuracy, month) => {
@@ -45,7 +46,7 @@ export const fetchtestResult = async (testId) => {
     if (response.status !== 200) {
         throw new Error(`HTTP error! Status: ${response.status}`);
     }
-    return response;
+    return response.json();
 }
 
 export const editForm = async (formData) => {
@@ -108,4 +109,30 @@ export const fetchAnalyticsData = async (params) => {
         throw new Error(`HTTP error! Status: ${response.status}`);
     }
     return await response.json();
+}
+
+
+export const addQuestion = async (body) => {
+    const url = API_ADD_QUESTION
+
+    const response = await axios.post(url, body);
+    if (response.status == 200) {
+        console.log('POST request successful!!!')
+    } else {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response;
+}
+
+
+export const deleteQuestionById = async (questionId) => {
+    const url = API_DELETE_QUESTION + questionId
+
+    const response = await axios.delete(url);
+    if (response.status == 200) {
+        console.log('POST request successful!!!')
+    } else {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response;
 }

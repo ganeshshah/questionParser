@@ -1,7 +1,8 @@
 import React from 'react';
-import PieChart from './components/PieChart';
+import PieChart from "./components/PieChart";
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from "react";
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { fetchtestResult } from '../../services'
 
@@ -36,7 +37,7 @@ function EndTest() {
 
   const navigate = useNavigate();
   const navigateToReviewQuestions = () => {
-    navigate('/reviewQuestions', { state: { qlist } });
+    navigate('/review_questions', { state: { qlist } });
   };
 
 
@@ -61,7 +62,13 @@ function EndTest() {
       </div>
       <PieChart data={data} />
       <h2>Review Incorrect Questions Again</h2>
-      <button className="review-button" onClick={navigateToReviewQuestions}> Review Questions</button>
+      <br/>
+      <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+          onClick={navigateToReviewQuestions}
+      >
+        Review Questions
+      </button>
     </div>
   );
 };
