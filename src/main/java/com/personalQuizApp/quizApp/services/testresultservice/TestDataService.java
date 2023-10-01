@@ -3,6 +3,7 @@ package com.personalQuizApp.quizApp.services.testresultservice;
 import com.personalQuizApp.quizApp.dataObjects.TestData;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -20,5 +21,13 @@ public class TestDataService {
 
     public List<TestData> getTestResultData(int testId) {
         return testDataRepository.getTestResultData(testId);
+    }
+
+    public List<TestData> getAttemptedQuestions() {
+        return testDataRepository.getAttemptedQuestions();
+    }
+
+    public List<TestData> getAttemptedQuestionsForAnalytics(ArrayList<String> byMonthOrMonthRange) {
+        return testDataRepository.getAttemptedQuestionsForAnalytics(byMonthOrMonthRange);
     }
 }

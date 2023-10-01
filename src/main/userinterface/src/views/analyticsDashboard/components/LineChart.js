@@ -32,18 +32,25 @@ export const data = [
 
 export const options = {
   chart: {
-    title: "Box Office Earnings in First Two Weeks of Opening",
-    subtitle: "in millions of dollars (USD)",
+    title: "Monthly Questions Attempted",
+    subtitle: "By day",
   },
 };
 
-export function LineChart() {
+export function LineChart({analyticsData}) {
+
+
+  const resultArray = [
+    ["Months", "January", "February","March","April","May","June","July","August","September","October","November","December"],
+    ...Object.keys(analyticsData).map((key) => [key, ...analyticsData[key]]),
+  ];
+
   return (
     <Chart
       chartType="Line"
       width="100%"
       height="400px"
-      data={data}
+      data={resultArray}
       options={options}
     />
   );

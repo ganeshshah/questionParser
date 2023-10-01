@@ -42,7 +42,7 @@ function ShowAnalytics() {
                     <MaterialCardQuestion totalQuestions = {analyticsData.totalQuestions}/>
                     <MaterialCardAttempted totalAttempted = {analyticsData.totalAttempted}/>
                 </div>
-                <LineChart />
+                <LineChart analyticsData={analyticsData.lineChartData}/>
                 <DoubleBarChart analyticsData={analyticsData.doubleBarChartData}/>
                 <DoughnutChart analyticsData={analyticsData.doughnutChartData} />
                 <h1 style={{textAlign : "center"}}>Subject Wise Statistics</h1>

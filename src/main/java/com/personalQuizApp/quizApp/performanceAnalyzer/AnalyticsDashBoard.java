@@ -1,7 +1,9 @@
 package com.personalQuizApp.quizApp.performanceAnalyzer;
 
 import com.personalQuizApp.quizApp.dataObjects.McqCSV;
+import com.personalQuizApp.quizApp.dataObjects.TestData;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -122,7 +124,6 @@ public class AnalyticsDashBoard {
         resultMap.put("totalQuestions",totalQuestions);
         resultMap.put("totalAttempted",totalAttempted);
         resultMap.put("doughnutChartData",doughNutData);
-        //resultMap.put("lineChartData",lineChartData);
         resultMap.put("doubleBarChartData",doubleBarChartData);
         resultMap.put("subjectWiseBarChartData",doubleBarChartDataMap);
         doughNutData = new ArrayList<>();
@@ -188,5 +189,37 @@ public class AnalyticsDashBoard {
             doughNutData.add(data);
         }
         return barData;
+    }
+
+    public static Object processLineChartData(List<TestData> allAttemptedQuestions) {
+        HashMap<Integer,ArrayList<Integer>> result = new HashMap<>();
+
+        for(int i=1;i<=31;i++){
+            result.put(i,new ArrayList<>(Collections.nCopies(12, 0)));
+        }
+        for(TestData tdata : allAttemptedQuestions){
+            int[] dayMonth = extractMonthAndDay(tdata.getTestDate().toString());
+            Integer value = result.get(dayMonth[0]).get(dayMonth[1]-1);
+            result.get(dayMonth[0]).set(dayMonth[1]-1 , value+1);
+        }
+        return result;
+    }
+
+    public static int[] extractMonthAndDay(String dateString) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSSSSS");
+
+        try {
+            Date date = sdf.parse(dateString);
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(date);
+
+            int month = calendar.get(Calendar.MONTH) + 1; // Add 1 for 1-based month
+            int day = calendar.get(Calendar.DAY_OF_MONTH);
+
+            return new int[]{day,month};
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return new int[]{-1, -1}; // Return sentinel values or handle the error as needed
+        }
     }
 }
