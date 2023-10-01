@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { loadQuestions } from '../../services'
 
-function LoadQuestions() {
+function LoadQuestionsFromText() {
 
   const [questionPath, setQuestionPath] = useState('');
   const [answerPath, setAnswerPath] = useState('');
@@ -115,4 +115,4 @@ function LoadQuestions() {
   );
 }
 
-export default LoadQuestions;
+export default LoadQuestionsFromText;
