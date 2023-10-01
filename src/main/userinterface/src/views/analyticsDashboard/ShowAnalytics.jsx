@@ -3,10 +3,9 @@ import { DoubleBarChart } from './components/DoubleBarChart';
 import { LineChart } from './components/LineChart';
 import { StackedBarChart } from './components/StackedBarChart';
 import { DoughnutChart } from './components/DoughnutChart';
-import MaterialCardQuestion from './components/MaterialCardQuestion';
-import MaterialCardAttempted from './components/MaterialCardAttempted';
 import { fetchAnalyticsData } from '../../services';
 import Loading from '../../components/Loading';
+import AnalyticsCard from '../../components/AnalyticsCard';
 
 function ShowAnalytics() {
     const [param, setParam] = useState('AUG,SEPT&allMonthsIndicator=YES');
@@ -77,10 +76,11 @@ function ShowAnalytics() {
         <>
             {loading && <Loading />}
             {analyticsData && (
-                <div className="ShowAnalytics">
-                    <h1>Analytics Dashboard</h1>
-                    <div className="multipleMonths">
-                        <p>By default, Analytics are shown for all months. Select specific month(s) if you want:</p>
+                <div className="flex flex-col ">
+                    <p className='text-2xl text-bold self-center'>Analytics Dashboard</p>
+                    <p className='py-2'>By default, Analytics are shown for all months. Select specific month(s) if you want:</p>
+
+                    <div className='flex flex-row justify-between my-4'>
                         <div className="w-1/4 p-4 border border-gray-300 rounded-md shadow-md bg-white">
                             <h2 className="text-xl font-semibold mb-4">Select Month(s)</h2>
                             <div className="flex flex-wrap justify-start">
@@ -105,10 +105,8 @@ function ShowAnalytics() {
                                 Fetch Data
                             </button>
                         </div>
-                    </div>
-                    <div>
-                        <MaterialCardQuestion totalQuestions={analyticsData.totalQuestions} />
-                        <MaterialCardAttempted totalAttempted={analyticsData.totalAttempted} />
+                        <AnalyticsCard title={'Total Questions Overall'} subTitle={'Present'} totalNumber={analyticsData.totalQuestions} />
+                        <AnalyticsCard title={'Total Questions Attempted'} subTitle={' At least Once'} totalNumber={analyticsData.totalAttempted} />
                     </div>
                     <LineChart analyticsData={analyticsData.lineChartData} />
                     <DoubleBarChart analyticsData={analyticsData.doubleBarChartData} />
