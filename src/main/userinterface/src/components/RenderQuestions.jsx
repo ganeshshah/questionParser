@@ -3,7 +3,7 @@ import QuestionBlock from './QuestionBlock';
 
 function RenderQuestions(props) {
 
-  const itemsPerPage = 20;
+  const itemsPerPage = 10;
   const [currentPage, setCurrentPage] = useState(1);
   const questions = props.questions;
 

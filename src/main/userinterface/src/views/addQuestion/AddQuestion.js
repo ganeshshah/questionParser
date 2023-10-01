@@ -85,6 +85,7 @@ function AddQuestion() {
                         id="month"
                         value={formData.month}
                         onChange={handleChange}
+                        required
                     >
                         {months.map((month) => (
                             <option key={month.value} value={month.value}>
