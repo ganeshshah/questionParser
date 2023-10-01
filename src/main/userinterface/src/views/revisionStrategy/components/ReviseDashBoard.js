@@ -5,8 +5,7 @@ import RevisionQuestionBar from './RevisionQuestionBar';
 
 function ReviseDashBoard() {
     const location = useLocation();
-    const {data} = location.state; // Replace Pib24x7 with the subject you want to display
-    console.log(data);
+    const { data } = location.state; // Replace Pib24x7 with the subject you want to display
     // Calculate the number of data points for each key
     const dataCounts = Object.keys(data).reduce((counts, key) => {
         counts[key] = data[key].length;
@@ -55,7 +54,7 @@ function ReviseDashBoard() {
                         legend: { position: 'right' },
                     }}
                 />
-                <RevisionQuestionBar data = {data}/>
+                <RevisionQuestionBar data={data} />
             </div>
         </div>
     );

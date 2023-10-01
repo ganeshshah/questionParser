@@ -1,5 +1,7 @@
-import { API_GET_QUESTIONS, API_CREATE_TEST, API_LOAD_QUESTIONS, API_TEST_RESULT, API_EDIT_FORM, API_SUBMIT_QUESTION, API_GET_REVISION_DATA,
-    API_GET_ALL_QUESTION_BY_IDS, API_GET_ALL_ANALYTICS_DATA, API_ADD_QUESTION, API_DELETE_QUESTION} from './constants';
+import {
+    API_GET_QUESTIONS, API_CREATE_TEST, API_LOAD_QUESTIONS, API_TEST_RESULT, API_EDIT_FORM, API_SUBMIT_QUESTION, API_GET_REVISION_DATA,
+    API_GET_ALL_QUESTION_BY_IDS, API_GET_ALL_ANALYTICS_DATA, API_ADD_QUESTION, API_DELETE_QUESTION
+} from '../common/constants';
 import axios from 'axios';
 
 export const fetchQuestions = async (numQuestions, flag, subject, accuracy, month) => {
@@ -78,7 +80,7 @@ export const submitQuestion = async (body) => {
 }
 
 export const fetchRevisionData = async (month, subject) => {
-    const url = API_GET_REVISION_DATA + 'byMonthOrAll='+month+'&subject='+subject
+    const url = API_GET_REVISION_DATA + 'byMonthOrAll=' + month + '&subject=' + subject
 
     const response = await fetch(url);
 

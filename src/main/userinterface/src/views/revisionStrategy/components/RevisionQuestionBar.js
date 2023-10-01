@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../css/RevisionQuestionBar.css';
-import { fetchAllQuestions } from '../../../services';
+import { fetchAllQuestions } from '../../../services/services';
 import { useNavigate } from 'react-router-dom';
 
 function RevisionQuestionBar({ data }) {
@@ -14,7 +13,7 @@ function RevisionQuestionBar({ data }) {
       try {
         const questions = await fetchAllQuestions(param);
         console.log(questions);
-        navigate('/revise_question', {state : {questions : questions}})
+        navigate('/revise_question', { state: { questions: questions } })
 
       } catch (error) {
         console.error(error);
@@ -59,14 +58,23 @@ function RevisionQuestionBar({ data }) {
   return (
     <div className="RevisionQuestionBar">
       <div className="search-container">
-        <select className="select" value={selectedOption} onChange={handleDropdownChange}>
+        <select
+          value={selectedOption}
+          onChange={handleDropdownChange}
+          className="p-2 text-xs bg-white border border-gray-300 hover:border-gray-400 rounded shadow leading-tight focus:outline-none focus:shadow-outline mr-4"
+        >
           <option value="notAttempted">Not Attempted questions</option>
           <option value="moreThan7Days">7 day overdue</option>
           <option value="moreThan15Days">15 day overdue</option>
           <option value="moreThan25Days">25 day overdue</option>
           <option value="lessThan80Accuracy">Question with less than 80% accuracy</option>
         </select>
-        <button className ="search_button" onClick={handleFetchQuestion}>Search</button>
+        <button
+          onClick={handleFetchQuestion}
+          className=' text-xs bg-blue-500 hover:bg-blue-700  text-white font-bold py-2 px-4 rounded-md'
+        >
+          Search
+        </button>
       </div>
     </div>
   );

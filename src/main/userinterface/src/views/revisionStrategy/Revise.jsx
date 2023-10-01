@@ -1,5 +1,5 @@
 import React from 'react';
-import RevisionSearchBar from './RevisionSearchBar';
+import RevisionSearchBar from './components/RevisionSearchBar';
 
 
 function Revise() {

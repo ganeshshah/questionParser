@@ -37,16 +37,17 @@ export const options = {
   },
 };
 
-export function LineChart({analyticsData}) {
+export function LineChart({ analyticsData }) {
 
 
   const resultArray = [
-    ["Months", "January", "February","March","April","May","June","July","August","September","October","November","December"],
+    ["Months", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
     ...Object.keys(analyticsData).map((key) => [key, ...analyticsData[key]]),
   ];
 
   return (
     <Chart
+      className="z-0"
       chartType="Line"
       width="100%"
       height="400px"

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import RenderQuestions from "../../components/RenderQuestions";
 import { useLocation } from 'react-router-dom';
-import { fetchQuestions } from '../../services'
+import { fetchQuestions } from '../../services/services'
 import Loading from '../../components/Loading'
 
 function QuestionsWithParams() {
@@ -31,7 +31,7 @@ function QuestionsWithParams() {
         <Loading />}
       <div style={{ marginTop: 70 }}>
         {/* pass data down to the QuestionBlock component where we'll create the table*/}
-        <RenderQuestions questions={questions} getQuestions={ getQuestions} />
+        <RenderQuestions questions={questions} getQuestions={getQuestions} />
       </div>
     </>
   );

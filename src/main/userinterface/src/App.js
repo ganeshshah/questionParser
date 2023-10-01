@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './views/home/Home';
-import Pib24x7 from './views/pib247/Pib24x7'; // Assuming you have a PIB24x7 component
+import Pib24x7 from './views/pib247/Pib24x7';
 import AllQuestions from './views/allQuestions/AllQuestions';
 import Finance from './views/finance/Finance';
 import Rbi24x7 from './views/rbi24x7/Rbi24x7';
@@ -17,7 +17,7 @@ import ReviewQuestions from './views/endTest/components/ReviewQuestions';
 import LoadQuestionsFromText from './views/loadQuestions/LoadQuestionsFromText';
 import ReviseDashBoard from './views/revisionStrategy/components/ReviseDashBoard';
 import SidebarLayout from './components/SidebarLayout'
-import RevisionSearchBar from './views/revisionStrategy/RevisionSearchBar';
+import Layout from './components/Layout'
 import Revise from './views/revisionStrategy/Revise';
 import ReviseQuestion from './views/revisionStrategy/components/ReviseQuestion';
 import ShowAnalytics from './views/analyticsDashboard/ShowAnalytics';
@@ -30,27 +30,28 @@ function App() {
     <Routes>
       <Route element={<SidebarLayout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/pib24x7" element={<Pib24x7 />} />
-        <Route path="/all_questions" element={<AllQuestions />} />
-        <Route path="/finance" element={<Finance />} />
-        <Route path="/rbi24x7" element={<Rbi24x7 />} />
-        <Route path="/management" element={<Management />} />
-        <Route path="/esi" element={<Esi />} />
-        <Route path="/spotlight_ga" element={<SpotlightGA />} />
-        <Route path="/cloudaffairs_ga" element={<CloudAffairsGA />} />
-        <Route path="/search_questions_with_params" element={<SearchQuestionsWithParams />} />
-        <Route path="/create_test" element={<CreateTest />} />
-        <Route path="/end_test" element={<EndTest />} />
-        <Route path="/review_questions" element={<ReviewQuestions />} />
-        <Route path="/load_questions_from_text" element={<LoadQuestionsFromText />} />
-        <Route path="/revise_dashboard" element={<ReviseDashBoard />} />
-        <Route path="/revision_searchbar" element={<RevisionSearchBar />} />
-        <Route path="/revise" element={<Revise />} />
-        <Route path="/revise_question" element={<ReviseQuestion />} />
-        <Route path="/show_analytics" element={<ShowAnalytics />} />
-        <Route path="/add_question" element={<AddQuestion />} />
-        <Route path="/create_mixed_test" element={<CreateMixedTest />} />
-        <Route path="/load_question_from_excel" element={<LoadQuestionFromExcel />} />
+        <Route element={<Layout />}>
+          <Route path="/pib24x7" element={<Pib24x7 />} />
+          <Route path="/all_questions" element={<AllQuestions />} />
+          <Route path="/finance" element={<Finance />} />
+          <Route path="/rbi24x7" element={<Rbi24x7 />} />
+          <Route path="/management" element={<Management />} />
+          <Route path="/esi" element={<Esi />} />
+          <Route path="/spotlight_ga" element={<SpotlightGA />} />
+          <Route path="/cloudaffairs_ga" element={<CloudAffairsGA />} />
+          <Route path="/search_questions_with_params" element={<SearchQuestionsWithParams />} />
+          <Route path="/create_test" element={<CreateTest />} />
+          <Route path="/end_test" element={<EndTest />} />
+          <Route path="/review_questions" element={<ReviewQuestions />} />
+          <Route path="/load_questions_from_text" element={<LoadQuestionsFromText />} />
+          <Route path="/revise_dashboard" element={<ReviseDashBoard />} />
+          <Route path="/revise" element={<Revise />} />
+          <Route path="/revise_question" element={<ReviseQuestion />} />
+          <Route path="/show_analytics" element={<ShowAnalytics />} />
+          <Route path="/add_question" element={<AddQuestion />} />
+          <Route path="/create_mixed_test" element={<CreateMixedTest />} />
+          <Route path="/load_question_from_excel" element={<LoadQuestionFromExcel />} />
+        </Route>
       </Route>
     </Routes>
   );

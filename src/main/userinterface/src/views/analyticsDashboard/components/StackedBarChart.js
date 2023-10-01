@@ -2,6 +2,7 @@ import React from "react";
 import { Chart } from "react-google-charts";
 
 export function StackedBarChart({ analyticsData, subject }) {
+
   const options = {
     chartArea: { width: "50%" },
     isStacked: true,
@@ -22,12 +23,12 @@ export function StackedBarChart({ analyticsData, subject }) {
   ];
 
   return (
-      <Chart
-          chartType="BarChart"
-          width="100%"
-          height="400px"
-          data={resultArray}
-          options={options}
-      />
+    <Chart
+      chartType="BarChart"
+      width="100%"
+      height="400px"
+      data={resultArray}
+      options={options}
+    />
   );
 }

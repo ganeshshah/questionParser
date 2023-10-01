@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from "react";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { fetchtestResult } from '../../services'
+import { fetchtestResult } from '../../services/services'
 
 function EndTest() {
 
@@ -62,10 +62,10 @@ function EndTest() {
       </div>
       <PieChart data={data} />
       <h2>Review Incorrect Questions Again</h2>
-      <br/>
+      <br />
       <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-          onClick={navigateToReviewQuestions}
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+        onClick={navigateToReviewQuestions}
       >
         Review Questions
       </button>

@@ -1,15 +1,18 @@
 import { Outlet } from 'react-router-dom';
 import './SidebarLayout.css'
 import { Link } from 'react-router-dom'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
 
 function SidebarLayout() {
 
     const location = useLocation();
     const currentRoute = location.pathname;
-
     const [activeMenu, setActiveMenu] = useState(currentRoute)
+
+    useEffect(() => {
+        setActiveMenu(currentRoute)
+    }, [currentRoute])
 
     const navLinks = [
         {
@@ -59,12 +62,20 @@ function SidebarLayout() {
             title: "Load Question from excel",
         },
         {
-            id: "load_questions_from_text",
+            id: "/load_questions_from_text",
             title: "Load Question from text file",
         },
         {
             id: '/revise',
-            title: 'Revise Search Bar'
+            title: 'Revise Search Bar',
+            child: [
+                {
+                    id: '/revise_dashboard',
+                    title: 'Revise dashboard'
+                }
+            ]
+
+
         },
         {
             id: "/show_analytics",
@@ -74,10 +85,10 @@ function SidebarLayout() {
 
 
     return (
-        <div className="relative min-h-screen md:flex justify-end z-10" data-dev-hint="container">
+        <div className="relative min-h-screen md:flex justify-end z-10 font-lucida-sans" data-dev-hint="container">
             <input type="checkbox" id="menu-open" className="hidden" />
 
-            <header className="bg-gray-600 text-gray-100 flex justify-between md:hidden fixed top-0 right-0 left-0 " data-dev-hint="mobile menu bar">
+            <header className="bg-gray-600 text-gray-100 flex justify-between md:hidden fixed top-0 right-0 left-0 z-20" data-dev-hint="mobile menu bar">
                 <a href="/" className="block p-4 text-white font-bold whitespace-nowrap truncate">
                     MCQ App
                 </a>
@@ -103,21 +114,26 @@ function SidebarLayout() {
 
                     <nav data-dev-hint="main navigation">
                         {navLinks.map((item) => {
-                            return <Link to={`${item.id}`} key={item.id} onClick={() => setActiveMenu(item.id)} className={`flex items-center space-x-2 py-2 px-4 transition duration-200 hover:bg-gray-700 hover:text-white ${activeMenu === item.id ? 'bg-gray-500' : ''}`}>
-                                <span className="ml-6">{item.title}</span>
-                            </Link>
+                            return (<>
+                                <Link to={`${item.id}`} key={item.id} onClick={() => setActiveMenu(item.id)} className={`flex items-center space-x-2 py-2 px-4 transition duration-200 hover:bg-gray-700 hover:text-white ${activeMenu === item.id ? 'bg-gray-500' : ''}`}>
+                                    <span className="ml-6">{item.title}</span>
+                                </Link>
+
+                                {item?.child?.map((i) => (
+                                    <p key={i.id} className={`flex items-center space-x-2 py-2 px-4 transition duration-200 hover:bg-gray-700 hover:text-white ${activeMenu === i.id ? 'bg-gray-500' : ''}`}>
+                                        <span className="ml-12">{i.title}</span>
+                                    </p>
+                                ))}
+                            </>)
+
                         })}
                     </nav>
                 </div>
             </aside>
 
-            <main id="content" className="main_content_width p-6 lg:px-8">
-                <div className="max-w-7xl mx-auto">
-                    <div className="px-4 py-6 sm:px-0 mt-4 md:mt-0">
-                        < Outlet />
-                    </div>
-                </div>
-            </main>
+            <div className="main_content_width " >
+                < Outlet />
+            </div>
         </div>
     )
 }

@@ -9,8 +9,7 @@ export const options = {
   is3D: false,
 };
 
-export function DoughnutChart({analyticsData}) {
-  console.log(analyticsData)
+export function DoughnutChart({ analyticsData }) {
   return (
     <Chart
       chartType="PieChart"

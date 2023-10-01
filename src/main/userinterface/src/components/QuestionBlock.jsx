@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import HintModal from './HintModal';
 import EditModal from './EditModal';
-import { deleteQuestionById, submitQuestion } from '../services'
+import { deleteQuestionById, submitQuestion } from '../services/services'
 import ConfirmationModal from "./ConfirmationModal";
 
 function QuestionBlock(props) {
@@ -113,7 +113,7 @@ function QuestionBlock(props) {
           value={inputValue}
           onChange={inputHandler}
         />
-        <div className=''>
+        <div className='self-end'>
           <button onClick={handleSubmit} type='submit' className='mr-2 mt-2 px-4 py-2 bg-green-500 text-white rounded-md cursor-pointer whitespace-nowrap'>
             Submit Answer
           </button>

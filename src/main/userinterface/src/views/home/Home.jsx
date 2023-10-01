@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import backgroundImage from './image/background.jpg';
 import thoughts from './components/thoughts.json';
+import Loading from '../../components/Loading';
 
 function Home() {
     const [randomQuote, setRandomQuote] = useState('');
@@ -23,24 +24,15 @@ function Home() {
 
     return (
         <div
-            className="min-h-screen bg-cover flex flex-col justify-center items-center"
-            style={{
-                position: 'fixed', // Fixed position
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                backgroundImage: `url(${backgroundImage})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundColor: 'rgba(255, 255, 255, 0.8)',
-                backdropFilter: 'blur(10px)',
-                overflow: 'hidden', // Hide any overflowing content
-            }}
         >
-            <div className="bg-white p-8 rounded-md shadow-lg text-center translate-x-[70px]">
-                <p className="text-lg font-bold text-black">{randomQuote.quote}</p>
-                <p className="mt-2 text-black">- {randomQuote.author}</p>
+            <div className='relative'>
+                {backgroundImage ? <img src={backgroundImage} className='h-screen w-screen object-cover' /> : <Loading />}
+                <div className='flex justify-center items-center absolute inset-0' >
+                    <div className="backdrop-blur  p-10 border-solid border-amber-400 border-2 rounded-lg flex flex-col">
+                        <p className="text-lg font-bold text-white rounded ">{randomQuote.quote}</p>
+                        <p className="mt-2 text-white self-end font-mono">- {randomQuote.author}</p>
+                    </div>
+                </div>
             </div>
         </div>
     );

@@ -9,3 +9,21 @@ export const API_GET_ALL_QUESTION_BY_IDS = "http://localhost:8080/getIncorrectQu
 export const API_GET_ALL_ANALYTICS_DATA = "http://localhost:8080/getAnalyticsData?byMonthOrMonthRange=";
 export const API_ADD_QUESTION = "http://localhost:8080/addQuestionManually";
 export const API_DELETE_QUESTION = "http://localhost:8080/deleteQuestionById/";
+
+export const MONTHS = [
+    { value: 'JAN', label: 'January' },
+    { value: 'FEB', label: 'February' },
+    { value: 'MAR', label: 'March' },
+    { value: 'APR', label: 'April' },
+    { value: 'MAY', label: 'May' },
+    { value: 'JUNE', label: 'June' },
+    { value: 'JULY', label: 'July' },
+    { value: 'AUG', label: 'August' },
+    { value: 'SEPT', label: 'September' },
+    { value: 'OCT', label: 'October' },
+    { value: 'NOV', label: 'November' },
+    { value: 'DEC', label: 'December' },
+];
+
+export const SUBJECTS = ['RBI24X7', 'SPOTLIGHT', 'PIB24X7', 'CA', 'FINANCE', 'MANAGEMENT', 'ESI'];
+export const ACCURACY = ['90', '80', '70', '60', '50', '40', '30', '20'] 

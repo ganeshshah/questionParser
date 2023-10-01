@@ -3,9 +3,10 @@ import { DoubleBarChart } from './components/DoubleBarChart';
 import { LineChart } from './components/LineChart';
 import { StackedBarChart } from './components/StackedBarChart';
 import { DoughnutChart } from './components/DoughnutChart';
-import { fetchAnalyticsData } from '../../services';
+import { fetchAnalyticsData } from '../../services/services';
 import Loading from '../../components/Loading';
 import AnalyticsCard from '../../components/AnalyticsCard';
+import { MONTHS, SUBJECTS } from '../../common/constants'
 
 function ShowAnalytics() {
     const [param, setParam] = useState('AUG,SEPT&allMonthsIndicator=YES');
@@ -13,21 +14,6 @@ function ShowAnalytics() {
     const [loading, setLoading] = useState(false);
     const subjects = ['RBI24X7', 'SPOTLIGHT', 'PIB24X7', 'CA'];
     const [selectedMonths, setSelectedMonths] = useState([]);
-
-    const months = [
-        { value: 'JAN', label: 'January' },
-        { value: 'FEB', label: 'February' },
-        { value: 'MAR', label: 'March' },
-        { value: 'APR', label: 'April' },
-        { value: 'MAY', label: 'May' },
-        { value: 'JUNE', label: 'June' },
-        { value: 'JULY', label: 'July' },
-        { value: 'AUG', label: 'August' },
-        { value: 'SEPT', label: 'September' },
-        { value: 'OCT', label: 'October' },
-        { value: 'NOV', label: 'November' },
-        { value: 'DEC', label: 'December' },
-    ];
 
     const handleMonthChange = (event) => {
         const monthValue = event.target.value;
@@ -76,15 +62,15 @@ function ShowAnalytics() {
         <>
             {loading && <Loading />}
             {analyticsData && (
-                <div className="flex flex-col ">
+                <div className="flex flex-col">
                     <p className='text-2xl text-bold self-center'>Analytics Dashboard</p>
                     <p className='py-2'>By default, Analytics are shown for all months. Select specific month(s) if you want:</p>
 
-                    <div className='flex flex-row justify-between my-4'>
-                        <div className="w-1/4 p-4 border border-gray-300 rounded-md shadow-md bg-white">
+                    <div className='flex flex-row max-lg:flex-col justify-between my-4'>
+                        <div className="max-lg:w-fit w-1/3 p-4 border border-gray-300 rounded-md shadow-md bg-white m-2">
                             <h2 className="text-xl font-semibold mb-4">Select Month(s)</h2>
                             <div className="flex flex-wrap justify-start">
-                                {months.map((month) => (
+                                {MONTHS.map((month) => (
                                     <label key={month.value} className="flex items-center mr-4 mb-2">
                                         <input
                                             type="checkbox"
@@ -112,14 +98,17 @@ function ShowAnalytics() {
                     <DoubleBarChart analyticsData={analyticsData.doubleBarChartData} />
                     <DoughnutChart analyticsData={analyticsData.doughnutChartData} />
                     <h1 style={{ textAlign: 'center' }}>Subject Wise Statistics</h1>
-                    {subjects.map((subject) => {
-                        return (
-                            <StackedBarChart
-                                key={subject}
-                                analyticsData={analyticsData.subjectWiseBarChartData[subject]}
-                                subject={subject}
-                            />
-                        );
+
+                    {SUBJECTS.map((subject) => {
+                        if (analyticsData.subjectWiseBarChartData[subject]) {
+                            return (
+                                <StackedBarChart
+                                    key={subject}
+                                    analyticsData={analyticsData.subjectWiseBarChartData[subject]}
+                                    subject={subject}
+                                />
+                            );
+                        }
                     })}
                 </div>
             )}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { editForm } from '../services'
+import { editForm } from '../services/services'
 import Loading from '../components/Loading'
 import Alert from '../components/Alert'
 
@@ -45,7 +45,7 @@ function EditModal({ props, onClose, getQuestions }) {
                 className='w-full p-2 border border-gray-300 rounded-md text-base mt-2'
                 type="text"
                 name="id"
-                value={formData.id}
+                value={formData?.id}
                 readOnly={true}
               />
             </div>
@@ -55,7 +55,7 @@ function EditModal({ props, onClose, getQuestions }) {
                 className='w-full p-2 border border-gray-300 rounded-md text-base mt-2'
                 type="text"
                 name="subject"
-                value={formData.subject}
+                value={formData?.subject}
                 readOnly={true}
               />
             </div>
@@ -64,7 +64,7 @@ function EditModal({ props, onClose, getQuestions }) {
               <textarea
                 className='w-full h-60 p-2 border border-gray-300 rounded-md text-base mt-2'
                 name="question"
-                value={formData.question}
+                value={formData?.question}
                 onChange={onChangeHandler}
               />
             </div>
@@ -74,7 +74,7 @@ function EditModal({ props, onClose, getQuestions }) {
                 className='w-full p-2 border border-gray-300 rounded-md text-base mt-2'
                 type="text"
                 name="answerKey"
-                value={formData.answerKey}
+                value={formData?.answerKey}
                 onChange={onChangeHandler}
               />
             </div>
@@ -83,7 +83,7 @@ function EditModal({ props, onClose, getQuestions }) {
               <textarea
                 className='w-full p-2 border border-gray-300 rounded-md text-base mt-2'
                 name="hint"
-                value={formData.hint}
+                value={formData?.hint ?? ''}
                 onChange={onChangeHandler}
               />
             </div>

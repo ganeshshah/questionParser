@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import FixedTestHeader from "../../components/FixedTestHeader.jsx";
 import AllQuestions from "../allQuestions/AllQuestions";
 import { useLocation } from 'react-router-dom';
-import { fetchTestId } from '../../services.js'
+import { fetchTestId } from '../../services/services.js'
 import Loading from '../../components/Loading.jsx'
 
 function CreateTest() {

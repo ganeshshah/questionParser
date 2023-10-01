@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-// import './QuestionLoader.css';
 import axios from 'axios';
-import { loadQuestions } from '../../services'
+import { loadQuestions } from '../../services/services'
+import { MONTHS } from '../../common/constants'
+import { SUBJECTS } from '../../common/constants'
 
 function LoadQuestionsFromText() {
 
@@ -10,23 +11,6 @@ function LoadQuestionsFromText() {
   const [selectedParser, setSelectedParser] = useState('PIB24X7');
   const [selectedSubject, setSelectedSubject] = useState('PIB24X7');
   const [selectedMonth, setSelectedMonth] = useState('AUG');
-
-  const months = [
-    { value: 'JAN', label: 'January' },
-    { value: 'FEB', label: 'February' },
-    { value: 'MAR', label: 'March' },
-    { value: 'APR', label: 'April' },
-    { value: 'MAY', label: 'May' },
-    { value: 'JUNE', label: 'June' },
-    { value: 'JULY', label: 'July' },
-    { value: 'AUG', label: 'August' },
-    { value: 'SEPT', label: 'September' },
-    { value: 'OCT', label: 'October' },
-    { value: 'NOV', label: 'November' },
-    { value: 'DEC', label: 'December' },
-  ];
-
-
 
   const handleValidateFormat = () => {
 
@@ -75,23 +59,18 @@ function LoadQuestionsFromText() {
           value={selectedParser}
           onChange={(e) => setSelectedParser(e.target.value)}
         >
-          <option value="PIB24X7">Pib24x7 Parser</option>
-          <option value="RBI24X7">Rbi24x7 Parser</option>
-          <option value="SPOTLIGHT">Spotlight Parser</option>
-          <option value="CA">Cloudaffairs Parser</option>
+          {SUBJECTS.map((subject) => (
+            <option key={subject} value={subject}>{subject + ' Parser'}</option>
+          ))}
         </select>
         <select
           className="h-full px-2 py-2 bg-white border border-gray-300 hover:border-gray-400  rounded shadow leading-tight focus:outline-none focus:shadow-outline"
           value={selectedSubject}
           onChange={(e) => setSelectedSubject(e.target.value)}
         >
-          <option value="FINANCE">Finance</option>
-          <option value="MANAGEMENT">Management</option>
-          <option value="ESI">Esi</option>
-          <option value="PIB24X7">Pib24x7</option>
-          <option value="RBI24X7">Rbi24x7</option>
-          <option value="SPOTLIGHT">Spotlight GA</option>
-          <option value="CA">Cloud Affairs GA</option>
+          {SUBJECTS.map((subject) => (
+            <option key={subject} value={subject}>{subject}</option>
+          ))}
         </select>
 
         <select
@@ -99,7 +78,7 @@ function LoadQuestionsFromText() {
           value={selectedMonth}
           onChange={(e) => setSelectedMonth(e.target.value)}
         >
-          {months.map((month) => (
+          {MONTHS.map((month) => (
             <option key={month.value} value={month.value}>
               {month.label}
             </option>

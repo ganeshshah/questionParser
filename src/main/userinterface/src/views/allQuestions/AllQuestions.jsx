@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import RenderQuestions from "../../components/RenderQuestions";
 import { useLocation } from 'react-router-dom';
-import { fetchQuestions } from '../../services'
+import { fetchQuestions } from '../../services/services'
 import Loading from '../../components/Loading';
+
 function AllQuestions({ testIdObject }) {
 
   const location = useLocation();
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(false);
-  
+
   useEffect(() => {
     //this is a self invoked function to fetch all questions
     (async function () {

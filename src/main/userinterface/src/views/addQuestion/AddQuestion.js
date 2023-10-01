@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { addQuestion } from "../../services";
+import { addQuestion } from "../../services/services";
 import Alert from '../../components/Alert'
+import { MONTHS, SUBJECTS } from '../../common/constants'
 
 function AddQuestion() {
     const [formData, setFormData] = useState({
@@ -12,20 +13,7 @@ function AddQuestion() {
     });
     const [alert, setAlert] = useState();
 
-    const months = [
-        { value: 'JAN', label: 'January' },
-        { value: 'FEB', label: 'February' },
-        { value: 'MAR', label: 'March' },
-        { value: 'APR', label: 'April' },
-        { value: 'MAY', label: 'May' },
-        { value: 'JUNE', label: 'June' },
-        { value: 'JULY', label: 'July' },
-        { value: 'AUG', label: 'August' },
-        { value: 'SEPT', label: 'September' },
-        { value: 'OCT', label: 'October' },
-        { value: 'NOV', label: 'November' },
-        { value: 'DEC', label: 'December' },
-    ];
+
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -54,7 +42,7 @@ function AddQuestion() {
 
     return (
         <>
-            {alert && <Alert message={'successfully sent'} type={'success'} />}
+            {alert && <Alert message={'Question added successfuly'} type={'success'} />}
             <div className="w-full flex justify-center relative z-50">
 
                 <div className=" w-11/12 h-4/5 p-10 flex flex-col  rounded-lg  shadow-lg">
@@ -72,14 +60,9 @@ function AddQuestion() {
                                 <option value="" disabled>
                                     Select Subject
                                 </option>
-                                <option value="PIB24X7">Pib24x7</option>
-                                <option value="RBI24X7">Rbi24x7</option>
-                                <option value="SPOTLIGHT">Spotlight GA</option>
-                                <option value="CA">Cloud Affairs GA</option>
-                                <option value="FINANCE">Finance</option>
-                                <option value="MANAGEMENT">Management</option>
-                                <option value="ESI">Esi</option>
-                                {/* Add more subject options */}
+                                {SUBJECTS.map((subject) => (
+                                    <option key={subject} value={subject}>{subject}</option>
+                                ))}
                             </select>
                         </div>
                         <div className="mb-4">
@@ -92,7 +75,7 @@ function AddQuestion() {
                                 className="h-full p-2  bg-white border border-gray-300 hover:border-gray-400 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
                                 required
                             >
-                                {months.map((month) => (
+                                {MONTHS.map((month) => (
                                     <option key={month.value} value={month.value}>
                                         {month.label}
                                     </option>
@@ -131,7 +114,6 @@ function AddQuestion() {
                                 rows="2"
                             />
                         </div>
-                        {/* Add more fields for month, etc. */}
                         <div className="mb-4">
                             <button
                                 type="submit"
