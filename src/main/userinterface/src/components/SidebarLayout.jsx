@@ -46,16 +46,12 @@ function SidebarLayout() {
             title: "Cloud Affairs GA",
         },
         {
-            id: "/all_questions",
-            title: "All Questions",
-        },
-        {
             id: "/",
             title: "Create Mixed Test",
         },
 
         {
-            id: "/",
+            id: "/add_question",
             title: "Add Question Manually",
         },
         {

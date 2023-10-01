@@ -99,4 +99,11 @@ public class ParsingController {
         return resultData;
     }
 
+    @PostMapping("addQuestionManually")
+    Integer addQuestionManually(@RequestBody McqCSV question) throws IOException {
+        McqCSV processedQuestion = ProcessInput.processQuestion(question);
+        parsingService.updateMcq(processedQuestion);
+        return 200;
+    }
+
 }

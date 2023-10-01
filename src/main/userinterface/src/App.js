@@ -21,6 +21,7 @@ import RevisionSearchBar from './views/revisionStrategy/RevisionSearchBar';
 import Revise from './views/revisionStrategy/Revise';
 import ReviseQuestion from './views/revisionStrategy/components/ReviseQuestion';
 import ShowAnalytics from './views/analyticsDashboard/ShowAnalytics';
+import AddQuestion from './views/addQuestion/AddQuestion'
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/revise" element={<Revise />} />
         <Route path="/revise_question" element={<ReviseQuestion />} />
         <Route path="/show_analytics" element={<ShowAnalytics />} />
+        <Route path="/add_question" element={<AddQuestion />} />
       </Route>
     </Routes>
   );
