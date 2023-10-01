@@ -46,10 +46,20 @@ public class CloudAffairsParser {
                     if(line.contains("Answer-")){
                         sol = answerKey(line);
                         while((line = reader.readLine())!=null){
-                            solExplaination += line + System.lineSeparator();
+                            if(line.contains("Report Errors in the PDF") || line.trim().isEmpty()){
+                                // do nothing
+                            }
+                            else if(!line.trim().isEmpty()){
+                                solExplaination += line + System.lineSeparator();
+                            }
                         }
                     }else{
-                        sanitizedQuestion += line + System.lineSeparator();
+                        if(line.contains("Report Errors in the PDF") || line.trim().isEmpty()){
+                            // do nothing
+                        }
+                        else if(!line.trim().isEmpty()){
+                            sanitizedQuestion += line + System.lineSeparator();
+                        }
                     }
                 }
                 solution.put(sol,solExplaination);
