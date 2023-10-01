@@ -77,8 +77,8 @@ function LoadQuestions() {
             value={selectedParser}
             onChange={(e) => setSelectedParser(e.target.value)}
           >
-            <option value="Pib24x7">Pib24x7 Parser</option>
-            <option value="Rbi24x7">Rbi24x7 Parser</option>
+            <option value="PIB24X7">Pib24x7 Parser</option>
+            <option value="RBI24X7">Rbi24x7 Parser</option>
             <option value="SPOTLIGHT">Spotlight Parser</option>
             <option value="CA">Cloudaffairs Parser</option>
           </select>
@@ -89,9 +89,9 @@ function LoadQuestions() {
           >
             <option value="FINANCE">Finance</option>
             <option value="MANAGEMENT">Management</option>
-            <option value="Esi">Esi</option>
-            <option value="Pib24x7">Pib24x7</option>
-            <option value="Rbi24x7">Rbi24x7</option>
+            <option value="ESI">Esi</option>
+            <option value="PIB24X7">Pib24x7</option>
+            <option value="RBI24X7">Rbi24x7</option>
             <option value="SPOTLIGHT">Spotlight GA</option>
             <option value="CA">Cloud Affairs GA</option>
           </select>

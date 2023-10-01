@@ -14,7 +14,7 @@ function RevisionQuestionBar({ data }) {
       try {
         const questions = await fetchAllQuestions(param);
         console.log(questions);
-        navigate('/ReviseQuestion', {state : {questions : questions}})
+        navigate('/revise_question', {state : {questions : questions}})
 
       } catch (error) {
         console.error(error);

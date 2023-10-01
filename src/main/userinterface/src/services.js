@@ -45,7 +45,7 @@ export const fetchtestResult = async (testId) => {
     if (response.status !== 200) {
         throw new Error(`HTTP error! Status: ${response.status}`);
     }
-    return response;
+    return response.json();
 }
 
 export const editForm = async (formData) => {
