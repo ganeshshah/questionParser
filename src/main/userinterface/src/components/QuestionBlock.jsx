@@ -31,7 +31,7 @@ function QuestionBlock(props) {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    if (inputValue === answerKey) {
+    if (inputValue.toUpperCase() === answerKey.toUpperCase()) {
       if (props.testIdObject != null) {
         dataToSend.result = 1;
       }
