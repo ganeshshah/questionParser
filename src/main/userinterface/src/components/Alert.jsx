@@ -22,7 +22,7 @@ const Alert = ({ message, type }) => {
     return (
         show && (
             <div
-                className={`w-full animate-slide-in-bottom fixed bottom-0 left-0  p-4 bg-${color}-500 text-white text-center`}
+                className={`w-full animate-slide-in-bottom fixed bottom-0 left-0  p-4 bg-${color}-500 text-white text-center z-50`}
             >
                 {message}
             </div>

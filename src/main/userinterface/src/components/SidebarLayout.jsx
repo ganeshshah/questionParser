@@ -74,10 +74,10 @@ function SidebarLayout() {
 
 
     return (
-        <div className="relative min-h-screen md:flex justify-end" data-dev-hint="container">
+        <div className="relative min-h-screen md:flex justify-end z-10" data-dev-hint="container">
             <input type="checkbox" id="menu-open" className="hidden" />
 
-            <header className="bg-gray-600 text-gray-100 flex justify-between md:hidden fixed top-0 right-0 left-0 z-40" data-dev-hint="mobile menu bar">
+            <header className="bg-gray-600 text-gray-100 flex justify-between md:hidden fixed top-0 right-0 left-0 " data-dev-hint="mobile menu bar">
                 <a href="/" className="block p-4 text-white font-bold whitespace-nowrap truncate">
                     MCQ App
                 </a>
@@ -92,7 +92,7 @@ function SidebarLayout() {
                 </label>
             </header>
 
-            <aside id="sidebar" className="flex-shrink-0 min-w-[16rem] z-50 bg-gray-800 text-gray-100 md:w-64 w-3/4 space-y-6 pt-6 px-0 fixed inset-y-0 left-0 transform  md:translate-x-0 transition duration-200 ease-in-out  md:flex md:flex-col md:justify-between overflow-y-auto" data-dev-hint="sidebar; px-0 for frameless; px-2 for visually inset the navigation">
+            <aside id="sidebar" className="flex-shrink-0 min-w-[16rem] z-30 bg-gray-800 text-gray-100 md:w-64 w-3/4 space-y-6 pt-6 px-0 fixed inset-y-0 left-0 transform  md:translate-x-0 transition duration-200 ease-in-out  md:flex md:flex-col md:justify-between overflow-y-auto" data-dev-hint="sidebar; px-0 for frameless; px-2 for visually inset the navigation">
                 <div className="flex flex-col space-y-6" data-dev-hint="optional div for having an extra footer navigation">
                     <a href="/" className="text-white flex items-center space-x-2 px-4" >
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
