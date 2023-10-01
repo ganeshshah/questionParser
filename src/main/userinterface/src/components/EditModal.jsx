@@ -19,11 +19,7 @@ function EditModal({ props, onClose, getQuestions }) {
       setLoading(true)
       const resData = await editForm(formData)
       getQuestions()
-      console.log(resData)
-      //TODO:  this logic might be invalid, must be checked
-      if (resData) {
-        SetIsSuccess(true);
-      }
+      SetIsSuccess(true);
     } catch (error) {
       console.error('Error:', error);
     } finally {

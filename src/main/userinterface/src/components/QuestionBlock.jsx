@@ -81,7 +81,7 @@ function QuestionBlock(props) {
     try {
       // Send a delete request to the backend.
       await deleteQuestionById(id); // Pass the question ID to your delete function.
-
+      props.getQuestions();
       // Handle the deletion on the front end (remove the question from the UI, etc.).
       // You can use a state management library or update the UI state as needed.
     } catch (error) {
