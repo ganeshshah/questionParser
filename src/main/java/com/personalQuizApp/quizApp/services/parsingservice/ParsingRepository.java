@@ -1,4 +1,5 @@
 package com.personalQuizApp.quizApp.services.parsingservice;
+
 import com.personalQuizApp.quizApp.dataObjects.LoadQuestionParams;
 import com.personalQuizApp.quizApp.dataObjects.McqCSV;
 import com.personalQuizApp.quizApp.enums.Subjects;
@@ -22,24 +23,23 @@ public class ParsingRepository {
         this.parsingRepo = parsingRepo;
     }
 
-    List<McqCSV> getQuestions(){
+    List<McqCSV> getQuestions() {
         return (List<McqCSV>) parsingRepo.findAll();
     }
 
-    List<McqCSV> getQuestionsByMonthOrAll(String byMonthOrAll, String subject){
-        if(byMonthOrAll.equals("ALL") && subject.equals("ALL")){
+    List<McqCSV> getQuestionsByMonthOrAll(String byMonthOrAll, String subject) {
+        if (byMonthOrAll.equals("ALL") && subject.equals("ALL")) {
             return (List<McqCSV>) parsingRepo.findAll();
-        }
-        else if(!byMonthOrAll.equals("ALL") && !subject.equals("ALL")){
-            return parsingRepo.getQuestionsBySubjectAndMonth(subject,byMonthOrAll);
-        }else if(byMonthOrAll.equals("ALL") && !subject.equals("ALL")){
+        } else if (!byMonthOrAll.equals("ALL") && !subject.equals("ALL")) {
+            return parsingRepo.getQuestionsBySubjectAndMonth(subject, byMonthOrAll);
+        } else if (byMonthOrAll.equals("ALL") && !subject.equals("ALL")) {
             return parsingRepo.getAllQuestionsBySubject(subject);
-        }else{
+        } else {
             return parsingRepo.getQuestionsByMonth(byMonthOrAll);
         }
     }
 
-    public List<McqCSV> getIncorrectQuestions(ArrayList<Integer> ids){
+    public List<McqCSV> getIncorrectQuestions(ArrayList<Integer> ids) {
         return (List<McqCSV>) parsingRepo.findAllById(ids);
     }
 
@@ -49,51 +49,52 @@ public class ParsingRepository {
         String month = loadQuestionParams.getSelectedMonth();
         String subject = loadQuestionParams.getSelectedSubject();
         String parser = loadQuestionParams.getSelectedParser();
-        if(subject.equals(Subjects.CA.toString())){
-            parsingRepo.saveAll(CloudAffairsParser.parseText(questionFilePath,subject,month));
-        }else if(subject.equals(Subjects.SPOTLIGHT.toString())){
-            parsingRepo.saveAll(SpotlightParser.parseText(questionFilePath,answerFilePath,subject,month));
-        }else if(subject.equals(Subjects.PIB24X7.toString())){
+        if (subject.equals(Subjects.CA.toString())) {
+            parsingRepo.saveAll(CloudAffairsParser.parseText(questionFilePath, subject, month));
+        } else if (subject.equals(Subjects.SPOTLIGHT.toString())) {
+            parsingRepo.saveAll(SpotlightParser.parseText(questionFilePath, answerFilePath, subject, month));
+        } else if (subject.equals(Subjects.PIB24X7.toString())) {
             System.out.println("I am called");
-            parsingRepo.saveAll(Pib27x7Parser.parseText(questionFilePath,subject,month));
-        }else if(subject.equals(Subjects.RBI24X7.toString())){
+            parsingRepo.saveAll(Pib27x7Parser.parseText(questionFilePath, subject, month));
+        } else if (subject.equals(Subjects.RBI24X7.toString())) {
             System.out.println("I am called");
-            parsingRepo.saveAll(Rbi24x7Parser.parseText(questionFilePath,subject,month));
+            parsingRepo.saveAll(Rbi24x7Parser.parseText(questionFilePath, subject, month));
         }
     }
 
-    public void deleteMcq(Integer id){
-        System.out.println("Deleting question id : " +  id);
+    public void deleteMcq(Integer id) {
+        System.out.println("Deleting question id : " + id);
         parsingRepo.deleteById(id);
     }
 
-    public void updateMcq(McqCSV mcq){
+    public void updateMcq(McqCSV mcq) {
         parsingRepo.save(mcq);
     }
 
 
     public List<McqCSV> getQuestionsWithParam(int numQuestions, String allFlag, String subject, int accuracy, String month) {
-        if(numQuestions>0 && allFlag.equals("no")){
-            if(accuracy == 0){
-                List<McqCSV> results =  parsingRepo.getQuestionsBySubjectAndMonth(subject, month);
+        if (numQuestions > 0 && allFlag.equals("no")) {
+            if (accuracy == 0) {
+                List<McqCSV> results = parsingRepo.getQuestionsBySubjectAndMonth(subject, month);
                 if (results.size() > numQuestions) {
                     return results.subList(0, numQuestions);
                 }
                 return results;
-            }
-            else{
+            } else {
                 List<McqCSV> results = parsingRepo.getTopXQuestions(subject, accuracy, month);
                 if (results.size() > numQuestions) {
                     return results.subList(0, numQuestions);
                 }
                 return results;
             }
-        }else{
-            if(accuracy == 0){
+        } else if ((!allFlag.equals("no") && !allFlag.equals("yes")) && numQuestions == 0) {
+            List<McqCSV> results = parsingRepo.getQuestionsBySubjectAndMonth1(subject, month, allFlag);
+            return results;
+        } else {
+            if (accuracy == 0) {
                 return parsingRepo.getQuestionsBySubjectAndMonth(subject, month);
-            }
-            else{
-                return parsingRepo.getQuestionsBySubjectMonthAndAccuracy(subject,accuracy, month);
+            } else {
+                return parsingRepo.getQuestionsBySubjectMonthAndAccuracy(subject, accuracy, month);
             }
         }
     }

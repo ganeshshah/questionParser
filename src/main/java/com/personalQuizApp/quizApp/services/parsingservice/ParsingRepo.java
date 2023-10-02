@@ -15,6 +15,12 @@ public interface ParsingRepo extends CrudRepository<McqCSV, Integer> {
             @Param("subjectParam") String subject,
             @Param("monthOfQuestion") String month);
 
+    @Query("SELECT m FROM McqCSV m WHERE m.subject = :subjectParam AND m.month = :monthOfQuestion AND m.noOfAttempt = :noOfAttempt ORDER BY m.id")
+    List<McqCSV> getQuestionsBySubjectAndMonth1(
+            @Param("subjectParam") String subject,
+            @Param("monthOfQuestion") String month,
+            @Param("noOfAttempt") String noOfAttempt);
+
     @Query("SELECT m FROM McqCSV m WHERE m.subject = :subjectParam AND m.accurracy <= :accuracyParam AND m.month = :monthOfQuestion ORDER BY m.id")
     List<McqCSV> getQuestionsBySubjectMonthAndAccuracy(
             @Param("subjectParam") String subject,
@@ -36,6 +42,8 @@ public interface ParsingRepo extends CrudRepository<McqCSV, Integer> {
 
     @Query("SELECT m FROM McqCSV m WHERE m.month in :byMonthOrMonthRange ORDER BY m.id")
     List<McqCSV> getQuestionsByMonths(ArrayList<String> byMonthOrMonthRange);
+
+
 }
 
 

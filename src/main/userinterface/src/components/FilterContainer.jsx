@@ -47,6 +47,11 @@ function FilterContainer() {
         >
           <option value="yes">All</option>
           <option value="no">Not all</option>
+          <option value="0">Not Attempted Yet</option>
+          <option value="1">Attempted Once</option>
+          <option value="2">Attempted twice</option>
+          <option value="3">Attempted thrice</option>
+          <option value="4">Attempted fourth time</option>
         </select>
 
         <select
