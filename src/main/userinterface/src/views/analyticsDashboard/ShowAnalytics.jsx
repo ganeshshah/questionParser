@@ -7,6 +7,7 @@ import { fetchAnalyticsData } from '../../services/services';
 import Loading from '../../components/Loading';
 import AnalyticsCard from '../../components/AnalyticsCard';
 import { MONTHS, SUBJECTS } from '../../common/constants'
+import {Calendar} from "./components/Calendar";
 
 function ShowAnalytics() {
     const [param, setParam] = useState('AUG,SEPT&allMonthsIndicator=YES');
@@ -95,6 +96,7 @@ function ShowAnalytics() {
                         <AnalyticsCard title={'Total Questions Attempted'} subTitle={' At least Once'} totalNumber={analyticsData.totalAttempted} />
                     </div>
                     <LineChart analyticsData={analyticsData.lineChartData} />
+                    <Calendar analyticsData={analyticsData.calendarData}/>
                     <DoubleBarChart analyticsData={analyticsData.doubleBarChartData} />
                     <DoughnutChart analyticsData={analyticsData.doughnutChartData} />
                     <h1 style={{ textAlign: 'center' }}>Subject Wise Statistics</h1>

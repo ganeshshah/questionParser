@@ -19,6 +19,7 @@ public class AnalyticsDashBoard {
     private static final String PIB24X7 = "PIB24X7";
     private static final String CA = "CA";
     private static final String SPOTLIGHT = "SPOTLIGHT";
+    private static HashMap<Date,Integer> attemptsCalendar = new HashMap<>();
     private static final HashSet<String> supportedSubjects = new HashSet<String>() {{
         add(RBI24X7);
         add(PIB24X7);
@@ -136,6 +137,7 @@ public class AnalyticsDashBoard {
         resultMap.put("doughnutChartData",doughNutData);
         resultMap.put("doubleBarChartData",doubleBarChartData);
         resultMap.put("subjectWiseBarChartData",doubleBarChartDataMap);
+        resultMap.put("calendarData",attemptsCalendar);
         doughNutData = new ArrayList<>();
         return resultMap;
     }
@@ -203,11 +205,16 @@ public class AnalyticsDashBoard {
 
     public static Object processLineChartData(List<TestData> allAttemptedQuestions) {
         HashMap<Integer,ArrayList<Integer>> result = new HashMap<>();
-
         for(int i=1;i<=31;i++){
             result.put(i,new ArrayList<>(Collections.nCopies(12, 0)));
         }
         for(TestData tdata : allAttemptedQuestions){
+            if(attemptsCalendar.containsKey(tdata.getTestDate())){
+                Integer value = attemptsCalendar.get(tdata.getTestDate());
+                attemptsCalendar.put(tdata.getTestDate(),value+1);
+            }else{
+                attemptsCalendar.put(tdata.getTestDate(),0);
+            }
             int[] dayMonth = extractMonthAndDay(tdata.getTestDate().toString());
             Integer value = result.get(dayMonth[0]).get(dayMonth[1]-1);
             result.get(dayMonth[0]).set(dayMonth[1]-1 , value+1);
