@@ -78,6 +78,10 @@ function SidebarLayout() {
 
         },
         {
+            id: '/quant_and_reasoning',
+            title: 'Quant and Reasoning',
+        },
+        {
             id: "/show_analytics",
             title: "Analytics dashboard",
         },

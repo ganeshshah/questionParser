@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import { addQuestion } from "../../services/services";
 import Alert from '../../components/Alert'
-import { MONTHS, SUBJECTS } from '../../common/constants'
+import { MONTHS, SUBJECTS, QUANT_CHAPTERS, REASONING_CHAPTERS } from '../../common/constants'
 
 function AddQuestion() {
     const [formData, setFormData] = useState({
         subject: "",
+        chapter: "NA",
         question: "",
         answerKey: "",
         hint: "",
         month: "",
     });
-    const [alert, setAlert] = useState();
-
-
+    const [alert, setAlert] = useState(false); // Initialize alert state as false
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -28,12 +27,13 @@ function AddQuestion() {
                 const resData = await addQuestion(formData);
                 setFormData({
                     subject: "",
+                    chapter: "",
                     question: "",
                     answerKey: "",
                     hint: "",
                     month: "",
                 });
-                setAlert(true)
+                setAlert(true); // Set alert to true when the question is successfully submitted
             } catch (error) {
                 console.error("Error post data:", error);
             }
@@ -42,10 +42,9 @@ function AddQuestion() {
 
     return (
         <>
-            {alert && <Alert message={'Question added successfuly'} type={'success'} />}
+            {alert && <Alert message={'Question added successfully'} type={'success'} />}
             <div className="w-full flex justify-center relative z-50">
-
-                <div className=" w-11/12 h-4/5 p-10 flex flex-col  rounded-lg  shadow-lg">
+                <div className="w-11/12 h-4/5 p-10 flex flex-col rounded-lg shadow-lg">
                     <h1 className="text-2xl font-semibold mb-4 self-center">Add Question</h1>
                     <form onSubmit={handleSubmit}>
                         <div className="mb-4">
@@ -65,6 +64,32 @@ function AddQuestion() {
                                 ))}
                             </select>
                         </div>
+                        {(formData.subject === "QUANT" || formData.subject === "REASONING") && (
+                            <div className="mb-4">
+                                <label className="block text-gray-700 font-bold mb-2">Chapter</label>
+                                <select
+                                    name="chapter"
+                                    value={formData.chapter}
+                                    onChange={handleChange}
+                                    className="h-full p-2 bg-white border border-gray-300 hover:border-gray-400 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
+                                    required
+                                >
+                                    <option value="" >
+                                        Select Chapter
+                                    </option>
+                                    {formData.subject === "QUANT"
+                                        ? QUANT_CHAPTERS.map((chapter) => (
+                                            <option key={chapter} value={chapter}>{chapter}</option>
+                                        ))
+                                        : formData.subject === "REASONING"
+                                            ? REASONING_CHAPTERS.map((chapter) => (
+                                                <option key={chapter} value={chapter}>{chapter}</option>
+                                            ))
+                                            : null
+                                    }
+                                </select>
+                            </div>
+                        )}
                         <div className="mb-4">
                             <label className="block text-gray-700 font-bold mb-2">Month of question:</label>
                             <select
@@ -111,7 +136,7 @@ function AddQuestion() {
                                 value={formData.hint}
                                 onChange={handleChange}
                                 className='w-full p-2 border border-gray-300 rounded-md text-base mt-2'
-                                rows="2"
+                                rows="10"
                             />
                         </div>
                         <div className="mb-4">
@@ -123,7 +148,7 @@ function AddQuestion() {
                             </button>
                         </div>
                     </form>
-                </div >
+                </div>
             </div>
         </>
     );

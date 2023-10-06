@@ -24,6 +24,9 @@ import ShowAnalytics from './views/analyticsDashboard/ShowAnalytics';
 import AddQuestion from './views/addQuestion/AddQuestion'
 import CreateMixedTest from "./views/createMixedTest/CreateMixedTest";
 import LoadQuestionFromExcel from "./views/loadQuestionFromExcel/LoadQuestionfromExcel";
+import QuantAndReasoning from "./views/quantAndreasoning/QuantAndReasoning";
+import SearchQreQuestionWithParams from "./views/quantAndreasoning/components/SearchQreQuestionWithParams";
+import CreateQreTest from "./views/quantAndreasoning/components/CreateQreTest";
 
 function App() {
   return (
@@ -41,6 +44,7 @@ function App() {
           <Route path="/cloudaffairs_ga" element={<CloudAffairsGA />} />
           <Route path="/search_questions_with_params" element={<SearchQuestionsWithParams />} />
           <Route path="/create_test" element={<CreateTest />} />
+          <Route path="/create_qre_test" element={<CreateQreTest />} />
           <Route path="/end_test" element={<EndTest />} />
           <Route path="/review_questions" element={<ReviewQuestions />} />
           <Route path="/load_questions_from_text" element={<LoadQuestionsFromText />} />
@@ -51,6 +55,8 @@ function App() {
           <Route path="/add_question" element={<AddQuestion />} />
           <Route path="/create_mixed_test" element={<CreateMixedTest />} />
           <Route path="/load_question_from_excel" element={<LoadQuestionFromExcel />} />
+          <Route path="/quant_and_reasoning" element={<QuantAndReasoning />} />
+          <Route path="/search_qre_questions_with_params" element={<SearchQreQuestionWithParams />} />
         </Route>
       </Route>
     </Routes>

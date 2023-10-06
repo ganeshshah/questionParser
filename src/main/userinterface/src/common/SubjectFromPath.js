@@ -25,6 +25,9 @@ function getSubjectFromPath() {
         case '/cloudaffairs_ga':
             return 'CA';
             break;
+        case '/quant_and_reasoning':
+            return 'QUANT';
+            break;
         default:
             return 'PIB24X7';
     }

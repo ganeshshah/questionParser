@@ -17,6 +17,7 @@ public class TestData {
     private Date testDate;
     private String subject;
     private Integer result;
+    private Integer timeTaken = 0;
     private String month;
 
     public String getMonth() {
@@ -66,4 +67,11 @@ public class TestData {
         this.questionId = questionId;
     }
 
+    public Integer getTimeTaken() {
+        return timeTaken;
+    }
+
+    public void setTimeTaken(Integer timeTaken) {
+        this.timeTaken = timeTaken;
+    }
 }

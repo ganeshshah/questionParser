@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { editForm } from '../services/services'
+import {editQreForm} from '../services/services'
 import Loading from '../components/Loading'
 import Alert from '../components/Alert'
 
@@ -19,7 +19,7 @@ function EditModal({ props, onClose, getQuestions }) {
   const onSaveHandler = async () => {
     try {
       setLoading(true)
-      const resData = await editForm(formData)
+      const resData = await editQreForm(formData)
       setAlert(true)
       getQuestions()
     } catch (error) {

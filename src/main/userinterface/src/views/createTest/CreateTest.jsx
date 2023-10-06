@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import FixedTestHeader from "../../components/FixedTestHeader.jsx";
+import FixedTestHeader from "../../components/FixedTestHeader";
 import AllQuestions from "../allQuestions/AllQuestions";
 import { useLocation } from 'react-router-dom';
 import { fetchTestId } from '../../services/services.js'
