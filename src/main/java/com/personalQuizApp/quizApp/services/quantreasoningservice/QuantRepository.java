@@ -81,4 +81,8 @@ public class QuantRepository {
     public void updateAllQuestions(ArrayList<QuantAndReasoning> questionToBeUpdated) {
         QuantRepo.saveAll(questionToBeUpdated);
     }
+
+    public List<QuantAndReasoning> getIncorrectQuestions(ArrayList<Integer> ids) {
+        return (List<QuantAndReasoning>) QuantRepo.findAllById(ids);
+    }
 }

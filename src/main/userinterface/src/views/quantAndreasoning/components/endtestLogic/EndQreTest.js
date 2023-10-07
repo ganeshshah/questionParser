@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { fetchQretestResult } from "../../../../services/services";
 import PieChart from "../../../endTest/components/PieChart";
 import Loading from "../../../../components/Loading";
+import {DoughnutChart} from "./components/DoughnutChart";
 
 function EndQreTest() {
     const location = useLocation();
@@ -15,6 +16,7 @@ function EndQreTest() {
     const [testResultData, setTestResultData] = useState({});
     const [data, setData] = useState([]); // Initialize data as an empty array
     const [attemptedData, setAttemptedData] = useState([]);
+    const [timeData, setTimeData] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -53,17 +55,31 @@ function EndQreTest() {
                 ["Attempted", testResultData.totalQuestionAttempted],
                 ["NotAttemptedOrUntouched", testResultData.totalQuestionsUnAttemptedAndUnreviewed],
             ];
-         console.log(newData)
+
+            const timeData1 = [
+                ["Question time", "Minutes"],
+                ["less than 1 minute", testResultData.questionTiming1.length],
+                ["less than 2 minute", testResultData.questionTiming2.length],
+                ["less than 3 minute", testResultData.questionTiming3.length],
+                ["less than 4 minute", testResultData.questionTiming4.length],
+                ["less than 5 minute", testResultData.questionTiming5.length],
+                ["More than 5 minute", testResultData.questionTimingBeyond5.length]
+            ];
+
+            console.log(timeData1)
             // Update the data state with the newly prepared data
             setData(newData);
-         setAttemptedData(newData1)
+            setAttemptedData(newData1);
+            setTimeData(timeData1);
+
             setIsLoading(false);
         }
     }, [testResultData]);
 
     const navigate = useNavigate();
+    const path = 'http://localhost:8080/qre/getIncorrectQuestions?ids=';
     const navigateToReviewQuestions = () => {
-        navigate('/review_questions', { state: { qlist: testResultData.incorrectQuestionsList } });
+        navigate('/review_questions', { state: { qlist: testResultData.incorrectQuestionIds , path} });
     };
 
     return (
@@ -80,7 +96,7 @@ function EndQreTest() {
                     </div>
                     <PieChart data={data} />
                     <PieChart data={attemptedData} />
-
+                    <DoughnutChart timeData={timeData}/>
                     <h2>Review Incorrect Questions Again</h2>
                     <br />
                     <button

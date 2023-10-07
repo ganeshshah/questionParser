@@ -4,18 +4,20 @@ import { Chart } from "react-google-charts";
 
 
 export const options = {
-  title: "Completion time wise question distribution",
+  title: "Subject Wise Completion Percentage",
   pieHole: 0.4,
   is3D: false,
 };
 
-export function DoughnutChart({ analyticsData }) {
+export function DoughnutChart({ timeData }) {
+
+  console.log(timeData)
   return (
     <Chart
       chartType="PieChart"
       width="100%"
       height="400px"
-      data={analyticsData}
+      data={timeData}
       options={options}
     />
   );

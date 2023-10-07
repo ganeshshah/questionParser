@@ -14,7 +14,8 @@ function ReviewQuestions() {
   questionList.forEach(item => {
     queryParams += item + ",";
   });
-  const apiPath = 'http://localhost:8080/getIncorrectQuestions?ids=' + queryParams;
+
+  const apiPath = location.state.path + queryParams;
 
 
   useEffect(() => {

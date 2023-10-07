@@ -1,4 +1,5 @@
 package com.personalQuizApp.quizApp.services.quantreasoningservice;
+import com.personalQuizApp.quizApp.dataObjects.McqCSV;
 import com.personalQuizApp.quizApp.dataObjects.QuantAndReasoning;
 import com.personalQuizApp.quizApp.dataObjects.TestData;
 import com.personalQuizApp.quizApp.dataObjects.TestQreBodyData;
@@ -70,5 +71,10 @@ public class QuantController {
     void editQuestion(@RequestBody QuantAndReasoning mcq){
         System.out.println("Updating in DB");
         quantService.updateMcq(mcq);
+    }
+
+    @GetMapping("getIncorrectQuestions")
+    public List<QuantAndReasoning> getIncorrectQuestions(@RequestParam ArrayList<Integer> ids){
+        return quantService.getIncorrectQuestions(ids);
     }
 }

@@ -1,5 +1,6 @@
 package com.personalQuizApp.quizApp.services.quantreasoningservice;
 
+import com.personalQuizApp.quizApp.dataObjects.McqCSV;
 import com.personalQuizApp.quizApp.dataObjects.QuantAndReasoning;
 import com.personalQuizApp.quizApp.services.parsingservice.ParsingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,5 +39,9 @@ public class QuantService {
 
     public void updateAllQuestions(ArrayList<QuantAndReasoning> questionToBeUpdated) {
         quantRepository.updateAllQuestions(questionToBeUpdated);
+    }
+
+    public List<QuantAndReasoning> getIncorrectQuestions(ArrayList<Integer> ids) {
+        return quantRepository.getIncorrectQuestions(ids);
     }
 }

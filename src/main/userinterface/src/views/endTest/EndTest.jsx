@@ -34,10 +34,11 @@ function EndTest() {
 
   console.log(testResultData);
   const qlist = testResultData.incorrectQuestionsList;
+  const path = 'http://localhost:8080/getIncorrectQuestions?ids=';
 
   const navigate = useNavigate();
   const navigateToReviewQuestions = () => {
-    navigate('/review_questions', { state: { qlist } });
+    navigate('/review_questions', { state: { qlist , path} });
   };
 
 
