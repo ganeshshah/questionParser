@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function TestLandingPage({ questions }) {
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -7,49 +7,69 @@ function TestLandingPage({ questions }) {
     const [showSolution, setShowSolution] = useState(false);
     const [solutionButtonEnabled, setSolutionButtonEnabled] = useState(false);
 
+    // State for tracking time spent on each question
+    const [questionTimers, setQuestionTimers] = useState(Array(questions.length).fill(0));
+
+    useEffect(() => {
+        // Start the timer for the current question when the component mounts or when the current question changes
+        const timerInterval = setInterval(() => {
+            setQuestionTimers((prevTimers) => {
+                const newTimers = [...prevTimers];
+                newTimers[currentQuestion] += 1;
+                return newTimers;
+            });
+        }, 1000);
+
+        return () => {
+            // Clear the timer interval when the component unmounts or when the current question changes
+            clearInterval(timerInterval);
+        };
+    }, [currentQuestion]);
+
     const handleSubmit = () => {
         const currentQuestionObj = questions[currentQuestion];
-        const isCorrect =
-            inputAnswer.toLowerCase() === currentQuestionObj.answerKey.toLowerCase();
+        const isCorrect = inputAnswer.toLowerCase() === currentQuestionObj.answerKey.toLowerCase();
         setResults([...results, isCorrect]);
         if (isCorrect) {
             alert('Correct!');
             // Enable the "Solution" button after submitting
         } else {
             alert('Incorrect!');
-            setSolutionButtonEnabled(true)
+            setSolutionButtonEnabled(true);
         }
     };
 
     const handleNextQuestion = () => {
-        setSolutionButtonEnabled(false)
+        setSolutionButtonEnabled(false);
+        clearInterval(questionTimers[currentQuestion]);
         if (currentQuestion < questions.length - 1) {
             setCurrentQuestion(currentQuestion + 1);
             setInputAnswer('');
-            // Disable the "Solution" button when moving to the next question
             setShowSolution(false);
         } else {
             alert('Quiz finished!');
         }
+        console.log(questionTimers)
     };
 
     const handlePreviousQuestion = () => {
+        setSolutionButtonEnabled(false);
+        clearInterval(questionTimers[currentQuestion]);
         if (currentQuestion > 0) {
             setCurrentQuestion(currentQuestion - 1);
             setInputAnswer('');
-            // Disable the "Solution" button when moving to the previous question
             setShowSolution(false);
         }
+        console.log(questionTimers)
     };
 
     const handleQuestionClick = (index) => {
+        clearInterval(questionTimers[currentQuestion]);
         setCurrentQuestion(index);
-        // Disable the "Solution" button when selecting a question from the list
         setShowSolution(false);
     };
 
     const handleSolutionClick = () => {
-        // Show the solution popup
         setShowSolution(true);
     };
 
@@ -74,18 +94,18 @@ function TestLandingPage({ questions }) {
             <div className="w-3/4 p-4">
                 <div className="bg-white p-8 rounded shadow-lg">
                     {showSolution ? (
-                        // Show the solution here
-                        // Add your solution content
                         <div>
                             <p>Solution for Question {currentQuestion + 1}</p>
                             {/* Add solution content */}
                         </div>
                     ) : (
-                        // Show the question and answer input
                         <div>
-                            <h2 className="text-lg font-semibold mb-4">
-                                {questions[currentQuestion].question}
-                            </h2>
+                            <div>
+                                <pre style={{ overflowX: 'auto', whiteSpace: 'pre-wrap' }}>
+                                    {questions[currentQuestion].question}
+                                </pre>
+                            </div>
+                            <br />
                             <input
                                 type="text"
                                 value={inputAnswer}

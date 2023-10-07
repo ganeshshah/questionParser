@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Loading from "../../../components/Loading";
 import { fetchQreQuestions, fetchTestId } from "../../../services/services";
 import TestLandingPage from "./TestLandingPage";
+import FixedTestHeader from "../../../components/FixedTestHeader";
 
 function CreateQreTest() {
     const location = useLocation();
@@ -53,7 +54,7 @@ function CreateQreTest() {
                 } catch (error) {
                     console.error("Error fetching questions:", error);
                 } finally {
-                    // Set loading to false after fetching questions
+                    // Set loading to false after fetching questionsz
                     setLoading(false);
                 }
             })();
@@ -61,6 +62,7 @@ function CreateQreTest() {
 
     return (
         <>
+            <FixedTestHeader testIdObject = {testIdObject}/>
             {loading ? (
                 <Loading />
             ) : (
