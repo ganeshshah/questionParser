@@ -1,55 +1,73 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from 'react-router-dom';
 import Loading from "../../../components/Loading";
-import {fetchQreQuestions, fetchTestId} from "../../../services/services";
+import { fetchQreQuestions, fetchTestId } from "../../../services/services";
 import TestLandingPage from "./TestLandingPage";
 
 function CreateQreTest() {
-
     const location = useLocation();
     const [testIdObject, setTestIdObject] = useState([]);
-    const [loading, setLoading] = useState([false]);
+    const [loading, setLoading] = useState(true); // Set loading to true initially
     const [questions, setQuestions] = useState([]);
 
     useEffect(() => {
-        //this is a self invoked function to fetch all questions
+        // Fetch test ID
         (async function () {
-            setLoading(true)
             try {
                 const resData = await fetchTestId(location.state.subject, location.state.month);
-                console.log(resData)
+                console.log("TestIdObject:", resData);
                 setTestIdObject(resData);
             } catch (error) {
-                console.error("Error fetching data:", error);
+                console.error("Error fetching test ID:", error);
             } finally {
-                setLoading(false)
+                // Set loading to false after fetching test ID
+                //setLoading(false);
             }
-        })()
-    }, []);
+        })();
+    }, [location.state.subject, location.state.month]);
 
-    const getQuestions = async () => {
-        setLoading(true)
-        try {
-            const resData = await fetchQreQuestions(location.state.numQuestions, location.state.flag, location.state.subject,location.state.chapter, location.state.accuracy, location.state.month, location.state.time, location.state.timeValue);
-            console.log(resData)
-            setQuestions(resData);
-        } catch (error) {
-            console.error("Error fetching data:", error);
-        } finally {
-            setLoading(false);
-        }
-    }
     useEffect(() => {
-        getQuestions()
+        // Fetch questions when testIdObject changes
+
+            (async function () {
+                setLoading(true); // Set loading to true while fetching questions
+                try {
+                    const resData = await fetchQreQuestions(
+                        location.state.numQuestions,
+                        location.state.flag,
+                        location.state.subject,
+                        location.state.chapter,
+                        location.state.accuracy,
+                        location.state.month,
+                        location.state.time,
+                        location.state.timeValue
+                    );
+                    console.log("Fetched Questions:", resData);
+
+                    // Ensure that the resData is an array before setting the state
+                    if (Array.isArray(resData)) {
+                        setQuestions(resData);
+                    } else {
+                        console.error("Invalid data format for questions:", resData);
+                    }
+                } catch (error) {
+                    console.error("Error fetching questions:", error);
+                } finally {
+                    // Set loading to false after fetching questions
+                    setLoading(false);
+                }
+            })();
     }, []);
 
-    // fixed test header component contains buttons to start and end the test and a timer
     return (
         <>
-            {loading &&
-                <Loading />}
-            <TestLandingPage questions = {questions} testIdObject={testIdObject} />
+            {loading ? (
+                <Loading />
+            ) : (
+                <TestLandingPage questions={questions} />
+            )}
         </>
     );
 }
-export default CreateQreTest
+
+export default CreateQreTest;
