@@ -8,14 +8,19 @@ function TestLandingPage({ questions }) {
     const [solutionButtonEnabled, setSolutionButtonEnabled] = useState(false);
 
     // State for tracking time spent on each question
-    const [questionTimers, setQuestionTimers] = useState(Array(questions.length).fill(0));
+    const [questionTimers, setQuestionTimers] = useState({});
 
     useEffect(() => {
         // Start the timer for the current question when the component mounts or when the current question changes
         const timerInterval = setInterval(() => {
             setQuestionTimers((prevTimers) => {
-                const newTimers = [...prevTimers];
-                newTimers[currentQuestion] += 1;
+                const currentQuestionId = questions[currentQuestion]?.id;
+                const newTimers = { ...prevTimers };
+                if (currentQuestionId in newTimers) {
+                    newTimers[currentQuestionId] += 1;
+                } else {
+                    newTimers[currentQuestionId] = 1;
+                }
                 return newTimers;
             });
         }, 1000);
@@ -24,7 +29,7 @@ function TestLandingPage({ questions }) {
             // Clear the timer interval when the component unmounts or when the current question changes
             clearInterval(timerInterval);
         };
-    }, [currentQuestion]);
+    }, [currentQuestion, questions]);
 
     const handleSubmit = () => {
         const currentQuestionObj = questions[currentQuestion];
@@ -41,7 +46,7 @@ function TestLandingPage({ questions }) {
 
     const handleNextQuestion = () => {
         setSolutionButtonEnabled(false);
-        clearInterval(questionTimers[currentQuestion]);
+        clearInterval(questionTimers[questions[currentQuestion]?.id]);
         if (currentQuestion < questions.length - 1) {
             setCurrentQuestion(currentQuestion + 1);
             setInputAnswer('');
@@ -54,7 +59,7 @@ function TestLandingPage({ questions }) {
 
     const handlePreviousQuestion = () => {
         setSolutionButtonEnabled(false);
-        clearInterval(questionTimers[currentQuestion]);
+        clearInterval(questionTimers[questions[currentQuestion]?.id]);
         if (currentQuestion > 0) {
             setCurrentQuestion(currentQuestion - 1);
             setInputAnswer('');
@@ -64,7 +69,7 @@ function TestLandingPage({ questions }) {
     };
 
     const handleQuestionClick = (index) => {
-        clearInterval(questionTimers[currentQuestion]);
+        clearInterval(questionTimers[questions[currentQuestion]?.id]);
         setCurrentQuestion(index);
         setShowSolution(false);
     };
@@ -80,7 +85,7 @@ function TestLandingPage({ questions }) {
                 <ul>
                     {questions.map((question, index) => (
                         <li
-                            key={index}
+                            key={question.id}
                             onClick={() => handleQuestionClick(index)}
                             className={`cursor-pointer py-2 ${
                                 currentQuestion === index ? 'bg-gray-200' : ''
