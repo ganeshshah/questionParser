@@ -5,6 +5,7 @@ import com.personalQuizApp.quizApp.services.parsingservice.ParsingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -33,5 +34,9 @@ public class QuantService {
 
     public void updateMcq(QuantAndReasoning mcq) {
         quantRepository.updateMcq(mcq);
+    }
+
+    public void updateAllQuestions(ArrayList<QuantAndReasoning> questionToBeUpdated) {
+        quantRepository.updateAllQuestions(questionToBeUpdated);
     }
 }

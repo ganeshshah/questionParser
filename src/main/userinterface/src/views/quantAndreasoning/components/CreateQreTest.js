@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom';
 import Loading from "../../../components/Loading";
 import { fetchQreQuestions, fetchTestId } from "../../../services/services";
 import TestLandingPage from "./TestLandingPage";
-import FixedTestHeader from "./endtestLogic/components/FixedTestHeader";
 
 function CreateQreTest() {
     const location = useLocation();

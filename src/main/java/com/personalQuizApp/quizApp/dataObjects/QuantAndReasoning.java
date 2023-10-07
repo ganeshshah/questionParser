@@ -1,5 +1,6 @@
 package com.personalQuizApp.quizApp.dataObjects;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 
 import java.util.Date;
@@ -33,6 +34,7 @@ public class QuantAndReasoning {
     private double maxTime = 0;
     private double minTime = 999999;
     private double averageTime = 0;
+    private double improvement = 0;
     private Date attemptedDate;
     @Column(nullable = false)
     private Date createdDate;
@@ -42,31 +44,12 @@ public class QuantAndReasoning {
     private String lodingIndicator = "AUTO_PARSED";
     private Integer noOfIncorrectAttempt = 0;
 
-    public String getMonth() {
-        return month;
+    public Integer getId() {
+        return id;
     }
 
-    public void setMonth(String month) {
-        this.month = month;
-    }
-
-
-
-    public Integer getNoOfCorrect() {
-        return noOfCorrect;
-    }
-
-    public void setNoOfCorrect(Integer noOfCorrect) {
-        this.noOfCorrect = noOfCorrect;
-    }
-
-
-    public Date getCreatedDate() {
-        return createdDate;
-    }
-
-    public void setCreatedDate(Date createdDate) {
-        this.createdDate = createdDate;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getSubject() {
@@ -75,6 +58,14 @@ public class QuantAndReasoning {
 
     public void setSubject(String subject) {
         this.subject = subject;
+    }
+
+    public String getChapter() {
+        return chapter;
+    }
+
+    public void setChapter(String chapter) {
+        this.chapter = chapter;
     }
 
     public String getQuestion() {
@@ -109,12 +100,52 @@ public class QuantAndReasoning {
         this.noOfAttempt = noOfAttempt;
     }
 
-    public double getAccurracy() {
+    public double getAccuracy() {
         return accuracy;
     }
 
-    public void setAccurracy(double accuracy) {
+    public void setAccuracy(double accuracy) {
         this.accuracy = accuracy;
+    }
+
+    public Integer getNoOfCorrect() {
+        return noOfCorrect;
+    }
+
+    public void setNoOfCorrect(Integer noOfCorrect) {
+        this.noOfCorrect = noOfCorrect;
+    }
+
+    public double getMaxTime() {
+        return maxTime;
+    }
+
+    public void setMaxTime(double maxTime) {
+        this.maxTime = maxTime;
+    }
+
+    public double getMinTime() {
+        return minTime;
+    }
+
+    public void setMinTime(double minTime) {
+        this.minTime = minTime;
+    }
+
+    public double getAverageTime() {
+        return averageTime;
+    }
+
+    public void setAverageTime(double averageTime) {
+        this.averageTime = averageTime;
+    }
+
+    public double getImprovement() {
+        return improvement;
+    }
+
+    public void setImprovement(double improvement) {
+        this.improvement = improvement;
     }
 
     public Date getAttemptedDate() {
@@ -125,13 +156,22 @@ public class QuantAndReasoning {
         this.attemptedDate = attemptedDate;
     }
 
-    public Integer getId() {
-        return id;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public void setMonth(String month) {
+        this.month = month;
+    }
+
     public String getLodingIndicator() {
         return lodingIndicator;
     }
@@ -146,37 +186,5 @@ public class QuantAndReasoning {
 
     public void setNoOfIncorrectAttempt(Integer noOfIncorrectAttempt) {
         this.noOfIncorrectAttempt = noOfIncorrectAttempt;
-    }
-
-    public double getMaxTime() {
-        return maxTime;
-    }
-
-    public void setMaxTime(Integer maxTime) {
-        this.maxTime = maxTime;
-    }
-
-    public double getMinTime() {
-        return minTime;
-    }
-
-    public void setMinTime(Integer minTime) {
-        this.minTime = minTime;
-    }
-
-    public double getAverageTime() {
-        return averageTime;
-    }
-
-    public void setAverageTime(Integer averageTime) {
-        this.averageTime = averageTime;
-    }
-
-    public String getChapter() {
-        return chapter;
-    }
-
-    public void setChapter(String chapter) {
-        this.chapter = chapter;
     }
 }

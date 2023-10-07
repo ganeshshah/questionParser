@@ -77,4 +77,8 @@ public class QuantRepository {
     public void updateMcq(QuantAndReasoning mcq) {
         QuantRepo.save(mcq);
     }
+
+    public void updateAllQuestions(ArrayList<QuantAndReasoning> questionToBeUpdated) {
+        QuantRepo.saveAll(questionToBeUpdated);
+    }
 }

@@ -48,34 +48,26 @@ function SidebarLayout() {
             id: "/cloudaffairs_ga",
             title: "Cloud Affairs GA",
         },
-        {
-            id: "/create_mixed_test",
-            title: "Create Mixed Test",
-        },
+        // {
+        //     id: "/create_mixed_test",
+        //     title: "Create Mixed Test",
+        // },
 
         {
             id: "/add_question",
             title: "Add Question Manually",
         },
-        {
-            id: "/load_question_from_excel",
-            title: "Load Question from excel",
-        },
+        // {
+        //     id: "/load_question_from_excel",
+        //     title: "Load Question from excel",
+        // },
         {
             id: "/load_questions_from_text",
             title: "Load Question from text file",
         },
         {
             id: '/revise',
-            title: 'Revise Search Bar',
-            child: [
-                {
-                    id: '/revise_dashboard',
-                    title: 'Revise dashboard'
-                }
-            ]
-
-
+            title: 'Revise Search Bar'
         },
         {
             id: '/quant_and_reasoning',
@@ -84,6 +76,10 @@ function SidebarLayout() {
         {
             id: "/show_analytics",
             title: "Analytics dashboard",
+        },
+        {
+            id: "/show_qre_analytics",
+            title: "QRE Analytics dashboard",
         },
     ];
 
