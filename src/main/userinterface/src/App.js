@@ -27,6 +27,7 @@ import LoadQuestionFromExcel from "./views/loadQuestionFromExcel/LoadQuestionfro
 import QuantAndReasoning from "./views/quantAndreasoning/QuantAndReasoning";
 import SearchQreQuestionWithParams from "./views/quantAndreasoning/components/SearchQreQuestionWithParams";
 import CreateQreTest from "./views/quantAndreasoning/components/CreateQreTest";
+import EndQreTest from "./views/quantAndreasoning/components/endtestLogic/EndQreTest"
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
           <Route path="/create_test" element={<CreateTest />} />
           <Route path="/create_qre_test" element={<CreateQreTest />} />
           <Route path="/end_test" element={<EndTest />} />
+          <Route path="/end_qre_test" element={<EndQreTest />} />
           <Route path="/review_questions" element={<ReviewQuestions />} />
           <Route path="/load_questions_from_text" element={<LoadQuestionsFromText />} />
           <Route path="/revise_dashboard" element={<ReviseDashBoard />} />

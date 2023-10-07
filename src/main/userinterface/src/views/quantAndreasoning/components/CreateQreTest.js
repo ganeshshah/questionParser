@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Loading from "../../../components/Loading";
 import { fetchQreQuestions, fetchTestId } from "../../../services/services";
 import TestLandingPage from "./TestLandingPage";
-import FixedTestHeader from "../../../components/FixedTestHeader";
+import FixedTestHeader from "./endtestLogic/components/FixedTestHeader";
 
 function CreateQreTest() {
     const location = useLocation();
@@ -62,11 +62,10 @@ function CreateQreTest() {
 
     return (
         <>
-            <FixedTestHeader testIdObject = {testIdObject}/>
             {loading ? (
                 <Loading />
             ) : (
-                <TestLandingPage questions={questions} />
+                <TestLandingPage questions={questions} testIdObject = {testIdObject} />
             )}
         </>
     );

@@ -1,9 +1,10 @@
 package com.personalQuizApp.quizApp.services.quantreasoningservice;
-
-import com.personalQuizApp.quizApp.dataObjects.LoadQuestionParams;
-import com.personalQuizApp.quizApp.dataObjects.McqCSV;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.personalQuizApp.quizApp.dataObjects.QuantAndReasoning;
 import com.personalQuizApp.quizApp.processors.ProcessInput;
+import com.personalQuizApp.quizApp.processors.SpotlightParser.ProcessQreTestData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -43,6 +44,32 @@ public class QuantController {
 
         return  quantService.getQuestionsWithParam(numQuestions,flag,subject,chapter,accuracy,month,timeCriteria,timeValue);
     }
+
+//    @GetMapping("fetchQretestResult")
+//    List<Object> getQreTestResultData(
+//            @RequestParam(name = "testId") int testId,
+//            @RequestParam(name = "totalTime") double totalTime,
+//            @RequestParam(name = "subject") String subject,
+//            @RequestParam(name = "questionTimers") String questionTimingMap,
+//            @RequestParam(name = "questions") String questions
+//
+//    ) throws JsonProcessingException {
+//
+//        // Deserialize JSON strings to objects
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        List<Object> questionTimers = objectMapper.readValue(questionTimingMap, new TypeReference<List<Object>>() {});
+//        List<Object> questionsList = objectMapper.readValue(questions, new TypeReference<List<Object>>() {});
+//
+//        return ProcessQreTestData.processTestResult(testId,totalTime,subject,questionTimingMap,questions);
+//    }
+
+    @PostMapping("getTestResultData")
+    Object getQreTestResultData(@RequestBody Object testRequestData) throws IOException {
+
+        return ProcessQreTestData.processTestResult(testRequestData);
+    }
+
+
 
     @DeleteMapping (path = "deleteQuestionById/{id}")
     void deleteQuestionById(@PathVariable("id") Integer id){

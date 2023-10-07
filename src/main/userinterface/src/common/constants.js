@@ -3,6 +3,7 @@ export const API_GET_QUESTIONS = 'http://localhost:8080/getQuestionsWithParam?'
 export const API_GET_QRE_QUESTIONS = 'http://localhost:8080/qre/getQuestionsWithParam?'
 export const API_LOAD_QUESTIONS = 'http://localhost:8080/proccessFile'
 export const API_TEST_RESULT = 'http://localhost:8080/testData/getTestResultData?testId=';
+export const API_QRE_TEST_RESULT = 'http://localhost:8080/qre/getTestResultData';
 export const API_EDIT_FORM = 'http://localhost:8080/editMcq'
 export const API_EDIT_QRE_FORM = 'http://localhost:8080/qre/editMcq'
 export const API_SUBMIT_QUESTION = "http://localhost:8080/testData/submitQuestion"

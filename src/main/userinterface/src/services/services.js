@@ -13,7 +13,8 @@ import {
     API_ADD_QRE_QUESTION,
     API_GET_QRE_QUESTIONS,
     API_DELETE_QRE_QUESTION,
-    API_EDIT_QRE_FORM
+    API_EDIT_QRE_FORM,
+    API_QRE_TEST_RESULT
 } from '../common/constants';
 import axios from 'axios';
 
@@ -218,4 +219,30 @@ export const editQreForm = async (formData) => {
     } else {
         throw new Error(`HTTP error! Status: ${response.status}`);
     }
+}
+
+// export const fetchQretestResult = async (testId,totalTime,subject,questionTimers,questions) => {
+//     const url = API_QRE_TEST_RESULT + 'testId=' + testId +'&totalTime=' + totalTime + '&subject=' + subject + '&questionTimers=' + questionTimers
+//     + '&questions' + questions;
+//
+//     const response = await fetch(url);
+//
+//     if (response.status !== 200) {
+//         throw new Error(`HTTP error! Status: ${response.status}`);
+//     }
+//     return response.json();
+// }
+
+
+export const fetchQretestResult = async (body) => {
+    const url = API_QRE_TEST_RESULT
+
+    const response = await axios.post(url, body);
+    if (response.status == 200) {
+        console.log(response)
+        console.log('POST request successful!!!')
+    } else {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response;
 }

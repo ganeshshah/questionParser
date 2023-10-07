@@ -1,14 +1,41 @@
 import React, { useState, useEffect } from 'react';
+import {submitQuestion} from "../../../services/services";
+import {useNavigate} from "react-router-dom";
 
-function TestLandingPage({ questions }) {
+function TestLandingPage({ questions, testIdObject }) {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [inputAnswer, setInputAnswer] = useState('');
-    const [results, setResults] = useState([]);
     const [showSolution, setShowSolution] = useState(false);
     const [solutionButtonEnabled, setSolutionButtonEnabled] = useState(false);
+    const navigate = useNavigate();
+    const [timer, setTimer] = useState(0);
+    const [isTimerRunning, setIsTimerRunning] = useState(true);
+    const [questionTimers, setQuestionTimers] = useState({});
+    const testId = testIdObject.testId;
+    const subject = testIdObject.subject;
+
+    const formatTime = (seconds) => {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+        return `${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;
+    };
+
+    useEffect(() => {
+        let interval;
+
+        if (isTimerRunning) {
+            interval = setInterval(() => {
+                setTimer((prevTimer) => prevTimer + 1);
+            }, 1000);
+        } else {
+            clearInterval(interval);
+        }
+
+        return () => clearInterval(interval);
+    }, [isTimerRunning]);
 
     // State for tracking time spent on each question
-    const [questionTimers, setQuestionTimers] = useState({});
+
 
     useEffect(() => {
         // Start the timer for the current question when the component mounts or when the current question changes
@@ -31,16 +58,36 @@ function TestLandingPage({ questions }) {
         };
     }, [currentQuestion, questions]);
 
-    const handleSubmit = () => {
+    const dataToSend = {
+        testId: testIdObject ? testIdObject.testId : 0,
+        questionId: '',
+        result: 0,
+        testDate: testIdObject ? testIdObject.date : null,
+        subject: '',
+        month : ''
+    };
+    const handleSubmit = async (event) => {
+        event.preventDefault();
         const currentQuestionObj = questions[currentQuestion];
         const isCorrect = inputAnswer.toLowerCase() === currentQuestionObj.answerKey.toLowerCase();
-        setResults([...results, isCorrect]);
         if (isCorrect) {
             alert('Correct!');
+            dataToSend.result = 1;
             // Enable the "Solution" button after submitting
         } else {
             alert('Incorrect!');
             setSolutionButtonEnabled(true);
+        }
+        dataToSend.questionId = currentQuestionObj.id;
+        dataToSend.subject = currentQuestionObj.subject;
+        dataToSend.month = currentQuestionObj.month;
+
+        if (testIdObject != null) {
+            try {
+                const resData = await submitQuestion(dataToSend);
+            } catch (error) {
+                console.error("Error post data:", error);
+            }
         }
     };
 
@@ -77,8 +124,28 @@ function TestLandingPage({ questions }) {
     const handleSolutionClick = () => {
         setShowSolution(true);
     };
+    const onEndClickHandler = () => {
+        setIsTimerRunning(false);
+        navigate('/end_qre_test', { state: { timer, testId : testIdObject.testId, subject, questionTimers, questions } });
+    };
+
 
     return (
+        <>
+            {/* Code for to header*/}
+        <div className="flex justify-between items-center p-2">
+            <button className='bg-green-500 px-4 mt-2 py-2  text-white rounded-md cursor-pointer whitespace-nowrap' >
+                Test Has Started
+            </button>
+            <p>Test Id: {testId}</p>
+            <div className="font-bold text-slate-600 text-lg">
+                {formatTime(timer)}
+            </div>
+            <button onClick={onEndClickHandler} className='bg-red-500 px-4 mt-2 py-2  text-white rounded-md cursor-pointer whitespace-nowrap' >
+                End test
+            </button>
+        </div>
+            {/* Code for question rendering logic*/}
         <div className="min-h-screen flex">
             <div className="w-1/8 p-4">
                 <h2 className="text-xl font-semibold">Questions</h2>
@@ -101,7 +168,7 @@ function TestLandingPage({ questions }) {
                     {showSolution ? (
                         <div>
                             <p>Solution for Question {currentQuestion + 1}</p>
-                            {/* Add solution content */}
+                            {questions[currentQuestion].hint}
                         </div>
                     ) : (
                         <div>
@@ -151,6 +218,7 @@ function TestLandingPage({ questions }) {
                 </div>
             </div>
         </div>
+        </>
     );
 }
 
