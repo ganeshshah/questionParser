@@ -141,96 +141,101 @@ function TestLandingPage({ questions, testIdObject }) {
 
 
     return (
+
         <>
-            {successAlert && <Alert message={'Your response was correct'} type={'success'} />}
-            {failureAlert && <Alert message={'Your response was incorrect'} type={'failure'} />}
-            {/* Code for to header*/}
-        <div className="flex justify-between items-center p-2">
-            <button className='bg-green-500 px-4 mt-2 py-2  text-white rounded-md cursor-pointer whitespace-nowrap' >
-                Test Has Started
-            </button>
-            <p>Test Id: {testId}</p>
-            <div className="font-bold text-slate-600 text-lg">
-                {formatTime(timer)}
-            </div>
-            <button onClick={onEndClickHandler} className='bg-red-500 px-4 mt-2 py-2  text-white rounded-md cursor-pointer whitespace-nowrap' >
-                End test
-            </button>
-        </div>
-            {/* Code for question rendering logic*/}
-        <div className="min-h-screen flex">
-            <div className="w-1/8 p-4">
-                <h2 className="text-xl font-semibold">Questions</h2>
-                <ul>
-                    {questions.map((question, index) => (
-                        <li
-                            key={question.id}
-                            onClick={() => handleQuestionClick(index)}
-                            className={`cursor-pointer py-2 ${
-                                currentQuestion === index ? 'bg-gray-200' : ''
-                            }`}
-                        >
-                            {index + 1}
-                        </li>
-                    ))}
-                </ul>
-            </div>
-            <div className="w-3/4 p-4">
-                <div className="bg-white p-8 rounded shadow-lg">
-                    {showSolution ? (
-                        <div>
-                            <p>Solution for Question {currentQuestion + 1}</p>
-                            {questions[currentQuestion].hint}
-                        </div>
-                    ) : (
-                        <div>
-                            <div>
-                                <pre style={{ overflowX: 'auto', whiteSpace: 'pre-wrap' }}>
-                                    {questions[currentQuestion].question}
-                                </pre>
-                            </div>
-                            <br />
-                            <input
-                                type="text"
-                                value={inputAnswer}
-                                onChange={(e) => setInputAnswer(e.target.value)}
-                                placeholder="Your answer"
-                                className="border border-gray-400 p-2 rounded mb-4"
-                            />
-                            <button
-                                onClick={handleSubmit}
-                                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2"
-                            >
-                                Submit
-                            </button>
-                            <button
-                                onClick={handleNextQuestion}
-                                className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
-                            >
-                                Next
-                            </button>
-                            {currentQuestion > 0 && (
-                                <button
-                                    onClick={handlePreviousQuestion}
-                                    className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 ml-2"
+            <div className="relative">
+                {successAlert && <Alert message={'Your response was correct'} type={'success'} />}
+                {failureAlert && <Alert message={'Your response was incorrect'} type={'failure'} />}
+                {/* Code for the header */}
+                <div className="flex justify-between items-center p-2">
+                    <button className='bg-green-500 px-4 mt-2 py-2  text-white rounded-md cursor-pointer whitespace-nowrap'>
+                        Test Has Started
+                    </button>
+                    <p>Test Id: {testId}</p>
+                    <div className="font-bold text-slate-600 text-lg">
+                        {formatTime(timer)}
+                    </div>
+                    <button onClick={onEndClickHandler} className='bg-red-500 px-4 mt-2 py-2  text-white rounded-md cursor-pointer whitespace-nowrap'>
+                        End test
+                    </button>
+                </div>
+                {/* Code for question rendering logic */}
+                <div className="flex h-screen">
+                    <div className="w-1/8 p-4 h-3/4 overflow-y-auto">
+                        {/* Add a fixed height and make this div scrollable */}
+                        <h2 className="text-xl font-semibold">Questions</h2>
+                        <ul>
+                            {questions.map((question, index) => (
+                                <li
+                                    key={question.id}
+                                    onClick={() => handleQuestionClick(index)}
+                                    className={`cursor-pointer py-2 ${
+                                        currentQuestion === index ? 'bg-gray-200' : ''
+                                    }`}
                                 >
-                                    Back
-                                </button>
-                            )}
-                            {solutionButtonEnabled && (
-                                <button
-                                    onClick={handleSolutionClick}
-                                    className="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600"
-                                >
-                                    Solution
-                                </button>
+                                    {index + 1}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="w-3/4 p-4">
+                        <div className="bg-white p-8 rounded shadow-lg">
+                            {showSolution ? (
+                                <div>
+                                    <p>Solution for Question {currentQuestion + 1}</p>
+                                    {questions[currentQuestion].hint}
+                                </div>
+                            ) : (
+                                <div>
+                                    <div>
+              <pre style={{ overflowX: 'auto', whiteSpace: 'pre-wrap' }}>
+                {questions[currentQuestion].question}
+              </pre>
+                                    </div>
+                                    <br />
+                                    <input
+                                        type="text"
+                                        value={inputAnswer}
+                                        onChange={(e) => setInputAnswer(e.target.value)}
+                                        placeholder="Your answer"
+                                        className="border border-gray-400 p-2 rounded mb-4"
+                                    />
+                                    <button
+                                        onClick={handleSubmit}
+                                        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2"
+                                    >
+                                        Submit
+                                    </button>
+                                    <button
+                                        onClick={handleNextQuestion}
+                                        className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+                                    >
+                                        Next
+                                    </button>
+                                    {currentQuestion > 0 && (
+                                        <button
+                                            onClick={handlePreviousQuestion}
+                                            className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 ml-2"
+                                        >
+                                            Back
+                                        </button>
+                                    )}
+                                    {solutionButtonEnabled && (
+                                        <button
+                                            onClick={handleSolutionClick}
+                                            className="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600"
+                                        >
+                                            Solution
+                                        </button>
+                                    )}
+                                </div>
                             )}
                         </div>
-                    )}
+                    </div>
                 </div>
             </div>
-        </div>
         </>
+
     );
 }
 

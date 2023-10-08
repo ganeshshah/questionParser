@@ -44,6 +44,9 @@ public class TestDataController {
     HashMap<String,Object> getTestResultData(
             @RequestParam(name = "testId") int testId){
         HashMap<String,Object> testResult =  ProcessTestData.processData(testDataService.getTestResultData(testId));
+        if(testResult.size() == 0){
+            return null;
+        }
         ArrayList<Integer> correctQuestion = (ArrayList<Integer>) testResult.get("correctQuestionsList");
         Date testDate = (Date) testResult.get("testDate");
         // get all list of questions

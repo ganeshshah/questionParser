@@ -55,6 +55,9 @@ public class QuantController {
             HashMap<String,Object> request = (HashMap<String, Object>) testRequestData;
             List<TestData> testData;
             testData = testDataService.getTestResultData((Integer) request.get("testId"));
+        if(testData.size() == 0){
+            return null;
+        }
             HashMap<String,Object> processedData = ProcessTestData.ProcessQreTestData.processTestResult(request, testData);
             quantService.updateAllQuestions((ArrayList<QuantAndReasoning>) processedData.get("questionToBeUpdated"));
             return processedData;

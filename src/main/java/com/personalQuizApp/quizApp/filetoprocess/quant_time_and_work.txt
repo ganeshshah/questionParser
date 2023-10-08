@@ -243,3 +243,485 @@ Q.15) Anil, Aman, Amit, and Anshul have taken
 
 
 Answer- B)
+
+Q.1) 1. Manik, Ruby, and Ashwin are friends.
+      Together they can finish a task in 24 days.
+      If Manik is thrice as efficient as Ruby and
+      Ruby is half as efficient as Ashwin, then
+      find in how many days Manik can finish
+      that work alone.
+      (A) 12 hours
+      (B) 48 hours
+      (C) 72 hours
+      (D) 144 hours
+
+Answer- B)
+
+Q.2) Mukesh alone can do a job in 30 days,
+whereas Sujeet alone can do it in 60
+days. Mukesh started the job, and after 2
+days, Sujeet joined him. Again, after a few
+more days, Smita joined them and they
+together finished the job. If Smita did 10%
+of the job, then in how many days was the
+job done?
+(A) 16-2/3 days
+(B) 18-2/3 days
+(C) 17 days
+(D) 19 days
+
+Answer- B)
+
+Q.3) A cistern has three inlet taps and two
+outlet taps. The inlet taps can fill the
+cistern individually in 8, 12, and 16 hours.
+The outlet taps can individually empty
+the cistern in 4 hours and 20 hours,
+respectively. If all the taps are opened
+together, how much time does the empty
+cistern will take to fill?
+(A) 8 hours
+(B) 5 hours
+(C) 3 hours
+(D) Cistern will never be filled
+
+Answer- D)
+
+Q.4) Sita and Geeta are working together to
+     complete a job in 8 days. If Sita worked
+     twice efficiently as she actually did and
+     Geeta worked one-third as efficiently as
+     she did, then the work would have been
+     completed in 6 days. Find the time taken
+     by Sita to complete the job alone.
+     (A) 13-1/3 days
+     (B) 15-1/2 days
+     (C) 7-1/2 days
+     (D) 9 days
+
+Answer- A)
+
+Q.5) Ravi can do work in 24 days, whereas
+     Chandan can do the same work in
+     32 days. Ravi, Chandan, and Sushma
+     undertook this work for ₹96,000 and all
+     together can complete the same work in
+     12 days. If Sushma is paid in proportion to
+     her work, then the amount in ₹ received
+     by her is:
+     (A) ₹36,000
+     (B) ₹12,000
+     (C) ₹18,000
+     (D) ₹32,000
+
+Answer- B)
+
+Q.6) Rajan alone can finish a piece of work in
+     156 days. A new person with the same
+     efficiency as him joins him every third
+     day, fifth day, seventh day, and so on until
+     the work is finished. In how many days
+     work will be finished?
+     (A) 12 days
+     (B) 13 days
+     (C) 14 days
+     (D) 15 days
+
+Answer- A)
+
+Q.7) Twenty four men can complete work in
+     20 days. 40 women can complete the
+     same work in 12 days. 16 men and 8
+     women started working and after 18 days,
+     20 more women joined them. How many
+     days will they now take to complete the
+     remaining work?
+
+     (A) 1-1/11 Days
+     (B) 2-1/11 Days
+     (C) 3-1/11 Days
+     (D) 4-1/11 Days
+
+Answer- A)
+
+Q.8) Five identical small pumps and two
+     identical large pumps are filling a tank.
+     The filling rate per minute of each small
+     pump is 60% of the filling rate of each
+     large pump. Find the ratio of the time
+     taken by all seven pumps to the time
+     taken by two large pumps to fill the same
+     tank.
+     (A) 2 : 7
+     (B) 3 : 7
+     (C) 1 : 4
+     (D) 2 : 5
+
+Answer- D)
+
+Q.9) A, B, and C can complete a work in 6, 10,
+     or 12 days, respectively. If they started
+     working together, but B left 3 days
+     before the completion of the work and
+     C left 5 days before the completion of
+     the work, then find how many days work
+     it had taken less if B and C not left the
+     work?
+     (A) 4-5/21 days
+     (B) 3-1/21 days
+     (C) 2-1/21 days
+     (D) 3-1/33 days
+
+Answer- C)
+
+Q.10) Four men and six women get ₹40,000 by
+      doing a piece of work in 5 days. Three
+      men and seven women get ₹43,500 by
+      doing the same work in 6 days. In how
+      many days, seven men and six women
+      can complete the same work getting
+      ₹94,000?
+      (A) 8 days
+      (B) 6 days
+      (C) 5 days
+      (D) 10 days
+
+Answer- D)
+
+Q.11) 11. P alone can do a piece of work in 10
+      days. Q and R each of whom can do the
+      work three-fourth as fast as P joined the
+      group. Moreover, S and T, each of whom
+      can do the work one-fifth as fast as P
+      joined the group. If all the five people
+      start working on a particular project
+      together. Find in how many days this
+      project will end.
+      (A) 2-13/29 days
+      (B) 3-13/29 days
+      (C) 5-1/13 days
+      (D) 45 days
+
+Answer- B)
+
+Q.12) Sonu and Monu can finish a piece of
+      work in 12 and 15 days, respectively. They
+      started the work at the same time. After
+      2 days, Sonu left work and Rahul joined
+      Monu. For 1 day Monu worked with 1.5
+      times his efficiency with Rahul and left
+      after that. The rest of the work is finished
+      by Rahul in 2 more days. In how many
+      days Rahul alone can finish that piece of
+      work?
+      (A) 12 days
+      (B) 6 days
+      (C) 10 days
+      (D) 5 days
+
+Answer- D)
+
+Q.13) 72 men working 9 hours a day plan to
+      complete a piece of work in 12 days.
+      However, 8 days later, they found that
+      they had completed only 45% of the
+      total work. They now want to complete
+      the remaining work in 10 more days. How
+      many hours per day should they work to
+      achieve the target?
+      (A) 8 hours
+      (B) 9 hours
+      (C) 10 hours
+      (D) None of these
+
+Answer- D)
+
+Q.14) A can do 2/5th of the work in 18 days and
+      B can do 3/8th of the work in 18 days.
+      A and B along with C started working on
+      the work and they worked together for 12
+      days. After 12 days, A left, and then B and
+      C together completed the remaining work
+      in 10 days. In how many days, C alone will
+      complete the entire work?
+      (A) 60 days
+      (B) 72 days
+      (C) 80 days
+      (D) 90 days
+
+Answer- C)
+
+Q.15) Two pipes P and Q are connected to
+      an empty water tank. Pipe P can fill the
+      tank, whereas pipe Q empty it. If pipe P
+      is opened at 3 pm and pipe Q is opened
+      at 4 pm, the tank becomes filled at 8 pm.
+      Instead, if pipe P is opened at 3 pm and
+      pipe Q is opened at 5 pm. Then the tank
+      becomes full at 6 pm. If pipe Q is not
+      opened at all, then the time taken to fill
+      the tank is:
+      (A) 130 minutes
+      (B) 140 minutes
+      (C) 42 minutes
+      (D) 56 minutes
+
+ Answer- B)
+
+Q.16) A buffalo can graze as much in 6 days as
+      a goat can in 10 days. A cow can graze as
+      much in 8 days as a buffalo can in 5 days.
+      The goat and the cow together take 89
+      days to graze a certain field. How much
+      time does it take for all three to graze the
+      same field? [ Answer to be edited ]
+      (A) 54
+      (B) 47
+      (C) 49
+      (D) 48.5
+
+Answer- C)
+
+Q.17) X can complete the construction of the
+      building in which 1 lakh bricks are to be
+      used in 15 days and Y can complete the
+      same job in 20 days. Initially, X worked
+      for 5 days and then Y joined him. X left
+      4 days after Y joined. Find the number
+      of bricks that are put by Y alone in this
+      entire construction.
+      (A) 20,000
+      (B) 25,000
+      (C) 40,000
+      (D) 45,000
+
+Answer- C)
+
+Q.18) P, Q, and R can complete a work in 8,
+      12, or 16 days, respectively. They started
+      working together, but Q left 6 days before
+      completing the work, and R left 3 days
+      before completing the work. Find how
+      many days would it have taken less if Q
+      and R had not left the work in between.
+      (A) 5-1/3 days
+      (B) 4-3/7 days
+      (C) 2-7/13 days
+      (D) 8-1/3 days
+
+Answer- C)
+
+Q.19) Mr. Joe has three dogs, namely Max,
+      Charlie, and Buddy. Max is double
+      efficient as Charlie, Buddy alone takes 15
+      minutes more to fill a hole in the earth
+      than the time taken by Max alone to fill
+      the same hole. Charlie started filling the
+      hole and after 4 minutes Max also joined
+      and together they filled the hole after
+      working for 2 more minutes. Find the
+      time taken by Charlie and Buddy together
+      to fill a hole of volume equal to half the
+      volume of the previous hole with double
+      their efficiency:
+      (A) 3 minutes
+      (B) 2 minutes
+      (C) 10/3 minutes
+      (D) 5/3 minutes
+
+Answer- D)
+
+Q.20) Satyam, Shivam, and Sundram start
+      working on a contract to build a house.
+      Satyam and Shivam can build this house
+      working together in 12 months. Shivam
+      and Sundram work together to build
+      the same house in 16 months, whereas
+      Sundram and Satyam can build the same
+      house in 24 months. If the person who is
+      neither the fastest nor the slowest work
+      alone, then the time in months, he will
+      take to build the same house is:
+      (A) 24 months
+      (B) 32 months
+      (C) 28 months
+      (D) 15 months
+
+Answer- B)
+
+Q.21) Five men and seven women can complete
+      a piece of work in 20 days. Four men and
+      three women can complete the same
+      work in 30 days. In how many days will
+      one man and four women can complete
+      twice the original work?
+      (A) 60 days
+      (B) 90 days
+      (C) 120 days
+      (D) 180 days
+
+Answer- C)
+
+Q.22) Rohan builds an overhead tank in his
+      house, which has three taps attached
+      to it. While the first tap alone can fill
+      the tank in 18 hours, the time taken by
+      the second tap alone to fill the tank
+      is two and a half time that of the first
+      one. A third tap is attached to the tank,
+      emptying it in 36 hours. Now, day 1, to fill
+      the tank, Rohan opens the first tap and
+      after 3 hours opens the second tap as
+      well. However, at the end of the 8th hour,
+      he realises that the third tap has been
+      kept open right from the beginning and
+      promptly closes it. What would be the
+      total time required to fill the tank?
+      (A) 16-4/7 hours
+      (B) 15-3/7 hours
+      (C) 13-4/7hours
+      (D) 14-5/7 hours
+
+Answer- A)
+
+Q.23) A can do a piece of work in 3 days. B takes
+      thrice as much time as A to complete the
+      same piece of work. C takes thrice as
+      much time as B to complete the same
+      piece of work. D takes thrice as much time
+      as C to complete the same piece of work
+      and E takes thrice as much time as D to
+      complete the same piece of work. If A’s
+      1-day work exceeds the total 1-day work of
+      B, C, D, and E together by 123 units, then
+      find how many units of B’s 1-day work are
+      more than D’s 1-day work.
+      (A) 75
+      (B) 74
+      (C) 87
+      (D) 72
+
+Answer- D)
+
+Q.24) Work done by Jeevan decreases every day
+      as compared to his previous day’s work.
+      Every day, he works 20% less efficiently
+      than the previous day. If the work gets
+      over in 7 days, what fraction of the work
+      was done in the first 5 days together?
+      (A) 2101 / 5120
+      (B) 57525 / 61741
+      (C) 8102 / 9315
+      (D) 7351 / 9377
+
+Answer- B)
+
+Q.25) A worker can build a wall in 16 days when
+      working alone without taking any energy
+      drink or other substance. He takes an
+      energy drink which can double his work
+      output on any day. He does not take the
+      drink for 3 days consecutively as it can
+      damage his liver. What is the minimum
+      number of days he needs to finish the
+      wall?
+      (A) 10
+      (B) 12
+      (C) 15
+      (D) 20
+
+Answer- A)
+
+Q.26) Isha can finish a piece of work in 12 days
+      and Nisha can finish the same piece
+      of work in 16 days. They both worked
+      together for 4 days, thereafter, Nisha left
+      and Isha worked alone for 1 day. The next
+      day, Rajni joined. Isha and Rajni worked
+      together for 2 days and completed the
+      remaining work. In these 2 days, Isha
+      worked with half of her efficiency. In how
+      many days, Rajni alone could finish the
+      same piece of work?
+      (A) 4 days
+      (B) 7 days
+      (C) 8 days
+      (D) 12 days
+
+Answer- C)
+
+Q.27) 32 boys and 48 girls complete certain
+      construction work in 6 days. All boys
+      work with the same efficiency and all
+      the girls work with the same efficiency;
+      though the efficiency of a boy and a girl
+      may or may not be equal. If 6 boys and 4
+      girls complete the same work in N2 days
+      (where N is an integer). Find the total
+      possible values of N.
+      (A) 0
+      (B) 4
+      (C) 6
+      (D) 8
+
+Answer- D)
+
+Q.28) A tank is filled with water. There are four
+      pipes attached to the tank from which
+      pipe A and pipe B are outlet pipes that
+      can empty the tank in 10 hours and
+      30 hours, respectively, working alone.
+      Pipe C and D are inlet pipes and can fill
+      the empty tank in 20 hours and 15 hours,
+      respectively, working alone. Pipe A is
+      opened on Monday at 3 pm, at 5 pm pipe
+      B is opened, at 6 pm pipe C is opened,
+      and pipe D is also opened at 7 pm. At
+      what time the filled tank will be empty?
+      (A) 7 pm, Tuesday
+      (B) 7 pm, Wednesday
+      (C) 6 am, Wednesday
+      (D) Tank will never be empty
+
+Answer- C)
+
+Q.29) A worker alone can complete a piece
+      of work in 63 days. On the Nth day
+      (N ≥ 2) the number of workers becomes
+      the number of workers on (N − 1)th day
+      thrice. Moreover, the efficiency of each
+      worker on the Nth day is two-thirds of
+      his efficiency on (N − 1)th day. In how
+      many days will they be able to complete
+      the original work? (Assume that all the
+      workers are of the same efficiency.)
+
+      (A) 7
+      (B) 6
+      (C) 8
+      (D) 5
+
+Answer- B)
+
+
+Q.30) Thirty workers all working with the same
+      efficiency started a job and worked on
+      it for 30 days. From day 31 onwards, a
+      new worker with the same efficiency as
+      previous workers joined them every day
+      till the job was finished. It took exactly
+      38 days (since the beginning of the work)
+      to finish the entire job. Now, the same
+      job has to be done, starting with the
+      minimum possible number of workers
+      when it is known that a worker will quit
+      the job every day after the first day. How
+      many days will it take to finish the job in
+      such a manner?
+      (A) 40 days
+      (B) 44 days
+      (C) 48 days
+      (D) 52 days
+
+
+Answer- C)

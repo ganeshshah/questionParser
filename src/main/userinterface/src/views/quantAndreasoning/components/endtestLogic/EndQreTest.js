@@ -31,6 +31,10 @@ function EndQreTest() {
                 const resData = await fetchQretestResult(testRequestData);
                 console.log(resData.data);
                 setTestResultData(resData.data);
+                if(resData.data.length === 0 ){
+                    setIsLoading(false);
+                    alert("You didn't attempt any questions");
+                }
             } catch (error) {
                 console.error("Error fetching data:", error);
             } finally {
