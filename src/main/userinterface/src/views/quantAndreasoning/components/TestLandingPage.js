@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {submitQuestion} from "../../../services/services";
 import {useNavigate} from "react-router-dom";
+import Alert from "../../../components/Alert";
 
 function TestLandingPage({ questions, testIdObject }) {
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -13,6 +14,8 @@ function TestLandingPage({ questions, testIdObject }) {
     const [questionTimers, setQuestionTimers] = useState({});
     const testId = testIdObject.testId;
     const subject = testIdObject.subject;
+    const [successAlert, setSuccessAlert] = useState(false);
+    const [failureAlert, setFailureAlert] = useState(false);
 
     const formatTime = (seconds) => {
         const minutes = Math.floor(seconds / 60);
@@ -71,12 +74,19 @@ function TestLandingPage({ questions, testIdObject }) {
         const currentQuestionObj = questions[currentQuestion];
         const isCorrect = inputAnswer.toLowerCase() === currentQuestionObj.answerKey.toLowerCase();
         if (isCorrect) {
-            alert('Correct!');
+            setSuccessAlert(true);
             dataToSend.result = 1;
-            // Enable the "Solution" button after submitting
+
+            setTimeout(() => {
+                setSuccessAlert(false);
+            }, 3000); // Set a timeout to hide the Alert after 3 seconds (adjust as needed)
         } else {
-            alert('Incorrect!');
+            setFailureAlert(true);
+            // Enable the "Solution" button after submitting
             setSolutionButtonEnabled(true);
+            setTimeout(() => {
+                setFailureAlert(false);
+            }, 3000); // Set a timeout to hide the Alert after 3 seconds (adjust as needed)
         }
         dataToSend.questionId = currentQuestionObj.id;
         dataToSend.subject = currentQuestionObj.subject;
@@ -132,6 +142,8 @@ function TestLandingPage({ questions, testIdObject }) {
 
     return (
         <>
+            {successAlert && <Alert message={'Your response was correct'} type={'success'} />}
+            {failureAlert && <Alert message={'Your response was incorrect'} type={'failure'} />}
             {/* Code for to header*/}
         <div className="flex justify-between items-center p-2">
             <button className='bg-green-500 px-4 mt-2 py-2  text-white rounded-md cursor-pointer whitespace-nowrap' >
