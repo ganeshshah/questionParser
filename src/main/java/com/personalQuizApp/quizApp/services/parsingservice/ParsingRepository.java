@@ -7,6 +7,8 @@ import com.personalQuizApp.quizApp.processors.PIB24X7Parser.Pib27x7Parser;
 import com.personalQuizApp.quizApp.processors.RBI24X7Parser.Rbi24x7Parser;
 import com.personalQuizApp.quizApp.processors.SpotlightParser.SpotlightParser;
 import com.personalQuizApp.quizApp.processors.cloudaffairsParser.CloudAffairsParser;
+import com.personalQuizApp.quizApp.processors.quantParser.QuantParser;
+import com.personalQuizApp.quizApp.services.quantreasoningservice.QuantRepo;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -18,9 +20,11 @@ import java.util.List;
 public class ParsingRepository {
 
     private ParsingRepo parsingRepo;
+    private QuantRepo quantRepo;
 
-    public ParsingRepository(ParsingRepo parsingRepo) {
+    public ParsingRepository(ParsingRepo parsingRepo, QuantRepo quantRepo) {
         this.parsingRepo = parsingRepo;
+        this.quantRepo = quantRepo;
     }
 
     List<McqCSV> getQuestions() {
@@ -49,16 +53,20 @@ public class ParsingRepository {
         String month = loadQuestionParams.getSelectedMonth();
         String subject = loadQuestionParams.getSelectedSubject();
         String parser = loadQuestionParams.getSelectedParser();
+        String chapter = loadQuestionParams.getSelectedChapter();
         if (subject.equals(Subjects.CA.toString())) {
             parsingRepo.saveAll(CloudAffairsParser.parseText(questionFilePath, subject, month));
         } else if (subject.equals(Subjects.SPOTLIGHT.toString())) {
             parsingRepo.saveAll(SpotlightParser.parseText(questionFilePath, answerFilePath, subject, month));
         } else if (subject.equals(Subjects.PIB24X7.toString())) {
-            System.out.println("I am called");
+            System.out.println("Parsing PIB Questions");
             parsingRepo.saveAll(Pib27x7Parser.parseText(questionFilePath, subject, month));
         } else if (subject.equals(Subjects.RBI24X7.toString())) {
-            System.out.println("I am called");
+            System.out.println("Parsing RBI Questions");
             parsingRepo.saveAll(Rbi24x7Parser.parseText(questionFilePath, subject, month));
+        }else if(subject.equals(Subjects.QUANT.toString()) || subject.equals(Subjects.REASONING.toString()) ){
+            System.out.println("Parsing" + subject + " Questions");
+            quantRepo.saveAll(QuantParser.parseText(questionFilePath, subject, chapter,month));
         }
     }
 

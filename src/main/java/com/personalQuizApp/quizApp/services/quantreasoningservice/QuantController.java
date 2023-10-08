@@ -1,10 +1,9 @@
 package com.personalQuizApp.quizApp.services.quantreasoningservice;
-import com.personalQuizApp.quizApp.dataObjects.McqCSV;
 import com.personalQuizApp.quizApp.dataObjects.QuantAndReasoning;
 import com.personalQuizApp.quizApp.dataObjects.TestData;
-import com.personalQuizApp.quizApp.dataObjects.TestQreBodyData;
+import com.personalQuizApp.quizApp.performanceAnalyzer.QreAnalyticsDashBoard;
 import com.personalQuizApp.quizApp.processors.ProcessInput;
-import com.personalQuizApp.quizApp.processors.SpotlightParser.ProcessQreTestData;
+import com.personalQuizApp.quizApp.processors.ProcessTestData;
 import com.personalQuizApp.quizApp.services.testresultservice.TestDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -56,7 +55,7 @@ public class QuantController {
             HashMap<String,Object> request = (HashMap<String, Object>) testRequestData;
             List<TestData> testData;
             testData = testDataService.getTestResultData((Integer) request.get("testId"));
-            HashMap<String,Object> processedData = ProcessQreTestData.processTestResult(request, testData);
+            HashMap<String,Object> processedData = ProcessTestData.ProcessQreTestData.processTestResult(request, testData);
             quantService.updateAllQuestions((ArrayList<QuantAndReasoning>) processedData.get("questionToBeUpdated"));
             return processedData;
     }
@@ -76,5 +75,13 @@ public class QuantController {
     @GetMapping("getIncorrectQuestions")
     public List<QuantAndReasoning> getIncorrectQuestions(@RequestParam ArrayList<Integer> ids){
         return quantService.getIncorrectQuestions(ids);
+    }
+
+    @GetMapping("getAnalyticsData")
+    public HashMap<String,Object>  getAnalyticsData(){
+        HashMap<String,Object> resultData = new HashMap<>();
+        List<QuantAndReasoning> allQuestions = quantService.getAllQuestions();
+        resultData = QreAnalyticsDashBoard.prepareData(allQuestions);
+        return resultData;
     }
 }

@@ -14,7 +14,8 @@ import {
     API_GET_QRE_QUESTIONS,
     API_DELETE_QRE_QUESTION,
     API_EDIT_QRE_FORM,
-    API_QRE_TEST_RESULT
+    API_QRE_TEST_RESULT,
+    API_GET_ALL_QRE_ANALYTICS_DATA
 } from '../common/constants';
 import axios from 'axios';
 
@@ -245,4 +246,15 @@ export const fetchQretestResult = async (body) => {
         throw new Error(`HTTP error! Status: ${response.status}`);
     }
     return response;
+}
+
+export const fetchQreAnalyticsData = async () => {
+    const url = API_GET_ALL_QRE_ANALYTICS_DATA
+
+    const response = await fetch(url);
+
+    if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return await response.json();
 }

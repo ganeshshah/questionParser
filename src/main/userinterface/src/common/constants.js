@@ -10,6 +10,7 @@ export const API_SUBMIT_QUESTION = "http://localhost:8080/testData/submitQuestio
 export const API_GET_REVISION_DATA = "http://localhost:8080/getRevisionData?";
 export const API_GET_ALL_QUESTION_BY_IDS = "http://localhost:8080/getIncorrectQuestions?ids=";
 export const API_GET_ALL_ANALYTICS_DATA = "http://localhost:8080/getAnalyticsData?byMonthOrMonthRange=";
+export const API_GET_ALL_QRE_ANALYTICS_DATA = "http://localhost:8080/qre/getAnalyticsData";
 export const API_ADD_QUESTION = "http://localhost:8080/addQuestionManually";
 export const API_ADD_QRE_QUESTION = "http://localhost:8080/qre/addQuestion";
 export const API_DELETE_QUESTION = "http://localhost:8080/deleteQuestionById/";
@@ -33,5 +34,7 @@ export const MONTHS = [
 export const SUBJECTS = ['RBI24X7', 'SPOTLIGHT', 'PIB24X7', 'CA', 'FINANCE', 'MANAGEMENT', 'ESI', 'QUANT', 'REASONING'];
 export const ACCURACY = ['90', '80', '70', '60', '50', '40', '30', '20']
 
-export const QUANT_CHAPTERS = ['Time And Work', 'Ratio and Proportion', 'Percentage', 'Average'];
-export const REASONING_CHAPTERS = ['Syllogism'];
+export const QUANT_CHAPTERS = ['TIME_AND_WORK', 'RATIO_AND_PROPORTION', 'PERCENTAGE', 'AVERAGE', 'MENSURATION', 'DOWNSTREAM_AND_UPSTREAM',
+    'SPEED_DISTANCE_AND_TIME', 'COMPOUND_AND_SIMPLE_INTEREST', 'PERMUTATION_AND_COMBINATION', 'DATA_INTERPRETATION', 'PROBABILITY', 'APPROXIMATION_AND_SIMPLIFICATION',
+    'QUADRATIC_EQUATIONS', 'INEQUALITIES', 'NUMBER_SERIES', 'STOCKS_AND_SHARES', 'PROFIT_AND_LOSS'];
+export const REASONING_CHAPTERS = ['SEATING_ARRANGEMENT', 'PUZZLES', 'DIRECTION_TEST', 'INEQUALITIES', 'SYLLOGISM', 'BLOOD_RELATION', 'DATA_SUFFICIENCY', 'INPUT_OUTPUT', 'CODING_DECODING', 'ANALOGY', 'ALPHANUMERIC_SERIES', 'RANKING'];

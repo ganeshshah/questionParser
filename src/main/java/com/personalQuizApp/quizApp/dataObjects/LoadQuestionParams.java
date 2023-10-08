@@ -6,7 +6,9 @@ public class LoadQuestionParams {
     private String answerPath;
     private String selectedParser;
     private String selectedSubject;
+    private String selectedChapter;
     private String selectedMonth;
+
 
     public String getQuestionPath() {
         return questionPath;
@@ -46,5 +48,13 @@ public class LoadQuestionParams {
 
     public void setSelectedMonth(String selectedMonth) {
         this.selectedMonth = selectedMonth;
+    }
+
+    public String getSelectedChapter() {
+        return selectedChapter;
+    }
+
+    public void setSelectedChapter(String selectedChapter) {
+        this.selectedChapter = selectedChapter;
     }
 }

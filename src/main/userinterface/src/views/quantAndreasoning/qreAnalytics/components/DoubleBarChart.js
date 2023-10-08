@@ -2,7 +2,7 @@ import React from "react";
 import { Chart } from "react-google-charts";
 
 export const options = {
-  title: "Criteria wise question distribution overall subjects",
+  title: "Chapter wise questions statistics",
   chartArea: { width: "50%" },
   colors: ["#b0120a", "#49bf28"],
   hAxis: {
@@ -10,16 +10,22 @@ export const options = {
     minValue: 0,
   },
   vAxis: {
-    title: "Completion Target",
+    title: "Chapters",
   },
 };
 
-export function DoubleBarChart({analyticsData}) {
+export function DoubleBarChart({data}) {
+
+  const resultArray = [
+    ["Chapters", "Total Question Present", "Total Solved"],
+    ...Object.entries(data).map(([key, value]) => [key, ...value])
+  ];
   return (
     <Chart
       chartType="BarChart"
       width="100%"
-      data={analyticsData}
+      height="400px"
+      data={resultArray}
       options={options}
     />
   );

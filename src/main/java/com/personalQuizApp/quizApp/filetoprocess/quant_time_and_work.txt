@@ -1,0 +1,245 @@
+Q.1) ‘A’ does 2/5 th of a work in 9 days. B then
+    joined him, and they together completed
+    the remaining work in 6 days. B alone can
+    finish the whole work in:
+    (A) 18 days
+    (B) 95 days
+    (C) 19 days
+    (D) 17 days
+
+Answer- A)
+
+Q.2) ‘A’ and ‘B’ can do a work in 45 days and 40
+    days, respectively. They began the work
+    together but A left after some days and B
+    finished the remaining work in 23 days. A
+    left after:
+    (A) 13 days
+    (B) 9 days
+    (C) 10 days
+    (D) 12 days
+
+ Answer- B)
+
+ Q.3) A can do 50% of the job in 16 days, B can
+     do 1/4 th of the job in 24 days. In how many
+     days can they do 3/4 th of the job working
+     together?
+     (A) 18 days
+     (B) 22 days
+     (C) 25 days
+     (D) 28 days
+
+
+ Answer- A)
+
+ Q.4) Arun and Varun working together, can
+     complete a piece of work in 8 days. Had
+     Arun worked twice as fast and Varun at
+     an efficiency of one-third of his original
+     efficiency, then they would have finished
+     the job in 6 days. In how many days can
+     Varun complete the whole work working
+     alone?
+     (A) 35 days
+     (B) 30 days
+     (C) 20 days
+     (D) 12 days
+
+
+  Answer- C)
+
+
+
+  Q.5) Pipe P can fill an empty tank in
+      30 minutes, whereas pipe Q can fill it in
+      45 minutes. Pipe P and Q are opened and
+      closed alternatively, i.e., the first pipe P is
+      opened then Q again P and then Q, and so
+      on 1 minute each time without any time
+      lapse. In how many minutes will the tank
+      be filled when it was empty initially?
+      (A) 40 minutes
+      (B) 30 minutes
+      (C) 15 minutes
+      (D) 36 minutes
+
+
+   Answer- D)
+
+
+
+
+   Q.6) Ruby can do a work in 40 days, whereas
+      Nandini can do the same work in 50 days.
+      They started working together. A few days
+      later Bhavna also joined them and thus
+      all of them completed the whole work
+      in 20 days. All of them were paid total
+      ₹1,400. What is the share of Bhavna?
+      (A) ₹140
+      (B) ₹200
+      (C) ₹250
+      (D) ₹290
+
+
+    Answer- A)
+
+
+    Q.7) P can do a piece of work in 10 days. Q and
+        R who can do the work 3/4 th as fast as P
+        joined the group. Also S and T who can
+        do the work 1/5 as fast as P also joined the
+        group. If all five people start working on a
+        particular data science project together.
+        Find in how many days this data science
+        project will end?
+        (A) 2-13/29 days
+        (B) 3-13/29 days
+        (C) 5-1/13 days
+        (D) 45 days
+
+Answer- B)
+
+Q.8) In an automobile company, an engineer
+    started work on a machine learning project
+    on day 1, on day 2, two more engineers
+    joined the m/c learning project, on day 3,
+    three more engineers joined the project,
+    and so on till the machine learning project
+    was completed in 10 days. In how many
+    days can the project be completed by 20
+    data scientists, if each data scientist is
+    twice as efficient as an engineer of an
+    automobile company?
+    (A) 11/2 days
+    (B) 22/3 days
+    (C) 7/2 days
+    (D) 9 days
+
+
+Answer- A)
+
+
+Q.9) The rate of discharge of water from a
+    pipe is 40 m/sec. The pipe is attached to
+    the bottom of a cuboidal water tank of
+    dimensions 20 m × 18 m × 10 m. If the
+    tank is emptied in 30 minutes. Find the
+    area of the cross-section of the pipe.
+    (A) 600 cm2
+    (B) 800 cm2
+    (C) 700 cm2
+    (D) 500 cm2
+
+
+Answer- D)
+
+
+Q.10) Three taps can fill an empty tank in 40
+    minutes. If two of the three taps can
+    alone fill the empty tank in 120 minutes
+    and 180 minutes, respectively, then in
+    how much time does the third tap alone
+    fill the empty tank?
+    (A) 90 minutes
+    (B) 75 minutes
+    (C) 80 minutes
+    (D) 70 minutes
+
+
+Answer- A)
+
+
+Q.11) C is twice efficient as A, B takes thrice as
+    many days as C. A takes 12 days to finish
+    the work alone. If they work in pairs (i.e.,
+    AB, BC, and CA), starting with AB on the
+    first day then BC on the second day, AC on
+    the third day, and so on. Then how many
+    days are required to finish the work?
+    (A) 6-1/5 days
+    (B) 4.5 days
+    (C) 5-1/9 days
+    (D) 8 days
+
+Answer- C)
+
+Q.12) A cistern is attached to a few pipes.
+    Some of them are large pipes and some
+    of them are small pipes. Each of these
+    pipes can be used to fill or empty the
+    tank. The filling speed of each pipe is 10
+    times the speed of its emptying capacity.
+    Further, all the large pipes have the same
+    filling rate among themselves and all the
+    small pipes have the same filling rate
+    among themselves. One large pipe and
+    seven small pipes can empty the cistern
+    in 6 minutes, whereas one large pipe
+    and three small pipes can fill it in just 1
+    minute. How many minutes will one large
+    pipe and one small pipe together take to
+    empty a completely filled cistern?
+    (A) 12 minutes
+    (B) 16 minutes
+    (C) 15 minutes
+    (D) 18 minutes
+
+
+Answer- C)
+
+
+Q.13) A tank has four pipes attached to it. The
+    amount of water flowing per minute
+    through each pipe is directly proportional
+    to the area of its cross-section. The pipes
+    attached to the tank are of the square
+    cross-section with sides of 2 cm, 4 cm, 8
+    cm, and 16 cm, respectively. If the smallest
+    pipe alone takes 60 minutes to fill the
+    tank, how much time (in seconds) will it
+    take for all four pipes to fill the tank?
+    (A) 42.35 seconds
+    (B) 41.45 seconds
+    (C) 40.4 seconds
+    (D) 43.5 seconds
+
+Answer- A)
+
+Q.14) Simba can do a piece of work in 15 days.
+    At the same time, Jaggu can do the same
+    piece of work in 18 days. They started
+    the work together. After some days Bala
+    joined them and all of them completed
+    the whole work in 8 days. All of them
+    were paid a total of ₹3,600. What is the
+    share of Bala?
+    (A) ₹70
+    (B) ₹75
+    (C) ₹80
+    (D) ₹85
+
+Answer- C)
+
+Q.15) Anil, Aman, Amit, and Anshul have taken
+    the task to make several wooden chairs.
+    Anil alone can make a chair in 12 hours.
+    Aman is 20% more efficient than Anil,
+    whereas Amit is 25% more efficient than
+    Aman. Anshul is one-third as efficient
+    as Anil. One day, they together had to
+    make a chair. Initially, for 15 minutes all
+    four worked on the chair. Then, Anil and
+    Aman left and the remaining two of them
+    worked on the chair for another 4 hours.
+    Then, Anshul finished the remaining work
+    alone. For how much time did Anshul
+    work alone?
+    (A) 678.5 minutes
+    (B) 658.5 minutes
+    (C) 666.3 minutes
+    (D) 645.5 minutes
+
+
+Answer- B)

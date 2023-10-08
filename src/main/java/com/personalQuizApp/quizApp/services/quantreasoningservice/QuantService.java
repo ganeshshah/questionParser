@@ -44,4 +44,8 @@ public class QuantService {
     public List<QuantAndReasoning> getIncorrectQuestions(ArrayList<Integer> ids) {
         return quantRepository.getIncorrectQuestions(ids);
     }
+
+    public List<QuantAndReasoning> getAllQuestions() {
+        return quantRepository.getAllQuestions();
+    }
 }

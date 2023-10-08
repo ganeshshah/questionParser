@@ -28,6 +28,7 @@ import QuantAndReasoning from "./views/quantAndreasoning/QuantAndReasoning";
 import SearchQreQuestionWithParams from "./views/quantAndreasoning/components/SearchQreQuestionWithParams";
 import CreateQreTest from "./views/quantAndreasoning/components/CreateQreTest";
 import EndQreTest from "./views/quantAndreasoning/components/endtestLogic/EndQreTest"
+import QreAnalyticsDashBoard from "./views/quantAndreasoning/qreAnalytics/QreAnalyticsDashBoard";
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
           <Route path="/revise" element={<Revise />} />
           <Route path="/revise_question" element={<ReviseQuestion />} />
           <Route path="/show_analytics" element={<ShowAnalytics />} />
+          <Route path="/show_qre_analytics" element={<QreAnalyticsDashBoard />} />
           <Route path="/add_question" element={<AddQuestion />} />
           <Route path="/create_mixed_test" element={<CreateMixedTest />} />
           <Route path="/load_question_from_excel" element={<LoadQuestionFromExcel />} />

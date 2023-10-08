@@ -85,4 +85,8 @@ public class QuantRepository {
     public List<QuantAndReasoning> getIncorrectQuestions(ArrayList<Integer> ids) {
         return (List<QuantAndReasoning>) QuantRepo.findAllById(ids);
     }
+
+    public List<QuantAndReasoning> getAllQuestions() {
+        return (List<QuantAndReasoning>) QuantRepo.findAll();
+    }
 }
