@@ -4,7 +4,7 @@ import { Chart } from "react-google-charts";
 
 
 export const options = {
-  title: "Completion time wise question distribution",
+  title: "Subject wise question completed percentage",
   pieHole: 0.4,
   is3D: false,
 };

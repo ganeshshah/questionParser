@@ -27,19 +27,24 @@ public class AnalyticsDashBoard {
         add(SPOTLIGHT);
     }};
 
-    private static ArrayList<ArrayList<Object>> doughNutData = new ArrayList<>();
 
     public static HashMap<String, Object> prepareAnalyticsData(List<McqCSV> listOfQuestions) {
         HashMap<String, Object> resultMap = new HashMap<>();
+        HashMap<String, ArrayList<Integer>> doughNutData = new HashMap<>();
+        ArrayList<ArrayList<Object>> doughNutFinalData = new ArrayList<>();
         ArrayList<Object> headers = new ArrayList<>();
         headers.add("Subject");
         headers.add("Completion Status");
-        doughNutData.add(headers);
+        doughNutFinalData.add(headers);
         Integer totalQuestions = 0;
         Integer totalAttempted = 0;
         Date todaysDate = new Date();
-        HashMap<String, Integer> doughnutChartData = new HashMap<>();
-        HashMap<String, HashMap<Integer, ArrayList<Integer>>> lineChartData = new HashMap<>();
+
+        doughNutData.put(RBI24X7, new ArrayList<>(Collections.nCopies(2, 0)));
+        doughNutData.put(PIB24X7, new ArrayList<>(Collections.nCopies(2, 0)));
+        doughNutData.put(CA, new ArrayList<>(Collections.nCopies(2, 0)));
+        doughNutData.put(SPOTLIGHT, new ArrayList<>(Collections.nCopies(2, 0)));
+
 
         // final return list
         ArrayList<ArrayList<Object>> doubleBarChartData = new ArrayList<>();
@@ -95,6 +100,16 @@ public class AnalyticsDashBoard {
                 String questionCreatedDate = question.getCreatedDate().toString().substring(0, 10);
                 long daysGap = calculateDateDifferenceInDays(questionCreatedDate, formattedDate);
                 Integer noOfAttempts = question.getNoOfAttempt();
+
+                ArrayList<Integer> values = doughNutData.get(question.getSubject());
+                if (noOfAttempts > 0) {
+                    values.set(0, values.get(0) + 1);
+                    doughNutData.put(question.getSubject(), values);
+                } else {
+                    values.set(1, values.get(1) + 1);
+                    doughNutData.put(question.getSubject(), values);
+                }
+
                 String subject = question.getSubject();
                 if (noOfAttempts != null && noOfAttempts > 0)
                     totalAttempted++;
@@ -132,15 +147,26 @@ public class AnalyticsDashBoard {
             }
         }
 
+        for (Map.Entry<String, ArrayList<Integer>> innerEntry : doughNutData.entrySet()) {
+
+            String subject = innerEntry.getKey();
+            ArrayList<Integer> values = innerEntry.getValue();
+            ArrayList<Object> data = new ArrayList<>();
+            data.add(subject);
+            data.add(values.get(0)*100.0 / (values.get(0) + values.get(1)));
+            doughNutFinalData.add(data);
+        }
+
+
+
         doubleBarChartData = prepareListForDoubleBarChart(doubleBarChartDataMap);
 
         resultMap.put("totalQuestions", totalQuestions);
         resultMap.put("totalAttempted", totalAttempted);
-        resultMap.put("doughnutChartData", doughNutData);
+        resultMap.put("doughnutChartData", doughNutFinalData);
         resultMap.put("doubleBarChartData", doubleBarChartData);
         resultMap.put("subjectWiseBarChartData", doubleBarChartDataMap);
         resultMap.put("calendarData", attemptsCalendar);
-        doughNutData = new ArrayList<>();
         return resultMap;
     }
 
@@ -157,11 +183,6 @@ public class AnalyticsDashBoard {
         innerData.put(LESS_THAN_80_ACCURACY, new ArrayList<>(Collections.nCopies(2, 0)));
 
         for (Map.Entry<String, HashMap<String, ArrayList<Integer>>> entry : doubleBarChartDataMap.entrySet()) {
-            // Subject Name
-            String datasetName = entry.getKey();
-            double target = 0;
-            double done = 0;
-            doughNutInnerData.put(datasetName, 0.0);
             HashMap<String, ArrayList<Integer>> innerMap;
             // Criteria wise question distribution map
             innerMap = entry.getValue();
@@ -171,21 +192,11 @@ public class AnalyticsDashBoard {
                 String categoryName = innerEntry.getKey();
                 // Numbers for total and target
                 ArrayList<Integer> values = innerEntry.getValue();
-                target += values.get(0);
-                done += values.get(1);
-
                 ArrayList<Integer> values2 = innerData.get(categoryName);
                 values2.set(0, values2.get(0) + values.get(0));
                 values2.set(1, values2.get(1) + values.get(1));
                 innerData.put(categoryName, values2);
-
             }
-            target = target + done;
-            double doughnutValue = 0;
-            if (target != 0) {
-                doughnutValue = done / target;
-            }
-            doughNutInnerData.put(datasetName, doughnutValue * 100);
         }
 
         barData.add(new ArrayList<>(Arrays.asList("Criteria", "Still to be completed", "Completed till now")));
@@ -198,15 +209,6 @@ public class AnalyticsDashBoard {
             data.add(values.get(0));
             data.add(values.get(1));
             barData.add(data);
-        }
-
-        for (Map.Entry<String, Double> innerEntry : doughNutInnerData.entrySet()) {
-            String subject = innerEntry.getKey();
-            Double values = innerEntry.getValue();
-            ArrayList<Object> data = new ArrayList<>();
-            data.add(subject);
-            data.add(values);
-            doughNutData.add(data);
         }
         return barData;
     }

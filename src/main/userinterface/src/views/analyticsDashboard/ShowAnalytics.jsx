@@ -59,6 +59,9 @@ function ShowAnalytics() {
         }
     }, [param]);
 
+
+    console.log(analyticsData)
+
     return (
         <>
             {loading && <Loading />}
