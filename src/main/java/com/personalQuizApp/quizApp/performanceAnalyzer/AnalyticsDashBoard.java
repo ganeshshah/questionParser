@@ -19,7 +19,7 @@ public class AnalyticsDashBoard {
     private static final String PIB24X7 = "PIB24X7";
     private static final String CA = "CA";
     private static final String SPOTLIGHT = "SPOTLIGHT";
-    private static HashMap<Date,Integer> attemptsCalendar = new HashMap<>();
+    private static HashMap<Date, Integer> attemptsCalendar = new HashMap<>();
     private static final HashSet<String> supportedSubjects = new HashSet<String>() {{
         add(RBI24X7);
         add(PIB24X7);
@@ -28,9 +28,10 @@ public class AnalyticsDashBoard {
     }};
 
     private static ArrayList<ArrayList<Object>> doughNutData = new ArrayList<>();
-    public static HashMap<String,Object> prepareAnalyticsData(List<McqCSV> listOfQuestions){
-        HashMap<String,Object> resultMap = new HashMap<>();
-        ArrayList<Object> headers =  new ArrayList<>();
+
+    public static HashMap<String, Object> prepareAnalyticsData(List<McqCSV> listOfQuestions) {
+        HashMap<String, Object> resultMap = new HashMap<>();
+        ArrayList<Object> headers = new ArrayList<>();
         headers.add("Subject");
         headers.add("Completion Status");
         doughNutData.add(headers);
@@ -45,99 +46,100 @@ public class AnalyticsDashBoard {
 
 
         // Use while calculation
-        HashMap<String,HashMap<String, ArrayList<Integer>>>  doubleBarChartDataMap = new HashMap<>();
+        HashMap<String, HashMap<String, ArrayList<Integer>>> doubleBarChartDataMap = new HashMap<>();
+
         HashMap<String, ArrayList<Integer>> doubleBarChartDataItem = new HashMap<>();
-        doubleBarChartDataItem.put(NOT_ATTEMPTED,new ArrayList<>(Collections.nCopies(2, 0)));
-        doubleBarChartDataItem.put(GREATER_THAN_7_DAYS,new ArrayList<>(Collections.nCopies(2, 0)));
-        doubleBarChartDataItem.put(GREATER_THAN_15_DAYS,new ArrayList<>(Collections.nCopies(2, 0)));
-        doubleBarChartDataItem.put(GREATER_THAN_25_DAYS,new ArrayList<>(Collections.nCopies(2, 0)));
-        doubleBarChartDataItem.put(LESS_THAN_80_ACCURACY,new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem.put(NOT_ATTEMPTED, new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem.put(GREATER_THAN_7_DAYS, new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem.put(GREATER_THAN_15_DAYS, new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem.put(GREATER_THAN_25_DAYS, new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem.put(LESS_THAN_80_ACCURACY, new ArrayList<>(Collections.nCopies(2, 0)));
 
         //
         HashMap<String, ArrayList<Integer>> doubleBarChartDataItem1 = new HashMap<>();
-        doubleBarChartDataItem1.put(NOT_ATTEMPTED,new ArrayList<>(Collections.nCopies(2, 0)));
-        doubleBarChartDataItem1.put(GREATER_THAN_7_DAYS,new ArrayList<>(Collections.nCopies(2, 0)));
-        doubleBarChartDataItem1.put(GREATER_THAN_15_DAYS,new ArrayList<>(Collections.nCopies(2, 0)));
-        doubleBarChartDataItem1.put(GREATER_THAN_25_DAYS,new ArrayList<>(Collections.nCopies(2, 0)));
-        doubleBarChartDataItem1.put(LESS_THAN_80_ACCURACY,new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem1.put(NOT_ATTEMPTED, new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem1.put(GREATER_THAN_7_DAYS, new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem1.put(GREATER_THAN_15_DAYS, new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem1.put(GREATER_THAN_25_DAYS, new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem1.put(LESS_THAN_80_ACCURACY, new ArrayList<>(Collections.nCopies(2, 0)));
 
         //
 
         HashMap<String, ArrayList<Integer>> doubleBarChartDataItem2 = new HashMap<>();
-        doubleBarChartDataItem2.put(NOT_ATTEMPTED,new ArrayList<>(Collections.nCopies(2, 0)));
-        doubleBarChartDataItem2.put(GREATER_THAN_7_DAYS,new ArrayList<>(Collections.nCopies(2, 0)));
-        doubleBarChartDataItem2.put(GREATER_THAN_15_DAYS,new ArrayList<>(Collections.nCopies(2, 0)));
-        doubleBarChartDataItem2.put(GREATER_THAN_25_DAYS,new ArrayList<>(Collections.nCopies(2, 0)));
-        doubleBarChartDataItem2.put(LESS_THAN_80_ACCURACY,new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem2.put(NOT_ATTEMPTED, new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem2.put(GREATER_THAN_7_DAYS, new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem2.put(GREATER_THAN_15_DAYS, new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem2.put(GREATER_THAN_25_DAYS, new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem2.put(LESS_THAN_80_ACCURACY, new ArrayList<>(Collections.nCopies(2, 0)));
 
         //
         HashMap<String, ArrayList<Integer>> doubleBarChartDataItem3 = new HashMap<>();
-        doubleBarChartDataItem3.put(NOT_ATTEMPTED,new ArrayList<>(Collections.nCopies(2, 0)));
-        doubleBarChartDataItem3.put(GREATER_THAN_7_DAYS,new ArrayList<>(Collections.nCopies(2, 0)));
-        doubleBarChartDataItem3.put(GREATER_THAN_15_DAYS,new ArrayList<>(Collections.nCopies(2, 0)));
-        doubleBarChartDataItem3.put(GREATER_THAN_25_DAYS,new ArrayList<>(Collections.nCopies(2, 0)));
-        doubleBarChartDataItem3.put(LESS_THAN_80_ACCURACY,new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem3.put(NOT_ATTEMPTED, new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem3.put(GREATER_THAN_7_DAYS, new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem3.put(GREATER_THAN_15_DAYS, new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem3.put(GREATER_THAN_25_DAYS, new ArrayList<>(Collections.nCopies(2, 0)));
+        doubleBarChartDataItem3.put(LESS_THAN_80_ACCURACY, new ArrayList<>(Collections.nCopies(2, 0)));
 
 
-        doubleBarChartDataMap.put(RBI24X7,doubleBarChartDataItem);
-        doubleBarChartDataMap.put(PIB24X7,doubleBarChartDataItem1);
-        doubleBarChartDataMap.put(CA,doubleBarChartDataItem2);
-        doubleBarChartDataMap.put(SPOTLIGHT,doubleBarChartDataItem3);
+        doubleBarChartDataMap.put(RBI24X7, doubleBarChartDataItem);
+        doubleBarChartDataMap.put(PIB24X7, doubleBarChartDataItem1);
+        doubleBarChartDataMap.put(CA, doubleBarChartDataItem2);
+        doubleBarChartDataMap.put(SPOTLIGHT, doubleBarChartDataItem3);
 
 
-        for(McqCSV question : listOfQuestions){
-           if(supportedSubjects.contains(question.getSubject())){
-               totalQuestions++;
-               SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-               String formattedDate = sdf.format(todaysDate);
-               String questionCreatedDate = question.getCreatedDate().toString().substring(0,10);
-               long daysGap = calculateDateDifferenceInDays(questionCreatedDate,formattedDate);
-               Integer noOfAttempts = question.getNoOfAttempt();
-               String subject = question.getSubject();
-               if(noOfAttempts!= null && noOfAttempts > 0)
-                   totalAttempted++;
-               if (noOfAttempts!= null && noOfAttempts == 0) {
-                   Integer value = doubleBarChartDataMap.get(subject).get(NOT_ATTEMPTED).get(0) + 1;
-                   doubleBarChartDataMap.get(subject).get(NOT_ATTEMPTED).set(0,value);
-               } else if(noOfAttempts!= null && daysGap <=7){
-                   Integer value = doubleBarChartDataMap.get(subject).get(NOT_ATTEMPTED).get(1) + 1;
-                   doubleBarChartDataMap.get(subject).get(NOT_ATTEMPTED).set(1,value);
-               }else if (daysGap > 7 && daysGap < 15) {
-                   if(noOfAttempts!= null && noOfAttempts < 2 ){
-                       Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_7_DAYS).get(0) + 1;
-                       doubleBarChartDataMap.get(subject).get(GREATER_THAN_7_DAYS).set(0,value);
-                   }else {
-                       Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_7_DAYS).get(1) + 1;
-                       doubleBarChartDataMap.get(subject).get(GREATER_THAN_7_DAYS).set(1,value);
-                   }
-               } else if (daysGap >= 15 && daysGap < 25) {
-                   if(noOfAttempts!= null && noOfAttempts < 3 ){
-                       Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_15_DAYS).get(0) + 1;
-                       doubleBarChartDataMap.get(subject).get(GREATER_THAN_15_DAYS).set(0,value);
-                   }else {
-                       Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_15_DAYS).get(1) + 1;
-                       doubleBarChartDataMap.get(subject).get(GREATER_THAN_15_DAYS).set(1,value);
-                   }
-               } else if (daysGap >= 25 ) {
-                   if(noOfAttempts!= null && noOfAttempts < 4 ){
-                       Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_25_DAYS).get(0) + 1;
-                       doubleBarChartDataMap.get(subject).get(GREATER_THAN_25_DAYS).set(0,value);
-                   }else {
-                       Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_25_DAYS).get(1) + 1;
-                       doubleBarChartDataMap.get(subject).get(GREATER_THAN_25_DAYS).set(1,value);
-                   }
-               }
-           }
+        for (McqCSV question : listOfQuestions) {
+            if (supportedSubjects.contains(question.getSubject())) {
+                totalQuestions++;
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+                String formattedDate = sdf.format(todaysDate);
+                String questionCreatedDate = question.getCreatedDate().toString().substring(0, 10);
+                long daysGap = calculateDateDifferenceInDays(questionCreatedDate, formattedDate);
+                Integer noOfAttempts = question.getNoOfAttempt();
+                String subject = question.getSubject();
+                if (noOfAttempts != null && noOfAttempts > 0)
+                    totalAttempted++;
+                if (noOfAttempts != null && noOfAttempts == 0) {
+                    Integer value = doubleBarChartDataMap.get(subject).get(NOT_ATTEMPTED).get(0) + 1;
+                    doubleBarChartDataMap.get(subject).get(NOT_ATTEMPTED).set(0, value);
+                } else if (noOfAttempts != null && daysGap <= 7) {
+                    Integer value = doubleBarChartDataMap.get(subject).get(NOT_ATTEMPTED).get(1) + 1;
+                    doubleBarChartDataMap.get(subject).get(NOT_ATTEMPTED).set(1, value);
+                } else if (daysGap > 7 && daysGap < 15) {
+                    if (noOfAttempts != null && noOfAttempts < 2) {
+                        Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_7_DAYS).get(0) + 1;
+                        doubleBarChartDataMap.get(subject).get(GREATER_THAN_7_DAYS).set(0, value);
+                    } else {
+                        Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_7_DAYS).get(1) + 1;
+                        doubleBarChartDataMap.get(subject).get(GREATER_THAN_7_DAYS).set(1, value);
+                    }
+                } else if (daysGap >= 15 && daysGap < 25) {
+                    if (noOfAttempts != null && noOfAttempts < 3) {
+                        Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_15_DAYS).get(0) + 1;
+                        doubleBarChartDataMap.get(subject).get(GREATER_THAN_15_DAYS).set(0, value);
+                    } else {
+                        Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_15_DAYS).get(1) + 1;
+                        doubleBarChartDataMap.get(subject).get(GREATER_THAN_15_DAYS).set(1, value);
+                    }
+                } else if (daysGap >= 25) {
+                    if (noOfAttempts != null && noOfAttempts < 4) {
+                        Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_25_DAYS).get(0) + 1;
+                        doubleBarChartDataMap.get(subject).get(GREATER_THAN_25_DAYS).set(0, value);
+                    } else {
+                        Integer value = doubleBarChartDataMap.get(subject).get(GREATER_THAN_25_DAYS).get(1) + 1;
+                        doubleBarChartDataMap.get(subject).get(GREATER_THAN_25_DAYS).set(1, value);
+                    }
+                }
+            }
         }
 
         doubleBarChartData = prepareListForDoubleBarChart(doubleBarChartDataMap);
 
-        resultMap.put("totalQuestions",totalQuestions);
-        resultMap.put("totalAttempted",totalAttempted);
-        resultMap.put("doughnutChartData",doughNutData);
-        resultMap.put("doubleBarChartData",doubleBarChartData);
-        resultMap.put("subjectWiseBarChartData",doubleBarChartDataMap);
-        resultMap.put("calendarData",attemptsCalendar);
+        resultMap.put("totalQuestions", totalQuestions);
+        resultMap.put("totalAttempted", totalAttempted);
+        resultMap.put("doughnutChartData", doughNutData);
+        resultMap.put("doubleBarChartData", doubleBarChartData);
+        resultMap.put("subjectWiseBarChartData", doubleBarChartDataMap);
+        resultMap.put("calendarData", attemptsCalendar);
         doughNutData = new ArrayList<>();
         return resultMap;
     }
@@ -145,39 +147,45 @@ public class AnalyticsDashBoard {
     private static ArrayList<ArrayList<Object>> prepareListForDoubleBarChart(HashMap<String, HashMap<String, ArrayList<Integer>>> doubleBarChartDataMap) {
         ArrayList<ArrayList<Object>> barData = new ArrayList<>();
         //ArrayList<ArrayList<Object>> doughNutData = new ArrayList<>();
-        HashMap<String,Double> doughNutInnerData = new HashMap<>();
+        HashMap<String, Double> doughNutInnerData = new HashMap<>();
 
         HashMap<String, ArrayList<Integer>> innerData = new HashMap<>();
+        innerData.put(NOT_ATTEMPTED, new ArrayList<>(Collections.nCopies(2, 0)));
+        innerData.put(GREATER_THAN_7_DAYS, new ArrayList<>(Collections.nCopies(2, 0)));
+        innerData.put(GREATER_THAN_15_DAYS, new ArrayList<>(Collections.nCopies(2, 0)));
+        innerData.put(GREATER_THAN_25_DAYS, new ArrayList<>(Collections.nCopies(2, 0)));
+        innerData.put(LESS_THAN_80_ACCURACY, new ArrayList<>(Collections.nCopies(2, 0)));
 
         for (Map.Entry<String, HashMap<String, ArrayList<Integer>>> entry : doubleBarChartDataMap.entrySet()) {
+            // Subject Name
             String datasetName = entry.getKey();
             double target = 0;
             double done = 0;
-            doughNutInnerData.put(datasetName,0.0);
-            HashMap<String, ArrayList<Integer>> innerMap = entry.getValue();
-
-            System.out.println("Dataset: " + datasetName);
+            doughNutInnerData.put(datasetName, 0.0);
+            HashMap<String, ArrayList<Integer>> innerMap;
+            // Criteria wise question distribution map
+            innerMap = entry.getValue();
 
             for (Map.Entry<String, ArrayList<Integer>> innerEntry : innerMap.entrySet()) {
+                // Question criteria
                 String categoryName = innerEntry.getKey();
+                // Numbers for total and target
                 ArrayList<Integer> values = innerEntry.getValue();
                 target += values.get(0);
                 done += values.get(1);
-                if(!innerData.containsKey(categoryName)){
-                    innerData.put(categoryName,values);
-                }else{
-                    ArrayList<Integer> values2 = innerData.get(categoryName);
-                    values2.set(0,values2.get(0)+values.get(0));
-                    values2.set(1,values2.get(1)+values.get(1));
-                    innerData.put(categoryName,values2);
-                }
+
+                ArrayList<Integer> values2 = innerData.get(categoryName);
+                values2.set(0, values2.get(0) + values.get(0));
+                values2.set(1, values2.get(1) + values.get(1));
+                innerData.put(categoryName, values2);
+
             }
             target = target + done;
             double doughnutValue = 0;
-            if(target != 0){
+            if (target != 0) {
                 doughnutValue = done / target;
             }
-            doughNutInnerData.put(datasetName, doughnutValue*100);
+            doughNutInnerData.put(datasetName, doughnutValue * 100);
         }
 
         barData.add(new ArrayList<>(Arrays.asList("Criteria", "Still to be completed", "Completed till now")));
@@ -204,20 +212,20 @@ public class AnalyticsDashBoard {
     }
 
     public static Object processLineChartData(List<TestData> allAttemptedQuestions) {
-        HashMap<Integer,ArrayList<Integer>> result = new HashMap<>();
-        for(int i=1;i<=31;i++){
-            result.put(i,new ArrayList<>(Collections.nCopies(12, 0)));
+        HashMap<Integer, ArrayList<Integer>> result = new HashMap<>();
+        for (int i = 1; i <= 31; i++) {
+            result.put(i, new ArrayList<>(Collections.nCopies(12, 0)));
         }
-        for(TestData tdata : allAttemptedQuestions){
-            if(attemptsCalendar.containsKey(tdata.getTestDate())){
+        for (TestData tdata : allAttemptedQuestions) {
+            if (attemptsCalendar.containsKey(tdata.getTestDate())) {
                 Integer value = attemptsCalendar.get(tdata.getTestDate());
-                attemptsCalendar.put(tdata.getTestDate(),value+1);
-            }else{
-                attemptsCalendar.put(tdata.getTestDate(),0);
+                attemptsCalendar.put(tdata.getTestDate(), value + 1);
+            } else {
+                attemptsCalendar.put(tdata.getTestDate(), 0);
             }
             int[] dayMonth = extractMonthAndDay(tdata.getTestDate().toString());
-            Integer value = result.get(dayMonth[0]).get(dayMonth[1]-1);
-            result.get(dayMonth[0]).set(dayMonth[1]-1 , value+1);
+            Integer value = result.get(dayMonth[0]).get(dayMonth[1] - 1);
+            result.get(dayMonth[0]).set(dayMonth[1] - 1, value + 1);
         }
         return result;
     }
@@ -233,7 +241,7 @@ public class AnalyticsDashBoard {
             int month = calendar.get(Calendar.MONTH) + 1; // Add 1 for 1-based month
             int day = calendar.get(Calendar.DAY_OF_MONTH);
 
-            return new int[]{day,month};
+            return new int[]{day, month};
         } catch (ParseException e) {
             e.printStackTrace();
             return new int[]{-1, -1}; // Return sentinel values or handle the error as needed

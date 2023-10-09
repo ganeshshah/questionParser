@@ -24,7 +24,7 @@ export function DoubleBarChart({data}) {
     <Chart
       chartType="BarChart"
       width="100%"
-      height="400px"
+      height="800px"
       data={resultArray}
       options={options}
     />
