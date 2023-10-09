@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Chart } from "react-google-charts";
 
 export const options = {
@@ -8,18 +8,30 @@ export const options = {
     },
 };
 
-export function Calendar({analyticsData}) {
+export function Calendar({ analyticsData }) {
+    // Initialize resultList as a state variable
+    const [resultList, setResultList] = useState([]);
 
-    const resultList = [];
+    useEffect(() => {
+        // This effect will run whenever analyticsData changes
+        const updatedResultList = [];
 
-    for (const key in analyticsData) {
-        if (analyticsData.hasOwnProperty(key)) {
-            var date = new Date(key);
-            const number = analyticsData[key] % 10; // Get the last digit of the number
-            resultList.push([date, number]);
+        for (const key in analyticsData) {
+            if (analyticsData.hasOwnProperty(key)) {
+                var date = new Date(key);
+                const number = analyticsData[key];
+
+                // Handle null values
+                if (number !== null) {
+                    updatedResultList.push([date, number]);
+                }
+            }
         }
-    }
-    
+
+        // Set the updated resultList in state
+        setResultList(updatedResultList);
+    }, [analyticsData]); // Only run this effect when analyticsData changes
+
     const resultArray = [
         [
             { type: "date", id: "Date" },
@@ -27,6 +39,9 @@ export function Calendar({analyticsData}) {
         ],
         ...resultList,
     ];
+
+    console.log(resultArray);
+    console.log(analyticsData);
 
     return (
         <Chart

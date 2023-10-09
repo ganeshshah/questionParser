@@ -86,7 +86,7 @@ public class ParsingController {
     @GetMapping("getAnalyticsData")
     public HashMap<String,Object>  getAnalyticsData(@RequestParam ArrayList<String> byMonthOrMonthRange,
                                           @RequestParam String allMonthsIndicator){
-        HashMap<String,Object> resultData;
+        HashMap<String,Object> resultData = new HashMap<>();
         List<McqCSV> allQuestions;
         List<TestData> allAttemptedQuestions = testDataService.getAttemptedQuestions();
         if(allMonthsIndicator.equals("YES")){
@@ -94,8 +94,9 @@ public class ParsingController {
         }else{
             allQuestions = parsingService.getQuestionsForAnalytics(byMonthOrMonthRange);
         }
-        resultData = AnalyticsDashBoard.prepareAnalyticsData(allQuestions);
         resultData.put("lineChartData",AnalyticsDashBoard.processLineChartData(allAttemptedQuestions));
+        resultData.putAll(AnalyticsDashBoard.prepareAnalyticsData(allQuestions));
+
         return resultData;
     }
 
